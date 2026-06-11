@@ -1,0 +1,239 @@
+{
+  "main": {
+    "id": "06ddd940f2d57ea4",
+    "type": "split",
+    "children": [
+      {
+        "id": "ec6dda2f56b977b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c5ccb53fb3d95389",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "01-Projects/Roadmap PhD June.canvas",
+                "viewState": {
+                  "x": 9.424268454600249,
+                  "y": -1313.864895327134,
+                  "zoom": -0.5116445586914476
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Roadmap PhD June"
+            }
+          },
+          {
+            "id": "24a5cf96ced86180",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nouvel onglet"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2807e86c0d2964da",
+    "type": "split",
+    "children": [
+      {
+        "id": "aeb4b04c713e4d5d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f69618d437bd17aa",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorateur de fichiers"
+            }
+          },
+          {
+            "id": "bebd94c09411c9c2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:python",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "161d27f71db18a64",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "19a435c7da305492",
+    "type": "split",
+    "children": [
+      {
+        "id": "b0c3c9fcde274ac6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a75ff9a29abd4e2f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "01-Projects/To digest.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Rétrolien pour To digest"
+            }
+          },
+          {
+            "id": "3d21215c26145a87",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "01-Projects/To digest.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Liens sortants de To digest"
+            }
+          },
+          {
+            "id": "0212c243d72f17ea",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "83defc6b947666d5",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Toutes les propriétés"
+            }
+          },
+          {
+            "id": "ca014b90db5101e4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Plan"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false,
+      "bases:Créer une nouvelle base": false
+    }
+  },
+  "active": "24a5cf96ced86180",
+  "lastOpenFiles": [
+    "01-Projects/PRD-M-Wiki-Agent.md",
+    "01-Projects/M-wiki(doc) - Build the Brain.md",
+    "01-Projects/Ralph prompt.md",
+    "01-Projects/To digest.md",
+    "01-Projects/Portfolio for Pan.md",
+    "01-Projects/M-wiki(doc) - llm wiki.md",
+    "01-Projects/M-wiki(log) - p0-to-p3.md",
+    "01-Projects/M-wiki - Bibliography.md",
+    "01-Projects/M-wiki(log) - p0-to-p3-suite.md",
+    "01-Projects/M-wiki(log) - p3-to-p4.md",
+    "01-Projects/M-wiki(log) - refactor.md",
+    "03-Clinical/OAD(log) - MVP Sprint.md",
+    "03-Clinical/OAD(log) - Beta-Bangui.md",
+    "03-Clinical/OAD(handoff) - React Native ou ODK.md",
+    "01-Projects/Roadmap PhD June.canvas",
+    "conflict-files-obsidian-git.md",
+    "03-Clinical/OAD(handoff) - product requirements document.md",
+    "00-MOCs/Bibliography.md",
+    "01-Projects/Bibliography.md",
+    "00-MOCs/OAD.md",
+    "00-MOCs/MeepsScribe.md",
+    "06-Admin/ED414-Checklist-Year1.md",
+    "05-Writing/Vee-model.md",
+    "05-Writing/Using an engineering notebook.md",
+    "05-Writing/TurboQuant.md",
+    "05-Writing/Improve monitoring and bibliographic management.md",
+    "01-Projects/MeepsScribe(log) p0-to-p3.md",
+    "01-Projects/memory-plan",
+    "06-Admin",
+    "05-Writing",
+    "04-Papers",
+    "03-Clinical",
+    "02-Genetic",
+    "00-MOCs",
+    "07-Admin",
+    "06-Ideas",
+    "05-Meetings"
+  ]
+}
