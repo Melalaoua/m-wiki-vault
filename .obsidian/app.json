@@ -5,5 +5,6 @@
   "attachmentFolderPath": "06-Ideas/Attachments",
   "showLineNumber": true,
   "spellcheck": true,
-  "defaultViewMode": "source"
+  "defaultViewMode": "source",
+  "promptDelete": false
 }
