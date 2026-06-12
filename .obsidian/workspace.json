@@ -30,12 +30,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/walkinglabs.github.io/welcome-to-learn-harness-engineering.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "welcome-to-learn-harness-engineering"
+              "title": "index"
             }
           }
         ],
@@ -174,13 +174,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "raw/walkinglabs.github.io/welcome-to-learn-harness-engineering.md",
+                "file": "index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de welcome-to-learn-harness-engineering"
+              "title": "Plan de index"
             }
           }
         ],
@@ -204,7 +204,25 @@
   },
   "active": "24a5cf96ced86180",
   "lastOpenFiles": [
+    "log.md",
+    "wiki/entities/agents-md.md",
     "raw/walkinglabs.github.io/welcome-to-learn-harness-engineering.md",
+    "raw/walkinglabs.github.io/lecture-01-strong-models-don-t-mean-reliable-execution.md",
+    "wiki/sources/walkinglabs2026lecture.md",
+    "wiki/maps/ai-agent-failure-modes.md",
+    "wiki/maps/phd.md",
+    "wiki/maps/personal.md",
+    "wiki/concepts/verification-gap.md",
+    "wiki/concepts/harness-induced-failure.md",
+    "wiki/concepts/harness-engineering.md",
+    "wiki/concepts/diagnostic-loop.md",
+    "wiki/sources",
+    "wiki/maps",
+    "wiki/entities",
+    "wiki/concepts",
+    "wiki",
+    "index.md",
+    "AGENTS.md",
     "raw/walkinglabs.github.io",
     "raw",
     "01-Projects/PRD-M-Wiki-Agent.md",
@@ -219,27 +237,9 @@
     "01-Projects/M-wiki(log) - p3-to-p4.md",
     "01-Projects/M-wiki(log) - refactor.md",
     "03-Clinical/OAD(log) - MVP Sprint.md",
-    "03-Clinical/OAD(log) - Beta-Bangui.md",
-    "03-Clinical/OAD(handoff) - React Native ou ODK.md",
     "01-Projects/Roadmap PhD June.canvas",
-    "conflict-files-obsidian-git.md",
-    "03-Clinical/OAD(handoff) - product requirements document.md",
-    "00-MOCs/Bibliography.md",
-    "01-Projects/Bibliography.md",
-    "00-MOCs/OAD.md",
-    "00-MOCs/MeepsScribe.md",
-    "06-Admin/ED414-Checklist-Year1.md",
-    "05-Writing/Vee-model.md",
-    "05-Writing/Using an engineering notebook.md",
-    "05-Writing/TurboQuant.md",
-    "05-Writing/Improve monitoring and bibliographic management.md",
     "01-Projects/memory-plan",
     "06-Admin",
-    "05-Writing",
-    "04-Papers",
-    "03-Clinical",
-    "02-Genetic",
-    "00-MOCs",
-    "07-Admin"
+    "05-Writing"
   ]
 }
