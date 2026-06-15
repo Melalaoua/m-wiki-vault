@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorateur de fichiers"
             }
           },
           {
@@ -162,7 +162,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of rhoa-gene"
+              "title": "Plan de rhoa-gene"
             }
           }
         ],
@@ -174,37 +174,37 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false,
+      "bases:Créer une nouvelle base": false,
       "obsidian-git:Open Git source control": false
     }
   },
   "active": "0ee61b6608f6b669",
   "lastOpenFiles": [
-    "raw/phd/fgene-17-1761449.pdf.extract.md",
-    "raw/phd/fgene-17-1761449.pdf",
-    "wiki/concepts/ciliopathy.md",
+    "wiki/concepts/variant-of-uncertain-significance-vus.md",
     "wiki/concepts/trio-exome-sequencing.md",
     "wiki/concepts/diagnostic-yield.md",
-    "wiki/concepts/variant-of-uncertain-significance-vus.md",
-    "wiki/entities/rhoa-gene.md",
+    "wiki/concepts/ciliopathy.md",
+    "raw/phd/fgene-17-1761449.pdf",
+    "log.md",
+    "index.md",
     "wiki/sources/phd2026fgene171761449.md",
     "wiki/maps/phd.md",
     "wiki/maps/personal.md",
-    "index.md",
     "wiki/entities/mel.md",
-    "log.md",
+    "wiki/entities/rhoa-gene.md",
     "AGENTS.md",
     "wiki/maps",
     "wiki/sources",
     "wiki/entities",
     "wiki/concepts",
     "wiki",
+    "raw/phd/fgene-17-1761449.pdf.extract.md",
     "raw/phd",
     "raw",
     "wiki/concepts/harness-induced-failure.md",
