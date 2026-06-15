@@ -8,3 +8,10 @@
 - [[wiki/entities/rhoa-gene|RHOA gene]] — entity
 - [[wiki/concepts/diagnostic-yield|Diagnostic Yield]] — concept
 - [[wiki/concepts/variant-of-uncertain-significance-vus|Variant of Uncertain Significance (VUS)]] — concept
+- [[wiki/sources/phd2026rare|Rare type I collagen variants in early-onset bicuspid aortic valve disease: Overlap with Ehlers-Danlos syndrome and osteogenesis imperfecta]] — captured 2026-06-15
+- [[wiki/concepts/bicuspid-aortic-valve-bav|Bicuspid Aortic Valve (BAV)]] — concept
+- [[wiki/concepts/early-onset-bicuspid-aortic-valve-disease-ebav|Early-Onset Bicuspid Aortic Valve Disease (EBAV)]] — concept
+- [[wiki/concepts/type-i-collagen-col1|Type I Collagen (COL1)]] — concept
+- [[wiki/entities/col1a1|COL1A1]] — entity
+- [[wiki/entities/col1a2|COL1A2]] — entity
+- [[wiki/maps/col1-related-connective-tissue-disorders|COL1-Related Connective Tissue Disorders]] — map

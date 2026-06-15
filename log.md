@@ -15,3 +15,13 @@
 - wiki/entities/rhoa-gene.md (create)
 - wiki/concepts/diagnostic-yield.md (create)
 - wiki/concepts/variant-of-uncertain-significance-vus.md (create)
+
+## [2026-06-15] ingest | Rare type I collagen variants in early-onset bicuspid aortic valve disease: Overlap with Ehlers-Danlos syndrome and osteogenesis imperfecta
+
+- wiki/sources/phd2026rare.md (create)
+- wiki/concepts/bicuspid-aortic-valve-bav.md (create)
+- wiki/concepts/early-onset-bicuspid-aortic-valve-disease-ebav.md (create)
+- wiki/concepts/type-i-collagen-col1.md (create)
+- wiki/entities/col1a1.md (create)
+- wiki/entities/col1a2.md (create)
+- wiki/maps/col1-related-connective-tissue-disorders.md (create)
