@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "wiki/entities/rhoa-gene.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "rhoa-gene"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md",
+                "file": "wiki/entities/rhoa-gene.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of rhoa-gene"
             }
           }
         ],
@@ -180,30 +180,31 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f69618d437bd17aa",
+  "active": "0ee61b6608f6b669",
   "lastOpenFiles": [
-    "log.md",
-    "index.md",
+    "raw/phd/fgene-17-1761449.pdf.extract.md",
+    "raw/phd/fgene-17-1761449.pdf",
+    "wiki/concepts/ciliopathy.md",
+    "wiki/concepts/trio-exome-sequencing.md",
+    "wiki/concepts/diagnostic-yield.md",
+    "wiki/concepts/variant-of-uncertain-significance-vus.md",
+    "wiki/entities/rhoa-gene.md",
     "wiki/sources/phd2026fgene171761449.md",
     "wiki/maps/phd.md",
     "wiki/maps/personal.md",
+    "index.md",
     "wiki/entities/mel.md",
-    "wiki/entities/rhoa-gene.md",
-    "wiki/concepts/variant-of-uncertain-significance-vus.md",
-    "wiki/concepts/trio-exome-sequencing.md",
-    "wiki/concepts/diagnostic-yield.md",
-    "wiki/concepts/ciliopathy.md",
+    "log.md",
     "AGENTS.md",
     "wiki/maps",
     "wiki/sources",
     "wiki/entities",
     "wiki/concepts",
     "wiki",
-    "raw/phd/fgene-17-1761449.pdf.extract.md",
-    "raw/phd/fgene-17-1761449.pdf",
     "raw/phd",
     "raw",
     "wiki/concepts/harness-induced-failure.md",
@@ -219,7 +220,6 @@
     "01-Projects/PRD-M-Wiki-Agent.md",
     "01-Projects/M-wiki(doc) - Build the Brain.md",
     "01-Projects/Ralph prompt.md",
-    "01-Projects/To digest.md",
     "01-Projects/Roadmap PhD June.canvas",
     "01-Projects/memory-plan"
   ]
