@@ -10,3 +10,12 @@
 - wiki/concepts/organic-startup-idea-generation.md (create)
 - wiki/entities/y-combinator.md (create)
 - wiki/maps/personal.md (update)
+
+## [2026-06-22] ingest | Great Work
+
+- wiki/sources/paulgraham2026great.md (create)
+- wiki/concepts/great-work.md (create)
+- wiki/concepts/staying-upwind.md (create)
+- wiki/concepts/per-project-procrastination.md (create)
+- wiki/entities/paul-graham.md (create)
+- wiki/maps/personal.md (update)

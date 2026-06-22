@@ -14,3 +14,7 @@ Top-level map of the personal domain. Ingested sources link in below as the area
 - [[wiki/concepts/exponential-startup-growth|Exponential Startup Growth]]
 - [[wiki/concepts/organic-startup-idea-generation|Organic Startup Idea Generation]]
 - [[wiki/entities/y-combinator|Y Combinator]]
+- [[wiki/concepts/great-work|Great Work]]
+- [[wiki/concepts/staying-upwind|Staying Upwind]]
+- [[wiki/concepts/per-project-procrastination|Per-Project Procrastination]]
+- [[wiki/entities/paul-graham|Paul Graham]]
