@@ -11,10 +11,14 @@
             "id": "0ee61b6608f6b669",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "AGENTS.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nouvel onglet"
+              "title": "AGENTS"
             }
           }
         ]
@@ -152,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "AGENTS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan"
+              "title": "Plan de AGENTS"
             }
           }
         ],
@@ -181,17 +186,18 @@
   },
   "active": "0ee61b6608f6b669",
   "lastOpenFiles": [
-    "AGENTS.md",
-    "index.md",
+    "wiki/maps/phd.md",
+    "wiki/maps/personal.md",
+    "wiki/maps",
     "log.md",
+    "index.md",
+    "AGENTS.md",
     "wiki/concepts/early-onset-bicuspid-aortic-valve-disease-ebav.md",
     "wiki/concepts/bicuspid-aortic-valve-bav.md",
     "wiki/concepts/ciliopathy.md",
     "wiki/maps/col1-related-connective-tissue-disorders.md",
     "wiki/entities/col1a2.md",
     "wiki/entities/col1a1.md",
-    "wiki/maps/personal.md",
-    "wiki/maps/phd.md",
     "wiki/concepts/type-i-collagen-col1.md",
     "raw/phd/PIIS2666247726000679.pdf",
     "wiki/entities/rhoa-gene.md",
@@ -203,7 +209,6 @@
     "raw/phd/fgene-17-1761449.pdf",
     "wiki/sources/phd2026fgene171761449.md",
     "wiki/entities/mel.md",
-    "wiki/maps",
     "wiki/sources",
     "wiki/entities",
     "wiki/concepts",
