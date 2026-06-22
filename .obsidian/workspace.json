@@ -11,14 +11,10 @@
             "id": "0ee61b6608f6b669",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AGENTS.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "AGENTS"
+              "title": "Nouvel onglet"
             }
           }
         ]
@@ -156,13 +152,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AGENTS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de AGENTS"
+              "title": "Plan"
             }
           }
         ],
@@ -186,6 +181,7 @@
   },
   "active": "0ee61b6608f6b669",
   "lastOpenFiles": [
+    "AGENTS.md",
     "index.md",
     "log.md",
     "wiki/concepts/early-onset-bicuspid-aortic-valve-disease-ebav.md",
@@ -207,7 +203,6 @@
     "raw/phd/fgene-17-1761449.pdf",
     "wiki/sources/phd2026fgene171761449.md",
     "wiki/entities/mel.md",
-    "AGENTS.md",
     "wiki/maps",
     "wiki/sources",
     "wiki/entities",
