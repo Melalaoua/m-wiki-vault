@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/paulgraham.com/how-to-earn-a-billion-dollars.md",
+                "file": "wiki/concepts/staying-upwind.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "how-to-earn-a-billion-dollars"
+              "title": "staying-upwind"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "raw/paulgraham.com/how-to-earn-a-billion-dollars.md",
+                "file": "wiki/concepts/staying-upwind.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de how-to-earn-a-billion-dollars"
+              "title": "Plan de staying-upwind"
             }
           }
         ],
@@ -186,12 +186,13 @@
   },
   "active": "0ee61b6608f6b669",
   "lastOpenFiles": [
-    "raw/paulgraham.com/how-to-do-great-work.md",
-    "wiki/concepts/exponential-startup-growth.md",
+    "wiki/concepts/per-project-procrastination.md",
     "wiki/concepts/organic-startup-idea-generation.md",
     "wiki/concepts/great-work.md",
+    "wiki/concepts/exponential-startup-growth.md",
+    "raw/paulgraham.com/how-to-earn-a-billion-dollars.md",
+    "raw/paulgraham.com/how-to-do-great-work.md",
     "wiki/concepts/staying-upwind.md",
-    "wiki/concepts/per-project-procrastination.md",
     "wiki/entities/y-combinator.md",
     "wiki/entities/paul-graham.md",
     "log.md",
@@ -204,7 +205,6 @@
     "wiki/sources",
     "wiki/entities",
     "wiki/concepts",
-    "raw/paulgraham.com/how-to-earn-a-billion-dollars.md",
     "raw/paulgraham.com",
     "wiki/maps",
     "wiki/concepts/early-onset-bicuspid-aortic-valve-disease-ebav.md",
