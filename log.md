@@ -19,3 +19,11 @@
 - wiki/concepts/per-project-procrastination.md (create)
 - wiki/entities/paul-graham.md (create)
 - wiki/maps/personal.md (update)
+
+## [2026-06-22] ingest | The Insecurity of Debian
+
+- wiki/sources/unix2026the.md (create)
+- wiki/concepts/selinux.md (create)
+- wiki/concepts/apparmor.md (create)
+- wiki/concepts/multi-category-security-mcs.md (create)
+- wiki/maps/personal.md (update)
