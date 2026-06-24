@@ -35,3 +35,8 @@
 - wiki/concepts/vibe-medicine.md (create)
 - wiki/concepts/three-level-self-evolution.md (create)
 - wiki/maps/phd.md (update)
+
+## [2026-06-24] chat | Critical Evaluation of Medical LLMs
+
+- wiki/concepts/critical-evaluation-of-medical-llms.md (create)
+- wiki/maps/phd.md (update)
