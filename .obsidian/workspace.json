@@ -11,14 +11,10 @@
             "id": "0ee61b6608f6b669",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "log.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "log"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Vue graphique"
             }
           }
         ]
@@ -44,7 +40,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorateur de fichiers"
             }
           },
           {
@@ -156,13 +152,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "log.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of log"
+              "title": "Plan"
             }
           }
         ],
@@ -174,54 +169,54 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false,
+      "bases:Créer une nouvelle base": false,
       "obsidian-git:Open Git source control": false
     }
   },
   "active": "0ee61b6608f6b669",
   "lastOpenFiles": [
-    "index.md",
-    "AGENTS.md",
-    "wiki/sources/unix2026the.md",
-    "wiki/sources/paulgraham2026how.md",
-    "wiki/sources/paulgraham2026great.md",
-    "wiki/concepts/apparmor.md",
-    "wiki/concepts/great-work.md",
-    "wiki/concepts/multi-category-security-mcs.md",
-    "wiki/concepts/organic-startup-idea-generation.md",
-    "wiki/concepts/per-project-procrastination.md",
-    "wiki/concepts/selinux.md",
-    "wiki/concepts/staying-upwind.md",
-    "wiki/entities/y-combinator.md",
-    "wiki/entities/paul-graham.md",
-    "wiki/concepts/exponential-startup-growth.md",
+    "wiki/sources/phd2026toward.md",
+    "wiki/entities/vibemed.md",
+    "wiki/concepts/vibe-medicine.md",
+    "wiki/concepts/three-level-self-evolution.md",
+    "raw/phd/2606.15504v2.pdf.extract.md",
+    "raw/phd/2606.15504v2.pdf",
+    "raw/phd",
     "wiki/maps/personal.md",
-    "wiki/maps/phd.md",
-    "wiki/entities/rhoa-gene.md",
     "raw/unix.foo/the-insecurity-of-debian.md",
+    "wiki/concepts/selinux.md",
+    "wiki/concepts/multi-category-security-mcs.md",
+    "wiki/concepts/great-work.md",
+    "wiki/concepts/exponential-startup-growth.md",
+    "wiki/concepts/apparmor.md",
+    "wiki/concepts/staying-upwind.md",
+    "wiki/sources/unix2026the.md",
     "raw/unix.foo",
+    "wiki/concepts/per-project-procrastination.md",
+    "wiki/concepts/organic-startup-idea-generation.md",
     "raw/paulgraham.com/how-to-earn-a-billion-dollars.md",
     "raw/paulgraham.com/how-to-do-great-work.md",
-    "raw/paulgraham.com",
-    "raw/phd/fgene-17-1761449.pdf.extract.md",
-    "raw/phd/fgene-17-1761449.pdf",
-    "wiki/concepts/ciliopathy.md",
-    "wiki/concepts/trio-exome-sequencing.md",
-    "wiki/concepts/diagnostic-yield.md",
-    "wiki/concepts/variant-of-uncertain-significance-vus.md",
-    "wiki/maps",
+    "wiki/entities/y-combinator.md",
+    "wiki/entities/paul-graham.md",
+    "log.md",
+    "index.md",
+    "AGENTS.md",
+    "wiki/maps/phd.md",
+    "wiki/sources/paulgraham2026great.md",
+    "wiki/sources/paulgraham2026how.md",
     "wiki/sources",
     "wiki/entities",
     "wiki/concepts",
-    "wiki",
-    "raw/phd",
-    "raw",
+    "raw/paulgraham.com",
+    "wiki/maps",
+    "raw/phd/PIIS2666247726000679.pdf",
+    "raw/phd/fgene-17-1761449.pdf",
     "01-Projects/Roadmap PhD June.canvas"
   ]
 }
