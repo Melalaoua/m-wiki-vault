@@ -7,7 +7,7 @@ tags: [concept, phd]
 
 # Three-Level Self-Evolution
 
-Three-Level Self-Evolution is a system optimization architecture, notably implemented in [[wiki/entities/vibemed]], that operates simultaneously on three temporal timescales to balance immediate adaptability with long-term stability in agentic systems:
+Three-Level Self-Evolution is a system optimization architecture, notably implemented in [[vibemed]], that operates simultaneously on three temporal timescales to balance immediate adaptability with long-term stability in agentic systems:
 
 1. **Memory-Level Evolution:** Real-time extraction and structural storage of interaction traces into working, episodic, and graph memory, allowing the agent to adapt immediately without updating parameters.
 2. **Model-Level Evolution:** Periodic (e.g., weekly or monthly) parameter updates leveraging [[wiki/concepts/supervised-fine-tuning]] and [[wiki/concepts/direct-preference-optimization]] using distilled reflection datasets.
