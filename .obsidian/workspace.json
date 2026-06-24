@@ -11,10 +11,14 @@
             "id": "0ee61b6608f6b669",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "wiki/maps/personal.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "personal"
             }
           }
         ]
@@ -152,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "wiki/maps/personal.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of personal"
             }
           }
         ],
@@ -181,10 +186,13 @@
   },
   "active": "0ee61b6608f6b669",
   "lastOpenFiles": [
-    "wiki/entities/rhoa-gene.md",
-    "wiki/sources/unix2026the.md",
+    "wiki/maps/phd.md",
     "wiki/sources/paulgraham2026how.md",
+    "index.md",
+    "AGENTS.md",
     "wiki/sources/paulgraham2026great.md",
+    "wiki/sources/unix2026the.md",
+    "wiki/entities/rhoa-gene.md",
     "wiki/entities/y-combinator.md",
     "wiki/entities/paul-graham.md",
     "wiki/concepts/staying-upwind.md",
@@ -207,9 +215,6 @@
     "wiki/concepts/diagnostic-yield.md",
     "wiki/concepts/variant-of-uncertain-significance-vus.md",
     "wiki/sources/phd2026fgene171761449.md",
-    "wiki/maps/phd.md",
-    "wiki/maps/personal.md",
-    "index.md",
     "wiki/maps",
     "wiki/sources",
     "wiki/entities",
