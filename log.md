@@ -27,3 +27,11 @@
 - wiki/concepts/apparmor.md (create)
 - wiki/concepts/multi-category-security-mcs.md (create)
 - wiki/maps/personal.md (update)
+
+## [2026-06-24] ingest | Toward Vibe Medicine: A Self-Evolving Multi-Agent Framework for Clinical Decision Support
+
+- wiki/sources/phd2026toward.md (create)
+- wiki/entities/vibemed.md (create)
+- wiki/concepts/vibe-medicine.md (create)
+- wiki/concepts/three-level-self-evolution.md (create)
+- wiki/maps/phd.md (update)
