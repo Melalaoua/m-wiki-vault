@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/entities/vibemed.md",
+                "file": "wiki/concepts/organic-startup-idea-generation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "vibemed"
+              "title": "organic-startup-idea-generation"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki/entities/vibemed.md",
+                "file": "wiki/concepts/organic-startup-idea-generation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of vibemed"
+              "title": "Outline of organic-startup-idea-generation"
             }
           }
         ],
@@ -186,12 +186,14 @@
   },
   "active": "0ee61b6608f6b669",
   "lastOpenFiles": [
+    "wiki/concepts/per-project-procrastination.md",
     "wiki/concepts/three-level-self-evolution.md",
-    "wiki/concepts/staying-upwind.md",
     "wiki/concepts/vibe-medicine.md",
+    "wiki/entities/vibemed.md",
+    "wiki/concepts/critical-evaluation-of-medical-llms.md",
+    "wiki/concepts/staying-upwind.md",
     "log.md",
     "wiki/sources/phd2026toward.md",
-    "wiki/entities/vibemed.md",
     "raw/phd/2606.15504v2.pdf.extract.md",
     "raw/phd/2606.15504v2.pdf",
     "raw/phd",
@@ -204,7 +206,6 @@
     "wiki/concepts/great-work.md",
     "wiki/concepts/multi-category-security-mcs.md",
     "wiki/concepts/organic-startup-idea-generation.md",
-    "wiki/concepts/per-project-procrastination.md",
     "wiki/concepts/selinux.md",
     "wiki/entities/y-combinator.md",
     "wiki/entities/paul-graham.md",
@@ -214,7 +215,6 @@
     "wiki/entities/rhoa-gene.md",
     "raw/unix.foo/the-insecurity-of-debian.md",
     "raw/unix.foo",
-    "raw/paulgraham.com/how-to-earn-a-billion-dollars.md",
     "raw/paulgraham.com",
     "raw/phd/fgene-17-1761449.pdf",
     "wiki/maps",
