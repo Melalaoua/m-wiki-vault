@@ -40,3 +40,12 @@
 
 - wiki/concepts/critical-evaluation-of-medical-llms.md (create)
 - wiki/maps/phd.md (update)
+
+## [2026-07-01] ingest | Humans may have hidden regenerative powers
+
+- wiki/sources/www2026humans.md (create)
+- wiki/concepts/blastema.md (create)
+- wiki/concepts/positional-re-specification.md (create)
+- wiki/entities/ken-muneoka.md (create)
+- wiki/concepts/fibroblast-growth-factor-2-fgf2.md (create)
+- wiki/maps/personal.md (update)

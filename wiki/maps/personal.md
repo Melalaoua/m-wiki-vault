@@ -21,3 +21,7 @@ Top-level map of the personal domain. Ingested sources link in below as the area
 - [[wiki/concepts/selinux|SELinux]]
 - [[wiki/concepts/apparmor|AppArmor]]
 - [[wiki/concepts/multi-category-security-mcs|Multi-Category Security (MCS)]]
+- [[wiki/concepts/blastema|Blastema]]
+- [[wiki/concepts/positional-re-specification|Positional re-specification]]
+- [[wiki/entities/ken-muneoka|Ken Muneoka]]
+- [[wiki/concepts/fibroblast-growth-factor-2-fgf2|Fibroblast Growth Factor 2 (FGF2)]]
