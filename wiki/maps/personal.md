@@ -25,3 +25,8 @@ Top-level map of the personal domain. Ingested sources link in below as the area
 - [[wiki/concepts/positional-re-specification|Positional re-specification]]
 - [[wiki/entities/ken-muneoka|Ken Muneoka]]
 - [[wiki/concepts/fibroblast-growth-factor-2-fgf2|Fibroblast Growth Factor 2 (FGF2)]]
+- [[wiki/concepts/the-3-approach|The 3% Approach]]
+- [[wiki/entities/virgil-abloh|Virgil Abloh]]
+- [[wiki/entities/kibu|Kibu]]
+- [[wiki/entities/mintlify|Mintlify]]
+- [[wiki/concepts/vibecoding|Vibecoding]]

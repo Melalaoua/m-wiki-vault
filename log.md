@@ -49,3 +49,13 @@
 - wiki/entities/ken-muneoka.md (create)
 - wiki/concepts/fibroblast-growth-factor-2-fgf2.md (create)
 - wiki/maps/personal.md (update)
+
+## [2026-07-01] ingest | Stealing is a Skill
+
+- wiki/sources/benmini2026stealing.md (create)
+- wiki/concepts/the-3-approach.md (create)
+- wiki/entities/virgil-abloh.md (create)
+- wiki/entities/kibu.md (create)
+- wiki/entities/mintlify.md (create)
+- wiki/concepts/vibecoding.md (create)
+- wiki/maps/personal.md (update)
