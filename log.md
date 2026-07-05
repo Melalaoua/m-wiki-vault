@@ -63,3 +63,7 @@
 ## [2026-07-05] project | AI for Rare Disease Diagnosis
 
 - wiki/projects/ai-for-rare-disease-diagnosis.md (create)
+
+## [2026-07-05] project | Diagnostic Tool for Febrile Children in CAR
+
+- wiki/projects/diagnostic-tool-for-febrile-children-in-car.md (create)

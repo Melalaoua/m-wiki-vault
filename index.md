@@ -2,3 +2,4 @@
 - [[wiki/maps/phd|PhD]] — map
 - [[wiki/maps/personal|Personal]] — map
 - [[wiki/projects/ai-for-rare-disease-diagnosis|AI for Rare Disease Diagnosis]] — project
+- [[wiki/projects/diagnostic-tool-for-febrile-children-in-car|Diagnostic Tool for Febrile Children in CAR]] — project
