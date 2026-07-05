@@ -59,3 +59,7 @@
 - wiki/entities/mintlify.md (create)
 - wiki/concepts/vibecoding.md (create)
 - wiki/maps/personal.md (update)
+
+## [2026-07-05] project | AI for Rare Disease Diagnosis
+
+- wiki/projects/ai-for-rare-disease-diagnosis.md (create)
