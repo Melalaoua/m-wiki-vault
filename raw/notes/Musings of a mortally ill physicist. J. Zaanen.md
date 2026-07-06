@@ -1,0 +1,15 @@
+tags:: #frostfire_ridge/figures 
+
+*Instituut-Lorentz for Theoretical Physics, Leiden University, The Netherlands.*
+
+With regard to the real axis of religious attitudes Einstein stressed that he considered himself as an agnost. We just do not understand enough of these metaphysical matters to afford any opinion. I actually became aware of Einstein’s agnostic attitudes, feeling actually pleased that I had figured out the same wisdom myself independently over the course of time.
+
+The substances that causes so much joy in my brains and the brains of other physicists just triggers severe headaches and feelings of anxiety in the heads of 99.9 % of the remaining part of mankind.
+
+You get the point:  Einstein means ”a very small but eventually finite fraction of Einstein’s physics legacy.” But this is a tall order for any physicist. Reality is that progress is usually incremental, and much of the outcomes of such research is routine, circular, repetitive and only rewarding in terms of citations. Is my personal  finite? Perhaps, but I am not convinced and it will play a key role in my supernatural experiences as I will explain later.
+
+Arrived at the restaurant Bob explained to me that we are all part of a worldwide ”conspiracy” that is completely hidden from the public eye. He stressed that the process of discovery in physics is in one or the other way a rather supernatural, mythical affair. He claimed that anybody who has lived through the process of discovering a mathematical equation shedding a different light on reality – part of the definition of physics – perceives this as a supernatural event, suddenly looking into a world unrelated to our daily biological existence. This was for him very personal, because he discovered the greatly powerful BCS wavefunction all by himself.
+
+He claimed a well organised and rather powerful cult on the planet, having the theory floors of academic physics departments as temples, with the best and brightest theorists often equipped with a Nobel prize as the high priests of this denomination. These priests have somehow the capacity to receive these mathematical visions that turn into the great game changers of mankind. Think again Newton, Maxwell, Einstein, and so forth, all of them tapping from this divine source of deep knowledge that is way beyond the material existence of mankind as envisioned by the biologists. Surely, this is accompanied by an army of ”physics monks” (like me) populating the physics departments, in essence apprentices that should be chasing their moment of awakening hoping it will come.
+
+A way to view it is that our tolerance for untestable theories has spectacularly declined due to the staggering success of the testable ones. With regard to Schrieffer’s church I share my personal attitude with Einstein: the only view that makes sense is agnosticism, I perceive the case that I will fortify underneath as solid and unambiguous evidence that there are realms of reality that we really do not understand. We may afford the luxury to try to capture it in a metaphoric language borrowing from classic religions.

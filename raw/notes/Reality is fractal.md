@@ -1,0 +1,4 @@
+tags:: #frostfire_ridge/mind 
+source:: [1](https://blar.do/your-brain-as-a-zoom-lens/)
+
+Reality is fractal in this particular way from where I sit. Yet again, we have an abstraction for this - in the hard sciences you'll hear it called reductionism: the concept that any complex system can be broken down and described in terms of its sub-components. This idea is so powerful that data scientists, physicists, mathematicians, and every other technical discipline you'll ever bump into use it. There are a few examples that really helped this whole concept click for me: objects in the world that we interact with are composed of many small parts. This applies to water as noted above, but also applies to things like your car.

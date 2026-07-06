@@ -1,0 +1,6 @@
+tags:: #frostfire_ridge/figures
+
+**Publius Clodius Thrasea Paetus** (died AD 66), [Roman](https://en.wikipedia.org/wiki/Roman_Empire "Roman Empire") [senator](https://en.wikipedia.org/wiki/Roman_Senate "Roman Senate"), who lived in the 1st century AD. Notable for his principled opposition to the emperor [Nero](https://en.wikipedia.org/wiki/Nero "Nero") and his interest in [Stoicism](https://en.wikipedia.org/wiki/Stoicism "Stoicism"), he was the husband of Arria, who was the daughter of [A. Caecina Paetus](https://en.wikipedia.org/wiki/Caecina_Paetus "Caecina Paetus") and the elder [Arria](https://en.wikipedia.org/wiki/Arria "Arria"), father-in-law of [Helvidius Priscus](https://en.wikipedia.org/wiki/Helvidius_Priscus "Helvidius Priscus"), and a friend and relative by marriage of the poet [Persius](https://en.wikipedia.org/wiki/Aulus_Persius_Flaccus "Aulus Persius Flaccus"). Thrasea was the most prominent member of the political faction known today as the [Stoic Opposition](https://en.wikipedia.org/wiki/Stoic_Opposition "Stoic Opposition").
+
+![[Pasted image 20230204093259.png]]
+*_Quaestor Reading the Death Sentence to Senator Thrasea Paetus_, by [Fyodor Bronnikov](https://en.wikipedia.org/wiki/Fyodor_Bronnikov "Fyodor Bronnikov")*

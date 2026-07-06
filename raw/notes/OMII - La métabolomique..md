@@ -1,0 +1,11 @@
+tags:: #master/Omiques 
+
+La métabolomique est une branche de la biologie systémique qui se concentre sur l'étude complète du métabolome, càd de l'ensemble des métabolites présents dans une cellule, un organe ou un organisme à un moment donné. Ces métabolites sont des petites molécules générées ou modifiées au cours des processus métaboliques cellulaires, comme les acides aminés, les nucléotides, les lipides, et les glucides.
+
+L'objectif principal de la métabolomique est d'identifier, de caractériser et de quantifier l'ensemble des métabolites, afin d'obtenir une image instantannée de l'état physiologique d'un système biologique. Les fluctuations dans la composition du métabolome peuvent en effet réveler des changements pathologiques ou des réponses à des traitements ou encore des expositions environnementales, ce qui fait de la métabolomique un outil puissant en biologie, médecine ou pharmacologie.
+
+Dans la pratique, la métabolomique fait appel à des techniques analytiques de pointe comme la [[Spectrométrie de masse]] ou la [[Résonance Magnétique Nucléaire]] pour détecter et mesurer les métabolites. Les données recueillies sont ensuite analysées à l'aide de logiciels informatiques et d'approches statistiques avancées pour traiter et interpréter les grands ensembles de données complexes (big data)
+
+L'analyse métabolomique peut être divisée en deux approches principales : 
+1. Métabolomique ciblée : Elle implique la quantification de métabolites sélectionnés à priori, souvent associées à des voies métaboliques spécifiques connues. Cette méthode est précise et quantitative, mais elle est limitée aux métabolites spécifiquement ciblés.
+2. 2. Métabolomique non ciblée : Cette approche cherche à profiler le plus grand nombre possible de métabolites présents dans un échantillon, sans se concentrer sur des substances particulières. Elle est exploratoire et permet de découvrir de nouveaux biomarqueurs ou voies métaboliques, mais elle est moins quantitative que la métabolomique ciblée.
