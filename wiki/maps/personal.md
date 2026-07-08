@@ -30,3 +30,6 @@ Top-level map of the personal domain. Ingested sources link in below as the area
 - [[wiki/entities/kibu|Kibu]]
 - [[wiki/entities/mintlify|Mintlify]]
 - [[wiki/concepts/vibecoding|Vibecoding]]
+- [[wiki/concepts/the-cult-of-done|The Cult of Done]]
+- [[wiki/entities/bre-pettis|Bre Pettis]]
+- [[wiki/entities/kio-stark|Kio Stark]]

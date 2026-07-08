@@ -67,3 +67,12 @@
 ## [2026-07-05] project | Diagnostic Tool for Febrile Children in CAR
 
 - wiki/projects/diagnostic-tool-for-febrile-children-in-car.md (create)
+
+## [2026-07-08] ingest | 33-COD
+
+- wiki/sources/notes202633cod.md (create)
+- wiki/concepts/the-cult-of-done.md (create)
+- wiki/concepts/per-project-procrastination.md (update)
+- wiki/entities/bre-pettis.md (create)
+- wiki/entities/kio-stark.md (create)
+- wiki/maps/personal.md (update)
