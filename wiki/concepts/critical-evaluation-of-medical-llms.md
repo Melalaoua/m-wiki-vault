@@ -4,7 +4,7 @@ title: "Critical Evaluation of Medical LLMs"
 aliases: []
 tags: [concept, phd, chat]
 ---
-
+	
 # Critical Evaluation of Medical LLMs
 
 Evaluating the viability of LLMs and multi-agent systems in [[wiki/concepts/clinical-decision-support]] requires looking past the algorithmic novelty (such as the self-evolving loops in [[wiki/entities/vibemed]]) and scrutinizing safety, bias, and evaluation rigor. For a system to transition from a computer science experiment to a viable Software as a Medical Device (SaMD), three major critical lenses must be applied:
