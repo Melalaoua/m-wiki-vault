@@ -16,4 +16,9 @@ Development of an 'Outil de Diagnostic' for children with febrile disease in the
 
 ## Relevant knowledge
 
+```dataview
+TABLE type, tags
+WHERE contains(this.file.outlinks, file.link) OR contains(this.file.inlinks, file.link)
+```
+
 Declared 2026-07-05. Knowledge that bears on this project accretes here at ingest.
