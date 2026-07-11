@@ -17,3 +17,4 @@ This page serves as a top-level map of the PhD domain, encompassing research on 
 - [[phd/wiki/concepts/joint-embedding-predictive-architecture|Joint-Embedding Predictive Architecture]]
 - [[phd/wiki/concepts/world-models|World Models]]
 - [[phd/wiki/concepts/sketched-isotropic-gaussian-regularizer|Sketched-Isotropic-Gaussian Regularizer]]
+- [[phd/wiki/concepts/biological-world-models-via-jepa|Biological World Models via JEPA]]

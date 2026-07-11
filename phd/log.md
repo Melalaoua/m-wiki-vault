@@ -10,3 +10,8 @@
 - phd/wiki/concepts/world-models.md (create)
 - phd/wiki/concepts/sketched-isotropic-gaussian-regularizer.md (create)
 - phd/wiki/maps/phd.md (update)
+
+## [2026-07-11] chat | Biological World Models via JEPA
+
+- phd/wiki/concepts/biological-world-models-via-jepa.md (create)
+- phd/wiki/maps/phd.md (update)
