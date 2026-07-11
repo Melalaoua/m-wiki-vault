@@ -6,3 +6,4 @@
 - [[wiki/maps/paul-graham-s-startup-and-work-philosophy|Paul Graham's Startup and Work Philosophy]] — map
 - [[wiki/maps/mandatory-access-control-systems|Mandatory Access Control Systems]] — map
 - [[wiki/maps/mammalian-blastema-induction|Mammalian Blastema Induction]] — map
+- [[wiki/maps/self-evolving-clinical-ai-and-regulatory-critiques|Self-Evolving Clinical AI and Regulatory Critiques]] — map

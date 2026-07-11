@@ -94,3 +94,9 @@
 - wiki/maps/mammalian-blastema-induction.md (create)
 - wiki/maps/personal.md (update)
 - index.md (update)
+
+## [2026-07-11] promote | Self-Evolving Clinical AI and Regulatory Critiques
+
+- wiki/maps/self-evolving-clinical-ai-and-regulatory-critiques.md (create)
+- wiki/maps/phd.md (update)
+- index.md (update)
