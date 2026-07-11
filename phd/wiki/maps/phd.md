@@ -4,17 +4,12 @@ title: "PhD"
 aliases: []
 tags: [map, phd]
 updated: 2026-07-11
-status: developing
+status: stable
 ---
 
 # PhD
 
-Top-level map of the phd domain.
-
-## From [[phd/wiki/sources/phd2026leworldmodel|LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture from Pixels]] (2026-07-11)
-
-## Readings on World Models and Representation Learning
-- [[LeWorldModel]] explores stable, end-to-end JEPAs for robotic continuous control directly from raw pixels.
+This page serves as a top-level map of the PhD domain, encompassing research on world models and representation learning. Work in this space includes [[LeWorldModel]], which explores stable, end-to-end Joint-Embedding Predictive Architectures (JEPAs) for robotic continuous control directly from raw pixels ([[phd/wiki/sources/phd2026leworldmodel|LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture from Pixels]]).
 
 ## Pages in this area
 
