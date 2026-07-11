@@ -82,3 +82,9 @@
 - wiki/maps/paul-graham-s-startup-and-work-philosophy.md (create)
 - wiki/maps/personal.md (update)
 - index.md (update)
+
+## [2026-07-11] promote | Mandatory Access Control Systems
+
+- wiki/maps/mandatory-access-control-systems.md (create)
+- wiki/maps/personal.md (update)
+- index.md (update)
