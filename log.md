@@ -88,3 +88,9 @@
 - wiki/maps/mandatory-access-control-systems.md (create)
 - wiki/maps/personal.md (update)
 - index.md (update)
+
+## [2026-07-11] promote | Mammalian Blastema Induction
+
+- wiki/maps/mammalian-blastema-induction.md (create)
+- wiki/maps/personal.md (update)
+- index.md (update)

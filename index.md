@@ -5,3 +5,4 @@
 - [[wiki/projects/diagnostic-tool-for-febrile-children-in-car|Diagnostic Tool for Febrile Children in CAR]] — project
 - [[wiki/maps/paul-graham-s-startup-and-work-philosophy|Paul Graham's Startup and Work Philosophy]] — map
 - [[wiki/maps/mandatory-access-control-systems|Mandatory Access Control Systems]] — map
+- [[wiki/maps/mammalian-blastema-induction|Mammalian Blastema Induction]] — map
