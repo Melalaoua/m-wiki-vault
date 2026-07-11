@@ -1,9 +1,11 @@
 ---
 type: project
-title: "Diagnostic Tool for Febrile Children in CAR"
+title: OAD - Diagnostic Tool for Febrile Children in CAR
 status: active
 aliases: []
-tags: [project, phd]
+tags:
+  - project
+  - phd
 ---
 
 # Diagnostic Tool for Febrile Children in CAR
