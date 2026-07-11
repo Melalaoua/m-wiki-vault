@@ -21,6 +21,6 @@ TABLE type, tags
 WHERE contains(this.file.outlinks, file.link) OR contains(this.file.inlinks, file.link)
 ```
 
-- **[[wiki/sources/phd2026toward]]** (and its concepts **[[wiki/concepts/vibe-medicine|Vibe Medicine]]** & **[[wiki/concepts/critical-evaluation-of-medical-llms|Critical Evaluation of Medical LLMs]]**) — While this source focuses on multi-agent clinical decision support generally, the challenges of continuous learning, bias, and clinical safety it raises are directly applicable to the deployment of AI systems for diagnosing rare diseases.
+- **[[phd2026toward]]** (and its concepts **[[vibe-medicine|Vibe Medicine]]** & **[[critical-evaluation-of-medical-llms|Critical Evaluation of Medical LLMs]]**) — While this source focuses on multi-agent clinical decision support generally, the challenges of continuous learning, bias, and clinical safety it raises are directly applicable to the deployment of AI systems for diagnosing rare diseases.
 
 Declared 2026-07-05. Knowledge that bears on this project accretes here at ingest.
