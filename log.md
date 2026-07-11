@@ -76,3 +76,9 @@
 - wiki/entities/bre-pettis.md (create)
 - wiki/entities/kio-stark.md (create)
 - wiki/maps/personal.md (update)
+
+## [2026-07-11] promote | Paul Graham's Startup and Work Philosophy
+
+- wiki/maps/paul-graham-s-startup-and-work-philosophy.md (create)
+- wiki/maps/personal.md (update)
+- index.md (update)
