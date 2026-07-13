@@ -4,19 +4,9 @@ title: "OAD"
 aliases: []
 tags: [entity, phd]
 updated: 2026-07-13
-status: developing
+status: stable
 ---
 
 # OAD
 
-The **OAD** (Outil d'Aide au Diagnostic) is a mobile application developed to assist healthcare workers (Agents de Santé) with clinical diagnosis, particularly for non-malarial febrile illnesses in resource-constrained environments like the Central African Republic. 
-
-It is built using [[phd/wiki/concepts/react-native|React Native]] for Android tablets and relies heavily on an [[phd/wiki/concepts/offline-first-architecture|offline-first architecture]] to ensure functionality without internet access, syncing local databases to remote servers when possible. The diagnostic logic is based on a [[phd/wiki/concepts/syndromic-approach|syndromic approach]], effectively replacing legacy Excel-based tools.
-
-Source: [[phd/wiki/sources/notes2025oadhandoff|OAD(handoff) - product requirements document]]
-
-## From [[phd/wiki/sources/notes2026oad|OAD — Project Hub]] (2026-07-13)
-
-The **Outil d'Aide au Diagnostic (OAD)** is a mobile health initiative focused on developing a [[phd/wiki/concepts/syndromic-approach|syndromic diagnostic]] aid for practitioners in resource-limited settings. It relies heavily on an [[phd/wiki/concepts/offline-first-architecture|offline-first architecture]] implemented via a [[phd/wiki/concepts/react-native|React Native]] tablet app. 
-
-See [[phd/wiki/maps/oad-mobile-health-application|OAD Mobile Health Application]] for the full project map and stakeholders.
+The **OAD** (Outil d'Aide au Diagnostic) is a mobile health initiative and application designed to assist healthcare workers (Agents de Santé) with clinical diagnosis in resource-constrained environments like the Central African Republic ([[phd/wiki/sources/notes2025oadhandoff|OAD(handoff) - product requirements document]], [[phd/wiki/sources/notes2026oad|OAD — Project Hub]]). Replacing legacy Excel-based tools, the application utilizes a [[phd/wiki/concepts/syndromic-approach|syndromic approach]] to serve as a [[phd/wiki/concepts/syndromic-approach|syndromic diagnostic]] aid, particularly for non-malarial febrile illnesses ([[phd/wiki/sources/notes2025oadhandoff|OAD(handoff) - product requirements document]]). The software is built for Android tablets using [[phd/wiki/concepts/react-native|React Native]] and depends on an [[phd/wiki/concepts/offline-first-architecture|offline-first architecture]], which allows practitioners to operate without internet access by syncing local databases to remote servers when connectivity is available ([[phd/wiki/sources/notes2025oadhandoff|OAD(handoff) - product requirements document]], [[phd/wiki/sources/notes2026oad|OAD — Project Hub]]). Further stakeholder and project scope details are documented in the [[phd/wiki/maps/oad-mobile-health-application|OAD Mobile Health Application]] project map ([[phd/wiki/sources/notes2026oad|OAD — Project Hub]]).
