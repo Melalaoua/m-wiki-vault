@@ -10,3 +10,7 @@
 - personal/wiki/concepts/robot-vacuum.md (create)
 - personal/wiki/concepts/ros-2.md (create)
 - personal/wiki/maps/personal.md (update)
+
+## [2026-07-13] project | Build a DIY Roomba
+
+- personal/wiki/projects/build-a-diy-roomba.md (create)
