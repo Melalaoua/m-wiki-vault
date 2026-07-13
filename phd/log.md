@@ -76,3 +76,9 @@
 - phd/wiki/entities/oad.md (update)
 - phd/wiki/maps/phd.md (update)
 - phd/wiki/projects/diagnostic-tool-for-febrile-children-in-car.md (update)
+
+## [2026-07-13] promote | OAD Technical Infrastructure and Evaluation
+
+- phd/wiki/maps/oad-technical-infrastructure-and-evaluation.md (create)
+- phd/wiki/maps/phd.md (update)
+- index.md (update)
