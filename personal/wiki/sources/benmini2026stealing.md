@@ -12,7 +12,7 @@ tags: [source, personal]
 
 # Stealing is a Skill
 
-Original: [[raw/ben-mini.com/stealing-is-a-skill]]
+Original: [[personal/raw/ben-mini.com/stealing-is-a-skill]]
 
 I’m slowly developing my own list of advice: have a [[wiki/concepts/creative-mindset]], embrace [[wiki/concepts/radical-transparency]], and write down what makes you happy. I’d like to add one more to the list: stealing is a skill!
 
@@ -50,4 +50,4 @@ Blech. So cliche to end on a Jobs quote. One more:
 
 - Virgil Abloh coined the '3% approach' to discipline himself to edit only 3% of an original design, avoiding diluting the original vision. ([[raw/ben-mini.com/stealing-is-a-skill#Paragraph 4]]) — "Abloh disciplined himself to only edit 3% of the original design, so as not to dilute the original work perfected by visionaries before him."
 - Kibu initially rebuilt Mintlify's marketing site pixel-by-pixel to establish their own site's baseline. ([[raw/ben-mini.com/stealing-is-a-skill#Paragraph 6]]) — "So, we literally rebuilt the Mintlify site, pixel-by-pixel."
-- In March 2026, Kibu migrated from Framer to a full codebase to utilize vibecoding for faster development. ([[raw/ben-mini.com/stealing-is-a-skill#Footnote 2]]) — "In March 2026, we migrated off Framer and into a full codebase. We bet that vibecoding would allow us to move faster than a drag-and-drop builder"
+- In March 2026, Kibu migrated from Framer to a full codebase to utilize vibecoding for faster development. ([[personal/raw/ben-mini.com/stealing-is-a-skill#Footnote 2]]) — "In March 2026, we migrated off Framer and into a full codebase. We bet that vibecoding would allow us to move faster than a drag-and-drop builder"

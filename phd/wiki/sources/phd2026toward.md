@@ -12,7 +12,7 @@ tags: [source, phd]
 
 # Toward Vibe Medicine: A Self-Evolving Multi-Agent Framework for Clinical Decision Support
 
-Original: [[raw/phd/2606.15504v2.pdf]]
+Original: [[phd/raw/phd/2606.15504v2.pdf]]
 
 # Toward Vibe Medicine: A Self-Evolving Multi-Agent Framework for Clinical Decision Support
 
