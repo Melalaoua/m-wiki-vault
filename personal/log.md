@@ -18,3 +18,7 @@
 ## [2026-07-13] project | League of Legends Mastery
 
 - personal/wiki/projects/league-of-legends-mastery.md (create)
+
+## [2026-07-13] project | Financial Maturity via Talis
+
+- personal/wiki/projects/financial-maturity-via-talis.md (create)
