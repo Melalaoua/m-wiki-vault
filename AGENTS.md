@@ -81,3 +81,7 @@ Propose the change as a reviewable diff and wait. Apply only on the user's
 explicit approval, as one commit `agents: <reason>`. The user editing it
 directly in Obsidian needs no approval — the gate binds the agent, not the
 human.
+
+## Contradictions
+
+- ⚠️ contradicts [[phd/wiki/sources/phd2026mwikiprd|M-WIKI-PRD]] (captured 2026-07-13): "`personal/` and `phd/` are each a complete Brain — own `raw/`, `wiki/` (`sources/`, `entities/`, `concepts/`, `maps/`, `projects/`), `index.md`, `log.md`. [...] A page's `domain` tag is Dataview fuel only, never the write boundary." vs "Domain separation between personal and PhD knowledge relies on metadata tags rather than separate directories." — The new source claims domains are separated by metadata tags instead of directories, while AGENTS.md strictly defines separate `personal/` and `phd/` directories and explicitly rejects the domain tag as a boundary.

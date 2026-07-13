@@ -19,3 +19,12 @@
 ## [2026-07-13] project | Project Meeps
 
 - phd/wiki/projects/project-meeps.md (create)
+
+## [2026-07-13] ingest | M-WIKI-PRD
+
+- phd/wiki/sources/phd2026mwikiprd.md (create)
+- phd/wiki/entities/m-wiki.md (create)
+- phd/wiki/concepts/hexagonal-architecture.md (create)
+- phd/wiki/concepts/tool-selection-routing.md (create)
+- phd/wiki/maps/phd.md (update)
+- phd/wiki/projects/project-meeps.md (update)
