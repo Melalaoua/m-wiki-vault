@@ -21,3 +21,5 @@ This page serves as a top-level map of the [[PhD]] domain, encompassing research
 - [[phd/wiki/entities/m-wiki|M-Wiki]]
 - [[phd/wiki/concepts/hexagonal-architecture|Hexagonal Architecture]]
 - [[phd/wiki/concepts/tool-selection-routing|Tool-Selection Routing]]
+- [[phd/wiki/entities/oad|OAD]]
+- [[phd/wiki/concepts/open-data-kit|Open Data Kit]]

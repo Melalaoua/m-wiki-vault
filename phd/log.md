@@ -43,3 +43,12 @@
 - phd/wiki/maps/oad-mobile-health-application.md (create)
 - phd/wiki/maps/phd.md (update)
 - index.md (update)
+
+## [2026-07-13] ingest | OAD — Project Hub
+
+- phd/wiki/sources/notes2026oad.md (create)
+- phd/wiki/maps/oad-mobile-health-application.md (update)
+- phd/wiki/entities/oad.md (update)
+- phd/wiki/concepts/open-data-kit.md (create)
+- phd/wiki/maps/phd.md (update)
+- phd/wiki/projects/diagnostic-tool-for-febrile-children-in-car.md (update)

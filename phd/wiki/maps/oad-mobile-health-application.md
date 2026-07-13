@@ -16,3 +16,18 @@ The [[OAD]] (Outil d'Aide au Diagnostic) is a React Native Android tablet applic
 - [[phd/wiki/entities/oad|OAD]]
 - [[phd/wiki/concepts/syndromic-approach|Syndromic Approach]]
 - [[phd/wiki/concepts/offline-first-architecture|Offline-First Architecture]]
+
+## From [[phd/wiki/sources/notes2026oad|OAD — Project Hub]] (2026-07-13)
+
+The [[phd/wiki/entities/oad|OAD]] (Outil d'Aide au Diagnostic) project aims to provide a [[phd/wiki/concepts/syndromic-approach|syndromic diagnostic aid tool]] through a [[phd/wiki/concepts/react-native|React Native]] tablet application. It is specifically designed to function with an [[phd/wiki/concepts/offline-first-architecture|offline-first architecture]] to serve resource-limited medical settings, notably in sub-Saharan Africa.
+
+### Core Team & Stakeholders
+- [[phd/wiki/entities/romaric-nzoumbou-boko|Pr Romaric Nzoumbou-Boko]] (Project Responsible)
+- [[phd/wiki/entities/didier-menard|Pr Didier Ménard]]
+- [[phd/wiki/entities/jean-de-dieu-longo|Pr Jean-de-Dieu Longo]]
+- [[phd/wiki/entities/patrice-piola|Dr Patrice Piola]] (Designer)
+- [[phd/wiki/entities/aboubacar-soumah|Dr Aboubacar Soumah]] (Project Manager)
+- [[phd/wiki/entities/mehdi-el-alaoua|Mehdi El Alaoua]] (Developer & Designer)
+
+### Technical Decisions
+An early technical comparison was made between [[phd/wiki/concepts/react-native|React Native]] and [[phd/wiki/concepts/open-data-kit|ODK]] to determine the best approach for the mobile infrastructure.
