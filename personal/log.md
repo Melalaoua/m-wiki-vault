@@ -22,3 +22,12 @@
 ## [2026-07-13] project | Financial Maturity via Talis
 
 - personal/wiki/projects/financial-maturity-via-talis.md (create)
+
+## [2026-07-13] ingest | TALIS-PRD
+
+- personal/wiki/sources/personal2026talisprd.md (create)
+- personal/wiki/concepts/talis-ai-agent.md (create)
+- personal/wiki/concepts/fire-financial-independence-retire-early.md (create)
+- personal/wiki/concepts/mastra-framework.md (create)
+- personal/wiki/maps/personal.md (update)
+- personal/wiki/projects/financial-maturity-via-talis.md (update)
