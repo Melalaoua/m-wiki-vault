@@ -3,7 +3,7 @@ type: map
 title: "PhD"
 aliases: []
 tags: [map, phd]
-updated: 2026-07-13
+updated: 2025-09-09
 status: stable
 ---
 
@@ -23,3 +23,4 @@ This page serves as a top-level map of the [[PhD]] domain, encompassing research
 - [[phd/wiki/concepts/tool-selection-routing|Tool-Selection Routing]]
 - [[phd/wiki/entities/oad|OAD]]
 - [[phd/wiki/concepts/open-data-kit|Open Data Kit]]
+- [[phd/wiki/concepts/react-native|React Native]]

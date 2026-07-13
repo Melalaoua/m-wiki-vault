@@ -1,42 +1,75 @@
 ---
 type: source
-title: "OAD(handoff) - product requirements document"
+title: "OAD(handoff) - React Native ou ODK"
 citekey: notes2025oadhandoff
 source_type: article
-captured: 2025-09-12
+captured: 2025-09-09
 site: notes
 url: 
 aliases: []
 tags: [source, phd]
-updated: 2025-09-12
+updated: 2025-09-09
 status: developing
 ---
 
-# OAD(handoff) - product requirements document
+# OAD(handoff) - React Native ou ODK
 
-Original: [[raw/notes/OAD(handoff) - product requirements document]]
+Original: [[raw/notes/OAD(handoff) - React Native ou ODK]]
 
-This document is the Product Requirements Document (PRD) for the [[phd/wiki/entities/oad|OAD]] (Outil d'Aide au Diagnostic), targeting release 0.1. 
+## [[phd/wiki/concepts/open-data-kit|ODK]]
+Plateformes de collecte de données avec des formulaires sous forme XLS (excel, google sheets) ou sous format web.
 
-## Project Objectives
-The primary purpose is to develop a diagnostic tool based on a [[phd/wiki/concepts/syndromic-approach|syndromic approach]]. This is necessitated by the increased use of rapid diagnostic tests for malaria, which leaves doctors facing a growing number of non-malarial febrile illnesses without alternative diagnostic methods. 
+les formulaires peuvent contenir : 
+- photos
+- GPS
+- calculs
+- datasets externes
+- multiples languages
+- ...
 
-The strategic context emphasizes UX and platform accessibility in fast-paced medical field settings. The application must be highly reliable and fully functional in impoverished regions where internet access is intermittent or non-existent.
+Les données peuvent être collectées en ligne ou offline, tout est synchronisés lorsqu'une connection est retrouvée. (See [[phd/wiki/concepts/offline-first-architecture|Offline-First Architecture]])
 
-## Feature Requirements
-- Built using [[phd/wiki/concepts/react-native|React Native]] for Android tablets.
-- **[[phd/wiki/concepts/offline-first-architecture|Offline-first]]**: Full platform functionality must be accessible without internet connectivity.
-- Interactive and guided UI optimized for tablets.
-- Data architecture requires local and distant databases with syncing capabilities when internet becomes available.
-- Integration with [[phd/wiki/entities/posthog|PostHog]] for deployment monitoring.
+Possibilité de connecter ODK avec python, excel, power bi, R.
 
-## Personas and Release Criteria
-The primary users are the *Agent de Santé* (Health Worker) and *Agent de santé communautaire* (Community Health Worker). 
+Peut être self-host ou hébergé sur des serveurs distant.
 
-For the 0.1 release, the team must design an eye-catching, user-friendly interface that successfully ports all existing functions from a legacy Excel tool into a standalone, offline-functional app.
+1. Trouver un serveur central (soit le cloud) ou notre propre serveur.
+2. Obtenir l'application de collecte (google play store or APK)
+3. Upload les formulaires sur le serveur central.
+4. Remplir les questionnaires
+5. Envoyer les données au serveur central.
+
+La construction de l'app serait rapide, en 1 mois. Elle serait très stable, fonctionnel immédiatement mais un sacrifice important sur le design, l'UX, le choix du fonctionnement de l'application. 
+
+### Points négatifs.
+- Si on ne paie pas, pas d'accès aux entités, seulement des formulaires straightforward.
+- Quid de la liberté sur le design des formulaires ?
+- design statique, pas d'interactivité / dynamicité.
+
+## [[phd/wiki/concepts/react-native|React native]]
+
+Construction de zéro de l'application, laissant un choix sur la forme, le design de l'application.
+
+Nécessite l'apprentissage d'un nouveau langage de programmation, plus coûteux et long. 4 mois est suffisant.
+
+Permet d'explorer plus de choix artistiques, fonctionnels. 
+
+Nécessite un développement full-stack : de l'application au serveur. De l'infrastructure à la sécurité/juridiction des données. Un vrai travail d'ingénierie.
+
+# A faire :
+- wireframe & maquette.
+- 300€ par tablette trouver un modèle de tablette android. ~mi-octobre.
+- vol de tablette.
+- quid de l'IA ? faire en sorte avec peu de moyen on ait le meilleur diagnostic et la meilleure prise en charge = aide à la décision et réalisable / optimal.
+- réduire la prescription.
+- intérêt économique.
+- réunion avec Bangui à prévoir.
+- [[phd/wiki/entities/souma|Souma]] ; project manager.
+- [[phd/wiki/entities/romaric|Romaric]] ; un point 0 dans le projet/ responsable
+- lire les compte-rendus
 
 ## Key claims
 
-- The widespread use of rapid diagnostic tests for malaria has increased the need for doctors to diagnose and manage non-malarial febrile illnesses without adequate alternative methods. ([[raw/notes/OAD(handoff) - product requirements document#Project objectives:]]) — "La croissance d’utilisation des tests de diagnostic rapide pour la paludisme confronte les médecins au diagnostic de plus en plus de maladies fébriles non palustres - sans méthodes ou moyens alternatifs pour leur prise en charge."
-- The application must be able to operate entirely offline on a tablet and synchronize data with a server once internet connectivity is restored. ([[raw/notes/OAD(handoff) - product requirements document#Feature requirements:]]) — "Full platform functionality accessible from a tablet device without internet. [...] Syncing so updates are sent to server when internet is available. (local and distant databases with syncing.)"
-- The initial release of the app must replicate the functionality currently handled by an existing Excel document. ([[raw/notes/OAD(handoff) - product requirements document#Release criteria:]]) — "Port all excel's existing functions to the app."
+- ODK allows for a rapid, 1-month development cycle that yields a stable application, but requires significant sacrifices in design and user experience. ([[raw/notes/OAD(handoff) - React Native ou ODK#ODK]]) — "La construction de l'app serait rapide, en 1 mois. Elle serait très stable, fonctionnel immédiatement mais un sacrifice important sur le design, l'UX"
+- Using React Native gives full control over the application's design and functionality but requires learning a new language and a roughly 4-month full-stack development cycle. ([[raw/notes/OAD(handoff) - React Native ou ODK#React native]]) — "Construction de zéro de l'application, laissant un choix sur la forme, le design de l'application... 4 mois est suffisant... Nécessite un développement full-stack"
+- The integration of AI in the project aims to provide optimal diagnostic and decision-making support despite limited resources. ([[raw/notes/OAD(handoff) - React Native ou ODK#A faire :]]) — "faire en sorte avec peu de moyen on ait le meilleur diagnostic et la meilleure prise en charge = aide à la décision et réalisable / optimal."

@@ -3,7 +3,7 @@ type: map
 title: "OAD Mobile Health Application"
 aliases: []
 tags: [map, phd]
-updated: 2026-07-13
+updated: 2025-09-09
 status: stable
 ---
 
@@ -16,3 +16,15 @@ The [[OAD]] (Outil d'Aide au Diagnostic), formally managed as the [[phd/wiki/ent
 - [[phd/wiki/entities/oad|OAD]]
 - [[phd/wiki/concepts/syndromic-approach|Syndromic Approach]]
 - [[phd/wiki/concepts/offline-first-architecture|Offline-First Architecture]]
+
+## From [[phd/wiki/sources/notes2025oadhandoff|OAD(handoff) - React Native ou ODK]] (2025-09-09)
+
+The [[phd/wiki/entities/oad|OAD]] Mobile Health Application faces a core architectural decision between [[phd/wiki/concepts/open-data-kit|Open Data Kit]] and [[phd/wiki/concepts/react-native|React Native]]. 
+
+**ODK Route**: Prioritizes speed (1 month build) and built-in offline synchronization, but results in static UI and limited dynamic functionality unless a paid version is leveraged for entity management.
+**React Native Route**: Prioritizes custom UX, interactive functionality, and design flexibility, but requires a ~4-month full-stack engineering effort (app, server, infrastructure, security).
+
+### Logistical & Operational Factors
+- **Hardware:** Tablets are budgeted at ~300€ each, with a target timeline around mid-October. Theft mitigation must be addressed.
+- **Team:** Key stakeholders include [[phd/wiki/entities/souma|Souma]] (Project Manager) and [[phd/wiki/entities/romaric|Romaric]] (Project Lead). Collaboration requires upcoming coordination with the team in Bangui.
+- **Clinical Goals:** The app must help reduce unnecessary prescriptions, integrate AI for decision support with limited means, and prove its economic interest.

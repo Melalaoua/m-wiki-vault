@@ -59,3 +59,12 @@
 - phd/wiki/maps/oad-mobile-health-application.md (update)
 - phd/wiki/maps/phd.md (update)
 - phd/wiki/projects/diagnostic-tool-for-febrile-children-in-car.md (update)
+
+## [2025-09-09] ingest | OAD(handoff) - React Native ou ODK
+
+- phd/wiki/sources/notes2025oadhandoff.md (update)
+- phd/wiki/maps/oad-mobile-health-application.md (update)
+- phd/wiki/concepts/open-data-kit.md (update)
+- phd/wiki/concepts/react-native.md (create)
+- phd/wiki/maps/phd.md (update)
+- phd/wiki/projects/diagnostic-tool-for-febrile-children-in-car.md (update)
