@@ -4,19 +4,12 @@ title: "Personal"
 aliases: []
 tags: [map, personal]
 updated: 2026-07-13
-status: developing
+status: stable
 ---
 
 # Personal
 
-Top-level map of the personal domain.
-
-## From [[personal/wiki/sources/makerspet2026building|Building an Open-Source Robot Vacuum — Meet OOMWOO]] (2026-07-13)
-
-## Open Source & Hardware Projects
-* [[OOMWOO]] - Open-source robot vacuum project by [[Maker's Pet]].
-* [[Robot Vacuum]]
-* [[ROS 2]]
+This page serves as a top-level map of the personal domain. It encompasses various open-source and hardware projects, notably tracking the development of [[OOMWOO]], an open-source [[Robot Vacuum]] created by [[Maker's Pet]] utilizing [[ROS 2]] (as documented in [[personal/wiki/sources/makerspet2026building|Building an Open-Source Robot Vacuum — Meet OOMWOO]]).
 
 ## Pages in this area
 
