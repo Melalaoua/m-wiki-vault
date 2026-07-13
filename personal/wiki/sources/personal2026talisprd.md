@@ -16,7 +16,14 @@ status: developing
 
 Original: [[personal/raw/personal/TALIS-PRD.pdf]]
 
-The `TALIS-PRD` document is the foundational Product Requirements Document for [[personal/wiki/concepts/talis-ai-agent|Talis]], a specialized AI agent designed for personal financial automation. The system operates as a private Discord bot that automatically ingests and categorizes financial transactions via a dedicated Gmail inbox. It provides robust capabilities for expense tracking, budget enforcement, computing [[personal/wiki/concepts/fire-financial-independence-retire-early|FIRE]] progress, and acting as an advisor for a [[personal/wiki/concepts/pea-investing|PEA]] portfolio. Structurally, the project employs a [[personal/wiki/concepts/hexagonal-architecture|Hexagonal architecture]] with the [[personal/wiki/concepts/mastra-framework|Mastra framework]] powering its internal intelligence layer. A core tenet of the design is strict safety: Talis never moves money, nor does it connect to third-party bank scraping APIs. It enforces a strict end-to-end testing philosophy, validating only externally observable behaviors. The overall integration of this financial maturity effort is tracked in the [[personal/wiki/maps/personal|Personal]] map.
+The `TALIS-PRD` document is the foundational Product Requirements Document for [[personal/wiki/concepts/talis-ai-agent|Talis]], a specialized AI agent designed for personal financial automation. 
+
+## Summary
+- Talis replaces manual FIRE spreadsheets with a Discord-based AI bot that automates expense tracking by parsing emails using an embedded LLM.
+- The application architecture is strictly Hexagonal, keeping core business logic pure while treating LLMs, market data, and Discord as pure I/O ports.
+- To ensure pristine FIRE metrics, Talis strictly enforces a transaction flow model (expense vs. income vs. transfer) so that internal money movement never pollutes actual spending data.
+- Investment discipline is automated through 'guardrails': new portfolio positions require a written thesis and a cooling-off period, and the bot acts only as an advisor—never executing trades autonomously.
+- Testing relies entirely on observable end-to-end boundaries via test Gmail inboxes and Discord servers, strictly forbidding the mocking of internal functions.
 
 ## Key claims
 

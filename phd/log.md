@@ -28,3 +28,12 @@
 - phd/wiki/concepts/tool-selection-routing.md (create)
 - phd/wiki/maps/phd.md (update)
 - phd/wiki/projects/project-meeps.md (update)
+
+## [2025-09-12] ingest | OAD(handoff) - product requirements document
+
+- phd/wiki/sources/notes2025oadhandoff.md (create)
+- phd/wiki/entities/oad.md (create)
+- phd/wiki/concepts/syndromic-approach.md (create)
+- phd/wiki/concepts/offline-first-architecture.md (create)
+- phd/wiki/maps/phd.md (update)
+- phd/wiki/projects/diagnostic-tool-for-febrile-children-in-car.md (update)

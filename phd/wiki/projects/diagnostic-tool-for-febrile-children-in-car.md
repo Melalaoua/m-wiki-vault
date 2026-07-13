@@ -6,6 +6,7 @@ aliases: []
 tags:
   - project
   - phd
+updated: 2025-09-12
 ---
 
 # Diagnostic Tool for Febrile Children in CAR
@@ -17,6 +18,7 @@ Development of an 'Outil de Diagnostic' for children with febrile disease in the
 ## Open questions
 
 ## Relevant knowledge
+- [[phd/wiki/sources/notes2025oadhandoff|OAD(handoff) - product requirements document]] (2025-09-12) — This PRD directly defines the v0.1 requirements, constraints (offline React Native tablet app), and objectives (managing non-malarial fevers) for the diagnostic tool in CAR.
 
 ```dataview
 TABLE type, tags
