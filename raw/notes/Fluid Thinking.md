@@ -1,4 +1,4 @@
-up:: [[Thinking MOC]]
+ up:: [[Thinking MOC]]
 tags:: #on/thinking 
 
 # Fluid Thinking
