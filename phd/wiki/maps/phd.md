@@ -3,7 +3,7 @@ type: map
 title: "PhD"
 aliases: []
 tags: [map, phd]
-updated: 2025-09-09
+updated: 2026-07-13
 status: stable
 ---
 

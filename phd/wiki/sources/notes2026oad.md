@@ -16,6 +16,15 @@ status: developing
 
 Original: [[raw/notes/OAD]]
 
+---
+title: "OAD — Project Hub"
+date: 2026-03-18
+type: moc
+status: growing
+tags: [OAD]
+related: []
+---
+
 > **What is this?** This is the Map of Content (MOC) for the [[phd/wiki/entities/oad|OAD]] project. It is a living navigation hub — not a research note, not a document. Its only job is to link to every vault note that touches the OAD project, organised by type.
 >
 > **Maintenance rule:** Every time a new OAD-tagged note is created anywhere in the vault, add a link here in the appropriate section. This MOC is the entry point for any person or agent navigating the project.
@@ -24,7 +33,7 @@ Original: [[raw/notes/OAD]]
 
 ## Project in One Line
 
-Develop a [[phd/wiki/concepts/syndromic-approach|syndromic diagnostic aid tool]] (*Outil d'Aide au Diagnostic*) — a [[phd/wiki/concepts/react-native|React Native]] tablet app for use in resource-limited medical settings (sub-Saharan Africa), functional [[phd/wiki/concepts/offline-first-architecture|offline]], guided and interactive.
+Develop a [[phd/wiki/concepts/syndromic-approach|syndromic diagnostic]] aid tool (*Outil d'Aide au Diagnostic*) — a [[phd/wiki/concepts/react-native|React Native]] tablet app for use in resource-limited medical settings (sub-Saharan Africa), functional offline ([[phd/wiki/concepts/offline-first-architecture|offline-first architecture]]), guided and interactive.
 
 ---
 
@@ -40,7 +49,7 @@ Develop a [[phd/wiki/concepts/syndromic-approach|syndromic diagnostic aid tool]]
 
 ## 🔬 Research & Technical Decisions
 
-- [[OAD(handoff) - React Native ou ODK]] — Tech stack decision: [[phd/wiki/concepts/react-native|React Native]] vs [[phd/wiki/concepts/open-data-kit|ODK]] comparison
+- [[OAD(handoff) - React Native ou ODK]] — Tech stack decision: React Native vs [[phd/wiki/concepts/open-data-kit|ODK]] comparison
 
 ---
 
@@ -78,12 +87,12 @@ Develop a [[phd/wiki/concepts/syndromic-approach|syndromic diagnostic aid tool]]
 
 | Name | Role |
 |---|---|
-| [[phd/wiki/entities/romaric-nzoumbou-boko|Pr Romaric Nzoumbou-Boko]] | Document Owner / Project Responsible |
-| [[phd/wiki/entities/didier-menard|Pr Didier Ménard]] | Document Owner |
-| [[phd/wiki/entities/jean-de-dieu-longo|Pr Jean-de-Dieu Longo]] | Document Owner |
-| [[phd/wiki/entities/patrice-piola|Dr Patrice Piola]] | Document Owner / Designer |
-| [[phd/wiki/entities/aboubacar-soumah|Dr Aboubacar Soumah]] | Project Manager |
-| [[phd/wiki/entities/mehdi-el-alaoua|Mehdi El Alaoua]] | Developer & Designer |
+| Pr Romaric Nzoumbou-Boko | Document Owner / Project Responsible |
+| Pr Didier Ménard | Document Owner |
+| Pr Jean-de-Dieu Longo | Document Owner |
+| Dr Patrice Piola | Document Owner / Designer |
+| Dr Aboubacar Soumah | Project Manager |
+| Mehdi El Alaoua | Developer & Designer |
 
 ---
 
@@ -104,4 +113,5 @@ Contact tablettes : fmodina@esi-france.fr
 
 ## Key claims
 
-- The OAD project is an initiative to create a React Native tablet application that functions offline to assist with syndromic diagnoses in resource-limited medical settings in sub-Saharan Africa. ([[raw/notes/OAD#Project in One Line]]) — "Develop a syndromic diagnostic aid tool (Outil d'Aide au Diagnostic) — a React Native tablet app for use in resource-limited medical settings (sub-Saharan Africa), functional offline, guided and interactive."
+- The OAD project is developing a syndromic diagnostic aid application for offline use on tablets in resource-limited settings like sub-Saharan Africa. ([[raw/notes/OAD#Project in One Line]]) — "Develop a syndromic diagnostic aid tool (Outil d'Aide au Diagnostic) — a React Native tablet app for use in resource-limited medical settings (sub-Saharan Africa), functional offline"
+- The OAD project evaluated React Native against Open Data Kit (ODK) to determine its core technology stack. ([[raw/notes/OAD#Research & Technical Decisions]]) — "Tech stack decision: React Native vs ODK comparison"

@@ -68,3 +68,11 @@
 - phd/wiki/concepts/react-native.md (create)
 - phd/wiki/maps/phd.md (update)
 - phd/wiki/projects/diagnostic-tool-for-febrile-children-in-car.md (update)
+
+## [2026-07-13] ingest | OAD — Project Hub
+
+- phd/wiki/sources/notes2026oad.md (update)
+- phd/wiki/maps/oad-mobile-health-application.md (update)
+- phd/wiki/entities/oad.md (update)
+- phd/wiki/maps/phd.md (update)
+- phd/wiki/projects/diagnostic-tool-for-febrile-children-in-car.md (update)

@@ -3,7 +3,7 @@ type: map
 title: "OAD Mobile Health Application"
 aliases: []
 tags: [map, phd]
-updated: 2025-09-09
+updated: 2026-07-13
 status: stable
 ---
 
@@ -28,3 +28,18 @@ The [[phd/wiki/entities/oad|OAD]] Mobile Health Application faces a core archite
 - **Hardware:** Tablets are budgeted at ~300€ each, with a target timeline around mid-October. Theft mitigation must be addressed.
 - **Team:** Key stakeholders include [[phd/wiki/entities/souma|Souma]] (Project Manager) and [[phd/wiki/entities/romaric|Romaric]] (Project Lead). Collaboration requires upcoming coordination with the team in Bangui.
 - **Clinical Goals:** The app must help reduce unnecessary prescriptions, integrate AI for decision support with limited means, and prove its economic interest.
+
+## From [[phd/wiki/sources/notes2026oad|OAD — Project Hub]] (2026-07-13)
+
+The [[phd/wiki/entities/oad|OAD]] (Outil d'Aide au Diagnostic) project hub outlines the development of a diagnostic aid tool leveraging a [[phd/wiki/concepts/syndromic-approach|syndromic approach]]. Designed as a [[phd/wiki/concepts/react-native|React Native]] tablet app, it specifically targets resource-limited medical settings in sub-Saharan Africa with an [[phd/wiki/concepts/offline-first-architecture|offline-first architecture]].
+
+**Technical Decisions:**
+- Evaluated [[phd/wiki/concepts/react-native|React Native]] versus [[phd/wiki/concepts/open-data-kit|Open Data Kit]] (ODK) for the tech stack.
+
+**Core Team:**
+- Pr Romaric Nzoumbou-Boko (Document Owner / Project Responsible)
+- Pr Didier Ménard
+- Pr Jean-de-Dieu Longo
+- Dr Patrice Piola (Designer)
+- Dr Aboubacar Soumah (Project Manager)
+- Mehdi El Alaoua (Developer & Designer)
