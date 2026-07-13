@@ -3,7 +3,7 @@ type: entity
 title: "OAD"
 aliases: []
 tags: [entity, phd]
-updated: 2026-07-13
+updated: 2025-09-12
 status: stable
 ---
 
@@ -16,3 +16,7 @@ The **OAD** (Outil d'Aide au Diagnostic) is a mobile health initiative developin
 The [[OAD]] (Outil de Diagnostic) reached its MVP milestone in late May 2026, targeted for a field deployment in early June. Its [[OAD Mobile Health Application|mobile client]] and server backend were heavily accelerated through the adoption of multi-agent AI coding workflows (using tools like [[Claude|Claude Code]] and [[Claude|Claude Design]]).
 
 A critical evolution during the MVP phase involved discarding untyped, legacy Excel files for pathology/treatment mapping in favor of a robust, internal typing system to avoid logic-breaking bugs.
+
+## From [[phd/wiki/sources/notes2025oadhandoff|OAD(handoff) - product requirements document]] (2025-09-12)
+
+The OAD (Outil d'aide au diagnostic) is a diagnostic aid tool documented in the [[phd/wiki/maps/oad-mobile-health-application|OAD Mobile Health Application]] map. Its v0.1 PRD specifies a tablet-based [[phd/wiki/concepts/react-native|React Native]] application leveraging an [[phd/wiki/concepts/offline-first-architecture|offline-first architecture]] to support a [[phd/wiki/concepts/syndromic-approach|syndromic approach]] in fast-paced medical settings with poor internet connectivity.

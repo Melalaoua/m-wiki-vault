@@ -3,7 +3,7 @@ type: map
 title: "OAD Mobile Health Application"
 aliases: []
 tags: [map, phd]
-updated: 2026-07-13
+updated: 2025-09-12
 status: stable
 ---
 
@@ -16,3 +16,7 @@ The [[OAD]] (Outil d'Aide au Diagnostic), formally managed as the [[phd/wiki/ent
 - [[phd/wiki/entities/oad|OAD]]
 - [[phd/wiki/concepts/syndromic-approach|Syndromic Approach]]
 - [[phd/wiki/concepts/offline-first-architecture|Offline-First Architecture]]
+
+## From [[phd/wiki/sources/notes2025oadhandoff|OAD(handoff) - product requirements document]] (2025-09-12)
+
+The development of the [[phd/wiki/entities/oad|OAD]] application focuses on translating clinical algorithms—originally managed in Excel—into an accessible, interactive tablet UI. Core product requirements emphasize an [[phd/wiki/concepts/offline-first-architecture|offline-first architecture]] with local and remote database syncing, tailored for *Agents de Santé* and *Agents de santé communautaire*. The technical stack relies on [[phd/wiki/concepts/react-native|React Native]] for Android and PostHog for deployment monitoring.
