@@ -15,3 +15,7 @@
 
 - phd/wiki/concepts/biological-world-models-via-jepa.md (create)
 - phd/wiki/maps/phd.md (update)
+
+## [2026-07-13] project | Project Meeps
+
+- phd/wiki/projects/project-meeps.md (create)
