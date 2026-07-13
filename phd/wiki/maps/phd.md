@@ -3,7 +3,7 @@ type: map
 title: "PhD"
 aliases: []
 tags: [map, phd]
-updated: 2025-09-12
+updated: 2026-07-13
 status: stable
 ---
 
@@ -21,6 +21,3 @@ This page serves as a top-level map of the [[PhD]] domain, encompassing research
 - [[phd/wiki/entities/m-wiki|M-Wiki]]
 - [[phd/wiki/concepts/hexagonal-architecture|Hexagonal Architecture]]
 - [[phd/wiki/concepts/tool-selection-routing|Tool-Selection Routing]]
-- [[phd/wiki/entities/oad|OAD]]
-- [[phd/wiki/concepts/syndromic-approach|Syndromic Approach]]
-- [[phd/wiki/concepts/offline-first-architecture|Offline-First Architecture]]

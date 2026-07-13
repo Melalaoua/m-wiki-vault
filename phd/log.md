@@ -37,3 +37,9 @@
 - phd/wiki/concepts/offline-first-architecture.md (create)
 - phd/wiki/maps/phd.md (update)
 - phd/wiki/projects/diagnostic-tool-for-febrile-children-in-car.md (update)
+
+## [2026-07-13] promote | OAD Mobile Health Application
+
+- phd/wiki/maps/oad-mobile-health-application.md (create)
+- phd/wiki/maps/phd.md (update)
+- index.md (update)
