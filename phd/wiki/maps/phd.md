@@ -9,7 +9,7 @@ status: stable
 
 # PhD
 
-This page serves as a top-level map of the PhD domain, encompassing research on world models and representation learning. Work in this space includes [[LeWorldModel]], which explores stable, end-to-end Joint-Embedding Predictive Architectures (JEPAs) for robotic continuous control directly from raw pixels ([[phd/wiki/sources/phd2026leworldmodel|LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture from Pixels]]).
+This page serves as a top-level map of the [[PhD]] domain, encompassing research on world models and representation learning. Work in this space includes [[LeWorldModel]], which explores stable, end-to-end Joint-Embedding Predictive Architectures (JEPAs) for robotic continuous control directly from raw pixels ([[phd/wiki/sources/phd2026leworldmodel|LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture from Pixels]]). To foster cross-domain synthesis with personal knowledge, the PhD notes and research materials are migrated into a unified [[Obsidian]] vault managed by [[Project Meeps]] ([[phd/wiki/sources/phd2026mwikiprd|M-WIKI-PRD]]). The domain is indicated solely by a frontmatter tag (`tags: [phd]`) rather than isolated in its own folder structure, ensuring that methods or psychological concepts relevant to both life areas can naturally form connections.
 
 ## Pages in this area
 
@@ -21,8 +21,3 @@ This page serves as a top-level map of the PhD domain, encompassing research on 
 - [[phd/wiki/entities/m-wiki|M-Wiki]]
 - [[phd/wiki/concepts/hexagonal-architecture|Hexagonal Architecture]]
 - [[phd/wiki/concepts/tool-selection-routing|Tool-Selection Routing]]
-
-## From [[phd/wiki/sources/phd2026mwikiprd|M-WIKI-PRD]] (2026-07-13)
-
-## Second Brain Integration
-The [[PhD]] notes and research materials are being migrated into a unified [[Obsidian]] vault managed by [[Project Meeps]]. To foster cross-domain synthesis with personal knowledge, the PhD domain is indicated solely by a frontmatter tag (`tags: [phd]`) rather than isolated in its own folder structure. This ensures methods or psychological concepts relevant to both life areas can naturally form connections.
