@@ -16,3 +16,9 @@ The [[OAD]] (Outil d'Aide au Diagnostic), formally managed as the [[phd/wiki/ent
 - [[phd/wiki/entities/oad|OAD]]
 - [[phd/wiki/concepts/syndromic-approach|Syndromic Approach]]
 - [[phd/wiki/concepts/offline-first-architecture|Offline-First Architecture]]
+
+## From [[phd/wiki/sources/notes2026oadlog|OAD(log) - Beta-Bangui]] (2026-07-13)
+
+## Field Deployment Timeline
+- **June 21st**: Target date for equipping tablets with the application and handing them off for internal testing in Bangui, Central African Republic.
+- **September**: Target date for the final public launch of version 1.2.0, incorporating feedback (critics) from the internal beta testing.
