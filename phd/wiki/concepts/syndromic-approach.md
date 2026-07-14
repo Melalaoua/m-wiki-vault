@@ -3,18 +3,10 @@ type: concept
 title: "Syndromic Approach"
 aliases: []
 tags: [concept, phd]
-updated: 2025-09-12
-status: developing
+updated: 2026-07-14
+status: stable
 ---
 
 # Syndromic Approach
 
-A **Syndromic Approach** (Approche syndromique) in medicine involves diagnosing and treating patients based on their clinical syndromes (a group of symptoms and signs) rather than waiting for specific laboratory confirmation of an infectious agent. This is particularly crucial in resource-limited settings where laboratory infrastructure is lacking, allowing tools like the [[phd/wiki/entities/oad|OAD]] to guide healthcare workers in managing illnesses such as non-malarial fevers.
-
-Source: [[phd/wiki/sources/notes2025oadhandoff|OAD(handoff) - product requirements document]]
-
-## From [[phd/wiki/sources/notes2025oadhandoff|OAD(handoff) - product requirements document]] (2025-09-12)
-
-A medical diagnostic approach that identifies a clinical syndrome—a set of symptoms and signs—to guide patient management, especially useful when precise laboratory tests are unavailable.
-
-The [[phd/wiki/entities/oad|OAD]] project leverages this approach to provide healthcare workers with alternative diagnostic pathways for patients presenting with non-malarial febrile illnesses.
+A **Syndromic Approach** (Approche syndromique) is a medical diagnostic strategy that relies on identifying clinical syndromes—specific sets of symptoms and signs—to guide patient management and treatment rather than waiting for precise laboratory confirmation of an infectious agent. This methodology is particularly crucial in resource-limited settings where advanced laboratory tests and infrastructure are unavailable. By leveraging this alternative diagnostic pathway, tools and projects like the [[phd/wiki/entities/oad|OAD]] provide healthcare workers with actionable clinical guidance for managing complex conditions such as non-malarial febrile illnesses [[phd/wiki/sources/notes2025oadhandoff|OAD(handoff) - product requirements document]].
