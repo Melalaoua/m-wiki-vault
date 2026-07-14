@@ -110,3 +110,9 @@
 - phd/wiki/concepts/syndromic-approach.md (update)
 - phd/wiki/maps/phd.md (update)
 - phd/wiki/projects/diagnostic-tool-for-febrile-children-in-car.md (update)
+
+## [2026-07-14] promote | OAD Mobile Health System
+
+- phd/wiki/maps/oad-mobile-health-system.md (create)
+- phd/wiki/maps/phd.md (update)
+- index.md (update)
