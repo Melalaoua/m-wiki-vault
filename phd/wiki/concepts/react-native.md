@@ -3,21 +3,10 @@ type: concept
 title: "React Native"
 aliases: []
 tags: [concept, phd]
-updated: 2025-09-12
-status: developing
+updated: 2026-07-14
+status: stable
 ---
 
 # React Native
 
-React Native is a popular framework for building native applications using JavaScript/TypeScript and React. In contexts comparing rapid data-collection tools like [[phd/wiki/concepts/open-data-kit|ODK]] to custom solutions, React Native represents the "build from scratch" path.
-
-**Pros**: Complete freedom over UI/UX design, interactive functionality, and architectural choices.
-**Cons**: Demands a higher engineering cost. Developing an end-to-end mobile health application requires full-stack expertise (frontend, backend, infrastructure, and data security), typically requiring several months (e.g., ~4 months for an MVP) compared to the weeks needed for low-code/no-code form builders.
-
-Source: [[phd/wiki/sources/notes2025oadhandoff|OAD(handoff) - React Native ou ODK]]
-
-## From [[phd/wiki/sources/notes2025oadhandoff|OAD(handoff) - product requirements document]] (2025-09-12)
-
-A popular open-source UI software framework used to develop applications for Android, iOS, and other platforms.
-
-It is notably the framework chosen to build the [[phd/wiki/entities/oad|OAD]] Android tablet application, enabling the rapid development of a user-friendly, interactive interface for healthcare workers.
+React Native is an open-source UI software framework used to develop native applications for Android, iOS, and other platforms using JavaScript, TypeScript, and React. When evaluated against rapid data-collection solutions like [[phd/wiki/concepts/open-data-kit|ODK]], React Native represents a "build from scratch" approach ([[phd/wiki/sources/notes2025oadhandoff|OAD(handoff) - React Native ou ODK]]). This path offers complete freedom over UI/UX design, interactive functionality, and architectural choices, but it incurs a significantly higher engineering cost. Developing an end-to-end mobile health application in React Native demands full-stack expertise—encompassing frontend, backend, infrastructure, and data security—and typically requires several months (e.g., approximately four months for a minimum viable product), whereas low-code form builders can be deployed in weeks ([[phd/wiki/sources/notes2025oadhandoff|OAD(handoff) - React Native ou ODK]]). Despite the higher overhead, the framework enables the rapid development of highly customized, interactive interfaces, which drove its selection for the [[phd/wiki/entities/oad|OAD]] Android tablet application designed for healthcare workers ([[phd/wiki/sources/notes2025oadhandoff|OAD(handoff) - product requirements document]]).
