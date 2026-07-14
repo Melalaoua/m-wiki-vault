@@ -16,3 +16,7 @@ The [[phd/raw/OAD/OAD]] (Outil d'Aide au Diagnostic), formally managed as the [[
 - [[phd/wiki/entities/oad|OAD]]
 - [[phd/wiki/concepts/syndromic-approach|Syndromic Approach]]
 - [[phd/wiki/concepts/offline-first-architecture|Offline-First Architecture]]
+
+## From [[phd/wiki/sources/notes2026oadlog|OAD(log) - Tablet Database]] (2026-07-14)
+
+The [[OAD Mobile Health Application]] is a tablet-based application built with [[React Native]]. In early 2026, its architecture underwent a significant refactor to enforce an [[Offline-First Architecture]]. The data layer was transitioned to a Model-Repository-Service pattern, relying on [[RxDB]] for persistent local data storage and observable subscriptions, while restricting [[Zustand]] exclusively to UI state management and data pointers.

@@ -123,3 +123,13 @@
 - phd/wiki/maps/oad-technical-infrastructure-and-evaluation.md (update)
 - phd/wiki/maps/phd.md (update)
 - phd/wiki/projects/diagnostic-tool-for-febrile-children-in-car.md (update)
+
+## [2026-07-14] ingest | OAD(log) - Tablet Database
+
+- phd/wiki/sources/notes2026oadlog.md (update)
+- phd/wiki/maps/oad-mobile-health-application.md (update)
+- phd/wiki/concepts/rxdb.md (create)
+- phd/wiki/concepts/zustand.md (create)
+- phd/wiki/concepts/model-repository-service-pattern.md (create)
+- phd/wiki/maps/phd.md (update)
+- phd/wiki/projects/diagnostic-tool-for-febrile-children-in-car.md (update)
