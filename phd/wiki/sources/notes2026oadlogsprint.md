@@ -16,7 +16,7 @@ status: developing
 
 # OAD(log) - MVP Sprint
 
-Original: [[raw/notes/OAD(log) - MVP Sprint]]
+Original: [[phd/raw/OAD/OAD(log) - MVP Sprint]]
 
 After completing [[OAD(log) - Server]] and [[OAD(log) - Tablet Database]], it's time to do a final sprint for the MVP targetting 29th may for a trip to Africa 8th june
 
@@ -42,7 +42,7 @@ I'm learning vim with a new editor ([[Zed]]) on top of it, once i get the hand o
 
 Looking at the checklist : 
 - I still to do the treatment category.
-- Some small requests on quality of life using the [[OAD Mobile Health Application|app]].
+- Some small requests on quality of life using the [[oad-mobile-health-application|app]].
 - rebuild the final UI.
 
 ### May, the 06th
@@ -125,7 +125,7 @@ Remove taille
 Retirer urgence.
 
 ### May, the 26th
-TODO : Add notes to alembic and sqlAlchemy tables in [[OAD Technical Infrastructure and Evaluation|OAd Server]]
+TODO : Add notes to alembic and sqlAlchemy tables in [[oad-technical-infrastructure-and-evaluation|OAd Server]]
 
 ### May, the 29th
 Mvp is aimed to be released today in beta. Worked a lot with AI this week, much faster, quicker, better.
@@ -149,7 +149,7 @@ Your build is fine and Metro is fine. The problem was **discovery**, not connect
 
 ## Key claims
 
-- Relying on inconsistent and untyped Excel models for the diagnostic app causes critical development bottlenecks. ([[raw/notes/OAD(log) - MVP Sprint#### May, the 08th]]) — "The excel is too inconsistent, too noisy. The id doesn't match, the underlying system is not typed correctly. IT's a nightmare to work in this conditions. We NEED to emancipate the app from this excel otherwise it's going straight to the wall."
-- Deploying multiple AI agents on separate git branches significantly accelerates feature implementation. ([[raw/notes/OAD(log) - MVP Sprint#### May, the 14th]]) — "Managed to code with multiple claude agents each on a separate branch. Interacting with them while doing my own things on my branch was fairly easy."
-- Failing to snapshot the underlying ruleset version in medical consultations jeopardizes the auditability and reproducibility of the clinical impact study. ([[raw/notes/OAD(log) - MVP Sprint#### May, the 18th]]) — "The consultation document stores hypotheses[].p0 (good — priors are frozen), but nowhere captures the version of pathologies.json... Purpose #5 (impact study before/after) becomes hard to audit: which weights produced which recommendation?"
-- Local device-generated UUIDs for staff accounts break long-term clinical data analysis when synced to a centralized server. ([[raw/notes/OAD(log) - MVP Sprint#### May, the 18th]]) — "Every device generates its own staff UUIDs (PIN-bound, never synced). When consultations sync to the server, health_staff_id values from different devices live in different namespaces... you cannot: Identify the same clinician across devices."
+- Relying on inconsistent and untyped Excel models for the diagnostic app causes critical development bottlenecks. ([[phd/raw/OAD/OAD(log) - MVP Sprint#### May, the 08th]]) — "The excel is too inconsistent, too noisy. The id doesn't match, the underlying system is not typed correctly. IT's a nightmare to work in this conditions. We NEED to emancipate the app from this excel otherwise it's going straight to the wall."
+- Deploying multiple AI agents on separate git branches significantly accelerates feature implementation. ([[phd/raw/OAD/OAD(log) - MVP Sprint#### May, the 14th]]) — "Managed to code with multiple claude agents each on a separate branch. Interacting with them while doing my own things on my branch was fairly easy."
+- Failing to snapshot the underlying ruleset version in medical consultations jeopardizes the auditability and reproducibility of the clinical impact study. ([[phd/raw/OAD/OAD(log) - MVP Sprint#### May, the 18th]]) — "The consultation document stores hypotheses[].p0 (good — priors are frozen), but nowhere captures the version of pathologies.json... Purpose #5 (impact study before/after) becomes hard to audit: which weights produced which recommendation?"
+- Local device-generated UUIDs for staff accounts break long-term clinical data analysis when synced to a centralized server. ([[phd/raw/OAD/OAD(log) - MVP Sprint#### May, the 18th]]) — "Every device generates its own staff UUIDs (PIN-bound, never synced). When consultations sync to the server, health_staff_id values from different devices live in different namespaces... you cannot: Identify the same clinician across devices."

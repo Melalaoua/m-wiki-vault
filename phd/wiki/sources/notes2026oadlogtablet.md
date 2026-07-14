@@ -18,10 +18,10 @@ status: developing
 
 Original: [[raw/notes/OAD(log) - Tablet Database]]
 
-This log covers a major architectural refactoring of the [[OAD Mobile Health Application]] (tablet) from late March to mid-April 2026. The work primarily focused on decoupling database handling from UI state management, aiming to support a robust [[Offline-First Architecture]] for the [[OAD]] project.
+This log covers a major architectural refactoring of the [[oad-mobile-health-application]] (tablet) from late March to mid-April 2026. The work primarily focused on decoupling database handling from UI state management, aiming to support a robust [[offline-first-architecture]] for the [[OAD]] project.
 
 ### Architectural Shift: RxDB and Zustand
-The initial architecture suffered from data overlap risks by caching [[RxDB]] data directly into [[Zustand]] (e.g., storing fetched patient objects in a Zustand slice). This created a dual source of truth and led to stale-data bugs. The refactor enforced a strict boundary:
+The initial architecture suffered from data overlap risks by caching [[RxDB]] data directly into [[zustand]] (e.g., storing fetched patient objects in a Zustand slice). This created a dual source of truth and led to stale-data bugs. The refactor enforced a strict boundary:
 - **[[RxDB]]**: Handles all domain data (Patient records, Diagnostic sessions, Lab results, Sync metadata, Pathology scores).
 - **[[Zustand]]**: Strictly reserved for UI state (Active patient ID pointers, current wizard steps, modal states, form drafts).
 
