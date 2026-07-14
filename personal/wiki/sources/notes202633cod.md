@@ -14,7 +14,7 @@ tags: [source, personal]
 
 Original: [[raw/notes/33-COD]]
 
-This source is a presentation transcript and slides by Tris of No Boilerplate, analyzing [[The Cult of Done]] manifesto, which was written in 2009 by [[bre-pettis]] and [[kio-stark]]. The core philosophy fits well into [[Personal]] development and creative output frameworks. It outlines 13 principles designed to bypass perfectionism and [[per-project-procrastination]].
+This source is a presentation transcript and slides by Tris of No Boilerplate, analyzing [[The Cult of Done]] manifesto, which was written in 2009 by [[bre-pettis]] and [[kio-stark]]. The core philosophy fits well into [[personal]] development and creative output frameworks. It outlines 13 principles designed to bypass perfectionism and [[per-project-procrastination]].
 
 The framework posits three states of being: Not Knowing, Action, and Completion. Key principles highlight that there is no formal editing stage, everything should be treated as a draft, and pretending to know what you are doing is a valid way to take action. Failure, mistakes, and even destruction count as being "done." It also suggests that unexecuted ideas should be published online to become a "Ghost of Done," freeing up mental space so that "done" can serve as the engine for more work.
 
