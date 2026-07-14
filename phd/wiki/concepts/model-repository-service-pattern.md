@@ -11,4 +11,4 @@ status: developing
 
 A software architecture pattern that separates data storage, business logic, and data access. In the context of [[React Native]] and [[RxDB]], this involves using a Repository layer to abstract away database observables and document types, a Service layer to handle stateless business logic (like a diagnostic engine), and Hooks to bridge the repository data into the UI components.
 
-Source: [[phd/wiki/sources/notes2026oadlog|OAD(log) - Tablet Database]]
+Source: [[notes2026oadlogtablet|OAD(log) - Tablet Database]]

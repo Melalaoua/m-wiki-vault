@@ -1,13 +1,15 @@
 ---
 type: source
-title: "OAD(log) - Tablet Database"
-citekey: notes2026oadlog
+title: OAD(log) - Tablet Database
+citekey: notes2026oadlogtablet
 source_type: article
 captured: 2026-07-14
 site: notes
-url: 
+url:
 aliases: []
-tags: [source, phd]
+tags:
+  - source
+  - phd
 updated: 2026-07-14
 status: developing
 ---
