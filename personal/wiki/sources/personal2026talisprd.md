@@ -16,7 +16,7 @@ status: developing
 
 Original: [[personal/raw/personal/TALIS-PRD.pdf]]
 
-The `TALIS-PRD` document is the foundational Product Requirements Document for [[personal/wiki/concepts/talis-ai-agent|Talis]], a specialized AI agent designed for personal financial automation. 
+The `TALIS-PRD` document is the foundational Product Requirements Document for [[financial-maturity-via-talis|Talis]], a specialized AI agent designed for personal financial automation. 
 
 ## Summary
 - Talis replaces manual FIRE spreadsheets with a Discord-based AI bot that automates expense tracking by parsing emails using an embedded LLM.

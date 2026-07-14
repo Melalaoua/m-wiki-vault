@@ -20,7 +20,7 @@ Stealing is good for the soul. If done well, you will be able to build value at 
 
 But what is “stealing”? Is reading from a textbook considered stealing? Adopting an open-source library into your codebase? No- that’s not radical enough… I’m talking about _literally copying another person’s creation._
 
-My coworker Justin taught me about the [[wiki/concepts/3-percent-approach]], coined by the late creative, [[virgil-abloh]]. When designing his version of Air Force 1s, Abloh disciplined himself to only edit 3% of the original design, so as not to dilute the original work perfected by visionaries before him.
+My coworker Justin taught me about the [[the-3-approach]], coined by the late creative, [[virgil-abloh]]. When designing his version of Air Force 1s, Abloh disciplined himself to only edit 3% of the original design, so as not to dilute the original work perfected by visionaries before him.
 
 Abloh never went into much detail beyond that, but Justin and I began to make it our own at [[kibu]]. I love the 3% approach¹, particularly when engaging in a project unfamiliar to you. When asked to alter 3% of something, you are challenged to determine _which 3% you ought to alter_. This forces you to inspect all 100% of that thing: every stitch and seam of the original. To us, the best way to get to 3% was to _rebuild something we loved, stitch by stitch._ We had to steal to succeed.
 

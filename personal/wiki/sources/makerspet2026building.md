@@ -16,13 +16,13 @@ status: developing
 
 Original: [[personal/raw/makerspet.com/building-an-open-source-robot-vacuum-meet-oomwoo]]
 
-Today marks the launch of [[OOMWOO]], an ambitious open-source home [[Robot Vacuum]] project by [[Maker's Pet]]. The vacuum is entirely open across hardware, firmware, and software, and is being built in public from day one.
+Today marks the launch of [[OOMWOO]], an ambitious open-source home [[Robot Vacuum]] project by [[maker-s-pet|Maker's Pet]]. The vacuum is entirely open across hardware, firmware, and software, and is being built in public from day one.
 
 Crucially, OOMWOO is local-first: it requires no cloud connectivity and avoids vendor lock-in by integrating natively with [[Home Assistant]]. The robot navigates using an affordable 2D LiDAR and [[ROS 2]] (via [[Nav2]]), and is designed with a 3D-printable, hackable chassis powered by a [[Raspberry Pi]] and/or [[ESP32]]. The name "OOMWOO" is notably a rotational ambigram.
 
 Currently, the project is in its early hardware sourcing phase, but the software development environment is already live. Users can simulate the robot using [[Gazebo]] or use a "placeholder" consumer vacuum (like the Proscenic M6 Pro) to test code at home. 
 
-The project is organized to be built massively in parallel by the maker community. Work is divided into modular "Requests for Contributions" (RFCs) available on GitHub, allowing contributors to create 3D models, reverse-engineer specs, or write navigation code simultaneously. A full Bill of Materials (BOM) will be provided for those who wish to source parts independently, though [[Maker's Pet]] will also offer an optional convenience parts kit.
+The project is organized to be built massively in parallel by the maker community. Work is divided into modular "Requests for Contributions" (RFCs) available on GitHub, allowing contributors to create 3D models, reverse-engineer specs, or write navigation code simultaneously. A full Bill of Materials (BOM) will be provided for those who wish to source parts independently, though [[maker-s-pet| Maker's Pet]] will also offer an optional convenience parts kit.
 
 ## Key claims
 
