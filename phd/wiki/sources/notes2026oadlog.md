@@ -14,7 +14,7 @@ status: developing
 
 # OAD(log) - Server
 
-Original: [[raw/notes/OAD(log) - Server]]
+Original: [[OAD(log) - Server]]
 
 Chose [[phd/wiki/concepts/fastapi|FastAPI]] : faster (async), pydantic typing, but low documentation (still tbd). [[phd/wiki/concepts/django|Django]] is more reliable and older and includes easy admin panel integration.
 
@@ -67,6 +67,6 @@ Réunion avec salim :
 
 ## Key claims
 
-- The RxDB push protocol mandates synchronous conflict resolution, meaning database writes must happen inside the immediate API request cycle rather than being offloaded. ([[raw/notes/OAD(log) - Server#Key architectural takeaway]]) — "The RxDB protocol requires synchronous conflict resolution — the push response must contain the conflicts array. This means the DB write happens in the request cycle (inside a transaction), not in a Celery worker."
-- FastAPI and uv were selected over alternatives like Django and pip due to speed, asynchronous support, and modern tooling. ([[raw/notes/OAD(log) - Server#Intro (No heading)]]) — "Chose FastAPI : faster (async), pydantic typing... Chose uv instead of pip : faster, new, good material to learn"
-- The OAD production deployment in Bangui relies on a heavy-compute cluster of two Poweredge 540 servers. ([[raw/notes/OAD(log) - Server#June, the 11th]]) — "2 serveurs : Poweredge 540 cluster. RAM 456Go x2. Stockage 6to avec 3to de libre."
+- The RxDB push protocol mandates synchronous conflict resolution, meaning database writes must happen inside the immediate API request cycle rather than being offloaded. ([[OAD(log) - Server#Key architectural takeaway]]) — "The RxDB protocol requires synchronous conflict resolution — the push response must contain the conflicts array. This means the DB write happens in the request cycle (inside a transaction), not in a Celery worker."
+- FastAPI and uv were selected over alternatives like Django and pip due to speed, asynchronous support, and modern tooling. ([[OAD(log) - Server#Intro (No heading)]]) — "Chose FastAPI : faster (async), pydantic typing... Chose uv instead of pip : faster, new, good material to learn"
+- The OAD production deployment in Bangui relies on a heavy-compute cluster of two Poweredge 540 servers. ([[OAD(log) - Server#June, the 11th]]) — "2 serveurs : Poweredge 540 cluster. RAM 456Go x2. Stockage 6to avec 3to de libre."

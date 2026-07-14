@@ -35,6 +35,6 @@ La forme en V découle de la mise en regard de chaque phase de production avec s
 
 - [x] Identifier les phases typiques du flux descendant et ascendant avec plus de précision
 - [ ] Relier à d'autres modèles de cycle de vie (modèle en cascade, agile, spiral)
-- [ ] Évaluer la pertinence du Vee model dans le contexte de mon projet [[OAD]]
+- [ ] Évaluer la pertinence du Vee model dans le contexte de mon projet [[phd/raw/OAD/OAD]]
 
 #inbox

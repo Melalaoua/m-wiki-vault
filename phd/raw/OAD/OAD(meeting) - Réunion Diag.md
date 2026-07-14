@@ -7,7 +7,7 @@ tags:
   - OAD
 categories:
   - "[[Meetings]]"
-  - "[[OAD]]"
+  - "[[phd/raw/OAD/OAD]]"
 year: "2025"
 status: Terminé
 type:

@@ -14,7 +14,7 @@ status: developing
 
 # OAD(handoff) - product requirements document
 
-Original: [[raw/notes/OAD(handoff) - product requirements document]]
+Original: [[OAD(handoff) - product requirements document]]
 
 Link to figma PRD : https://www.figma.com/board/iIu27enlCVIRwyJt7ysKoY/OAD-PRD?node-id=0-1&t=1EWlWScBIM8ief2C-1
 
@@ -48,6 +48,6 @@ Developer: Medhi El alaoua
 
 ## Key claims
 
-- The OAD tool is necessitated by the rise of rapid diagnostic tests for malaria, which leaves doctors needing alternative methods to diagnose non-malarial febrile illnesses. ([[raw/notes/OAD(handoff) - product requirements document#Project objectives]]) — "La croissance d’utilisation des tests de diagnostic rapide pour la paludisme confronte les médecins au diagnostic de plus en plus de maladies fébriles non palustres - sans méthodes ou moyens alternatifs pour leur prise en charge."
-- The OAD application must be fully functional on a tablet without an internet connection. ([[raw/notes/OAD(handoff) - product requirements document#Feature requirements]]) — "Full platform functionality accessible from a tablet device without internet."
-- The application will sync local data to distant databases once an internet connection is available. ([[raw/notes/OAD(handoff) - product requirements document#Feature requirements]]) — "Syncing so updates are sent to server when internet is available. (local and distant databases with syncing.)"
+- The OAD tool is necessitated by the rise of rapid diagnostic tests for malaria, which leaves doctors needing alternative methods to diagnose non-malarial febrile illnesses. ([[OAD(handoff) - product requirements document#Project objectives]]) — "La croissance d’utilisation des tests de diagnostic rapide pour la paludisme confronte les médecins au diagnostic de plus en plus de maladies fébriles non palustres - sans méthodes ou moyens alternatifs pour leur prise en charge."
+- The OAD application must be fully functional on a tablet without an internet connection. ([[OAD(handoff) - product requirements document#Feature requirements]]) — "Full platform functionality accessible from a tablet device without internet."
+- The application will sync local data to distant databases once an internet connection is available. ([[OAD(handoff) - product requirements document#Feature requirements]]) — "Syncing so updates are sent to server when internet is available. (local and distant databases with syncing.)"
