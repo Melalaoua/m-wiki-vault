@@ -1,8 +1,8 @@
 ---
-updated: 2026-07-14T07:56:49.671Z
+updated: 2026-07-14T08:08:31.723Z
 generation: 0
 scope: resource
-pending-tokens: 29408
+pending-tokens: 27722
 observation-threshold: 30000
 ---
 
@@ -56,5 +56,13 @@ Date: Jul 13, 2026
 * 🔴 (13:44) User requested re-ingestion of Talis PRD with specific phrasing.
 * ✅ (13:48) Talis PRD ingested and integrated into `personal/wiki/projects/financial-maturity-via-talis.md`.
 * 🔴 (13:48) Talis project details: Private Discord bot for finance automation (expense tracking, FIRE metrics, PEA portfolio); uses Hexagonal architecture, Mastra framework, and strict E2E testing; read-only (no trade execution).
+</observation-group>
+* 🔴 (13:21) User requested ingestion of 8 specific OAD project notes to link back to the OAD Project Hub.
+* ✅ (13:28-13:58) Assistant ingested and integrated key OAD project notes into the PhD vault:
+  * -> Ingested "OAD — Project Hub" (MOC)
+  * -> Ingested "OAD(handoff) - product requirements document"
+  * -> Ingested "OAD(handoff) - React Native ou ODK" (technical handoff)
+  * -> Ingested "OAD(log) - MVP Sprint" (May 2026 development sprint)
+  * -> Ingested "OAD(log) - Beta-Bangui" (June 21st field deployment timeline)
 </observation-group>
 </thread>
