@@ -41,7 +41,7 @@ I Read :
 #### Plan for the API integration
 ##### Revised api/ layout — adapted for RxDB HTTP Replication
 
-The structure sets up an API using [[phd/wiki/concepts/rxdb-http-replication|RxDB protocol types]], defining standard `PullResponse`, `ChangeRow`, and `Checkpoint` schemas. The server has 3 main endpoints for replication:
+The structure sets up an API using [[rxdb]], defining standard `PullResponse`, `ChangeRow`, and `Checkpoint` schemas. The server has 3 main endpoints for replication:
 - `GET /v1/{collection}/pull` (Checkpoint pagination)
 - `POST /v1/{collection}/push` (Encrypted payload, synchronous conflict return)
 - `GET /v1/{collection}/stream` ([[phd/wiki/concepts/server-sent-events|SSE]] realtime events)
