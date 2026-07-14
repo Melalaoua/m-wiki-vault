@@ -23,3 +23,5 @@ This page serves as a top-level map of the [[PhD]] domain, encompassing research
 - [[phd/wiki/concepts/tool-selection-routing|Tool-Selection Routing]]
 - [[phd/wiki/entities/oad|OAD]]
 - [[phd/wiki/concepts/offline-first-architecture|Offline-First Architecture]]
+- [[phd/wiki/concepts/react-native|React Native]]
+- [[phd/wiki/concepts/syndromic-approach|Syndromic Approach]]

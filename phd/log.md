@@ -99,3 +99,14 @@
 - phd/wiki/concepts/offline-first-architecture.md (update)
 - phd/wiki/maps/phd.md (update)
 - phd/wiki/projects/diagnostic-tool-for-febrile-children-in-car.md (update)
+
+## [2025-09-12] ingest | OAD(handoff) - product requirements document
+
+- phd/wiki/sources/notes2025oadhandoff.md (update)
+- phd/wiki/entities/oad.md (update)
+- phd/wiki/maps/oad-mobile-health-application.md (update)
+- phd/wiki/concepts/offline-first-architecture.md (update)
+- phd/wiki/concepts/react-native.md (update)
+- phd/wiki/concepts/syndromic-approach.md (update)
+- phd/wiki/maps/phd.md (update)
+- phd/wiki/projects/diagnostic-tool-for-febrile-children-in-car.md (update)

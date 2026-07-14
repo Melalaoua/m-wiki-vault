@@ -20,3 +20,14 @@ The [[OAD]] (Outil d'Aide au Diagnostic), formally managed as the [[phd/wiki/ent
 ## From [[phd/wiki/sources/notes2025oadhandoff|OAD(handoff) - product requirements document]] (2025-09-12)
 
 The development of the [[phd/wiki/entities/oad|OAD]] application focuses on translating clinical algorithms—originally managed in Excel—into an accessible, interactive tablet UI. Core product requirements emphasize an [[phd/wiki/concepts/offline-first-architecture|offline-first architecture]] with local and remote database syncing, tailored for *Agents de Santé* and *Agents de santé communautaire*. The technical stack relies on [[phd/wiki/concepts/react-native|React Native]] for Android and PostHog for deployment monitoring.
+
+## From [[phd/wiki/sources/notes2025oadhandoff|OAD(handoff) - product requirements document]] (2025-09-12)
+
+The **OAD Mobile Health Application** translates a diagnostic [[phd/wiki/concepts/syndromic-approach|Syndromic Approach]] into a functional software tool for Android tablets. 
+
+### Technical and Product Requirements
+- **Framework:** Coded in [[phd/wiki/concepts/react-native|React Native]].
+- **Offline Functionality:** Requires an [[phd/wiki/concepts/offline-first-architecture|Offline-First Architecture]] featuring local database syncing to distant servers when connectivity allows.
+- **UX Focus:** Designed for 'Agents de Santé' and Community Health Agents. It emphasizes an interactive, guided UI suitable for fast-paced medical environments.
+- **Analytics:** Uses [[phd/wiki/entities/posthog|PostHog]] for deployment monitoring.
+- **Release Criteria:** The first release must successfully port all existing Excel-based diagnostic functions to the offline app.

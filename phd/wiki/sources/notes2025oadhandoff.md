@@ -16,36 +16,39 @@ status: developing
 
 Original: [[raw/notes/OAD(handoff) - product requirements document]]
 
-# OAD(handoff) - product requirements document
+Link to figma PRD : https://www.figma.com/board/iIu27enlCVIRwyJt7ysKoY/OAD-PRD?node-id=0-1&t=1EWlWScBIM8ief2C-1
 
-This document outlines the Product Requirements Document (PRD) for the [[phd/wiki/entities/oad|OAD]] project (Target Release: 0.1), mapped under the [[phd/wiki/maps/oad-mobile-health-application|OAD Mobile Health Application]].
+Project: [[phd/wiki/entities/oad|OAD]]
+Target release: 0.1
+Document owner: Pr Romaric NZOUMBOU-BOKO & Pr Didier MENARD & Pr Jean-de-Dieu LONGO | Dr Patrice PIOLA
+Project manager: Dr Aboubacar SOUMAH
+Designer: Medhi El alaoua, Dr Patrice PIOLA
+Developer: Medhi El alaoua
 
-## Project Objectives
-*   **Purpose:** Develop a diagnostic aid tool (OAD) based on a [[phd/wiki/concepts/syndromic-approach|syndromic approach]].
-*   **Background:** The increasing use of rapid diagnostic tests for malaria means doctors are confronted with diagnosing more non-malarial febrile diseases, often lacking alternative methods for their management.
-*   **Strategic Context:** The team prioritizes UX and platform accessibility for fast-paced medical environments. Crucially, the tool must function reliably in poor regions with limited internet, necessitating an [[phd/wiki/concepts/offline-first-architecture|offline-first architecture]].
+**Project objectives:**
+- **Purpose:** Développer un outil d’aide au diagnostic (OAD) basé sur une approche syndromique ([[phd/wiki/concepts/syndromic-approach|Syndromic Approach]]).
+- **Background:** La croissance d’utilisation des tests de diagnostic rapide pour la paludisme confronte les médecins au diagnostic de plus en plus de maladies fébriles non palustres - sans méthodes ou moyens alternatifs pour leur prise en charge.
+- **Strategic context:** We’re prioritizing UX and platform accessibility. The field where the app will be delivered is medical with fast-paced settings. So releasing a tablet app with ease-of-use, clear design and main UX is important. But non only, the OAD needs to be reliable and functional, in poor regions where internet is not always accessible.
 
-## Feature Requirements
-*   Developed in [[phd/wiki/concepts/react-native|React Native]] for Android tablets.
-*   Full functionality accessible without the internet.
-*   Optimized tablet experience with an interactive, guided UI.
-*   Local and distant databases with syncing capabilities when internet is restored.
-*   Integration of PostHog for deployment monitoring and analytics.
+**Feature requirements:**
+- App is coded in [[phd/wiki/concepts/react-native|React Native]] on android tablet.
+- Full platform functionality accessible from a tablet device without internet ([[phd/wiki/concepts/offline-first-architecture|Offline-First Architecture]]).
+- A fully-fedged interface optimized for the tablet experience.
+- Interactive & guided UI.
+- Syncing so updates are sent to server when internet is available. (local and distant databases with syncing.)
+- Integrates [[phd/wiki/entities/posthog|PostHog]] to the app for monitoring/deployment purposes
 
-## User Personas
-*   Agent de Santé
-*   Agent de santé communautaire
+**User personas:**
+- Agent de Santé
+- Agent de santé communautaire
 
-## Release Criteria
-*   Design an eye-catching, user-friendly interface.
-*   Port all existing Excel functions to the app.
-*   Ensure the application is fully functional offline.
-
-**Personnel involved:** Pr Romaric NZOUMBOU-BOKO, Pr Didier MENARD, Pr Jean-de-Dieu LONGO, Dr Patrice PIOLA (Document Owners/Designers); Dr Aboubacar SOUMAH (Project Manager); Medhi El alaoua (Designer/Developer).
+**Release criteria:**
+- Design an eye-catching, user-friendly interface.
+- Port all excel's existing functions to the app.
+- App functional without internet.
 
 ## Key claims
 
-- The OAD aims to assist in diagnosing non-malarial febrile illnesses by utilizing a syndromic approach. ([[raw/notes/OAD(handoff) - product requirements document#Project objectives:]]) — "Développer un outil d’aide au diagnostic (OAD) basé sur une approche syndromique. [...] La croissance d’utilisation des tests de diagnostic rapide pour la paludisme confronte les médecins au diagnostic de plus en plus de maladies fébriles non palustres"
-- The OAD application must be fully functional on a tablet without an internet connection. ([[raw/notes/OAD(handoff) - product requirements document#Feature requirements:]]) — "Full platform functionality accessible from a tablet device without internet."
-- The OAD application relies on local and distant databases that synchronize when an internet connection becomes available. ([[raw/notes/OAD(handoff) - product requirements document#Feature requirements:]]) — "Syncing so updates are sent to server when internet is available. (local and distant databases with syncing.)"
-- The app is being developed for Android tablets using React Native. ([[raw/notes/OAD(handoff) - product requirements document#Feature requirements:]]) — "App is coded in react native on android tablet."
+- The OAD tool is necessitated by the rise of rapid diagnostic tests for malaria, which leaves doctors needing alternative methods to diagnose non-malarial febrile illnesses. ([[raw/notes/OAD(handoff) - product requirements document#Project objectives]]) — "La croissance d’utilisation des tests de diagnostic rapide pour la paludisme confronte les médecins au diagnostic de plus en plus de maladies fébriles non palustres - sans méthodes ou moyens alternatifs pour leur prise en charge."
+- The OAD application must be fully functional on a tablet without an internet connection. ([[raw/notes/OAD(handoff) - product requirements document#Feature requirements]]) — "Full platform functionality accessible from a tablet device without internet."
+- The application will sync local data to distant databases once an internet connection is available. ([[raw/notes/OAD(handoff) - product requirements document#Feature requirements]]) — "Syncing so updates are sent to server when internet is available. (local and distant databases with syncing.)"
