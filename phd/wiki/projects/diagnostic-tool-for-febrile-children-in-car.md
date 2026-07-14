@@ -6,7 +6,7 @@ aliases: []
 tags:
   - project
   - phd
-updated: 2025-09-12
+updated: 2026-07-14
 ---
 
 # Diagnostic Tool for Febrile Children in CAR
@@ -26,6 +26,7 @@ Development of an 'Outil de Diagnostic' for children with febrile disease in the
 - [[phd/wiki/sources/notes2026oadlog|OAD(log) - MVP Sprint]] (2026-07-13) — Documents the crucial MVP development sprint for the OAD app, highlighting critical technical fixes (engine versioning, staff sync, UI updates) completed just prior to the June field deployment.
 - [[phd/wiki/sources/notes2025oadhandoff|OAD(handoff) - product requirements document]] (2025-09-12) — This source provides the foundational v0.1 Product Requirements Document (PRD) for the OAD, detailing its offline-first architecture, UI/UX goals, and syndromic approach focus.
 - [[phd/wiki/sources/notes2025oadhandoff|OAD(handoff) - product requirements document]] (2025-09-12) — Provides the foundational product requirements (PRD) for the OAD, specifying the tech stack (React Native), offline-first constraints, and target users for the diagnostic tool.
+- [[phd/wiki/sources/notes2026oadlog|OAD(log) - Server]] (2026-07-14) — Provides the complete server-side architecture, technology stack, and production hardware specifications for the Bangui deployment of OAD.
 
 ```dataview
 TABLE type, tags

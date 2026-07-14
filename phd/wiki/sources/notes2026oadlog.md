@@ -1,153 +1,72 @@
 ---
 type: source
-title: "OAD(log) - MVP Sprint"
+title: "OAD(log) - Server"
 citekey: notes2026oadlog
 source_type: article
-captured: 2026-07-13
+captured: 2026-07-14
 site: notes
 url: 
 aliases: []
 tags: [source, phd]
-updated: 2026-07-13
+updated: 2026-07-14
 status: developing
 ---
 
-# OAD(log) - MVP Sprint
+# OAD(log) - Server
 
-Original: [[raw/notes/OAD(log) - MVP Sprint]]
+Original: [[raw/notes/OAD(log) - Server]]
 
-After completing [[OAD(log) - Server]] and [[OAD(log) - Tablet Database]], it's time to do a final sprint for the MVP targetting 29th may for a trip to Africa 8th june
+Chose [[phd/wiki/concepts/fastapi|FastAPI]] : faster (async), pydantic typing, but low documentation (still tbd). [[phd/wiki/concepts/django|Django]] is more reliable and older and includes easy admin panel integration.
 
-### To do 
-- Serveur distant fonctionnel et communiquant avec l'[[OAD]] : les données sont effectivement centralisées.
-- Secteur Traitement intégré dans le flux diagnostique.
-- Changement onboarding enfant : renseigner le nom/prénom au lieu des initiales (le patient peut être retrouvé plus facilement).
-- Mise en place d'un admin/superviseur par tablette (username & mot de passe connus). Seuls ces derniers peuvent créer des comptes "classiques" soignant : chaque compte (soignant, admin, superviseur) décrypte la base de données.
-- De facto avec le point précédent : les informations du compte soignant seront systématiquement renseignées dans la consultation pour traçage.  
-- Détection de symptome qui requiert l'âge et automatiquement coché selon l'âge de l'enfant.
-- Commentaires quantitatifs sur les tests rapides.
-- Secteur Mailing automatique : basse priorité mais objectif à intégrer -> informer au plus vite si ce dernier n'est pas réalisable (pour coordonner les opérations sur le terrain pendant l'étude).
+Chose [[phd/wiki/concepts/uv|uv]] instead of pip : faster, new, good material to learn if it becomes the norm.
 
-### April, the 27th
-I did final tests to check if tablet & server communicate, it works. Further tests required to check the system is resilient.
-I migrated the initials field to firstname & lastname for patients
-Added healthstaff firstname & lastname to consultation data.
+What I did today
+1. Started from [[phd/wiki/maps/oad-technical-infrastructure-and-evaluation|OAD DAT (system architecture documentation)]] for a cold start.
+Develop 5 docker container (nginx, api, worker-celery, redis, database-postgres)
+I intend to dig in each and educate myself oneach subject.
 
-### May, the 04th 
-I made good progress today. Once again, AI helped me a lot. I found a good rythm on how to work with it. I build a consistent prompt (improved a lot which details to give or not), AI comes back with a fully laid out plan, i read it all, AI implement, I review every file written and I test, rince & repeat.
+### Celery
+I Read :
+- https://medium.com/@hitorunajp/celery-and-background-tasks-aebb234cae5d
+- https://docs.celeryq.dev/en/main/getting-started/first-steps-with-celery.html
+- https://lip17.medium.com/hands-on-learn-python-celery-in-30-minutes-9544aabb70b1
 
-I'm learning vim with a new editor ([[Zed]]) on top of it, once i get the hand of it i'll manage to code and navigate much faster.
+### API
+- https://rxdb.info/replication-http.html
+- FastAPI tutorial
+- Used claude Opus 4.6 for the plan
 
-Looking at the checklist : 
-- I still to do the treatment category.
-- Some small requests on quality of life using the [[OAD Mobile Health Application|app]].
-- rebuild the final UI.
+#### Plan for the API integration
+##### Revised api/ layout — adapted for RxDB HTTP Replication
 
-### May, the 06th
-Implemented the treatments, it's currently flawed and I detected many bugs in the excel version. Some key features are missing on my end (calculate the dosage depending on weight, age, etc...)
-I need to add testing on treatments.
+The structure sets up an API using [[phd/wiki/concepts/rxdb-http-replication|RxDB protocol types]], defining standard `PullResponse`, `ChangeRow`, and `Checkpoint` schemas. The server has 3 main endpoints for replication:
+- `GET /v1/{collection}/pull` (Checkpoint pagination)
+- `POST /v1/{collection}/push` (Encrypted payload, synchronous conflict return)
+- `GET /v1/{collection}/stream` ([[phd/wiki/concepts/server-sent-events|SSE]] realtime events)
 
-### May, the 07th
-Didn't work today, had a meeting with the colleagues today.
-Papier Oxford même objectifs que OAD. Durée du diagnostic trop long => timer les consultations.
-RUNNING OUT OF TIIIME
+Security layers apply AES-GCM encryption, gzip compression, and SHA-256 validation alongside JWT verification.
 
-### May, the 08th
-The excel is too inconsistent, too noisy. The id doesn't match, the underlying system is not typed correctly. IT's a nightmare to work in this conditions. We NEED to emancipate the app from this excel otherwise it's going straight to the wall.
-Wanted to do some testing but the excel is still full of bug again.
-I have to do testing manually, for real.
+**Key architectural takeaway:**
+The RxDB protocol requires synchronous conflict resolution — the push response must contain the conflicts array. This means the DB write happens in the request cycle (inside a transaction), not in a [[phd/wiki/concepts/celery|Celery]] worker. Celery is only used for fire-and-forget side-effects after a successful sync.
 
-### May, the 10th
-I used [[Claude|claude Design]] to redefine the UI of the OAD app. I'm satisfied with the proposed content. Much better than what I did. I'll try implementation with [[Claude|claude Code]] now.
+Complete stack overview:
+- **nginx**: Reverse proxy, upstream to api:8000, SSE buffering disabled.
+- **api**: FastAPI gateway (RxDB HTTP replication) on python:3.13-slim + uv.
+- **worker**: Celery worker (async post-sync) via psycopg2 (sync SQLAlchemy).
+- **redis**: Message broker + cache (appendonly AOF persistence).
+- **db**: PostgreSQL 17 (initialized via init.sql).
 
-### May, The 11th
-UI v4 is almost fully integrated, much cleaner, much more complete. Need a lot of polishing though.
-What to do tomorrow :
-- Onboarding doesnt' seems to trigger properly, check
-- Login flow need to be polished
-- Patient/consultation is not consistent when switching tabs, need to investigate this.
-- Symptoms select needs to be more clear, symptom grouping is bugged.
-- Add timer to consultation
-- Add numerical values to labtests
-- Add auto toggle for specific symptoms
+### April, the 24th
+Big advancements made in [[OAD(log) - Tablet Database]], clean slate on the [[phd/wiki/entities/oad|OAD]]. Time to get back to testing between the server and the tablet through the API gateway.
 
-### May, the 12th
-Finished & polished the auth flow, migrated UI to use [[Tamagui]] tokens instead of stylesheet.
-Progression : nominal.
-What to do tomorrow : same as yesterday.
-
-### May, the 13th
-Need to keep in store the currentConsultationId / currentPatientId to allow switching freely the page of the app without loosing progression.
-Switch steps in current consultation loose the data entrypoint restore to base, patient step restore to base.
-Switch to full [[Tamagui|tamagUI]]
-
-### May, the 14th
-Made tremendous achievments today.
-Managed to code with multiple claude agents each on a separate branch. Interacting with them while doing my own things on my branch was fairly easy. It's a bit boring to code manually now knowing they can do much more must faster.
-I'm getting a better hand on how to manage them effectively and how to distribute my tasks rapidly.
-I've made good progress on the UI on the task. Lot more to do.
-
-### May, the 15th
-Realizing how fast i'm working with AI.
-For instance today : 
-One agent is doing all the auth flow for the app : adding [[JWT]] auth, [[Caddy]] implementation.
-On the other hand i'm interacting with multiple agent on the UI.
-Very impressive.
-
-Update 17h16: Finished the JWT auth, need to be battle-tested. AI is very powerful to ship product rapidly, i need to be wary to read every line, understand every concept, to avoid loosing my grip on my codebase (happent multiple time before, needed to clean slate everytime).
-
-### May, the 18th
-Feedback from opus 4.7 : 
-
-__Engine ruleset version is not snapshotted on consultations__
-The consultation document stores `hypotheses[].p0` (good — priors are frozen), but **nowhere** captures the version of `pathologies.json`, `decayDelta.json`, `thresholds.json`, `treatments.json` used. Implications:
-- Purpose #5 (impact study before/after) becomes hard to audit: which weights produced which recommendation?
-- A clinician disputing a recommendation later cannot reproduce it.
-- Treatments and decay weights change → historical consultations look inconsistent in dashboards.
-Add `engineVersion: string` (or a hash of the bundled JSON) to the consultation schema and stamp it at `initDiagnosis`. Cheap, irreversible benefit.
-
-__`healthStaff` is not in `SYNC_COLLECTIONS`, but consultations reference `healthStaffId` `src/core/database/sync/config.ts:3`.__
-Every device generates its own staff UUIDs (PIN-bound, never synced). When consultations sync to the server, `health_staff_id` values from different devices live in different namespaces. For purposes 5–6 (study impact, socio-economic analysis), you cannot:
-- Identify the same clinician across devices.
-- Compute per-clinician performance.
-- Detect duplicate enrollments.
-You probably need a server-issued staff identity (or a deterministic mapping at enrollment).
-
-12h22: Switching user keeps highlights some caveats : 
-Dashboard is displaying overall data (should be only the user)
-Patients counter is displaying overall data (should be only the user)
-
-### May, the 21th
-Need to add disconnect button
-Remove taille
-Retirer urgence.
-
-### May, the 26th
-TODO : Add notes to alembic and sqlAlchemy tables in [[OAD Technical Infrastructure and Evaluation|OAd Server]]
-
-### May, the 29th
-Mvp is aimed to be released today in beta. Worked a lot with AI this week, much faster, quicker, better.
-I'll finally start my [[PhD]] bibliography now. June will be insightful.
-
-### Expo and ADB Issues
-Your build is fine and Metro is fine. The problem was **discovery**, not connectivity:
-- This is an **expo-dev-client** build. Its launcher screen finds dev servers by scanning the local network via mDNS (`_expo._tcp.local`).
-- Your phone is connected over **USB**, not sharing a LAN with your machine — so mDNS finds nothing and the launcher shows "no server detected."
-- Meanwhile `adb reverse tcp:8081 tcp:8081` *was* already routing the phone's `localhost:8081` to your machine's Metro. The launcher just never tried that address on its own.
-
-## How to connect (any of these)
-1. **In the dev launcher UI on the phone** — tap **"Enter URL manually"** and type `http://localhost:8081`. This is the normal manual path.
-2. **From your machine**:
-   ```bash
-   adb reverse tcp:8081 tcp:8081
-   adb shell am start -a android.intent.action.VIEW \
-     -d "oad://expo-development-client/?url=http%3A%2F%2Flocalhost%3A8081" \
-     com.oad.strasbourg
-   ```
+### June, the 11th
+Réunion avec salim :
+- 2 serveurs : Poweredge 540 cluster. RAM 456Go x2. Stockage 6to avec 3to de libre.
+- Domaine pasteur-bangui.cf
+- Jeudi 18 activation serveur 10h
 
 ## Key claims
 
-- Relying on inconsistent and untyped Excel models for the diagnostic app causes critical development bottlenecks. ([[raw/notes/OAD(log) - MVP Sprint#### May, the 08th]]) — "The excel is too inconsistent, too noisy. The id doesn't match, the underlying system is not typed correctly. IT's a nightmare to work in this conditions. We NEED to emancipate the app from this excel otherwise it's going straight to the wall."
-- Deploying multiple AI agents on separate git branches significantly accelerates feature implementation. ([[raw/notes/OAD(log) - MVP Sprint#### May, the 14th]]) — "Managed to code with multiple claude agents each on a separate branch. Interacting with them while doing my own things on my branch was fairly easy."
-- Failing to snapshot the underlying ruleset version in medical consultations jeopardizes the auditability and reproducibility of the clinical impact study. ([[raw/notes/OAD(log) - MVP Sprint#### May, the 18th]]) — "The consultation document stores hypotheses[].p0 (good — priors are frozen), but nowhere captures the version of pathologies.json... Purpose #5 (impact study before/after) becomes hard to audit: which weights produced which recommendation?"
-- Local device-generated UUIDs for staff accounts break long-term clinical data analysis when synced to a centralized server. ([[raw/notes/OAD(log) - MVP Sprint#### May, the 18th]]) — "Every device generates its own staff UUIDs (PIN-bound, never synced). When consultations sync to the server, health_staff_id values from different devices live in different namespaces... you cannot: Identify the same clinician across devices."
+- The RxDB push protocol mandates synchronous conflict resolution, meaning database writes must happen inside the immediate API request cycle rather than being offloaded. ([[raw/notes/OAD(log) - Server#Key architectural takeaway]]) — "The RxDB protocol requires synchronous conflict resolution — the push response must contain the conflicts array. This means the DB write happens in the request cycle (inside a transaction), not in a Celery worker."
+- FastAPI and uv were selected over alternatives like Django and pip due to speed, asynchronous support, and modern tooling. ([[raw/notes/OAD(log) - Server#Intro (No heading)]]) — "Chose FastAPI : faster (async), pydantic typing... Chose uv instead of pip : faster, new, good material to learn"
+- The OAD production deployment in Bangui relies on a heavy-compute cluster of two Poweredge 540 servers. ([[raw/notes/OAD(log) - Server#June, the 11th]]) — "2 serveurs : Poweredge 540 cluster. RAM 456Go x2. Stockage 6to avec 3to de libre."

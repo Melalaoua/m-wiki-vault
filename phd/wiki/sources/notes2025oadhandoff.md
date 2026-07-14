@@ -36,7 +36,6 @@ Developer: Medhi El alaoua
 - A fully-fedged interface optimized for the tablet experience.
 - Interactive & guided UI.
 - Syncing so updates are sent to server when internet is available. (local and distant databases with syncing.)
-- Integrates [[phd/wiki/entities/posthog|PostHog]] to the app for monitoring/deployment purposes
 
 **User personas:**
 - Agent de Santé
