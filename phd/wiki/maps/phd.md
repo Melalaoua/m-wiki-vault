@@ -3,7 +3,7 @@ type: map
 title: "PhD"
 aliases: []
 tags: [map, phd]
-updated: 2026-07-14
+updated: 2026-07-15
 status: stable
 ---
 
@@ -24,3 +24,5 @@ This page serves as a top-level map of the [[PhD]] domain, encompassing research
 - [[phd/wiki/concepts/rxdb|RxDB]]
 - [[phd/wiki/concepts/zustand|Zustand]]
 - [[phd/wiki/concepts/model-repository-service-pattern|Model-Repository-Service Pattern]]
+- [[phd/wiki/concepts/latent-space|Latent Space]]
+- [[phd/wiki/concepts/embedding-space|Embedding Space]]

@@ -133,3 +133,10 @@
 - phd/wiki/concepts/model-repository-service-pattern.md (create)
 - phd/wiki/maps/phd.md (update)
 - phd/wiki/projects/diagnostic-tool-for-febrile-children-in-car.md (update)
+
+## [2026-07-15] ingest | Latent and Embedding Space
+
+- phd/wiki/sources/www2026latent.md (create)
+- phd/wiki/concepts/latent-space.md (create)
+- phd/wiki/concepts/embedding-space.md (create)
+- phd/wiki/maps/phd.md (update)
