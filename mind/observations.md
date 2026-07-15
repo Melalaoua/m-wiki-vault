@@ -1,8 +1,8 @@
 ---
-updated: 2026-07-14T08:08:31.723Z
+updated: 2026-07-15T08:01:19.174Z
 generation: 0
 scope: resource
-pending-tokens: 27722
+pending-tokens: 112
 observation-threshold: 30000
 ---
 
@@ -64,5 +64,41 @@ Date: Jul 13, 2026
   * -> Ingested "OAD(handoff) - React Native ou ODK" (technical handoff)
   * -> Ingested "OAD(log) - MVP Sprint" (May 2026 development sprint)
   * -> Ingested "OAD(log) - Beta-Bangui" (June 21st field deployment timeline)
+</observation-group>
+</thread>
+
+--- message boundary (2026-07-15T08:01:11.990Z) ---
+
+<thread id="1526860996289761341">
+<observation-group id="0c20c1cf1f375d8e" range="4fdc70bf-667b-451c-899d-d598cac59b47:e4d6872f-70e7-41ae-b990-fcb54f13d0a1">
+Date: Jul 13, 2026
+* 🔴 (13:34) User requested backfill of OAD project notes.
+* ✅ (13:48) Ingested "OAD — Project Hub" (notes2026oad).
+
+Date: Jul 14, 2026
+* ✅ (14:06) Ingested "OAD(handoff) - product requirements document" (notes2025oadhandoff).
+* 🔴 (14:05) User specified: "PostHog will NOT be integrated into the application" (project constraint).
+* ✅ (14:12) Ingested "OAD(log) - Server" (notes2026oadlog).
+* ✅ (14:18) Ingested "OAD(log) - Tablet Database" (notes2026oadlog).
+
+Date: Jul 15, 2026
+* 🟡 (08:00) User requested ingestion of Baeldung article "Latent and Embedding Space"; failed due to 403 Forbidden error.
+</observation-group>
+</thread>
+
+--- message boundary (2026-07-14T08:05:56.115Z) ---
+
+<thread id="1526499945853751527">
+<observation-group id="077850f93cd9e588" range="141609b6-c689-4b43-ac09-909a58533a98:e4d6872f-70e7-41ae-b990-fcb54f13d0a1">
+Date: Jul 14, 2026
+* 🔴 (08:05) User requested backfill of "OAD(log) - Tablet Database" notes into the OAD project.
+* ✅ (08:08) Ingested "OAD(log) - Tablet Database" into PhD vault.
+  * -> Created new concept pages: `rxdb.md`, `zustand.md`, `model-repository-service-pattern.md`.
+  * -> Updated `phd/wiki/projects/diagnostic-tool-for-febrile-children-in-car.md` and related maps.
+* 🟡 (08:08) OAD project architectural refactor details:
+  * -> Decoupled Zustand (UI state) from RxDB (persistent data) to resolve stale-data bugs.
+  * -> Implemented Model-Repository-Service pattern.
+  * -> Established rule: TypeScript data types must flow from database schema upwards.
+  * -> Note on AI coding: "Vibecoding" requires deep architectural mastery to avoid unmanageable refactoring.
 </observation-group>
 </thread>
