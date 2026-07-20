@@ -156,3 +156,8 @@
 
 - phd/wiki/concepts/md-to-phd-transition.md (create)
 - phd/wiki/maps/phd.md (update)
+
+## [2026-07-20] chat | Evolving Novelty in Clinical AI Research
+
+- phd/wiki/concepts/evolving-novelty-in-clinical-ai-research.md (create)
+- phd/wiki/maps/phd.md (update)
