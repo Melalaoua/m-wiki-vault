@@ -31,3 +31,12 @@
 - personal/wiki/concepts/mastra-framework.md (create)
 - personal/wiki/maps/personal.md (update)
 - personal/wiki/projects/financial-maturity-via-talis.md (update)
+
+## [2026-07-20] ingest | A Gentle Introduction to Graph Neural Networks
+
+- personal/wiki/sources/distill2026a.md (create)
+- personal/wiki/concepts/graph-neural-network.md (create)
+- personal/wiki/concepts/message-passing-neural-network.md (create)
+- personal/wiki/concepts/permutation-invariance.md (create)
+- personal/wiki/concepts/graph-attention-network.md (create)
+- personal/wiki/maps/personal.md (create)
