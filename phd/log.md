@@ -151,3 +151,8 @@
 - phd/wiki/maps/phd.md (update)
 - phd/wiki/concepts/outer-loop-of-research.md (create)
 - phd/wiki/entities/andrej-karpathy.md (create)
+
+## [2026-07-20] chat | MD to PhD Transition
+
+- phd/wiki/concepts/md-to-phd-transition.md (create)
+- phd/wiki/maps/phd.md (update)

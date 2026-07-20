@@ -28,3 +28,4 @@ The [[PhD]] domain encompasses both direct research on world models and represen
 - [[phd/wiki/concepts/embedding-space|Embedding Space]]
 - [[phd/wiki/concepts/outer-loop-of-research|Outer Loop of Research]]
 - [[phd/wiki/entities/andrej-karpathy|Andrej Karpathy]]
+- [[phd/wiki/concepts/md-to-phd-transition|MD to PhD Transition]]
