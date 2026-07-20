@@ -144,3 +144,10 @@
 ## [2026-07-20] project | Thesis Topic Shift: World Models vs LLMs
 
 - phd/wiki/projects/thesis-topic-shift-world-models-vs-llms.md (create)
+
+## [2026-07-20] ingest | A Survival Guide to a PhD
+
+- phd/wiki/sources/karpathy2026a.md (create)
+- phd/wiki/maps/phd.md (update)
+- phd/wiki/concepts/outer-loop-of-research.md (create)
+- phd/wiki/entities/andrej-karpathy.md (create)

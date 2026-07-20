@@ -2,8 +2,8 @@
 type: map
 title: "PhD"
 aliases: []
-tags: [map, phd]
-updated: 2026-07-15
+tags: [map, phd, personal]
+updated: 2026-07-20
 status: stable
 ---
 
@@ -26,3 +26,12 @@ This page serves as a top-level map of the [[PhD]] domain, encompassing research
 - [[phd/wiki/concepts/model-repository-service-pattern|Model-Repository-Service Pattern]]
 - [[phd/wiki/concepts/latent-space|Latent Space]]
 - [[phd/wiki/concepts/embedding-space|Embedding Space]]
+- [[phd/wiki/concepts/outer-loop-of-research|Outer Loop of Research]]
+- [[phd/wiki/entities/andrej-karpathy|Andrej Karpathy]]
+
+## From [[phd/wiki/sources/karpathy2026a|A Survival Guide to a PhD]] (2026-07-20)
+
+A map of concepts, strategies, and advice for navigating a Doctor of Philosophy program. Key considerations include selecting an adviser based on their tenure incentives, operating in the [[phd/wiki/concepts/outer-loop-of-research|Outer Loop of Research]] to identify high-value problems, and structuring academic papers around a single core contribution. 
+
+**Key Resources:**
+- [[phd/wiki/entities/a-survival-guide-to-a-phd|A Survival Guide to a PhD]] by [[phd/wiki/entities/andrej-karpathy|Andrej Karpathy]]
