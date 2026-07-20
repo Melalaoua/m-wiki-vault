@@ -140,3 +140,7 @@
 - phd/wiki/concepts/latent-space.md (create)
 - phd/wiki/concepts/embedding-space.md (create)
 - phd/wiki/maps/phd.md (update)
+
+## [2026-07-20] project | Thesis Topic Shift: World Models vs LLMs
+
+- phd/wiki/projects/thesis-topic-shift-world-models-vs-llms.md (create)
