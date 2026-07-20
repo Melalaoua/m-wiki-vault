@@ -1,10 +1,6 @@
 up:: [[Thinking MOC]]
 tags:: #concept 
 
-> [!NOTE]+ Notes on this note
-> This is a sanitized version of my actual note. 
-> - Some content and links have been removed.
-
 # OODA Loop
 > The faster you can: *observe* the changes in your environment, *orient* advantageously, *decide* on the best course of action, and actually *act* on that decision...the greater your chances of victory. ^ac47c8
 
