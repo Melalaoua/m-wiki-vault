@@ -40,3 +40,11 @@
 - personal/wiki/concepts/permutation-invariance.md (create)
 - personal/wiki/concepts/graph-attention-network.md (create)
 - personal/wiki/maps/personal.md (create)
+
+## [2026-07-22] ingest | Unfortunately_Climbing_Really_Is_This_Simple
+
+- personal/wiki/sources/personal2026unfortunatelyclimbingreallyisthissimple.md (create)
+- personal/wiki/concepts/ego-death-in-competitive-play.md (create)
+- personal/wiki/concepts/deliberate-practice-in-gaming.md (create)
+- personal/wiki/maps/personal.md (update)
+- personal/wiki/projects/league-of-legends-mastery.md (update)
