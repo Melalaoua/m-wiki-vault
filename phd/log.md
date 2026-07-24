@@ -161,3 +161,11 @@
 
 - phd/wiki/concepts/evolving-novelty-in-clinical-ai-research.md (create)
 - phd/wiki/maps/phd.md (update)
+
+## [2026-07-24] ingest | Variational autoencoder
+
+- phd/wiki/sources/www2026variational.md (create)
+- phd/wiki/concepts/variational-autoencoder.md (create)
+- phd/wiki/concepts/latent-space.md (update)
+- phd/wiki/maps/phd.md (update)
+- phd/wiki/projects/thesis-topic-shift-world-models-vs-llms.md (update)

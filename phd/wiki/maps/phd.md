@@ -3,7 +3,7 @@ type: map
 title: "PhD"
 aliases: []
 tags: [map, phd, personal]
-updated: 2026-07-20
+updated: 2026-07-24
 status: stable
 ---
 
@@ -30,3 +30,4 @@ The [[PhD]] domain encompasses both direct research on world models and represen
 - [[phd/wiki/entities/andrej-karpathy|Andrej Karpathy]]
 - [[phd/wiki/concepts/md-to-phd-transition|MD to PhD Transition]]
 - [[phd/wiki/concepts/evolving-novelty-in-clinical-ai-research|Evolving Novelty in Clinical AI Research]]
+- [[phd/wiki/concepts/variational-autoencoder|Variational Autoencoder]]
