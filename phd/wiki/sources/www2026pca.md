@@ -28,7 +28,7 @@ Mathematically, the technique utilizes linear algebra and matrix operations on a
 2.  **Covariance Matrix:** Quantifying how the variables vary together. 
 3.  **Eigenvalue/Eigenvector Decomposition:** Identifying eigenvectors (which represent the directions of variance, hence the principal components) and eigenvalues (representing the magnitude of variance along those directions).
 4.  **Dimensionality Selection:** Utilizing scree plots (identifying the "elbow") or cumulative explained variance to determine how many principal components to retain.
-5.  **Projection:** Transforming the original dataset into a new coordinate system, creating a simplified [[Latent Space]] or [[Embedding Space]].
+5.  **Projection:** Transforming the original dataset into a new coordinate system, creating a simplified [[latent-space]] or [[embedding-space]].
 
 ### Comparisons with Other Techniques
 *   **vs. LDA:** Unlike Linear Discriminant Analysis, PCA is an unsupervised technique and does not require class labels.

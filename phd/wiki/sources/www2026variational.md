@@ -16,12 +16,12 @@ status: developing
 
 Original: [[phd/raw/www.ibm.com/variational-autoencoder]]
 
-The [[Variational Autoencoder]] (VAE) is a foundational deep generative model archetype introduced by Diederik P. Kingma and Max Welling in their seminal 2013 paper, "Auto-Encoding Variational Bayes". Unlike deterministic autoencoders that compress input data into fixed discrete codes, a VAE maps inputs to a continuous and probabilistic [[Latent Space]]. This enables VAEs to act as powerful generative systems capable of synthesizing novel variations of their training data, with wide-ranging applications spanning from image synthesis and anomaly detection to the molecular generation of drug compounds.
+The [[phd/wiki/concepts/variational-autoencoder|variational-autoencoder]] (VAE) is a foundational deep generative model archetype introduced by Diederik P. Kingma and Max Welling in their seminal 2013 paper, "Auto-Encoding Variational Bayes". Unlike deterministic autoencoders that compress input data into fixed discrete codes, a VAE maps inputs to a continuous and probabilistic [[latent-space]]. This enables VAEs to act as powerful generative systems capable of synthesizing novel variations of their training data, with wide-ranging applications spanning from image synthesis and anomaly detection to the molecular generation of drug compounds.
 
 ### Core Architecture
 Like vanilla autoencoders, a VAE is composed of:
 *   An **Encoder**: A neural network that compresses high-dimensional inputs into a representation of latent variables.
-*   A **Bottleneck**: The lower-dimensional [[Embedding Space]] containing the compressed latent representation.
+*   A **Bottleneck**: The lower-dimensional [[embedding-space]] containing the compressed latent representation.
 *   A **Decoder**: A neural network that reconstructs the original input data using vectors sampled from the bottleneck.
 
 However, VAEs model the bottleneck probabilistically. For each latent attribute, the encoder outputs a vector of means ($\mu$) and a vector of standard deviations ($\sigma$), defining a posterior probability distribution $p(z|x)$ over the latent space.
@@ -29,7 +29,7 @@ However, VAEs model the bottleneck probabilistically. For each latent attribute,
 ### Optimization and Mathematical Framework
 VAEs are optimized using a joint loss function that maximizes the Evidence Lower Bound (ELBO). This combines two principal objectives:
 1.  **Reconstruction Loss**: Measures the difference between the original input and the decoder's output (typically via mean-squared error or cross-entropy loss).
-2.  **Kullback-Leibler (KL) Divergence**: A regularization term that measures how much the encoded distribution diverges from a target prior distribution (usually a standard normal Gaussian distribution). Minimizing KL divergence ensures that the [[Latent Space]] possesses two critical properties: **continuity** (nearby points decode to similar content) and **completeness** (any sampled point in the space yields a meaningful reconstruction).
+2.  **Kullback-Leibler (KL) Divergence**: A regularization term that measures how much the encoded distribution diverges from a target prior distribution (usually a standard normal Gaussian distribution). Minimizing KL divergence ensures that the [[latent-space]] possesses two critical properties: **continuity** (nearby points decode to similar content) and **completeness** (any sampled point in the space yields a meaningful reconstruction).
 
 ### The Reparameterization Trick
 Because sampling a latent vector $z$ directly from the distribution $(\mu, \sigma)$ is a stochastic process, it lacks a derivative. This makes backpropagation impossible. To circumvent this, the **reparameterization trick** reformulates the sampling by introducing an auxiliary noise variable $\epsilon \sim \mathcal{N}(0, I)$. The latent variable is computed as:
