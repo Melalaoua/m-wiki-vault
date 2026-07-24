@@ -31,3 +31,4 @@ The [[PhD]] domain encompasses both direct research on world models and represen
 - [[phd/wiki/concepts/md-to-phd-transition|MD to PhD Transition]]
 - [[phd/wiki/concepts/evolving-novelty-in-clinical-ai-research|Evolving Novelty in Clinical AI Research]]
 - [[phd/wiki/concepts/variational-autoencoder|Variational Autoencoder]]
+- [[phd/wiki/concepts/principal-component-analysis|Principal Component Analysis]]

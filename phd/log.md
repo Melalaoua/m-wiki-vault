@@ -169,3 +169,10 @@
 - phd/wiki/concepts/latent-space.md (update)
 - phd/wiki/maps/phd.md (update)
 - phd/wiki/projects/thesis-topic-shift-world-models-vs-llms.md (update)
+
+## [2026-07-24] ingest | PCA
+
+- phd/wiki/sources/www2026pca.md (create)
+- phd/wiki/concepts/principal-component-analysis.md (create)
+- phd/wiki/concepts/latent-space.md (update)
+- phd/wiki/maps/phd.md (update)
