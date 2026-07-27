@@ -48,3 +48,10 @@
 - personal/wiki/concepts/deliberate-practice-in-gaming.md (create)
 - personal/wiki/maps/personal.md (update)
 - personal/wiki/projects/league-of-legends-mastery.md (update)
+
+## [2026-07-27] ingest | If You Build It, They Will Come
+
+- personal/wiki/sources/www2026if.md (create)
+- personal/wiki/entities/ben-landau-taylor.md (create)
+- personal/wiki/concepts/social-fabric-production.md (create)
+- personal/wiki/maps/personal.md (update)
