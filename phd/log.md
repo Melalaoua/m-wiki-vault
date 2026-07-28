@@ -176,3 +176,17 @@
 - phd/wiki/concepts/principal-component-analysis.md (create)
 - phd/wiki/concepts/latent-space.md (update)
 - phd/wiki/maps/phd.md (update)
+
+## [2026-07-28] lint | mechanical fixes
+
+- indexed phd/wiki/projects/ai-for-rare-disease-diagnosis.md
+- indexed phd/wiki/projects/diagnostic-tool-for-febrile-children-in-car.md
+- logged phd/wiki/concepts/critical-evaluation-of-medical-llms.md (backfill)
+- logged phd/wiki/concepts/vibe-medicine.md (backfill)
+- logged phd/wiki/concepts/vibecoding.md (backfill)
+- logged phd/wiki/entities/vibemed.md (backfill)
+- logged phd/wiki/projects/ai-for-rare-disease-diagnosis.md (backfill)
+- logged phd/wiki/sources/notes2026oadlogserver.md (backfill)
+- logged phd/wiki/sources/notes2026oadlogsprint.md (backfill)
+- logged phd/wiki/sources/notes2026oadlogtablet.md (backfill)
+- logged phd/wiki/sources/phd2026toward.md (backfill)
