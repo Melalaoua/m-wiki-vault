@@ -11,7 +11,7 @@ tags: [source, personal]
 ---
 
 # Great Work
-
+	
 Original: [[raw/paulgraham.com/how-to-do-great-work]]
 
 # How to Do Great Work
