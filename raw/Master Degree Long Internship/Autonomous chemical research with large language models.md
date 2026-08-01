@@ -13,7 +13,7 @@ fields, such as natural language processing1–5, biology6,7, chemistry8–10 an
 ```
 
 ## Notes
-- Application d'un [[Attention is all you need|Transformers]] dans un laboratoire de chimie. L'IA est capable de rechercher sur internet, de manipuler des appareils de laboratoire, ..
+- Application d'un [[Attention is All You Need|Transformers]] dans un laboratoire de chimie. L'IA est capable de rechercher sur internet, de manipuler des appareils de laboratoire, ..
 
 - Coscientist est capable, à partir d'une prompt initial, de mettre sur pied une expérience de laboratoire de A à Z.
 

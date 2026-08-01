@@ -20,7 +20,7 @@ We introduce Mixtral 8x7B, a [[A Review of Sparse Expert Models in Deep Learning
 - [[A Review of Sparse Expert Models in Deep Learning|Architecture SMoE]] avec 32K de contexte pour 13B de paramètres "actifs" pendant l'inference (plus rapide). ![[Pasted image 20240113145731.png]]
 - Decoder-only (comme GPT)
 - Meilleure performances que LLAMA2 (70B) et que GPT3.5.
-- Basé sur l'architecture [[Attention is all you need|transformers]]
+- Basé sur l'architecture [[Attention is All You Need|transformers]]
 - Le papier aborde la technique [Megablock](https://arxiv.org/abs/2211.15841) pour entrainer plus efficacement (+40%) les MoE et la technique [Expert Parallelism](https://arxiv.org/abs/1701.06538) 
 - Reprend les fonctionnalités d'un modèle mistral 7b classique :
 	- Sliding window : Entrainés ur 8K context length mais avec une fenêtre théorique de 128K tokens.

@@ -1,7 +1,7 @@
 tags:: #AI/models 
 source:: [1](https://jalammar.github.io/illustrated-gpt2/)
 
-Le GPT-2 n'a pas d'architecture particulièrement nouvelle, en effet son architecture est très similaire au [[Attention is all you need|decoder-only des transformers]]. Toutefois, GPT-2 est un transformer-based très large (LLM) entrainé sur une quantité massive de données.
+Le GPT-2 n'a pas d'architecture particulièrement nouvelle, en effet son architecture est très similaire au [[Attention is All You Need|decoder-only des transformers]]. Toutefois, GPT-2 est un transformer-based très large (LLM) entrainé sur une quantité massive de données.
 
 On va explorer son architecture en détail. Cette note fait écho à la note [[The Illustrated Transformer]], reposant sur les travaux du même auteur Jay Alammar
 

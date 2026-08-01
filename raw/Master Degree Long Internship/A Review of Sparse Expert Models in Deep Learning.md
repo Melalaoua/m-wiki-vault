@@ -14,7 +14,7 @@ Sparse expert models are a thirty-year old concept re-emerging as a popular arch
 ## Notes
 ![[Pasted image 20240117143940.png]]
 
-Le SmOE permet de réduire les coûts en inférence des modèles [[Attention is all you need|Transformers]] en divisant le modèle en plusieurs FFN (Feed-Forward Network). Seuls 2 FFN sont sélectionnés pour l'inférence, le résultat des deux est récupéré.
+Le SmOE permet de réduire les coûts en inférence des modèles [[Attention is All You Need|Transformers]] en divisant le modèle en plusieurs FFN (Feed-Forward Network). Seuls 2 FFN sont sélectionnés pour l'inférence, le résultat des deux est récupéré.
 
 La variantes la plus populaires de SmOE est le MoE (mixture of Experts) où les différents experts ont tous des poids différents.
 

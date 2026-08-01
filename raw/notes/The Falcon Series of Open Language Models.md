@@ -19,7 +19,7 @@ pretrain these models on up to 4,096 A100s on cloud AWS infrastructure with limi
 
 - ==The ongoing Cambrian explosion==, en tant que biologiste et informaticien, j'adore ce terme qui illustre parfaitement l'année 2023 avec l'apparition d'une multitude de modèle de LLM, avec l'open-source qui a joué un rôle important.
 
-- Le papier parle de "scalabilité" de l'architecture des [[Attention is all you need|Transformers]]
+- Le papier parle de "scalabilité" de l'architecture des [[Attention is All You Need|Transformers]]
 
 - Partie "State of the art : from language modelling to frontier models" est très utile pour avoir une compréhension du contexte dû à l'explosion des LLMs en 2023
 

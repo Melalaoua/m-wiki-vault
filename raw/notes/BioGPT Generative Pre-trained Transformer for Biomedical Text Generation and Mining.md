@@ -17,7 +17,7 @@ DDI end-to-end relation extraction tasks respectively, and 78:2% accuracy on Pub
 
 - Piocher dans des bases de données comme Clinvar, AlphaMissense, Pubmed...
 
-- BioGPT est un [[Attention is all you need|Transformers]]
+- BioGPT est un [[Attention is All You Need|Transformers]]
 
 - BioGPT a été confectionné dans la perspective de différentes tâches :
 	- ==Relation Extraction== : le modèle extrait, à partir du papier analysé, les entités ainsi que leur relations. Input : texte (article) => triplet (entitie, relation, entitie) en END-to-END

@@ -18,7 +18,7 @@ our approach on a wide range of benchmarks for natural language understanding. O
 
 Pre-training = entrainer un modèle sur une vaste quantité de données non annotées et ensuite le [[Scaling Instruction-Finetuned Language Models||Fine-Tune]] permet aux modèles d'être plus performants que les modèles initialement entrainés pour une/des tâche(s) spécifique(s), sur des donnée spécifiquement sélectionnées dans cette optique.
 
-- Entrainement d'un modèle deep learning avec une [[Attention is all you need|transformers]]
+- Entrainement d'un modèle deep learning avec une [[Attention is All You Need|transformers]]
 
 
 ```ad-warning
