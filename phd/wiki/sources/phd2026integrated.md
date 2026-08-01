@@ -12,7 +12,7 @@ tags: [source, personal]
 updated: 2026-08-01
 status: developing
 read_status: skimmed
-last_sitting: 2026-08-01T20:26:54.652Z
+last_sitting: 2026-08-01T20:58:23.568Z
 ---
 
 # Integrated Architectures for Learning, Planning, and Reacting Based on Approximating Dynamic Programming
