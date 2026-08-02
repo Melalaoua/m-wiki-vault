@@ -11,8 +11,8 @@ aliases: []
 tags: [source, personal]
 updated: 2026-08-02
 status: developing
-read_status: pass2
-last_sitting: 2026-08-02T13:26:09.988Z
+read_status: critiqued
+last_sitting: 2026-08-02T13:30:55.753Z
 ---
 
 # Integrated Architectures for Learning, Planning, and Reacting Based on Approximating Dynamic Programming
@@ -161,3 +161,39 @@ I did not understand your question
 **My objection (mine, after yours):**
 
 **My objection:** Although the author claims that Dyna architectures are "fully compatible" with compact function approximators like connectionist networks to handle larger state spaces, the empirical results are strictly limited to a trivial, tabular 54-state grid-world. In practice, combining off-policy bootstrapping planning (such as Q-learning in Dyna) with function approximation introduces severe risks of representation drift, instability, and divergence. These fundamental challenges of scaling the architecture are entirely masked by the perfect, low-dimensional state representations used in the paper's simple simulations.
+
+## Critique (pass 3)
+
+### Strongest objection
+
+**Your answer:**
+
+Deep learning architecture can plan with trial and error
+
+**My calibration (mine, after yours):**
+
+**Our calibration:** 
+
+The paper's framework relies heavily on the assumption that a learned world model can accurately simulate the environment, but it glosses over the threat of compounding model errors. In complex or stochastic environments, even minor inaccuracies in the learned model will propagate and compound during the "hypothetical" planning phases, leading the policy to exploit flaws in its own simulation rather than finding real-world optimal paths. Pure trial-and-error learning, while slower, avoids this compounding bias entirely by grounding all updates in actual physical reality.
+
+### Alternative explanation
+
+**Your answer:**
+
+I don't know
+
+**My calibration (mine, after yours):**
+
+**My calibration:** 
+
+A major alternative explanation for the results is that the superior adaptability of Dyna-Q+ in changing environments may be driven primarily by the mathematical exploration bonus itself rather than the integration of planning. A simpler, model-free reinforcement learning system using optimistic value initialization or a similar curiosity heuristic might resolve the blocking and shortcut problems just as effectively without the computational overhead of maintaining a world model. Without comparing Dyna-Q+ against a model-free baseline utilizing the exact same exploration bonus, the paper cannot definitively credit the "planning" component for this success.
+
+### Falsifying experiment
+
+**Your answer:**
+
+To test a reinforcement learning system with heuristic
+
+**My calibration (mine, after yours):**
+
+Our calibration: The proposed answer lacks a comparative baseline and specific environmental conditions to truly test the limits of the author's claims. A robust falsification experiment must evaluate the Dyna architecture in a highly stochastic or large-scale environment where the learned world model is frequently inaccurate. If the computational overhead and errors of relaxation planning on an incorrect model cause the system to converge slower or achieve lower cumulative reward than a simple, model-free reinforcement learning baseline, the core thesis of the paper is falsified.
