@@ -18,7 +18,7 @@ Original: [[phd/raw/www.baeldung.com/latent-and-embedding-space]]
 
 # Latent and Embedding Space
 
-One of the main problems in machine learning is efficiently representing complex data. [[Latent Space]] and [[Embedding Space]] are vector spaces designed to obtain the essence of data without unnecessary noise.
+One of the main problems in machine learning is efficiently representing complex data. [[Latent Space]] and [[embedding-space]] are vector spaces designed to obtain the essence of data without unnecessary noise.
 
 ## Latent Space
 **Latent space** is a compressed, lower-dimensional space into which high-dimensional data transforms. It aims to capture essential attributes in fewer dimensions.

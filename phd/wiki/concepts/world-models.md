@@ -15,16 +15,16 @@ Source: [[phd/wiki/sources/phd2026leworldmodel|LeWorldModel: Stable End-to-End J
 
 ## From [[phd/wiki/sources/phd2026integrated|Integrated Architectures for Learning, Planning, and Reacting Based on Approximating Dynamic Programming]] (2026-08-01)
 
-A **World Model** is an internal agent representation that mimics the transitions, rewards, and dynamics of the real world. Historically popularized by Richard Sutton's [[Integrated Architectures for Learning, Planning, and Reacting Based on Approximating Dynamic Programming]] in 1990, world models allow an agent to generate hypothetical experiences to plan actions offline or in real-time execution loops.
+A **World Model** is an internal agent representation that mimics the transitions, rewards, and dynamics of the real world. Historically popularized by Richard Sutton's [[phd2026integrated| Integrated Architectures for Learning, Planning, and Reacting Based on Approximating Dynamic Programming]] in 1990, world models allow an agent to generate hypothetical experiences to plan actions offline or in real-time execution loops.
 
-Modern incarnations include [[Joint-Embedding Predictive Architecture]] (JEPA) and [[Biological World Models via JEPA]]. Unlike model-free architectures, world models permit *relaxation planning*, drastically improving sample efficiency by allowing the agent to 'think' and simulate outcomes before acting.
+Modern incarnations include [[joint-embedding-predictive-architecture]] (JEPA) and [[biological-world-models-via-jepa]]. Unlike model-free architectures, world models permit *relaxation planning*, drastically improving sample efficiency by allowing the agent to 'think' and simulate outcomes before acting.
 
 ## From [[phd/wiki/sources/phd2026world|World Models]] (2026-08-02)
 
 A **World Model** is a cognitive-inspired neural network architecture that learns a compressed spatial and temporal representation of an environment, enabling an agent to predict future states given its current state and action. Synthesized in deep reinforcement learning by [[David Ha]] and [[Jürgen Schmidhuber]] (2018), this approach decouples spatial compression and temporal dynamics from decision-making policies.
 
 ## Core Components
-* **Vision (V)**: Usually a [[Variational Autoencoder]] (VAE), which compresses high-dimensional pixel streams into a compact latent vector $z$ inside the [[Latent Space]].
+* **Vision (V)**: Usually a [[phd/wiki/concepts/variational-autoencoder|variational-autoencoder]] (VAE), which compresses high-dimensional pixel streams into a compact latent vector $z$ inside the [[Latent Space]].
 * **Memory (M)**: A recurrent model, typically an MDN-RNN, which models $P(z_{t+1} | a_t, z_t, h_t)$ to capture temporal dependencies and environment stochastics.
 * **Controller (C)**: A compact neural network or linear policy optimized using black-box evolution strategies (such as CMA-ES) rather than backpropagation.
 
