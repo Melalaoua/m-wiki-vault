@@ -11,8 +11,8 @@ aliases: []
 tags: [source, personal]
 updated: 2026-08-02
 status: developing
-read_status: pass2
-last_sitting: 2026-08-02T15:33:54.216Z
+read_status: critiqued
+last_sitting: 2026-08-02T15:39:39.430Z
 ---
 
 # World Models
@@ -179,3 +179,41 @@ I don't know
 **My Objection:** 
 
 A major limitation of this approach is the compounding error inherent in the MDN-RNN's step-by-step autoregressive predictions, which causes the simulated "dream" environment to rapidly drift away from actual game physics over longer horizons. Because the VAE is trained entirely unsupervised and independently of the task's reward structure, the compressed latent space frequently discards critical but visually small task-relevant details (like distant hazards) while wasting capacity on irrelevant background textures. This representation decoupling makes the agent highly prone to exploiting inaccuracies in the dynamics model, necessitating fragile, environment-specific tuning of the temperature parameter ($\tau$) to prevent policy failure during transfer.
+
+## Critique (pass 3)
+
+### Strongest objection
+
+**Your answer:**
+
+1. The variational encoder can miss important detail or add irrelevant detail to the latent state, hindering the world model capabilities.
+
+**My calibration (mine, after yours):**
+
+**My objection:** 
+
+While representation loss in the encoder is a bottleneck, a more critical vulnerability lies in compounding prediction errors and the resulting adversarial exploitation of the transition model (M) during long-horizon rollouts. Because the controller is trained entirely inside its own hallucinated "dreams," it easily discovers and exploits unphysical transition dynamics (such as the "extinguishing fireballs" exploit) where the predictive model's approximations break down. The authors' proposed solution of manually tuning a temperature parameter ($\tau$) is a fragile, task-dependent heuristic that does not scale to complex, high-dimensional environments where compounding model drift is inevitable.
+
+### Alternative explanation
+
+**Your answer:**
+
+I don't know
+
+**My calibration (mine, after yours):**
+
+**My assessment:** 
+
+An alternative explanation for the high transferability of the VizDoom policy is that the injected temperature ($\tau = 1.15$) acted as a form of brute-force domain randomization rather than a high-fidelity simulation of game dynamics. By forcing the controller to survive in an artificially chaotic, hyper-stochastic dream environment, the evolutionary algorithm may have simply regularized the policy to adopt an extremely conservative, jittery obstacle-avoidance heuristic. Consequently, its success in the actual environment might stem from this over-sensitized behavioral robustness rather than the agent developing a genuine, predictive "mental model" of enemy fireball trajectories.
+
+### Falsifying experiment
+
+**Your answer:**
+
+I don't know
+
+**My calibration (mine, after yours):**
+
+**My calibration:** 
+
+A critical gap left open is designing an experiment to test whether the policy trained inside the "hallucinated dream" fails to generalize when the real environment introduces fine-grained, chaotic dynamics that the lossy VAE and MDN-RNN compression cannot capture. For example, one could systematically introduce minor physical perturbations—such as sudden wind resistance in the Car Racing environment or micro-latencies in VizDoom—and measure if the dream-trained policy collapses while a traditionally trained model-free policy remains robust. If the dream-trained agent cannot adapt to these subtle but critical real-world variations, it would falsify the core claim that unsupervised world models can reliably replace training in the actual environment.
