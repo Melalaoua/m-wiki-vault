@@ -30,7 +30,7 @@ While Large Language Models (LLMs) are highly productive, they introduce severe 
 ### Mitigation Strategies
 To fight back against [[cognitive-attention-degradation]], the author employs several strategies:
 * **Artificial Friction & Accountability**: Using short 15-minute timers to lower the barrier to entry, or live-streaming coding sessions to prevent picking up the phone.
-* **[[Low-Stimulus Resets]]**: Utilizing offline, analog hobbies like balcony gardening or reading physical books to let the brain rest without sliding into highly addictive passive consumption.
+* **[[low-stimulus-resets]]**: Utilizing offline, analog hobbies like balcony gardening or reading physical books to let the brain rest without sliding into highly addictive passive consumption.
 
 ## Key claims
 
