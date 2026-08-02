@@ -12,7 +12,7 @@ tags: [source, personal]
 updated: 2026-08-02
 status: developing
 read_status: skimmed
-last_sitting: 2026-08-02T13:42:32.090Z
+last_sitting: 2026-08-02T15:06:30.253Z
 ---
 
 # World Models
