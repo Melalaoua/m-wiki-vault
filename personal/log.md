@@ -82,3 +82,10 @@
 - logged personal/wiki/sources/paulgraham2026great.md (backfill)
 - logged personal/wiki/sources/paulgraham2026how.md (backfill)
 - logged personal/wiki/sources/unix2026the.md (backfill)
+
+## [2026-08-02] ingest | It's getting harder to focus every day
+
+- personal/wiki/sources/glyphack2026its.md (create)
+- personal/wiki/concepts/cognitive-attention-degradation.md (create)
+- personal/wiki/concepts/low-stimulus-resets.md (create)
+- personal/wiki/maps/personal.md (update)
