@@ -197,3 +197,9 @@
 - phd/wiki/concepts/world-models.md (update)
 - phd/wiki/concepts/dyna-architecture.md (create)
 - phd/wiki/projects/thesis-topic-shift-world-models-vs-llms.md (update)
+
+## [2026-08-02] ingest | World Models
+
+- phd/wiki/sources/phd2026world.md (update)
+- phd/wiki/concepts/world-models.md (update)
+- phd/wiki/projects/thesis-topic-shift-world-models-vs-llms.md (update)
