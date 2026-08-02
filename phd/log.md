@@ -190,3 +190,10 @@
 - logged phd/wiki/sources/notes2026oadlogsprint.md (backfill)
 - logged phd/wiki/sources/notes2026oadlogtablet.md (backfill)
 - logged phd/wiki/sources/phd2026toward.md (backfill)
+
+## [2026-08-01] ingest | Integrated Architectures for Learning, Planning, and Reacting Based on Approximating Dynamic Programming
+
+- phd/wiki/sources/phd2026integrated.md (update)
+- phd/wiki/concepts/world-models.md (update)
+- phd/wiki/concepts/dyna-architecture.md (create)
+- phd/wiki/projects/thesis-topic-shift-world-models-vs-llms.md (update)

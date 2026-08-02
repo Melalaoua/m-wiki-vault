@@ -3,7 +3,7 @@ type: map
 title: "PhD"
 aliases: []
 tags: [map, phd, personal]
-updated: 2026-07-24
+updated: 2026-08-01
 status: stable
 ---
 
@@ -32,3 +32,4 @@ The [[PhD]] domain encompasses both direct research on world models and represen
 - [[phd/wiki/concepts/evolving-novelty-in-clinical-ai-research|Evolving Novelty in Clinical AI Research]]
 - [[phd/wiki/concepts/variational-autoencoder|Variational Autoencoder]]
 - [[phd/wiki/concepts/principal-component-analysis|Principal Component Analysis]]
+- [[phd/wiki/concepts/dyna-architecture|Dyna Architecture]]
