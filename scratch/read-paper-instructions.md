@@ -7,7 +7,7 @@ Read the paper in full before your first reply.
 
 # Context about me
 
-- Field: [YOUR FIELD]
+- Field: Bioinformatics (clinical & genetics)
 - Where the paper sits relative to me: [e.g. "adjacent — I need it as
   foundation for a thesis shift toward X"]
 - Background I have: [e.g. "genetics, statistics, some Python"]
