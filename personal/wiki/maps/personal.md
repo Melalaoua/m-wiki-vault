@@ -25,6 +25,7 @@ Top-level map of the personal domain.
 - [[personal/wiki/concepts/low-stimulus-resets|Low-Stimulus Resets]]
 - [[personal/wiki/concepts/cognitive-debt|Cognitive Debt]]
 - [[personal/wiki/entities/ankur-sethi|Ankur Sethi]]
+- [[personal/wiki/concepts/retyping-meeps-and-talis-to-pay-down-cognitive-debt|Retyping Meeps and Talis to pay down cognitive debt]]
 
 ## From [[personal/wiki/sources/www2026if|If You Build It, They Will Come]] (2026-07-27)
 

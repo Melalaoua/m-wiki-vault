@@ -96,3 +96,8 @@
 - personal/wiki/concepts/cognitive-debt.md (create)
 - personal/wiki/entities/ankur-sethi.md (create)
 - personal/wiki/maps/personal.md (update)
+
+## [2026-08-09] chat | Retyping Meeps and Talis to pay down cognitive debt
+
+- personal/wiki/concepts/retyping-meeps-and-talis-to-pay-down-cognitive-debt.md (create)
+- personal/wiki/maps/personal.md (update)
