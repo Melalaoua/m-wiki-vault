@@ -3,7 +3,7 @@ type: map
 title: "Personal"
 aliases: []
 tags: [map, personal]
-updated: 2026-08-02
+updated: 2026-08-09
 status: developing
 ---
 
@@ -23,6 +23,8 @@ Top-level map of the personal domain.
 - [[personal/wiki/concepts/social-fabric-production|Social Fabric Production]]
 - [[personal/wiki/concepts/cognitive-attention-degradation|Cognitive Attention Degradation]]
 - [[personal/wiki/concepts/low-stimulus-resets|Low-Stimulus Resets]]
+- [[personal/wiki/concepts/cognitive-debt|Cognitive Debt]]
+- [[personal/wiki/entities/ankur-sethi|Ankur Sethi]]
 
 ## From [[personal/wiki/sources/www2026if|If You Build It, They Will Come]] (2026-07-27)
 

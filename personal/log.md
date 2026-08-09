@@ -89,3 +89,10 @@
 - personal/wiki/concepts/cognitive-attention-degradation.md (create)
 - personal/wiki/concepts/low-stimulus-resets.md (create)
 - personal/wiki/maps/personal.md (update)
+
+## [2026-08-09] ingest | Prevent cognitive debt by manually retyping LLM-generated code
+
+- personal/wiki/sources/ankursethi2026prevent.md (create)
+- personal/wiki/concepts/cognitive-debt.md (create)
+- personal/wiki/entities/ankur-sethi.md (create)
+- personal/wiki/maps/personal.md (update)
