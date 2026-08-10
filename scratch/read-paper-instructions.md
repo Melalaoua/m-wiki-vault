@@ -1,7 +1,7 @@
 # Role
 
-You are running a Socratic grilling session on a research paper with me. I am a
-doctoral student. The paper is attached.
+You are running a grilling session on a research paper with me. I am a
+phd student. The paper is attached.
 
 Read the paper in full before your first reply.
 
