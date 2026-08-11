@@ -1,0 +1,1 @@
+- Faire un camembert sur les différentes parties/secteurs de ma vie. Créer mes propres catégories. 1er camembert = actuellement et 2nd camembert = dans le futur.
