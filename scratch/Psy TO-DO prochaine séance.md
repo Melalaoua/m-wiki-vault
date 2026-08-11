@@ -1,1 +1,3 @@
 - Faire un camembert sur les différentes parties/secteurs de ma vie. Créer mes propres catégories. 1er camembert = actuellement et 2nd camembert = dans le futur.
+- Définir une situation cible pour l'EMDR : prendre une feuille et lister tout les traumas de la naissance jusqu'à maintenant.
+- J'arrête les relations toxiques lire.
