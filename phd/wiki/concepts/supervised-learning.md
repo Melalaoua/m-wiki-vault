@@ -45,15 +45,31 @@ Its goal is to learn the optimal decision boundary to separate two categories of
 
 The boundary defined is a hyperplane that maximizes the margin (or gap) between data points of opposite classes.
 
+Logically, the only data points that can support the computation of that hyperplane are the data points from each class that are closest to the boundary. The vector embeddings of those boundary-adjacent data points are therefore called _support vectors._
+
 
 
 ## Self-supervised learning.
 Since labelling data can be costly and time-consuming, **==SSL==** entails training on tasks in which a supervisory signal is obtained directly from unlabeled data. hence the "self"-supervised.
 
-Logically, the only data points that can support the computation of that hyperplane are the data points from each class that are closest to the boundary. The vector embeddings of those boundary-adjacent data points are therefore called _support vectors._
+#### Category One : Self-prediction
+Train a model to predict one aspect of a data point when given other information about that data point. "Pretend there is a part of the input you don't know and predict that" - Yann Lecun.
 
+- Predict _any part of the input_ from _any other part_
+- Predict the _future_ from the _past_
+- Predict the _masked_ from the _visible_
+- Predict any _occluded part_ from all _available parts_
+
+Prominent example of machine learning models trained used self-prediction algorithms include autoencoders and [[large-language-models]] (LLMs).
 
 [[phd/wiki/concepts/variational-autoencoder|variational-autoencoder]] are trained to compress (encode) input data, then reconstruct (decode) the original input that using the compressed representation. The training objective is to **minimize reconstruction error**, using the original input sa ground-truth.
+
+Autoregressive LLMs—the text generating models that rose to fame following the launch of ChatGPT—are tasked with iteratively predicting the next token in a sequence, given only the previous tokens in that sequence. For each prediction, the actual next token in the sequence serves as ground truth.
+
+
+#### Category Two : Contrastive learning.
+Provide a lot of data and task the model to predict how diffrent (or similar) they are.
+
 
 
 > **semi-supervised learning** use both labeled and unlabeled data using techniques that use information from the available labeled data to make assumptions about the unlabeled data.

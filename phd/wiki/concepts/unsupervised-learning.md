@@ -21,3 +21,10 @@ Unsupervised doesnt' assume the preexistence of a known "correct output".
 
 Unsupervised learning somewhat "optimizes" themsevles. The challenges lies in data-preprocessing and properly tuning hyperparameters 
 
+
+
+### Unsupervised learning algorithms.
+There are three fundamental subsets of unsupervised learning algorithms.
+
+#### Clustering algorithms.
+They partition unlabele
