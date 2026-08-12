@@ -36,4 +36,13 @@ Consider a maze:  a policy-based agent might learn "at this corner, turn left", 
 ### Reinforcement algorithms.
 Suite for tasks in which there's no singular "correct" output, but instead there are "good" outputs. 
 
-They entail a reward signal that allows models to learn holistically through trial and error
+They entail a reward signal that allows models to learn holistically through trial and error. That reward signal can come from a reward function, a separately trained reward model, or a rules-based reward system.
+
+- _Q-learning,_ derived from value-based methods  
+      
+    
+- _Proximal policy optimization (PPO),_ a policy-based method used prominently in [reinforcement learning from human feedback (RLHF)](https://www.ibm.com/think/topics/rlhf)  
+    _Actor-critic_ and derivatives such as _advantage actor-critic_ (A2C), which use a hybrid of value- and policy-based methods  
+      
+    
+- _REINFORCE_ (short for REward Increment = Nonnegative Factor × Offset Reinforcement × Characteristic Eligibility), a seminal policy-based method
