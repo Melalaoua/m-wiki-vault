@@ -27,4 +27,16 @@ Unsupervised learning somewhat "optimizes" themsevles. The challenges lies in da
 There are three fundamental subsets of unsupervised learning algorithms.
 
 #### Clustering algorithms.
-They partition unlabele
+They partition unlabeled data points into "clusters" based on their proximity or similarity to one another.
+
+- **==K-means clustering==** : partitions data in to k clusters in a given data point will be assigned to the cluster whose center (centroid) it's closes to. Each data point is assigned to the cluster of the nearest centroid. Each centroid is then relocated to the position representing the average (_mean_) of all the data points that were just assigned to it; Rinse & repeat.
+
+
+#### Association algorithms.
+Identify correlations between variables in large datasets, used prominently in task like market basket analysis or product recommendation engines.
+
+
+#### Dimensionality reduction algorithm.
+Take a data point and output a more efficient representation of that data point. They're designed to learn a mapping of high dimensional data points to a space where they can be accurately described using fewer features.
+
+- [[principal-component-analysis]] : 
