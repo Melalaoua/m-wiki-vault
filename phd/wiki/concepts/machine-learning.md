@@ -20,7 +20,7 @@ ML is a computer science, data science and artificial intelligence subset that e
 
 > All machine learning is [[artificial-intelligence]] but not all AI is machine learning.
 
-Instead of using explicit instructions for perf optimization, ML models rely on algori
+Instead of using explicit instructions for perf optimization, ML models rely on algorithms and statistical models that deploy task based on data patterns and inferences. **==ML leverages input data to predict outputs==**
 #### How ML works.
 Extracts features of each data point to numerical data and feed it into a mathematical algorithm that will learn to map a given input to the desired output.
 
