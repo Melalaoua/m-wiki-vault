@@ -25,5 +25,14 @@ All machine learning is [[artificial-intelligence]] but not all AI is machine le
 
 AI is catch-all for any program that can use information to make decisions or predictions without active human involvment.
 
+#### How ML works.
+Extracts features of each data point to numerical data and feed it into a mathematical algorithm that will learn to map a given input to the desired output.
 
+Data points are usually represented in vectors where each element (or dimension) of a data's point [[vector-embedding]] corresponds to its numerical value for a specific feature. 
+
+- [[feature-selection]] is the process of choosing which aspects of data to use in ML.
+- [[feature-extraction]] techniques refine data down to only its most relevant, meaningful dimensions. 
+- Both are subsets of [[feature-engineering]] which is to preprocess raw data for use in machine learning.
+
+[[deep-learning]] operates on raw data and automates much of the feature engineering process.
 
