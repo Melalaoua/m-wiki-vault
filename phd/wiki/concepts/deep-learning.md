@@ -24,3 +24,7 @@ The [[backpropagation]] algorithm is the computation of =="**how each individual
 
 > Neural networks are _universal approximators_: it has been theoretically proven that for any function, there exists a neural network arrangement that can reproduce it.
 
+
+
+#### Convolutional neural networks (CNNS).
+In mathematics, a convolution is an operation where one function modifies (or convolves) the shape of another. In CNNs, the convlutional layers are used to extract imporant features from data by applying weighted "filters".  CNNs are primarily associated with computer visoin models and image data.
