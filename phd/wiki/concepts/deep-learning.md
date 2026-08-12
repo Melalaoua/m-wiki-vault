@@ -19,7 +19,8 @@ Each activation function performed at each node are nonlinear, enabling NN to mo
 
 Each connection between two neurons is assigned a uniqued **weight** : a multiplier that increases or decreases one neuron's contribution to a neuron in the following layer. Each of which are the parameters to be optimized through [[machine-learning]]
 
-The [[backpropagation]] algorithm is the computation of =="**how each individual node contributes to the overal output of the loss function"**==
+The [[backpropagation]] algorithm is the computation of =="**how each individual node contributes to the overal output of the loss function"**== allowing millions, billions of model wieghts to be individually optimized through [[gradient-descent]] algorithms.
 
 
+> Neural networks are _universal approximators_: it has been theoretically proven that for any function, there exists a neural network arrangement that can reproduce it.
 
