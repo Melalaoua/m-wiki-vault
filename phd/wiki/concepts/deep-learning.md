@@ -39,3 +39,14 @@ First introduced in 2017, they are largely responsible for the advent of [[wiki/
 Like RNNs, transformers are ostensibly designed for sequential data, but clever workarounds have enabled most data modalities to be processed by transformers. The unique strength of a transformer model comes from their innovative attention mechanism, which enables the models to selectively focus on the parts of the input data most relevant at a specific moment in a sequence.
 
 
+### Architectures vs. algorithms.
+
+In the context of deep learning, specific model types are often referred to by their “architectures,” a concept related to but distinct from algorithms.
+
+a **neural network architecture** refers to its layout : the number and size of layers, the use of specialized layers, the choice of activation functions. A same architecture can be trained to perform multiple kinds of tasks.
+
+A deep learning algorithm comprises not only the NN architectures but also the task its being trained to perform and the steps taken to optimize it for that task.
+
+Consider autoencoders: architecture-wise, an autoencoder is an _encoder-decoder_ model—its encoder network features progressively smaller layers, while its decoder network features progressively larger layers. But an autoencoder is only one of many encoder-decoder models: for instance, [image segmentation](https://www.ibm.com/topics/image-segmentation) models have a very similar architecture, in which progressive smaller [convolutional](https://www.ibm.com/think/topics/convolutional-neural-networks) layers downsample data to isolate and segment key features, followed by progressively larger layers that upsample the (segmented) data back to its original size.
+
+What makes an autoencoder an autoencoder is not (just) its architecture, but the algorithm used to train it: an autoencoder is _tasked with reconstructing the original input,_ and optimized through model training to _minimize a function that measures reconstruction loss_ (often modified by additional [regularization](https://www.ibm.com/think/topics/regularization) terms)_._ A model that has an identical architecture but is trained to perform a different task and optimized for a different objective is not an autoencoder.
