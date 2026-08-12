@@ -26,3 +26,12 @@ Extracts features of each data point to numerical data and feed it into a mathem
 - [[feature-selection]] is the process of choosing which aspects of data to use in ML.
 - [[feature-extraction]] techniques refine data down to only its most relevant, meaningful dimensions. 
 - Both are subsets of [[feature-engineering]] which is to preprocess raw data for use in machine learning.
+
+
+#### Types of Machine Learning.
+- [[supervised-learning]] : training technique to predict the correct feature based on an input. Relies on ground truth.
+- [[unsupervised learning]] : discern patterns from ingested data during training, use the pattenrs to predict on new data.
+- [[reinforcment-learning]] : train the model to execute the most rewarding data, no ground truth like in SL, just the "good", "bad", "neutral" actions based on procured reward.
+
+> Training a model entails regularly the usage of multiple techniques.
+
