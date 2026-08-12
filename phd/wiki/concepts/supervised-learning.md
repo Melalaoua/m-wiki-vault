@@ -27,4 +27,8 @@ Usually SL requires a [[human-in-the-loop]] to provide a ground-truth in the for
 #### Self-supervised learning.
 Since labelling data can be costly and time-consuming, **==SSL==** entails training on tasks in which a supervisory signal is obtained directly from unlabeled data. hence the "self"-supervised.
 
-[[phd/wiki/concepts/variational-autoencoder|variational-autoencoder]]
+[[phd/wiki/concepts/variational-autoencoder|variational-autoencoder]] are trained to compress (encode) input data, then reconstruct (decode) the original input that using the compressed representation. The training objective is to **minimize reconstruction error**, using the original input sa ground-truth.
+
+
+> **semi-supervised learning** use both labeled and unlabeled data using techniques that use information from the available labeled data to make assumptions about the unlabeled data.
+

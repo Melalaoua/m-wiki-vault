@@ -17,7 +17,7 @@ A [[phd/wiki/concepts/variational-autoencoder|variational-autoencoder]] (VAE) is
 3.  **Decoder**: Reconstructs inputs from sampled latent points.
 
 ### Reparameterization Trick
-To allow backpropagation through the stochastic bottleneck, VAEs formulate the latent variable $z$ as:
+To allow [[backpropagation]] through the stochastic bottleneck, VAEs formulate the latent variable $z$ as:
 $$z = \mu + \epsilon \cdot \sigma$$
 where $\epsilon \sim \mathcal{N}(0, I)$ is an external noise variable. This keeps the network's parameters differentiable.
 
