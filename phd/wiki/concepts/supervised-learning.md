@@ -15,9 +15,6 @@ Trains the model for the best accuracy, such as classification or regression.
 - **regression** : predict ouput values by identifying linear relationships between real or continous values. (Linear regression, random forest, gradient boosting, ...).
 - **classification** : models predict discrete values (category, class, ...).
 
-**==Naïve Bayes classifiers==** : enable classification tasks for large datasets. They're part of a family of generative learning algo that model the input distribution of a given class or/category.
-Random forest algorithms predict a value or category by co 
-
 In order to train the model, it must be measured & optimized against a "ground truth" which is the most ideal or correct output for any given input. Hence it requires **labeled data**.
 
 Essential to supervised learning is the use of a [[loss-function]] that measures the divergence (loss) between the model's output and the ground truth across a batch of training inputs. Various optimization algorithms (most involve calculating the [[backpropagation|derivative]]) are used to identify parameter adjustements that will reduce loss.
@@ -26,6 +23,12 @@ Essential to supervised learning is the use of a [[loss-function]] that measures
 
 Usually SL requires a [[human-in-the-loop]] to provide a ground-truth in the form of data annotations, thus the "supervised". But on the most fundamental level, the hallmark of **==SL is the existence of some ground truth and the training objective of minimizing the output of loss function.==**
 
+
+## Common classification algorithms.
+
+#### Naïve Bayes.
+Operate on the logic of [[bayes-theorem]]
+
 #### Self-supervised learning.
 Since labelling data can be costly and time-consuming, **==SSL==** entails training on tasks in which a supervisory signal is obtained directly from unlabeled data. hence the "self"-supervised.
 
@@ -33,4 +36,5 @@ Since labelling data can be costly and time-consuming, **==SSL==** entails train
 
 
 > **semi-supervised learning** use both labeled and unlabeled data using techniques that use information from the available labeled data to make assumptions about the unlabeled data.
+
 
