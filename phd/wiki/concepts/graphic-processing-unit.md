@@ -27,3 +27,13 @@ Because of these advancements, GPUs have played important roles in AI accelera
 A GPU has its own random access memory (RAM), an electronic memory used to store code and data that the chip can access and alter as needed. Advanced GPUs typically have RAM that has been built to hold the large data volumes required for compute-intensive tasks such as graphics editing, gaming or AI/ML use cases.
 
 Two popular kinds of GPU memory are Graphics Double Data Rate 6 Synchronous Dynamic Random-Access Memory (GDDR6) and GDDR6X, a later generation. GDDR6X uses 15% less power per transferred bit than GDDR6, but its overall power consumption is higher because it is faster. iGPUs can be either integrated into a computer's CPU or inserted into a slot alongside it and connected by a PCI express port.
+
+### What's the difference between a GPU and a CPU?
+
+CPUs and GPUs share a similar design, including a similar number of cores and transistors for processing tasks, but CPUs are more general purpose in their functions than GPUs. GPUs tend to be focused on a singular, specific computing task, such as graphics processing or machine learning.
+
+CPUs are the heart and brain of a computer system or device. They receive general instructions or requests regarding a task from a program or software application. And GPU has a more specific task—typically involving the processing of high-resolution images and videos quickly. GPUs constantly perform complex mathematical calculations required for rendering graphics or other compute-intensive functions to accomplish their task.
+
+One of the biggest differences is that CPUs tend to use fewer cores and perform their tasks in a linear order. GPUs, however, have hundreds—even thousands—of cores, enabling the parallel processing that drives their lightning-fast processing capabilities.
+
+The first GPUs were built to speed up 3D graphics rendering, making movie and video game scenes seem more realistic and engaging. The first GPU chip, the GeForce from Nvidia, was released in 1999 and was quickly followed by a rapid period of growth that saw GPU capabilities expand into other areas due to their high-speed parallel processing capabilities.
