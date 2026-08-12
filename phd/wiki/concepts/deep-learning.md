@@ -35,4 +35,5 @@ Work on sequential data, whereas conventional feedforward networks map a single 
 
 
 #### Transfomers.
-First introduced in 2017, 
+First introduced in 2017, they are largely responsible for the advent of [[wiki/concepts/large-language-models]] and other pillars of generative AI. 
+Like RNNs, transformers are ostensibly designed for sequential data, but clever workarounds have enabled most data modalities to be processed by transformers. The unique strength of a transformer model comes from their innovative attention mechanism, which enables the models to selectively focus on the parts of the input data most relevant at a specific moment in a sequence.
