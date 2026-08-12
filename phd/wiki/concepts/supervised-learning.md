@@ -27,7 +27,13 @@ Usually SL requires a [[human-in-the-loop]] to provide a ground-truth in the for
 ## Common classification algorithms.
 
 #### Naïve Bayes.
-Operate on the logic of [[bayes-theorem]]
+Operate on the logic of [[bayes-theorem]] which is essentially a mathematical formulation of the idea that information from later events can be used to update understanding of earlier events (such as inputs).
+
+The model learns the relative importance of a given input variable based on how strongly it correlates with specific outcomes. Its eponymous "naive" assumption is that all features contributing to a classification are independent of each other. This simplification makes the algorithm fast and effective for straightforward tasks like spam detection.
+
+
+#### Logistic regression.
+Adapts the linear regression algorithm to solve binary classification problems by feeding the weighted sum of input features into a sigmoid function, which squashes any input int o
 
 #### Self-supervised learning.
 Since labelling data can be costly and time-consuming, **==SSL==** entails training on tasks in which a supervisory signal is obtained directly from unlabeled data. hence the "self"-supervised.
