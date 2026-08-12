@@ -13,5 +13,11 @@ status: developing
 
 Models discern intrinsic patterns in unlabeled data : similarities, correlations or potential groupings. They are useful when patterns aren't apparent to the human eye. 
 
-Unsuper
+Unsupervised doesnt' assume the preexistence of a known "correct output".
+
+- [[clustering]] : partition unlabeled data points into clusters (groupings), based on their proximity or similarity. (market segmentation, fraud detection). Prominent clustering algorithms include [[k-means]], [[gaussian-mixture-models]].
+- [[association-algorithms]] : discern correlation for instance between action and certains conditions.
+- [[dimensionality-reduction]] : reduce the complexity of data points by representing them with a smaller number of features while preserving their meaningful characteristics. Prominent dimensionality reduction algorithm include [[phd/wiki/concepts/variational-autoencoder|auto-encoder]], [[principal-component-analysis]] (PCA), [[t-distributed-stochastic-neighbor-embedding]] (t-SNE)
+
+Unsupervised learning somewhat "optimizes" themsevles.
 
