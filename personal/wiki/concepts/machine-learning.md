@@ -17,5 +17,13 @@ ML is optimizing a model's performance on a dataset of taks that adequatly resem
 
 In essence, machine learning aims to identify patterns within data in order to predict & act upon the real world. The deployment of an AI model is therefore called [[inference]]
 
-[[deep-learning]] or deep artificial neural networks is SOTA in AI, it is used everywhere and implies the usage of networks of neurons  
+[[deep-learning]] or deep artificial neural networks is SOTA in AI, it is used everywhere and implies the usage of vast quantities of interconnected neurons, in layer, with "deep" (hidden) layers. It requires very large amounts of data and computational resources, its emergence was promoted & accelerated with [[big-data]] and [[graphic-processing-units]]  (GPU).
+
+Machine learning is deeply intertwined with [[data-science]] as ML can be seen as automating data analysis through usage of more-or-less complex algorithms and techniques to applying theses learnings to relevant autonomous tasks.
+
+All machine learning is [[artificial-intelligence]] but not all AI is machine learning.
+
+AI is catch-all for any program that can use information to make decisions or predictions without active human involvment.
+
+
 
