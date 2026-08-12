@@ -15,7 +15,7 @@ status: developing
 
 - Optimizing a model's performance on a dataset of tasks through a process called [model-training], the model can make accurate predictions on the new data it sees in its ultimate use case.
 
-- [[deep-learning]] (subset of ML) is used everywhere and implies the usage of vast organized layers of neurons (function with input/output). It requires very large amounts of data and computational resources, its emergence was promoted & accelerated with [[big-data]] and [[graphic-processing-units]]  (GPU).
+- [[deep-learning]] (subset of ML) is used everywhere and implies the usage of vast organized layers of neurons (function with input/output). It requires very large amounts of data and computational resources, its emergence was promoted & accelerated with [[big-data]] and [[graphic-processing-unit]]  (GPU).
 
 > All machine learning is [[artificial-intelligence]] but not all AI is machine learning.
 
