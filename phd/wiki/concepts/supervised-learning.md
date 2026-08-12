@@ -33,10 +33,25 @@ The model learns the relative importance of a given input variable based on how 
 
 
 #### Logistic regression.
-Adapts the linear regression algorithm to solve binary classification problems by feeding the weighted sum of input features into a sigmoid function, which squashes any input int o
+Adapts the linear regression algorithm to solve binary classification problems by feeding the weighted sum of input features into a sigmoid function, which squashes any input into a value between 0 and 1.  The resulting value can be interpreted as the probability of a given event—in this case, a specific classification—occurring.
 
-#### Self-supervised learning.
+#### K-nearest neighbor (KNN).
+Classify data points based on their proximity in the [[embedding-space]] to other data points, with the assumption that similar data points can be found near each other. The k refers to how many neighboring data points are taken into consideration.
+
+#### Support vector machines (SVMs).
+Powerful models that ostensibly perform binary classification but can also be adapted to multi-classification.
+
+Its goal is to learn the optimal decision boundary to separate two categories of labeled data points in order to classify new data based on which side of the boundary they fall. 
+
+The boundary defined is a hyperplane that maximizes the margin (or gap) between data points of opposite classes.
+
+
+
+## Self-supervised learning.
 Since labelling data can be costly and time-consuming, **==SSL==** entails training on tasks in which a supervisory signal is obtained directly from unlabeled data. hence the "self"-supervised.
+
+Logically, the only data points that can support the computation of that hyperplane are the data points from each class that are closest to the boundary. The vector embeddings of those boundary-adjacent data points are therefore called _support vectors._
+
 
 [[phd/wiki/concepts/variational-autoencoder|variational-autoencoder]] are trained to compress (encode) input data, then reconstruct (decode) the original input that using the compressed representation. The training objective is to **minimize reconstruction error**, using the original input sa ground-truth.
 
