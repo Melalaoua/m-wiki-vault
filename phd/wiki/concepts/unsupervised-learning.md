@@ -39,4 +39,7 @@ Identify correlations between variables in large datasets, used prominently in t
 #### Dimensionality reduction algorithm.
 Take a data point and output a more efficient representation of that data point. They're designed to learn a mapping of high dimensional data points to a space where they can be accurately described using fewer features.
 
-- [[principal-component-analysis]] : 
+- [[principal-component-analysis]] : simplifies complex datasets by summarizing the data's original variables (many of which are often correlated with one another) as a smaller subset of uncorrelated variables, each of which is a linear combination of original variables.
+- t-distributed stochastic neighbor embedding (t-SNE): non-linear dimensionality reduction algorithm commonly used for data visualization purposes. Represent data in either 2 or 3 dimensions, with the primary goal of ensuring that data points close to each other in high-dimensional space remain close to each other in the new lower-dimensional space.
+- [[phd/wiki/concepts/variational-autoencoder|autoencoder]] : type of encoder-decoder [[neural-networks]] architecture trained through what might more commonly be considered a [[supervised-learning#Self-supervised learning.|self-supervised]] learning algorithm but they nevertheless perform dimensionality reduction of unlabeled data (modeling the latent space);
+- 
