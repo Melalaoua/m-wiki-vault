@@ -32,3 +32,8 @@ Consider a maze:  a policy-based agent might learn "at this corner, turn left", 
 
 - In deep RL, the policy is represented as a [[deep-learning|neural-network]]
 
+
+### Reinforcement algorithms.
+Suite for tasks in which there's no singular "correct" output, but instead there are "good" outputs. 
+
+They entail a reward signal that allows models to learn holistically through trial and error
