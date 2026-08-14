@@ -1,8 +1,8 @@
 ---
-updated: 2026-08-13T15:38:19.693Z
+updated: 2026-08-14T13:12:10.401Z
 generation: 0
 scope: resource
-pending-tokens: 399
+pending-tokens: 362
 observation-threshold: 30000
 ---
 
