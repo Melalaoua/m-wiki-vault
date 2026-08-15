@@ -31,7 +31,7 @@ In mathematics, a convolution is an operation where one function modifies (or co
 
 
 #### Recurrent Neural Networks (RNNs).
-Work on sequential data, whereas conventional feedforward networks map a single input to a single ouptut, RNNs map a sequence of inputs to an output by operating in a recurrent loop in which the output for a given step in the input sequence servers as input to the computation for the following step. In effect, this creates an inernal "memory", called the hidden state, that allows RNNs to understand context and order.
+Work on sequential data, whereas conventional feedforward networks map a single input to a single ouptut, RNNs map a sequence of inputs to an output by operating in a recurrent loop in which the output for a given step in the input sequence serve as input to the computation for the following step. In effect, this creates an internal "memory", called the hidden state, that allows RNNs to understand context and order.
 
 
 #### Transfomers.

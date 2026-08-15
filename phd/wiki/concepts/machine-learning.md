@@ -14,7 +14,7 @@ ML is a computer science, data science and artificial intelligence subset that e
 
 - Aims to identify patterns within data in order to predict & act upon the real world. The deployment of an AI model is therefore called [[inference]]
 
-- Optimizing a model's performance on a dataset of tasks through a process called [model-training], the model can make accurate predictions on the new data it sees in its ultimate use case.
+- Optimizing a model's performance on a dataset of tasks through a process called [[model-training]], the model can make accurate predictions on the new data it sees in its ultimate use case.
 
 - [[deep-learning]] (subset of ML) is used everywhere and implies the usage of vast organized layers of neurons (function with input/output). It requires very large amounts of data and computational resources, its emergence was promoted & accelerated with [[big-data]] and [[graphic-processing-unit]]  (GPU).
 
