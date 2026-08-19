@@ -42,3 +42,5 @@ During EDA, stats helps us :
 - Data quality (negative ages or impossible categories?)
 - Aid in model selection : a continous target variable suggests regression; a categorical one, classification. Relationships between features (i.e correlation) might also ifnluence whether to use linear, nonparametric, or kernel-basde methods.
 
+
+Modeling by using machine learning exists because of uncertainty. Real-world data is messy, incomplete and noisy, so we model lieklihoods
