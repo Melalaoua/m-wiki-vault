@@ -16,7 +16,8 @@ Machine learning is built upon statistical techniques and mathematical tools (ba
 This note unpacks the **statisticall pillars** behind modern [[machine-learning]].
 
 
-#### What is statistics ?
+### What is statistics ?
+
 ==Science of extracting insight from data==, it provides the mathematical foundation for understanding data behavior, guiding model choices and evaluating outcomes. **It transforms messy, noisy datasets into actionable intelligence.**
 
 ML is built on top of statistical methods :
@@ -26,7 +27,7 @@ ML is built on top of statistical methods :
 
 > Statistics enables quantification of uncertainty, generalization from samples and drawing conclusion about broader populations, all essential toward building trustworthy AI systems.
 
-###### Descriptive statistics : basics.
+##### Descriptive statistics : basics.
 Applying **==exploratory data analysis==** (EDA), before training models, relies on descriptive statistics to summarze key characteristics of the data. 
 - **Mean (average)** : arithmetic average of values. Common in measuring centrality in loss functions like mean squared error (MSE).
 - **Median** : the middle value when data is sorted. More robust to outliers than the mean.
@@ -45,11 +46,14 @@ During EDA, stats helps us :
 
 Modeling by using machine learning exists because of uncertainty. Real-world data is messy, incomplete and noisy, so we model ==likelihoods instead of certainties.==
 
+
+### Probabilities
+
 Probabilities is fundamental to everything [[machine-learning]] and [[artificial-intelligence]] is about, it plays a critical role in modeling uncertainties in ML models predictions.
 
 Diving in the world of probabilities and learning the fundamentals will help ensure that you understand the basis of all stastitical learning models and how their predictions come to be.
 
-__Terminologies__ : 
+##### Terminologies 
 - **random variables** : a numerical representation of an outcome of a random phenomenon. It's a variable whose possible values are numerical outcomes of a random process.
 
 - **Discrete random variable** : a random variable that can take on a finite or countably infinite number of distinct values. For example, the outcome of a coin flip (heads = 1, Tails = 0).
@@ -66,4 +70,10 @@ __Terminologies__ :
 
 > Probability = **how likely** an event is to happen, from 0 to 1.
 
+> In genAI, probabilistic models plays a role in determining the results and outputs of a model. Often, in the form of an **activation function** in the layers of [[neural-networks]]
+
+
+
+### Distributions
+*Modelling how data behave*
 
