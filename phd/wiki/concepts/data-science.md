@@ -91,4 +91,6 @@ A probability distribution describes the possible values and likelihoods that a 
 > Many [[machine-learning]] algo rely on the assumptions about your data's distribution, both for model selection and interpretation. ==Incorrect assumption can lead  to biased estimates, misaligned loss functions and ultimately, poor generalization or invalid conclusions in real-world applications.
 
 
+[.. Skip explanation of Bernoulli Trial & Bernoulli PMF formula]
+
 
