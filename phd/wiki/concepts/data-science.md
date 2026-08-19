@@ -77,3 +77,11 @@ Diving in the world of probabilities and learning the fundamentals will help ens
 ### Distributions
 *Modelling how data behave*
 
+A probability distribution describes the possible values and likelihoods that a random variable can take within a particular range. 
+
+- **discrete distributions** : variable take on distinct, countable values
+- **continuous distribution** : variable take any value within a range.
+
+##### Core concepts
+- ==Probability mass function (PMF)== : Tells the exact probability of each possible discrete outcome (0 or 1, heads or tails). i.e in a dice the PMf assigns a probability of 1/6 to each outcomes.
+- ==Probability density function (PDF)==: 
