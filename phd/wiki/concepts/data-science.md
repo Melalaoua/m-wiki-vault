@@ -43,4 +43,10 @@ During EDA, stats helps us :
 - Aid in model selection : a continous target variable suggests regression; a categorical one, classification. Relationships between features (i.e correlation) might also ifnluence whether to use linear, nonparametric, or kernel-basde methods.
 
 
-Modeling by using machine learning exists because of uncertainty. Real-world data is messy, incomplete and noisy, so we model lieklihoods
+Modeling by using machine learning exists because of uncertainty. Real-world data is messy, incomplete and noisy, so we model ==likelihoods instead of certainties.==
+
+Probabilities is fundamental to everything [[machine-learning]] and [[artificial-intelligence]] is about, it plays a critical role in modeling uncertainties in ML models predictions.
+
+Diving in the world of probabilities and learning the fundamentals will help ensure that you understand the basis of all stastitical learning models and how their predictions come to be.
+
+__Terminologies__ : 
