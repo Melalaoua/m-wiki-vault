@@ -1,8 +1,10 @@
 ---
 type: concept
-title: "Vibecoding"
+title: Vibecoding
 aliases: []
-tags: [concept, personal]
+tags:
+  - concept
+  - phd
 ---
 
 # Vibecoding

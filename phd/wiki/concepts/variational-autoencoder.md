@@ -1,8 +1,10 @@
 ---
 type: concept
-title: "Variational Autoencoder"
+title: Variational Autoencoder
 aliases: []
-tags: [concept, personal]
+tags:
+  - concept
+  - phd
 updated: 2026-07-24
 status: developing
 ---

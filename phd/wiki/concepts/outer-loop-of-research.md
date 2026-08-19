@@ -1,8 +1,10 @@
 ---
 type: concept
-title: "Outer Loop of Research"
+title: Outer Loop of Research
 aliases: []
-tags: [concept, personal]
+tags:
+  - concept
+  - phd
 updated: 2026-07-20
 status: developing
 ---

@@ -1,8 +1,10 @@
 ---
 type: concept
-title: "Embedding Space"
+title: Embedding Space
 aliases: []
-tags: [concept, personal]
+tags:
+  - concept
+  - phd
 updated: 2026-07-15
 status: developing
 ---

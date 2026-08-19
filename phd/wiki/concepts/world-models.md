@@ -1,8 +1,10 @@
 ---
 type: concept
-title: "World Models"
+title: World Models
 aliases: []
-tags: [concept, phd, personal]
+tags:
+  - concept
+  - phd
 updated: 2026-08-02
 status: developing
 ---

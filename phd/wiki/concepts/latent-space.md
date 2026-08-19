@@ -1,8 +1,10 @@
 ---
 type: concept
-title: "Latent Space"
+title: Latent Space
 aliases: []
-tags: [concept, personal]
+tags:
+  - concept
+  - phd
 updated: 2026-07-24
 status: stable
 ---

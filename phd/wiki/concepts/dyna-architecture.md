@@ -1,8 +1,10 @@
 ---
 type: concept
-title: "Dyna Architecture"
+title: Dyna Architecture
 aliases: []
-tags: [concept, personal]
+tags:
+  - concept
+  - phd
 updated: 2026-08-01
 status: developing
 ---

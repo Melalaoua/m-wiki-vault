@@ -4,7 +4,7 @@ title: Unsupervised Learning
 aliases: []
 tags:
   - concept
-  - personal
+  - phd
 updated: 2026-08-12
 status: developing
 ---
