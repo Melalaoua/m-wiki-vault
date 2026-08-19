@@ -33,3 +33,11 @@ Applying **==exploratory data analysis==** (EDA), before training models, relies
 - **Mode** : The most frequently ocurring value.
 - **Standard deviation (SD)** : How spread out the values are from the mean. A low SD implies that data points are clustered near the mean. Higher SD = greater variability.
 - **Interquartile range** (IQR) : The range between the 75th and 25th percentiles (Q3 - Q1)  : captures the middle 50% of the data and is useful for detecting outliers.
+- **skew** : indicates the asymmetry of a distribution. Positive skew = longer right tail, negative kew = longer left tail.
+- **kurtosis** : describes the "tailedness" of the distribution, that is, how likely extreme values are. High kurtosis implies more frequent outliers.
+
+During EDA, stats helps us :
+- assess the distribution : are variables gaussian ? Skewed ? Multimodal ?
+- Identify outliers and errors : a mismathc between mean and median might signal unusual values.
+- Data quality (negative ages or impossible categories?)
+- Aid in model selection : a continous target variable suggests regression; a categorical one, classification. Relationships between features (i.e correlation) might also ifnluence whether to use linear, nonparametric, 
