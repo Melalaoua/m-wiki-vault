@@ -62,4 +62,8 @@ __Terminologies__ :
 
 - **Probability P(A)** : A numerical measure of the likelihood that an event A will occur, ranging from 0 (impossible) to 1 (certain).
 
-- **conditional probabiliyt P(A|B)** : The probability of event A occurring, __given that event__ B has already occurred. This step is crucial in ML, as we often want to predict an outcome given specific features.
+- **conditional probability P(A|B)** : The probability of event A occurring, __given that event__ B has already occurred. This step is crucial in ML, as we often want to predict an outcome given specific features.
+
+> Probability = **how likely** an event is to happen, from 0 to 1.
+
+
