@@ -84,4 +84,11 @@ A probability distribution describes the possible values and likelihoods that a 
 
 ##### Core concepts
 - ==Probability mass function (PMF)== : Tells the exact probability of each possible discrete outcome (0 or 1, heads or tails). i.e in a dice the PMf assigns a probability of 1/6 to each outcomes.
-- ==Probability density function (PDF)==: 
+- ==Probability density function (PDF)==: spreads probability density across a range, helping us reason about percentiles, quantiles and probability thresholds. 
+- ==Cumulative distribution function (CDF)== gives cumulative probability that a value is less than or equal to a specific threshold. It grows from 0 to 1 as you move along the x-axis. (i.e what proportion of customers spend under USD 50).
+- ==Cumulative Mass function (CMF)== is the discrete counterpart to CDF. Cumulative probability that a discrete variable takes on a value less than or equal to a particular point.
+
+> Many [[machine-learning]] algo rely on the assumptions about your data's distribution, both for model selection and interpretation. ==Incorrect assumption can lead  to biased estimates, misaligned loss functions and ultimately, poor generalization or invalid conclusions in real-world applications.
+
+
+
