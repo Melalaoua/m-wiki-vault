@@ -28,4 +28,8 @@ ML is built on top of statistical methods :
 
 ###### Descriptive statistics : basics.
 Applying **==exploratory data analysis==** (EDA), before training models, relies on descriptive statistics to summarze key characteristics of the data. 
-- 
+- **Mean (average)** : arithmetic average of values. Common in measuring centrality in loss functions like mean squared error (MSE).
+- **Median** : the middle value when data is sorted. More robust to outliers than the mean.
+- **Mode** : The most frequently ocurring value.
+- **Standard deviation (SD)** : How spread out the values are from the mean. A low SD implies that data points are clustered near the mean. Higher SD = greater variability.
+- **Interquartile range** (IQR) : The range between the 75th and 25th percentiles (Q3 - Q1)  : captures the middle 50% of the data and is useful for detecting outliers.
