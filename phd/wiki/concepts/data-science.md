@@ -40,4 +40,4 @@ During EDA, stats helps us :
 - assess the distribution : are variables gaussian ? Skewed ? Multimodal ?
 - Identify outliers and errors : a mismathc between mean and median might signal unusual values.
 - Data quality (negative ages or impossible categories?)
-- Aid in model selection : a continous target variable suggests regression; a categorical one, classification. Relationships between features (i.e correlation) might also ifnluence whether to use linear, nonparametric, 
+- Aid in model selection : a continous target variable suggests regression; a categorical one, classification. Relationships between features (i.e correlation) might also ifnluence whether to use linear, nonparametric, or kernel-basde methods.
