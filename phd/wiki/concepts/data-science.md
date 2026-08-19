@@ -50,3 +50,16 @@ Probabilities is fundamental to everything [[machine-learning]] and [[artificial
 Diving in the world of probabilities and learning the fundamentals will help ensure that you understand the basis of all stastitical learning models and how their predictions come to be.
 
 __Terminologies__ : 
+- **random variables** : a numerical representation of an outcome of a random phenomenon. It's a variable whose possible values are numerical outcomes of a random process.
+
+- **Discrete random variable** : a random variable that can take on a finite or countably infinite number of distinct values. For example, the outcome of a coin flip (heads = 1, Tails = 0).
+
+- **Continuous random variable** : A random variable that can take on any value within a given range. (i.e height, temperature, ...)
+
+- **Event** : A set of one or more outcomes from a random process. (rolling an even number on a die : outcomes : 2, 4, 6)
+
+- **Outcome** : A single possible result of a random experiment. (flipping a coin yield either "Heads" or "Tails")
+
+- **Probability P(A)** : A numerical measure of the likelihood that an event A will occur, ranging from 0 (impossible) to 1 (certain).
+
+- **conditional probabiliyt P(A|B)** : The probability of event A occurring, __given that event__ B has already occurred. This step is crucial in ML, as we often want to predict an outcome given specific features.
