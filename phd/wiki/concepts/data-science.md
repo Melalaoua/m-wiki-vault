@@ -51,7 +51,7 @@ Modeling by using machine learning exists because of uncertainty. Real-world dat
 
 Probabilities is fundamental to everything [[machine-learning]] and [[artificial-intelligence]] is about, it plays a critical role in modeling uncertainties in ML models predictions.
 
-Diving in the world of probabilities and learning the fundamentals will help ensure that you understand the basis of all stastitical learning models and how their predictions come to be.
+Diving in the world of probabilities and learning the fundamentals will help ensure that you understand the basis of all statistical learning models and how their predictions come to be.
 
 ##### Terminologies 
 - **random variables** : a numerical representation of an outcome of a random phenomenon. It's a variable whose possible values are numerical outcomes of a random process.
