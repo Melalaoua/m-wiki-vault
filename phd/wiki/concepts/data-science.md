@@ -110,3 +110,4 @@ Bernoulli's PMF forms the probabilistic backbone of many classification models. 
 
 The logistic (sigmoid) function used in logistic regression ensures that predicted values fall within the [0,1] range, making them valid Bernoulli probabilities.
 
+
