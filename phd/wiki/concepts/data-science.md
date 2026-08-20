@@ -111,3 +111,34 @@ Bernoulli's PMF forms the probabilistic backbone of many classification models. 
 The logistic (sigmoid) function used in logistic regression ensures that predicted values fall within the [0,1] range, making them valid Bernoulli probabilities.
 
 
+## Bernoulli → Log-Loss → Cross-Entropy
+
+**Bernoulli PMF**: P(Y=y) = p^y (1-p)^(1-y) — one formula, collapses to p when y=1, to (1-p) when y=0.
+
+**Logistic regression**: predicts p = sigmoid(linear combo of X). Treats true label Y as Bernoulli(p).
+
+**Likelihood**: same PMF, but read backward — data (y) is fixed, p varies. Score how plausible the observed labels are under the model's predicted p's. Multiply across all points → L.
+
+**Log-likelihood**: log(L) = Σ [yᵢ·log(pᵢ) + (1-yᵢ)·log(1-pᵢ)]
+→ turns product into sum (avoids underflow, easy to differentiate). Log is monotonic, so same optimum.
+
+**Log-loss**: Loss = −log(L). MLE maximizes log(L) ⇔ gradient descent minimizes −log(L). Same optimum, sign flipped for convention.
+
+**Cross-entropy**: H(P,Q) = −Σ P(x)·log(Q(x)) — average surprisal (−log Q(x)) of outcomes, weighted by their true frequency P(x). Binary cross-entropy = cross-entropy with 2 outcomes = exactly the log-loss formula.
+
+**Intuition**: confident + correct predictions → low surprisal → low loss. Uncertain (p≈0.5) or confidently wrong predictions → high surprisal → high loss.
+
+
+The task's output type determines which distribution you assume for Y, which in turn *derives* the loss function via negative log-likelihood (MLE). Loss functions aren't arbitrary picks — they fall out of this choice.
+
+- **Discrete, 2 outcomes** (binary classification) → Bernoulli(p) → **binary cross-entropy**
+- **Discrete, k outcomes** (multi-class classification) → Categorical distribution → **categorical cross-entropy** (softmax loss)
+- **Continuous** (regression) → Gaussian(μ, σ²) → **MSE**
+
+Discrete vs continuous matters mechanically too:
+- Discrete → PMF → value at a point *is* a real probability (∈[0,1], sums to 1)
+- Continuous → PDF → value at a point is a *density*, not a probability (can exceed 1; only integrating over a range gives a probability)
+
+MLE machinery (multiply likelihoods → log → negate) is identical either way — only the plugged-in distribution changes.
+
+**Other discrete cases**: unbounded counts (e.g. cases per village) don't fit Bernoulli (not binary) or Gaussian (not continuous, no negative values) → reach for Poisson instead.
