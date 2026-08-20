@@ -105,5 +105,8 @@ PMF =  P(X=x)=p^x  (1-p)^(1-x)    for  x ∈ {0,1}
 ![[Pasted image 20260820193803.png]]
 
 
-###### Application to machine learning: discrete distribution.
+##### Application to machine learning: discrete distribution.
 Bernoulli's PMF forms the probabilistic backbone of many classification models. I.e [[logistic-regression]] doesn't just output a class label, it estimates the probability that a particular input belongs to class 1.
+
+The logistic (sigmoid) function used in logistic regression ensures that predicted values fall within the [0,1] range, making them valid Bernoulli probabilities.
+

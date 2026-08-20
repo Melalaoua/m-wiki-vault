@@ -12,7 +12,7 @@ status: developing
 # Supervised learning
 
 Trains the model for the best accuracy, such as classification or regression.
-- **[[logisticregression]]** : predict ouput values by identifying linear relationships between real or continous values. (Linear regression, random forest, gradient boosting, ...).
+- **[[logistic-regression]]** : predict ouput values by identifying linear relationships between real or continous values. (Linear regression, random forest, gradient boosting, ...).
 - **classification** : models predict discrete values (category, class, ...).
 
 In order to train the model, it must be measured & optimized against a "ground truth" which is the most ideal or correct output for any given input. Hence it requires **labeled data**.
@@ -32,7 +32,7 @@ Operate on the logic of [[bayes-theorem]] which is essentially a mathematical fo
 The model learns the relative importance of a given input variable based on how strongly it correlates with specific outcomes. Its eponymous "naive" assumption is that all features contributing to a classification are independent of each other. This simplification makes the algorithm fast and effective for straightforward tasks like spam detection.
 
 
-#### Logistic regression.
+#### [[logistic-regression]].
 Adapts the linear regression algorithm to solve binary classification problems by feeding the weighted sum of input features into a sigmoid function, which squashes any input into a value between 0 and 1.  The resulting value can be interpreted as the probability of a given event—in this case, a specific classification—occurring.
 
 #### K-nearest neighbor (KNN).
