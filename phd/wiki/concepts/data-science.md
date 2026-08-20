@@ -88,11 +88,16 @@ A probability distribution describes the possible values and likelihoods that a 
 - ==Cumulative distribution function (CDF)== gives cumulative probability that a value is less than or equal to a specific threshold. It grows from 0 to 1 as you move along the x-axis. (i.e what proportion of customers spend under USD 50).
 - ==Cumulative Mass function (CMF)== is the discrete counterpart to CDF. Cumulative probability that a discrete variable takes on a value less than or equal to a particular point.
 
-> Many [[machine-learning]] algo rely on the assumptions about your data's distribution, both for model selection and interpretation. ==Incorrect assumption can lead  to biased estimates, misaligned loss functions and ultimately, poor generalization or invalid conclusions in real-world applications.
+> Many [[machine-learning]] algo rely on the assumptions about your data's distribution, both for model selection and interpretation. **Incorrect assumption can lead  to biased estimates, misaligned loss functions and ultimately, poor generalization or invalid conclusions in real-world applications.
 
 
-###### Bernoulli trials.
-!
+##### Bernoulli trials.
+Bernoulli distribution models the success/failure in a single trial of a discrete random event : 1 (success) or 0 (failure) i.e if you flip a coins 10 time with 7 heads (success) and 3 tails (failure), the PMF can be graphed as : 
+![[Pasted image 20260820193537.png]]
 
+Let's calculate the PMF with :
+- X = random variable representing the outcome of a flip of a coin.
+- heads is considered success, X = 1 for heads and X = 0 for tails.
+- if the coin is fair, p=0.5
 
-
+PMF =  P(X=x)=p^x  (1-p)1-x,forx∈{0,1}
