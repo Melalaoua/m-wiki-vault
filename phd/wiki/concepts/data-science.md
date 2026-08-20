@@ -5,7 +5,7 @@ aliases: []
 tags:
   - concept
   - phd
-updated: 2026-08-12
+updated: 2026-08-19
 status: developing
 ---
 
@@ -21,7 +21,7 @@ This note unpacks the **statisticall pillars** behind modern [[machine-learning]
 ==Science of extracting insight from data==, it provides the mathematical foundation for understanding data behavior, guiding model choices and evaluating outcomes. **It transforms messy, noisy datasets into actionnable intelligence.**
 
 ML is built on top of statistical methods :
-- [[supervised-learning]] uses regression or classification.
+- [[supervised-learning]] uses [[logistic-regression]] or classification.
 - [[unsupervised-learning]] uses clustering.
 - [[reinforcement-learning]] uses tools rooted in statistical inference.
 
@@ -100,4 +100,10 @@ Let's calculate the PMF with :
 - heads is considered success, X = 1 for heads and X = 0 for tails.
 - if the coin is fair, p=0.5
 
-PMF =  P(X=x)=p^x  (1-p)1-x,forx∈{0,1}
+PMF =  P(X=x)=p^x  (1-p)^(1-x)    for  x ∈ {0,1}
+
+![[Pasted image 20260820193803.png]]
+
+
+###### Application to machine learning: discrete distribution.
+Bernoulli's PMF forms the probabilistic backbone of many classification models. I.e [[logistic-regression]] doesn't just output a class label, it estimates the probability that a particular input belongs to class 1.

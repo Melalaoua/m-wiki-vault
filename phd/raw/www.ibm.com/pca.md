@@ -103,7 +103,7 @@ Noise filtering
 
 PCA can remove noise or redundant information from data by focusing on the principal components that capture the underlying patterns.
 
-PCA has also had applications within healthcare. For example, it has assisted in diagnosing diseases earlier and more accurately. The paper Breast Cancer Prediction using Principal Component Analysis with Logistic Regression analyses a well-known [breast cancer dataset](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic)2 collected from patients at the University of Wisconsin Hospitals, Madison. The study’s author, Akbar, uses PCA to reduce the dimensions of the six different data attributes:
+PCA has also had applications within healthcare. For example, it has assisted in diagnosing diseases earlier and more accurately. The paper Breast Cancer Prediction using Principal Component Analysis with [[logistic-regression]] analyses a well-known [breast cancer dataset](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic)2 collected from patients at the University of Wisconsin Hospitals, Madison. The study’s author, Akbar, uses PCA to reduce the dimensions of the six different data attributes:
 
 *   mean\_radius of a breast lump
 *   mean\_texture of the X-ray image

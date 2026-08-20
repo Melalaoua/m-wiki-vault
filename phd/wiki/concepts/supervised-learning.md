@@ -12,7 +12,7 @@ status: developing
 # Supervised learning
 
 Trains the model for the best accuracy, such as classification or regression.
-- **regression** : predict ouput values by identifying linear relationships between real or continous values. (Linear regression, random forest, gradient boosting, ...).
+- **[[logisticregression]]** : predict ouput values by identifying linear relationships between real or continous values. (Linear regression, random forest, gradient boosting, ...).
 - **classification** : models predict discrete values (category, class, ...).
 
 In order to train the model, it must be measured & optimized against a "ground truth" which is the most ideal or correct output for any given input. Hence it requires **labeled data**.
