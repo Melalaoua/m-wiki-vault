@@ -162,4 +162,10 @@ Where :
 - The denominator $\sqrt{2\pi\sigma²}$ ensures the area under the curve sums to 1
 - The exponential term penalizes values that are far from the mean, making them less probable.
 
-##### Applications to machine learning: continous distribution.
+
+
+### Conclusion
+Statistics is the backbone of machine learning, an invisible scaffold that supports everything from model design to interpretration. It is a language for making sense of uncertainty and extracting meaning from data.
+
+- Descriptive statistics (mean, median, ...) : the first lens through which we examine and summarize the world's complexity.
+- Probability : The toolset to reason under uncertainty. In ML, it helps us quantify how likely an outcome is, to express confidence in the model 
