@@ -7,3 +7,4 @@
 - [[phd/wiki/projects/thesis-topic-shift-world-models-vs-llms|Thesis Topic Shift: World Models vs LLMs]] — project
 - [[phd/wiki/projects/ai-for-rare-disease-diagnosis|AI for Rare Disease Diagnosis]] — project
 - [[phd/wiki/projects/diagnostic-tool-for-febrile-children-in-car|OAD - Diagnostic Tool for Febrile Children in CAR]] — project
+- [[phd/wiki/maps/jepa-and-learned-world-models-lecun-s-cognitive-architecture|JEPA and Learned World Models: LeCun's Cognitive Architecture]] — map

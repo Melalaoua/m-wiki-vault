@@ -219,3 +219,9 @@
 - phd/wiki/concepts/model-predictive-control.md (create)
 - phd/wiki/maps/phd.md (update)
 - phd/wiki/projects/thesis-topic-shift-world-models-vs-llms.md (update)
+
+## [2026-08-21] promote | JEPA and Learned World Models: LeCun's Cognitive Architecture
+
+- phd/wiki/maps/jepa-and-learned-world-models-lecun-s-cognitive-architecture.md (create)
+- phd/wiki/maps/phd.md (update)
+- index.md (update)
