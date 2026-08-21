@@ -152,7 +152,7 @@ The normal distribution describes a continous random variable whose values tend 
 Imagine you record the heights of 1,000 adults. Plotting this data reveals a bell-shaped curve: most people are close to the average, with fewer at the extremes. This shape is captured by the probability density function (PDF)  of the normal distribution
 
 $$
-f(x) = \frac{1}{\sigma\sqrt{2\pi}}
+f(x) = \frac{1}{\sqrt{2\pi\sigma²}}
 \exp\left(-\frac{(x-\mu)²}{2\sigma²}\right)
 $$
 Where :
