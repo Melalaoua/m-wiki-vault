@@ -142,3 +142,14 @@ Discrete vs continuous matters mechanically too:
 MLE machinery (multiply likelihoods → log → negate) is identical either way — only the plugged-in distribution changes.
 
 **Other discrete cases**: unbounded counts (e.g. cases per village) don't fit Bernoulli (not binary) or Gaussian (not continuous, no negative values) → reach for Poisson instead.
+
+
+##### Example of continous distribution : Gaussian (normal) distribution.
+The normal distribution describes a continous random variable whose values tend to cluster around a central mean, with symmetric variability in both directions. 
+
+![[Pasted image 20260821110223.png|398]]
+
+Imagine you record the heights of 1,000 adults. Plotting this data reveals a bell-shaped curve: most people are close to the average, with fewer at the extremes. This shape is captured by the probability density function (PDF)  of the normal distribution
+
+$$
+f(x) = \frac{1}{\sigma\sqrt{2\pi}}
