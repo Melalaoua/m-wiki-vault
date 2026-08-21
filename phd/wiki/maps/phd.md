@@ -3,7 +3,7 @@ type: map
 title: "PhD"
 aliases: []
 tags: [map, phd, personal]
-updated: 2026-08-02
+updated: 2026-08-21
 status: stable
 ---
 
@@ -33,3 +33,10 @@ The [[PhD]] domain encompasses both direct research on world models and represen
 - [[phd/wiki/concepts/variational-autoencoder|Variational Autoencoder]]
 - [[phd/wiki/concepts/principal-component-analysis|Principal Component Analysis]]
 - [[phd/wiki/concepts/dyna-architecture|Dyna Architecture]]
+- [[phd/wiki/concepts/hierarchical-jepa-h-jepa|Hierarchical JEPA (H-JEPA)]]
+- [[phd/wiki/concepts/cognitive-architecture|Cognitive Architecture]]
+- [[phd/wiki/concepts/configurator-module|Configurator Module]]
+- [[phd/wiki/concepts/energy-based-models-ebm|Energy-Based Models (EBM)]]
+- [[phd/wiki/concepts/vicreg|VICReg]]
+- [[phd/wiki/concepts/common-sense|Common Sense]]
+- [[phd/wiki/concepts/model-predictive-control|Model-Predictive Control]]

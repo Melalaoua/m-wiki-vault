@@ -203,3 +203,19 @@
 - phd/wiki/sources/phd2026world.md (update)
 - phd/wiki/concepts/world-models.md (update)
 - phd/wiki/projects/thesis-topic-shift-world-models-vs-llms.md (update)
+
+## [2026-08-21] ingest | 10356_a_path_towards_autonomous_mach
+
+- phd/wiki/sources/phd202610356apathtowardsautonomousmach.md (create)
+- phd/wiki/concepts/joint-embedding-predictive-architecture.md (update)
+- phd/wiki/concepts/world-models.md (update)
+- phd/wiki/concepts/dyna-architecture.md (update)
+- phd/wiki/concepts/hierarchical-jepa-h-jepa.md (create)
+- phd/wiki/concepts/cognitive-architecture.md (create)
+- phd/wiki/concepts/configurator-module.md (create)
+- phd/wiki/concepts/energy-based-models-ebm.md (create)
+- phd/wiki/concepts/vicreg.md (create)
+- phd/wiki/concepts/common-sense.md (create)
+- phd/wiki/concepts/model-predictive-control.md (create)
+- phd/wiki/maps/phd.md (update)
+- phd/wiki/projects/thesis-topic-shift-world-models-vs-llms.md (update)

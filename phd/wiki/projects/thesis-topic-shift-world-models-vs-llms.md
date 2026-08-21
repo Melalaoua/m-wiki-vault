@@ -4,7 +4,7 @@ title: "Thesis Topic Shift: World Models vs LLMs"
 status: active
 aliases: []
 tags: [project, phd]
-updated: 2026-08-02
+updated: 2026-08-21
 ---
 
 # Thesis Topic Shift: World Models vs LLMs
@@ -23,5 +23,6 @@ Evaluate limits and strengths of LLMs vs World Models in clinical and molecular 
 - [[phd/wiki/sources/www2026variational|Variational autoencoder]] (2026-07-24) — Provides the mathematical and structural baseline for reconstruction-based latent representation models, forming a direct point of contrast with reconstruction-free joint-embedding predictive architectures (JEPAs). (re: "What are the strengths of World Models and how can they be translated to genomic/clinical fields?")
 - [[phd/wiki/sources/phd2026integrated|Integrated Architectures for Learning, Planning, and Reacting Based on Approximating Dynamic Programming]] (2026-08-01) — This paper establishes the foundational theory of World Models (Dyna), providing the exact historical definition of how internal world simulators accelerate policy optimization through offline planning. (re: "What are the strengths of World Models and how can they be translated to genomic/clinical fields?")
 - [[phd/wiki/sources/phd2026world|World Models]] (2026-08-02) — This foundational paper outlines the exact V-M-C architecture of World Models, helping evaluate how clinical latent spaces and hallucinated simulations compare with LLMs. (re: "What are the strengths of World Models and how can they be translated to genomic/clinical fields?")
+- [[phd/wiki/sources/phd202610356apathtowardsautonomousmach|10356_a_path_towards_autonomous_mach]] (2026-08-21) — This is the foundational LeCun position paper proposing World Models (JEPA/H-JEPA) as an alternative to scaling LLMs, directly addressing all three open questions on LLM vs World Model strengths/limits and novelty/risk tradeoffs. (re: "What are the strengths of World Models and how can they be translated to genomic/clinical fields?")
 
 Declared 2026-07-20. Knowledge that bears on this project accretes here at ingest.

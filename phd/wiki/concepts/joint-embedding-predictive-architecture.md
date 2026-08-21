@@ -3,8 +3,9 @@ type: concept
 title: "Joint-Embedding Predictive Architecture"
 aliases: []
 tags: [concept, phd]
-updated: 2026-07-11
+updated: 2026-08-21
 status: developing
+contradiction: true
 ---
 
 # Joint-Embedding Predictive Architecture
@@ -12,3 +13,22 @@ status: developing
 A machine learning architecture, conceptualized by Yann LeCun, that learns representations by predicting the latent embedding of a future state from the latent embedding of a current state, avoiding the need to reconstruct high-dimensional raw observations. A major challenge in JEPAs is preventing representation collapse, historically addressed with stop-gradients or EMAs, but more recently through direct regularization like the [[sketched-isotropic-gaussian-regularizer]].
 
 Source: [[phd/wiki/sources/phd2026leworldmodel|LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture from Pixels]]
+
+## From [[phd/wiki/sources/phd202610356apathtowardsautonomousmach|10356_a_path_towards_autonomous_mach]] (2026-08-21)
+
+## Contribution from "A Path Towards Autonomous Machine Intelligence"
+
+LeCun's original proposal formalizes JEPA's energy function explicitly as a prediction error computed in representation space rather than input space: `Ew(x, y, z) = D(sy, Pred(sx, z))`, where `sx = Enc(x)` and `sy = Enc(y)`. The architecture is framed as a combination of a [[phd/wiki/concepts/joint-embedding-architecture|joint-embedding-architecture]] and a latent-variable generative architecture, and is explicitly non-generative — it predicts the representation of `y`, not `y` itself, which the paper argues is what makes it preferable to pixel-level generative models: in a video-prediction scenario it is "essentially impossible to predict every pixel value of every future frame," but abstract representations discard exactly the irrelevant, unpredictable detail.
+
+The source spells out the paper's non-contrastive training principle as four simultaneous criteria: (1) `sx` should be maximally informative about `x`; (2) `sy` should be maximally informative about `y`; (3) `sy` should be easily predictable from `sx`; and (4) the latent variable `z` should carry minimal information content. Criteria 1 and 2 block collapse of the [[phd/wiki/concepts/joint-embedding-architecture|joint-embedding-architecture]] into constant, uninformative codes; criterion 3 is enforced directly by the energy/distance term; criterion 4 blocks a distinct collapse mode in which an overly expressive `z` lets the predictor ignore `sx` entirely (e.g., if `z` matches `sy`'s dimension, the predictor can simply copy `z` onto its output, driving energy to zero for any input). This directly motivates architectures like the [[phd/wiki/concepts/sketched-isotropic-gaussian-regularizer|sketched-isotropic-gaussian-regularizer]] that the current page already cites for collapse prevention — the paper catalogs the general family of such fixes as discretization/quantization (VQ-VAE), dimensionality/rank minimization (Implicit Rank-Minimizing AE), sparsification (LISTA, sparse coding), and fuzzyfication (noisy AE, [[phd/wiki/concepts/variational-autoencoder|variational-autoencoder]]).
+
+Multi-modality — representing several plausible futures for one input — is achieved either through encoder invariance (mapping multiple compatible `y` to the same `sy`) or through the latent `z` itself, sampled or optimized at inference/planning time. [[phd/wiki/concepts/vicreg|vicreg]] and Barlow Twins are named as the concrete non-contrastive losses used to instantiate the four criteria in practice, with VICReg characterized as "dimension-contrastive" (decorrelating representation components over a batch) rather than sample-contrastive.
+
+JEPA is positioned as the paper's central technical proposal precisely because it underlies the Hierarchical [[phd/wiki/concepts/world-models|World Models]] (H-JEPA) needed for the full cognitive architecture: stacked JEPA levels with temporal pooling are proposed to support prediction at multiple time scales and abstraction levels (e.g., short-term detailed vehicle trajectory vs. long-term arrival-time estimates), feeding into the actor, cost, and configurator modules for hierarchical model-predictive-control-style planning under uncertainty.
+
+**projectRelevance:**
+- thesis-topic-shift-world-models-vs-llms: This source is LeCun's foundational argument that JEPA-based world models overcome key LLM limitations (tokenized/generative bottlenecks, poor uncertainty representation in continuous spaces, absence of abstract latent variables for reasoning/planning) — directly informs the strengths-of-World-Models side of the thesis pitch.
+
+## Contradictions
+
+- ⚠️ contradicts [[phd/wiki/sources/phd202610356apathtowardsautonomousmach|10356_a_path_towards_autonomous_mach]] (captured 2026-08-21): "A major challenge in JEPAs is preventing representation collapse, historically addressed with stop-gradients or EMAs, but more recently through direct regularization like the sketched-isotropic-gaussian-regularizer." vs "JEPA can be trained with non-contrastive methods using four criteria: maximize information in sx, maximize information in sy, make sy predictable from sx, and minimize information in z; VICReg and Barlow Twins are examples of non-contrastive criteria for JEPA training." — Existing page frames collapse-prevention primarily via stop-gradient/EMA (contrastive-style asymmetric tricks) with newer sketched-isotropic-gaussian-regularizer; incoming source instead frames JEPA's collapse prevention as fundamentally regularized/non-contrastive (VICReg, Barlow Twins) rather than via stop-gradient/EMA methods, a differing account of the primary anti-collapse mechanism.
