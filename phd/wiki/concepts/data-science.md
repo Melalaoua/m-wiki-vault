@@ -153,3 +153,13 @@ Imagine you record the heights of 1,000 adults. Plotting this data reveals a bel
 
 $$
 f(x) = \frac{1}{\sigma\sqrt{2\pi}}
+\exp\left(-\frac{(x-\mu)²}{2\sigma²}\right)
+$$
+Where :
+- X is a continous variable (i.e height).
+- $\mu$  is the mean (center of distribution)
+- $\sigma²$ the variance (controls spread)
+- The denominator $\sqrt{2\pi\sigma²}$ ensures the area under the curve sums to 1
+- The exponential term penalizes values that are far from the mean, making them less probable.
+
+##### Applications to machine learning: continous distribution.
