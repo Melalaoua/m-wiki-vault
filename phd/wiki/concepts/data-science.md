@@ -168,4 +168,5 @@ Where :
 Statistics is the backbone of machine learning, an invisible scaffold that supports everything from model design to interpretration. It is a language for making sense of uncertainty and extracting meaning from data.
 
 - Descriptive statistics (mean, median, ...) : the first lens through which we examine and summarize the world's complexity.
-- Probability : The toolset to reason under uncertainty. In ML, it helps us quantify how likely an outcome is, to express confidence in the model 
+- Probability : The toolset to reason under uncertainty. In ML, it helps us quantify how likely an outcome is, to express confidence instead of just hard predictions.
+- Distributions : defines how data behaves across different scenarios.It underpin both the data that we observe and the algorithms that we build.
