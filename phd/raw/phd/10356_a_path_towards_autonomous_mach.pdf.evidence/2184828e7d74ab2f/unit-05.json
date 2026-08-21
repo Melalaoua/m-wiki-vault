@@ -1,0 +1,123 @@
+{
+  "ordinal": 5,
+  "locator": "pp. 19–21",
+  "claims": [
+    {
+      "text": "Latent variables in energy-based models can parameterize the set of possible relationships between an input x and compatible outputs y, representing information about y that cannot be extracted from x.",
+      "locator": "pp. 19–21",
+      "quote": "The latent variable can be seen as parameterizing the set of possible relationships between an x and a set of compatible y. Latent variables represent information about y that cannot be extracted from x."
+    },
+    {
+      "text": "Inference in latent-variable EBMs consists of finding the latent variable value that minimizes the energy function.",
+      "locator": "pp. 19–21",
+      "quote": "Inference consists in finding the latent that minimizes the energy ˇz = argminz∈Z Ew(x, y, z)."
+    },
+    {
+      "text": "After latent variable inference by minimization, the latent variable can be eliminated from the energy function to yield a simplified energy function Fw(x,y).",
+      "locator": "pp. 19–21",
+      "quote": "Fw(x, y) = min z∈Z Ew(x, y, z) = Ew(x, y, ˇz)"
+    },
+    {
+      "text": "Energy-based models do not necessarily require probabilistic interpretation, though many can be converted to probabilistic models.",
+      "locator": "pp. 19–21",
+      "quote": "Although many EBMs can easily be turned into probabilistic models, e.g. through a Gibbs distribution, this is not at all a necessity."
+    },
+    {
+      "text": "Training an EBM requires designing a loss functional that makes the energy of training samples lower than the energies of non-matching alternatives.",
+      "locator": "pp. 19–21",
+      "quote": "Training an EBM comes down to devising a suitable loss functional L(x, y, Fw(x, y)), which can be expressed directly as a function of the parameter vector L(x, y, w), and such that minimizing this loss will make the energy of the training sample Fw(x, y) lower than the energies Fw(x, ˆy) of any ˆy different from y."
+    },
+    {
+      "text": "Without explicit provisions to ensure higher energies for non-matching outputs, the energy landscape can collapse into a flat surface giving essentially the same energy to all output values.",
+      "locator": "pp. 19–21",
+      "quote": "Without a specific provision to ensure that Fw(x, y′) > Fw(x, y) whenever ˆy ≠ y the energy landscape may suffer a collapse: given an x the energy landscape could become \"flat\", giving essentially the same energy to all values of y."
+    },
+    {
+      "text": "Deterministic predictive architectures cannot suffer from energy collapse because they produce only a single output.",
+      "locator": "pp. 19–21",
+      "quote": "A regular predictive or deterministic-generative architecture (Figure 10(a)) cannot collapse. For any x, a single ỹ is produced."
+    },
+    {
+      "text": "Generative latent-variable architectures can collapse when the latent variable has excessive information capacity relative to the set of compatible outputs.",
+      "locator": "pp. 19–21",
+      "quote": "A generative latent-variable architecture (non-deterministic generative) (Figure 10(b)) can collapse when the latent variable has too much information capacity."
+    },
+    {
+      "text": "Auto-encoder architectures can collapse when their representation has sufficient information capacity to learn the identity function or reconstruct regions larger than the high-density data region.",
+      "locator": "pp. 19–21",
+      "quote": "An auto-encoder (AE) (Figure 10(c)) can collapse when the representation sy has too much information capacity. For example, if the dimension of sy is equal or higher than that of y, the AE could learn the identity function."
+    },
+    {
+      "text": "Joint embedding architectures can collapse when encoders produce insufficient or constant and equal representations.",
+      "locator": "pp. 19–21",
+      "quote": "A Joint Embedding Architecture (JEA) (Figure 10(d)) can collapse when the information carried by sx and/or sy are insufficient. If the encoders ignore the inputs, and produce constant and equal codes sx = sy, the entire space will have zero energy."
+    },
+    {
+      "text": "Two main approaches exist for designing loss functions to prevent energy collapse: contrastive methods and regularized methods.",
+      "locator": "pp. 19–21",
+      "quote": "There are two approaches: contrastive methods and regularized methods."
+    }
+  ],
+  "candidates": [
+    {
+      "kind": "concept",
+      "title": "Latent-Variable Energy-Based Model (LVEBM)",
+      "why": "Core model architecture for representing multiple compatible outputs through latent variables that parameterize different possible relationships.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Energy collapse",
+      "why": "Critical failure mode in EBM training where the energy function becomes flat across the output space, preventing discrimination between correct and incorrect outputs.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Contrastive methods",
+      "why": "Training approach for EBMs that pulls down energies of training samples and pushes up energies of negative examples.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Regularized (non-contrastive) methods",
+      "why": "Alternative training approach for EBMs positioned as preferable to contrastive methods for preventing collapse.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Joint Embedding Architecture (JEA)",
+      "why": "EBM architecture that encodes both input and output and compares their representations, susceptible to collapse under certain conditions.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Auto-encoder (AE) architecture",
+      "why": "Neural network architecture analyzed for its susceptibility to energy collapse, particularly through learning identity functions.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Deterministic generative architecture",
+      "why": "EBM architecture that is proven not susceptible to energy collapse because it produces single outputs.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Generative latent-variable architecture",
+      "why": "Non-deterministic EBM variant that can collapse when latent variable information capacity exceeds what is needed.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Loss functional",
+      "why": "Mathematical objective used to train EBMs by shaping the energy function to discriminate training samples from alternatives.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Information capacity",
+      "why": "Property of representations and latent variables that determines whether an EBM architecture is susceptible to collapse.",
+      "tier": "mention"
+    }
+  ]
+}

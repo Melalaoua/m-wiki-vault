@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "sourceTitle": "10356_a_path_towards_autonomous_mach",
+  "units": [
+    {
+      "ordinal": 1,
+      "locator": "pp. 1–6",
+      "start": 178,
+      "end": 16458
+    },
+    {
+      "ordinal": 2,
+      "locator": "pp. 7–9",
+      "start": 16458,
+      "end": 27143
+    },
+    {
+      "ordinal": 3,
+      "locator": "pp. 10–12",
+      "start": 27143,
+      "end": 38233
+    },
+    {
+      "ordinal": 4,
+      "locator": "pp. 13–18",
+      "start": 38233,
+      "end": 57350
+    },
+    {
+      "ordinal": 5,
+      "locator": "pp. 19–21",
+      "start": 57350,
+      "end": 67832
+    },
+    {
+      "ordinal": 6,
+      "locator": "pp. 22–27",
+      "start": 67832,
+      "end": 87935
+    },
+    {
+      "ordinal": 7,
+      "locator": "pp. 28–30",
+      "start": 87935,
+      "end": 95959
+    },
+    {
+      "ordinal": 8,
+      "locator": "pp. 31–33",
+      "start": 95959,
+      "end": 107217
+    },
+    {
+      "ordinal": 9,
+      "locator": "pp. 34–39",
+      "start": 107217,
+      "end": 126174
+    },
+    {
+      "ordinal": 10,
+      "locator": "pp. 40–42",
+      "start": 126174,
+      "end": 136607
+    },
+    {
+      "ordinal": 11,
+      "locator": "pp. 43–48",
+      "start": 136607,
+      "end": 153974
+    },
+    {
+      "ordinal": 12,
+      "locator": "pp. 49–62",
+      "start": 153974,
+      "end": 167677
+    }
+  ]
+}

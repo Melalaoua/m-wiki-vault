@@ -1,0 +1,421 @@
+{
+  "ordinal": 9,
+  "locator": "pp. 34–39",
+  "claims": [
+    {
+      "text": "World model inaccuracy due to limited training data represents epistemic uncertainty.",
+      "locator": "pp. 34–39",
+      "quote": "the world model is inaccurate due to it having been trained with limited amount of data (epistemic uncertainty, type 4)."
+    },
+    {
+      "text": "Stochasticity in predictions can be handled by pushing it into latent variables that may be optimized, predicted, or sampled rather than requiring models to represent distributions directly.",
+      "locator": "pp. 34–39",
+      "quote": "we push the possible stochasticity of a predicted variable into a latent variable, which may be optimized, predicted, or sampled."
+    },
+    {
+      "text": "The latent-variable parameterization of predictions should be viewed as fundamental rather than as an application of the reparameterization trick.",
+      "locator": "pp. 34–39",
+      "quote": "We do not need to use this trick here, since we view the latent-variable parameterization of the predictions as fundamental."
+    },
+    {
+      "text": "Sampling latent variables for predictions can use fixed distributions, amortized inference from available data, or configurator-produced parameters.",
+      "locator": "pp. 34–39",
+      "quote": "The sample may come from the distribution whose negative logarithm is the regularizer R2(z2[2])). The parameters of the regularizer may be constant (e.g. fixed Gaussian), predicted from currently-available data using amortized inference (e.g. a multinomial or Gaussian whose parameters are computed from s2[0]) or produced by the configurator."
+    },
+    {
+      "text": "Using previous predictions to configure the latent regularizer biases the system towards generating good trajectories.",
+      "locator": "pp. 34–39",
+      "quote": "Using previous predictions to configure the latent regularizer biases the system towards generating \"good\" trajectories."
+    },
+    {
+      "text": "The number of generated state trajectories grows exponentially with discrete latent variables as k^t where k is the number of discrete values per variable and t is the number of time steps.",
+      "locator": "pp. 34–39",
+      "quote": "if each latent variable has k possible discrete values, the number of possible trajectories will grow as k^t, where t is the number of time steps."
+    },
+    {
+      "text": "Directed search and pruning strategies like Monte-Carlo Tree Search can be employed to manage exponential growth of trajectories.",
+      "locator": "pp. 34–39",
+      "quote": "Directed search and pruning strategies can be employed, as in classical Monte-Carlo Tree Search (MCTS)."
+    },
+    {
+      "text": "The prediction process may need to be repeated for multiple samplings of latents to cover plausible outcomes and minimize uncertainty on expected cost.",
+      "locator": "pp. 34–39",
+      "quote": "the prediction process may need to be repeated for multiple drawings of the latents, so as to cover the set of plausible outcomes. The inference process may be used for multiple predictions to produce an action that does not just minimize the expected cost, but also minimizes the uncertainty on the expected cost."
+    },
+    {
+      "text": "World model architecture should depend on the type of environment the agent operates in.",
+      "locator": "pp. 34–39",
+      "quote": "The details of the architecture of the world model should depend on the type of environment the agent evolves in."
+    },
+    {
+      "text": "JEPA architectures should include gating or dynamic routing mechanisms.",
+      "locator": "pp. 34–39",
+      "quote": "It is likely that the best module architectures in a JEPA should include some sort of gating or dynamic routing mechanism."
+    },
+    {
+      "text": "Low-level short-term video predictions can be handled by extracting local feature vectors and displacing them based on predicted motions.",
+      "locator": "pp. 34–39",
+      "quote": "the best way to handle low-level, short-term predictions in videos is by extracting simple local feature vectors and displacing those feature vectors from one frame to the next, depending on predicted motions."
+    },
+    {
+      "text": "Latent variables can encode displacement maps that modulate routing connections between frames.",
+      "locator": "pp. 34–39",
+      "quote": "The latent variables may encode a map of displacements, which can modulate routing connections between one frame and the next."
+    },
+    {
+      "text": "Transformer architecture is appropriate for longer-term higher-level predictions involving objects and interactions because it is equivariant to permutation.",
+      "locator": "pp. 34–39",
+      "quote": "For longer-term prediction at a higher level of abstraction, the relevant features are objects and their interactions. The evolution may be best modeled by a transformer architecture, which has the property of being equivariant to permutation and is appropriate to capture interactions between discrete objects"
+    },
+    {
+      "text": "The agent should possess a separate ego model of itself potentially without latent variables, as the agent's actions are more predictable than the external world.",
+      "locator": "pp. 34–39",
+      "quote": "the agent should possess a separate model of itself, perhaps without latent variables (Sobal et al., 2022) as the effect of actions on proprioception somewhat easier to predict than the evolution of the external world or the effect of actions on it."
+    },
+    {
+      "text": "An ego-model can serve as a template for modeling other agents in multi-agent scenarios.",
+      "locator": "pp. 34–39",
+      "quote": "the ego-model that the agent has of itself can be used as a template for a model of other agents in a multi-agent scenario."
+    },
+    {
+      "text": "Communicating states through vectors or arrays is inefficient when object states change minimally between time steps.",
+      "locator": "pp. 34–39",
+      "quote": "Traditionally, modules in deep learning architectures communicate states through vectors or multi-dimensional arrays. But this tends to be a very inefficient method when the state of the object being modeled only changes in minor ways from one time to the next."
+    },
+    {
+      "text": "World state should be maintained in writable memory where only affected portions are updated when events occur.",
+      "locator": "pp. 34–39",
+      "quote": "This suggests that the state of the world should be maintained in some sort of writable memory. Whenever an event occurs, only the part of the world-state memory affected by the event is to be updated, while the rest is to be left unchanged."
+    },
+    {
+      "text": "Key-value associative memory similar to memory-augmented networks and entity networks can be used to maintain world state.",
+      "locator": "pp. 34–39",
+      "quote": "A conventional key-value associative memory can be used for this purpose, similar to what has been proposed in the context of memory-augmented networks (Bordes et al., 2015; Sukhbaatar et al., 2015; Miller et al., 2016), and entity networks (Henaff et al., 2017)."
+    },
+    {
+      "text": "World model outputs are query-value pairs that modify or add entries in world-state memory.",
+      "locator": "pp. 34–39",
+      "quote": "The output of the world model at a given time step is a set of query-value pairs (q[i], v[i]), which are used to modify existing entries in the world-state memory, or to add new entries."
+    },
+    {
+      "text": "Memory retrieval uses a matching function to compute divergence or dissimilarity between keys and queries with competitive normalization.",
+      "locator": "pp. 34–39",
+      "quote": "where the kj are keys, the vj are stored values, function Match(k, q) measures a divergence or dissimilarity between a key and a query, vector c contains scalar coefficients cj , and function Normalize(˜c) performs some sort of competitive normalization or thresholding"
+    },
+    {
+      "text": "If a query is distant from all keys, the memory can allocate a new entry with the query as key and an update value.",
+      "locator": "pp. 34–39",
+      "quote": "If the query is distant from all keys, the memory may allocate a new entry whose key is q and corresponding value is r."
+    },
+    {
+      "text": "Memory operations can be performed in a differentiable manner allowing backpropagation of gradients.",
+      "locator": "pp. 34–39",
+      "quote": "All of these operations can be done in a differentiable manner, and would hence allow to back-propagate gradients through them."
+    },
+    {
+      "text": "Physical laws of object motion can be derived from observation without intervention.",
+      "locator": "pp. 34–39",
+      "quote": "The laws of motion of physical objects can, in principle, be derived from observation, without a need for intervention."
+    },
+    {
+      "text": "Training a world model efficiently may require active or agentive information gathering beyond passive observation.",
+      "locator": "pp. 34–39",
+      "quote": "But training a world model efficiently may require more active or \"agentive\" information gathering."
+    },
+    {
+      "text": "Passive observation involves the agent receiving a sensor stream without actively directing attention or affecting the environment.",
+      "locator": "pp. 34–39",
+      "quote": "passive observation: the agent is being fed a sensor stream (e.g. video, audio, etc)"
+    },
+    {
+      "text": "Active foveation allows the agent to direct attention focus without affecting the environment, such as orienting vision and sound sensors.",
+      "locator": "pp. 34–39",
+      "quote": "active foveation: the agent is being fed a stream within which the focus of attention can be directed without affecting the environment. For example, watching a scene while being able to orient the vision and sound sensors"
+    },
+    {
+      "text": "Passive agency involves observing another agent acting on the environment to infer causal effects of actions.",
+      "locator": "pp. 34–39",
+      "quote": "passive agency: sensory streams in which another agent acting on the environment is being observed, enabling the inference of causal effects of agent actions on the state of the environment."
+    },
+    {
+      "text": "Active egomotion allows the agent to modify sensor position without significantly affecting the environment, including steerable active sensors and touch sensors.",
+      "locator": "pp. 34–39",
+      "quote": "active egomotion: the agent receives sensory streams from a real or virtual environment within which the position of the sensors can be modified without significantly affecting the environment. This may include steerable active sensors (e.g. range sensors, heat sensors, chemical sensors) as well as touch sensors."
+    },
+    {
+      "text": "Active agency involves sensory streams influenced by the agent's actions, enabling causal model learning and introducing the exploration-exploitation dilemma.",
+      "locator": "pp. 34–39",
+      "quote": "active agency: sensory streams that are influenced by the agent's actions. This enables the establishment of causal models in which the agent can learn to predict the consequences of its actions. This mode brings the exploration-exploitation dilemma to the forefront."
+    },
+    {
+      "text": "Passive data collection may be insufficient for complex environments; modes 2, 4, and 5 allow agents to maximize environmental understanding.",
+      "locator": "pp. 34–39",
+      "quote": "In a complex environment, it may not be practical to collect enough passive data for the world model to capture a sufficient portion of the environment's behavior. Mode 2, 4, and 5 allow the agent to collect information that maximizes its understanding of the environment."
+    },
+    {
+      "text": "Intrinsic motivation modules are needed to drive attention, curiosity, and exploration into areas where world model predictions are uncertain.",
+      "locator": "pp. 34–39",
+      "quote": "to do so may require intrinsic motivation modules that drive attention, curiosity, and exploration into corners of the state space in which the world model's prediction are currently inexact or uncertain."
+    },
+    {
+      "text": "The actor module has three roles: inferring optimal action sequences, producing configurations of latent variables for uncertainty, and training policy networks for fast action production.",
+      "locator": "pp. 34–39",
+      "quote": "The role of the actor module is threefold: 1. inferring optimal action sequences that minimize the cost, given the predictions produced by the world model for Mode-2 actions. 2. producing multiple configurations of latent variables that represent the portion of the world state the agent does not know. 3. training policy networks for producing Mode-1 actions."
+    },
+    {
+      "text": "There is no conceptual difference between actions and latent variables; both require exploration.",
+      "locator": "pp. 34–39",
+      "quote": "There is no conceptual difference between an action and a latent variable. The configurations of both sets of variables must be explored by the actor."
+    },
+    {
+      "text": "When the world model and cost are well-behaved, gradient-based optimization can infer optimal action sequences by backpropagating through the cost and unfolded world model.",
+      "locator": "pp. 34–39",
+      "quote": "When the world model and the cost are well-behaved, the actor module can use a gradient-based optimization process to infer an optimal action sequence. To do so, it receives estimates of the gradient of the cost computed by backpropagating gradients through the cost and the unfolded world model."
+    },
+    {
+      "text": "When the world model or cost are not well-behaved, alternative search methods like dynamic programming, beam search, or Monte-Carlo tree search can be applied.",
+      "locator": "pp. 34–39",
+      "quote": "When the world model or the cost are not so well-behaved, a gradient-based search for an optimal action sequence may fail. In this case another search/planning method may be applied. If the action space is discrete or can be discretized, one can use dynamic programming methods or approximate dynamic programming methods such as beam search or Monte-Carlo tree search."
+    },
+    {
+      "text": "Obtained optimal action sequences can be used as targets to train policy networks for rapid action generation.",
+      "locator": "pp. 34–39",
+      "quote": "Once an optimal action sequence is obtained through the planning / inference / optimization process, one can use the actions as targets to train a policy network."
+    },
+    {
+      "text": "Multiple policy networks can be trained for multiple tasks.",
+      "locator": "pp. 34–39",
+      "quote": "Multiple policy networks can be trained for multiple tasks."
+    },
+    {
+      "text": "The actor produces latent variable configurations that represent unknown portions of the world state.",
+      "locator": "pp. 34–39",
+      "quote": "The actor also produces configurations of latent variables. These latent variables represent the portion of the world state that the agent does not know."
+    },
+    {
+      "text": "Latent regularizers should represent log-priors from which latents can be sampled.",
+      "locator": "pp. 34–39",
+      "quote": "Ideally, the regularizer for the latents, R1 and R2 in Figure 17, would represent log-priors from which the latent could be sampled."
+    },
+    {
+      "text": "Latent amortized inference modules can learn distributions of latent variables with parameters depending on available variables.",
+      "locator": "pp. 34–39",
+      "quote": "one may devise a latent amortized inference module that learns distributions of latent variables. Good distributions would produce predictions that are plausible. The distribution primate's may depend on all the variables available at that time."
+    },
+    {
+      "text": "The configurator is the main controller taking input from all modules and modulating their parameters and connection graphs.",
+      "locator": "pp. 34–39",
+      "quote": "The configurator is the main controller of the agent. It takes input from all other modules and modulates their parameters and connection graphs."
+    },
+    {
+      "text": "Modulation can route signals, activate sub-networks, and focus attention, or constitute extra input tokens to transformer blocks.",
+      "locator": "pp. 34–39",
+      "quote": "The modulation can route signals, activate sub-networks, focus attention, etc. In a scenario in which the predictor and the upper layers of the perception encoder are transformer blocks, the configurator outputs may constitute extra input tokens to these transformer blocks, thereby modulating their connection graphs and functions."
+    },
+    {
+      "text": "The configurator is necessary for hardware reuse and knowledge sharing across multiple tasks.",
+      "locator": "pp. 34–39",
+      "quote": "The configurator module is necessary for two reasons: hardware reuse, and knowledge sharing."
+    },
+    {
+      "text": "A generic world model for an environment can be adapted for different tasks with minor configurator-modulated parameter changes.",
+      "locator": "pp. 34–39",
+      "quote": "A reasonable hypothesis is that a world model trained for a given environment can be used for a range of different tasks with minor changes. One can imagine a \"generic\" world model for the environment with a small portion of the parameters being modulated by the configurator for the task at hand."
+    },
+    {
+      "text": "The human perceptual system can be primed for particular tasks through parameter modulation.",
+      "locator": "pp. 34–39",
+      "quote": "The human perceptual system can be primed for a particular task, such as detecting an item in a cluttered drawer, detecting fruits or preys in a forest, reading, counting certain events, assembling two parts, etc."
+    },
+    {
+      "text": "The configurator may modulate low-level layer weights for rapid detection of simple motifs.",
+      "locator": "pp. 34–39",
+      "quote": "For tasks that require a rapid detection of simple motifs, the configurator may modulate the weights of low-level layers in a convolutional architecture."
+    },
+    {
+      "text": "For tasks involving object relationships, configuration may be performed by modulating tokens in high-level transformer modules.",
+      "locator": "pp. 34–39",
+      "quote": "For tasks that involve satisfying relationships between objects (such as assembling two parts with screws) the configuration may be performed by modulating tokens in high-level transformer modules."
+    },
+    {
+      "text": "For short-term low-level predictions, configuration may mean dynamic signal routing with local gating/routing circuits.",
+      "locator": "pp. 34–39",
+      "quote": "For predictors performing short-term predictions at a low level of abstraction, configuration may mean dynamic signal routing. In a low-level retinotopic feature array representation, prediction may be reduced to local displacements of individual feature vectors, accompanied with small transformations of those vectors. This may be advantageously implemented with local gating/routing circuits."
+    },
+    {
+      "text": "Transformer blocks are appropriate for object-based reasoning because their function is equivariant to permutation.",
+      "locator": "pp. 34–39",
+      "quote": "Transformer blocks are particularly appropriate for object-based reasoning in which objects interact. The reason is that the function of transformer blocks is equivariant to permutation."
+    },
+    {
+      "text": "Extra input tokens to transformer blocks can easily configure the predictor for causal prediction or other tasks.",
+      "locator": "pp. 34–39",
+      "quote": "Conveniently, the function of a transformer block is easy to configure by adding extra input tokens. Those extra inputs have the effect of modulating the connection graph used by the rest of the network, thereby allowing the specification of a wide range of input-output functions."
+    },
+    {
+      "text": "The configurator's most important function is setting subgoals and configuring the cost module accordingly.",
+      "locator": "pp. 34–39",
+      "quote": "Perhaps the most important function of the configurator is to set subgoals for the agent and to configure the cost module for this subgoal."
+    },
+    {
+      "text": "Immutable intrinsic cost components should have limited modulation to maintain control of basic drives and safety guardrails.",
+      "locator": "pp. 34–39",
+      "quote": "This may be appropriate for the immutable Intrinsic Cost submodule: allowing for a complex modulation of the Intrinsic Cost may make the basic drives of the agent difficult to control, including cost terms that implement safety guardrails."
+    },
+    {
+      "text": "The trainable critic part of the cost can be flexibly modulated with more sophisticated architectures.",
+      "locator": "pp. 34–39",
+      "quote": "In contrast, one can imagine more sophisticated architectures allowing the Trainable Critic part of the cost to be flexibly modulated."
+    },
+    {
+      "text": "High-level costs formulated as desired object relationships can use transformer architecture to measure divergence from target conditions.",
+      "locator": "pp. 34–39",
+      "quote": "if the high-level cost is formulated as a set of desired relationships between objects (\"is the nut set on the screw?\") one may use a transformer architecture trained to measure to what extent the state of the world diverges from the condition to be satisfied."
+    },
+    {
+      "text": "How the configurator learns to decompose complex tasks into accomplishable subgoals remains an open question.",
+      "locator": "pp. 34–39",
+      "quote": "One question that is left unanswered is how the configurator can learn to decompose a complex task into a sequence of subgoals that can individually be accomplished by the agent."
+    }
+  ],
+  "candidates": [
+    {
+      "kind": "concept",
+      "title": "Epistemic uncertainty",
+      "why": "Discussed as one type of uncertainty arising from limited training data in world models.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Reparameterization trick",
+      "why": "Mentioned as a common technique in ML literature for handling stochasticity, with the paper's approach viewed as fundamental rather than using this trick.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Monte-Carlo Tree Search (MCTS)",
+      "why": "Discussed as a directed search and pruning strategy for managing exponential trajectory growth in hierarchical planning.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "JEPA (Joint-Embedding Predictive Architecture)",
+      "why": "Central architecture discussed for world models with requirements for gating and dynamic routing mechanisms.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Transformer architecture for prediction",
+      "why": "Discussed extensively as appropriate for longer-term object-based predictions with permutation equivariance properties and configuration via extra input tokens.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Ego model",
+      "why": "Discussed as a separate deterministic model of the agent's own actions and their effects, distinct from world model.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Key-value associative memory",
+      "why": "Proposed mechanism for maintaining world state through memory operations with differential backpropagation.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Memory-augmented networks",
+      "why": "Referenced as prior work for implementing key-value associative memory for world state maintenance.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Entity networks",
+      "why": "Referenced as prior work related to memory-based approaches for state representation.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Active foveation",
+      "why": "One of five modes of information gathering where agent can direct attention without affecting environment.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Passive agency",
+      "why": "One of five modes of information gathering through observing other agents' actions.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Active egomotion",
+      "why": "One of five modes of information gathering through modifying sensor position without affecting environment.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Active agency",
+      "why": "One of five modes of information gathering through agent's own actions on environment, enabling causal learning.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Intrinsic motivation",
+      "why": "Discussed as necessary modules to drive attention, curiosity, and exploration in uncertain areas of state space.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Actor module",
+      "why": "Core component with three roles: action inference, latent variable configuration, and policy network training.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Gradient-based action optimization",
+      "why": "Method for inferring optimal action sequences when world model and cost are well-behaved.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Policy network",
+      "why": "Trained on optimal action sequences for rapid action generation or initialization for optimization.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Latent amortized inference",
+      "why": "Module that learns distributions of latent variables with parameters dependent on available data.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Configurator module",
+      "why": "Main controller that modulates parameters and connection graphs across all other modules for task-specific adaptation.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Cost module configuration",
+      "why": "Discussed as configurator's most important function, including immutable intrinsic costs and trainable critic modulation.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Model-predictive control",
+      "why": "Referenced in related work as foundational approach using models for control, with neural network variants discussed.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Kelley-Bryson method",
+      "why": "Referenced as early foundational work in model-based optimal control.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Online system identification",
+      "why": "Referenced as method allowing model learning and updating during control.",
+      "tier": "mention"
+    }
+  ]
+}

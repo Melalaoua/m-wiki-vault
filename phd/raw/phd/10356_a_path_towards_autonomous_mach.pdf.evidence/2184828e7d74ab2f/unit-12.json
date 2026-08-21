@@ -1,0 +1,208 @@
+{
+  "ordinal": 12,
+  "locator": "pp. 49–62",
+  "claims": [
+    {
+      "text": "Architectural diagrams in this paper use filled circles for observed variables or outputs of deterministic functions, and hollow circles for latent variables that must be inferred, minimized, varied, or sampled.",
+      "locator": "pp. 49–62",
+      "quote": "Filled circles represent observed variables, or variables that are outputs of deterministic functions. Hollow circles represent latent variables, i.e. variables that must be inferred by minimizing some cost, varied over a set, or sampled from a distribution."
+    },
+    {
+      "text": "Red rectangles in the diagrams represent energy terms that contribute additively to the total energy of the system with an implicit scalar output.",
+      "locator": "pp. 49–62",
+      "quote": "Red rectangles represent energy terms. These modules have an implicit scalar output that contributes additively to the total energy of the system."
+    },
+    {
+      "text": "Rounded rectangles represent deterministic functions with clear directionality from inputs to outputs, assumed to be differentiable and easily computable with unique outputs, often implemented as deep neural networks.",
+      "locator": "pp. 49–62",
+      "quote": "Rounded rectangles represent deterministic functions, which may have one or several inputs. Given a set of inputs, the output is assumed to be easily computable and unique. The function is generally assumed to be differentiable. It may contain trainable parameters. Such a module is typically implemented as a deep neural net."
+    },
+    {
+      "text": "Non-deterministic functions are represented as a combination of deterministic functions, energy modules, and latent variables, with the latent variable fed to a regularizing energy term.",
+      "locator": "pp. 49–62",
+      "quote": "Non-deterministic functions do not have a dedicated symbol, but must be represented as a combination of deterministic functions, energy modules, and latent variables."
+    },
+    {
+      "text": "The level set Z_h defines the set of latent variables z for which the regularizing energy term R(z) is less than a threshold h.",
+      "locator": "pp. 49–62",
+      "quote": "We first define Zh as the level set of z, i.e. the set of z for which R(z) is less than a threshold h"
+    },
+    {
+      "text": "Energy terms can be transformed into probability distributions using the Gibbs-Boltzmann formula to represent probability distributions over latent variables.",
+      "locator": "pp. 49–62",
+      "quote": "In some cases, this setup may be used to represent probability distributions. Forst, the energy term is transformed into a probability distribution using a Gibbs-Boltzmann formula"
+    },
+    {
+      "text": "Amortized inference reduces the cost of performing latent variable inference by training a neural network encoder to predict approximate solutions to the inference optimization problem.",
+      "locator": "pp. 49–62",
+      "quote": "One way to reduce the cost of inference is to use amortized inference. The idea is to train a neural net to predict an approximate solution to the inference optimization problem."
+    },
+    {
+      "text": "In amortized inference with regularized generative latent-variable EBMs, the regularizer R(z) is critical to prevent the system from cheating by carrying complete information about y through the encoder.",
+      "locator": "pp. 49–62",
+      "quote": "The regularizer R(z) is even more important than in the regular inference case because the prediction pathway has access to y and can \"cheat\" by carrying the complete information about y through the encoder."
+    },
+    {
+      "text": "Variational Auto-Encoders and LISTA-style sparse Auto-Encoders belong to the family of Regularized GLVEBM with amortized inference, though most are unconditional without x nor Enc(x) modules.",
+      "locator": "pp. 49–62",
+      "quote": "Variational Auto-Encoders, and LISTA-style sparse Auto-Encoders belong to the family of Regularized GLVEBM with amortized inference."
+    },
+    {
+      "text": "Rows 1-2 in the contrastive training table are exact maximum likelihood methods assuming the gradient of the log partition function can be computed exactly, while rows 3-4 are approximate maximum likelihood methods.",
+      "locator": "pp. 49–62",
+      "quote": "Rows 1-2 in the table are exact maximum likelihood methods. They assume that the gradient of the log partition function can be computed exactly. Rows 2-4 are approximate maximum likelihood methods."
+    },
+    {
+      "text": "Maximum Conditional Likelihood for discrete y uses the Gibbs formula to turn energy into a probability distribution and employs negative log conditional likelihood as the loss.",
+      "locator": "pp. 49–62",
+      "quote": "Row 1: Maximum Conditional Likelihood for discrete y is used whenever the energy needs to be turned into a probability distribution. through a Gibbs formula P (y|x) = exp(−Fw(x, y))/ ∑ y′∈Y exp(−Fw(x, y′). The loss is the negative log conditional likelihood."
+    },
+    {
+      "text": "Contrastive Divergence uses MCMC sampling starting from training samples for a short time to generate contrastive samples while satisfying detailed balance.",
+      "locator": "pp. 49–62",
+      "quote": "One may start from a training sample and let the Markov chain evolve for a short time, and then accept or reject the resulting sample so as to satisfy detailed balance"
+    },
+    {
+      "text": "Pairwise hinge loss (triplet loss) drives the energy of the correct output to be lower than contrastive output energy by at least a margin that may grow with divergence between outputs.",
+      "locator": "pp. 49–62",
+      "quote": "Pairwise hinge, also known as triplet loss, drives the energy of the correct output to be lower than the energy of the contrastive output by at least a margin m(y, ˆy)"
+    },
+    {
+      "text": "Min-hinge, Square-hinge, and Square-exp methods assume the energy has a lower bound and minimize energy of correct output while pushing contrastive energies above a margin.",
+      "locator": "pp. 49–62",
+      "quote": "Assumes that the energy has a lower bound. minimizes the energy of the correct output and pushes the energy of contrastive outputs above a margin equal to m(y, ˆy)"
+    },
+    {
+      "text": "GANs differ from other contrastive methods by generating contrastive samples through a generator network trained to preferentially produce samples with low energy according to the model.",
+      "locator": "pp. 49–62",
+      "quote": "A GAN differs from other contrastive methods in the way contrastive samples are generated. The contrastive samples are produced by a generator network that is trained preferentially generate samples that have low energy according to the model."
+    },
+    {
+      "text": "Denoising Auto-Encoders produce contrastive samples by corrupting training outputs through noise or masking, with energy function as the reconstruction error.",
+      "locator": "pp. 49–62",
+      "quote": "A denoising AE produces contrastive samples by corrupting outputs from training samples. The corruption can be performed by adding noise or by masking parts of the output. The energy function is the reconstruction error"
+    }
+  ],
+  "candidates": [
+    {
+      "kind": "concept",
+      "title": "Energy-based models (EBM)",
+      "why": "The section defines the symbolic and mathematical framework for energy-based models and their architectural representation.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Latent variables",
+      "why": "Hollow circles in the notation system represent latent variables that must be inferred, varied, or sampled.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Deterministic functions",
+      "why": "Rounded rectangles represent deterministic functions with clear directionality and assumed differentiability, often as neural networks.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Amortized inference",
+      "why": "The section explains how to train encoders to approximate solutions to inference optimization problems, reducing computational cost.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Generative Latent Variable EBM (GLVEBM)",
+      "why": "A specific architecture combining regularized latent variables with amortized inference, described in detail with diagrams.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Gibbs-Boltzmann formula",
+      "why": "Mathematical method for transforming energy terms into probability distributions.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Contrastive learning methods",
+      "why": "The section comprehensively catalogs ten different contrastive training approaches for energy-based models with their strategies and loss functions.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Maximum likelihood estimation",
+      "why": "Exact and approximate variants are core contrastive training methods for EBMs covered in rows 1-4 of the table.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Monte Carlo methods",
+      "why": "Used to approximate intractable gradient integrals when maximum conditional likelihood is applied to intractable models.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Contrastive Divergence",
+      "why": "MCMC-based training method for EBMs using truncated sampling from training samples.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Triplet loss",
+      "why": "Pairwise hinge loss variant that drives energy of correct outputs lower than contrastive outputs by a margin.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Hard negative mining",
+      "why": "Task of finding suitable contrastive samples with low energy that are threatening to model performance.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Hinge loss",
+      "why": "Loss function used in contrastive methods (rows 5-8) to push correct outputs to low energy and contrastive outputs above a margin.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "GANs (Generative Adversarial Networks)",
+      "why": "Contrastive training method where generator networks produce low-energy samples the model should assign high energy to.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Denoising Auto-Encoders",
+      "why": "Contrastive training approach using corrupted training samples as contrastive examples with reconstruction error as energy.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Variational Auto-Encoders (VAE)",
+      "why": "Identified as a specific instance of Regularized GLVEBM with amortized inference.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "LISTA-style sparse Auto-Encoders",
+      "why": "Identified alongside VAEs as belonging to the Regularized GLVEBM family.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Siamese networks",
+      "why": "Mentioned as using Row 1 contrastive method (InfoNCE) in contrastive self-supervised learning.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "InfoNCE",
+      "why": "Contrastive loss function used by Siamese networks and self-supervised methods.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Factor graphs",
+      "why": "Similar representation system that influenced the architectural notation, though this paper uses energy terms rather than probability factors.",
+      "tier": "mention"
+    }
+  ]
+}

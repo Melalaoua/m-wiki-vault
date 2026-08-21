@@ -1,0 +1,226 @@
+{
+  "ordinal": 4,
+  "locator": "pp. 13–18",
+  "claims": [
+    {
+      "text": "The total cost function is the sum of the immutable intrinsic cost module and the trainable critic cost module.",
+      "locator": "pp. 13–18",
+      "quote": "C(s) = IC(s) + TC(s)"
+    },
+    {
+      "text": "The intrinsic cost module is a linear combination of multiple immutable submodules, each weighted by coefficients determined by the configurator.",
+      "locator": "pp. 13–18",
+      "quote": "IC(s) = ∑_{i=1}^{k} u_i IC_i(s)"
+    },
+    {
+      "text": "The trainable cost module is a linear combination of multiple trainable submodules, each weighted by coefficients determined by the configurator.",
+      "locator": "pp. 13–18",
+      "quote": "TC(s) = ∑_{j=1}^{l} v_j TC_j(s)"
+    },
+    {
+      "text": "Each cost submodule imparts a particular behavioral drive to the agent, and the configurator weights allow the agent to focus on different subgoals at different times.",
+      "locator": "pp. 13–18",
+      "quote": "Each submodule imparts a particular behavioral drive to the agent. The weights in the linear combination, ui and vj, are modulated by the configurator module and allow the agent to focus on different subgoals at different times."
+    },
+    {
+      "text": "The intrinsic cost module defines the basic behavioral nature of the agent through immutable proprioceptive measurements corresponding to pain, hunger, and instinctive fears.",
+      "locator": "pp. 13–18",
+      "quote": "For a robot, these terms would include obvious proprioceptive measurements corresponding to \"pain\", \"hunger\", and \"instinctive fears\", measuring such things as external force overloads, dangerous electrical, chemical, or thermal environments, excessive power consumption, low levels of energy reserves in the power source, etc."
+    },
+    {
+      "text": "Intrinsic cost can include basic drives to help agents learn skills or accomplish missions, such as drives to stand and walk in legged robots.",
+      "locator": "pp. 13–18",
+      "quote": "They may also include basic drives to help the agent learn basic skills or accomplish its missions. For example, a legged robot may comprise an intrinsic cost to drive it to stand up and walk."
+    },
+    {
+      "text": "Social drives and curiosity can be included in intrinsic costs to enable learning and behavioral diversity.",
+      "locator": "pp. 13–18",
+      "quote": "This may also include social drives such as seeking the company of humans, finding interactions with humans and praises from them rewarding, and finding their pain unpleasant (akin to empathy in social animals). Other intrinsic behavioral drives, such as curiosity, or taking actions that have an observable impact, may be included to maximize the diversity of situations with which the world model is trained"
+    },
+    {
+      "text": "The intrinsic cost module plays a role similar to the amygdala in the mammalian brain.",
+      "locator": "pp. 13–18",
+      "quote": "The IC can be seen as playing a role similar to that of the amygdala in the mammalian brain and similar structures in other vertebrates."
+    },
+    {
+      "text": "The intrinsic cost must be immutable and not subject to learning or external modifications to prevent behavioral collapse.",
+      "locator": "pp. 13–18",
+      "quote": "To prevent a kind of behavioral collapse or an uncontrolled drift towards bad behaviors, the IC must be immutable and not subject to learning (nor to external modifications)."
+    },
+    {
+      "text": "The critic has two roles: to anticipate long-term outcomes with minimal world model use, and to allow the configurator to focus the agent on learned subgoals.",
+      "locator": "pp. 13–18",
+      "quote": "The role of the critic (TC) is twofold: (1) to anticipate long-term outcomes with minimal use of the onerous world model, and (2) to allow the configurator to make the agent focus on accomplishing subgoals with a learned cost."
+    },
+    {
+      "text": "AI agent behavior can be specified by explicit programming, objective function design, direct supervision, or inverse reinforcement learning through imitation.",
+      "locator": "pp. 13–18",
+      "quote": "In general, the behavioral nature of an AI agent can be specified in four ways: 1. by explicitly programming a specific behavior activated when specific conditions are met 2. by defining an objective function in such a way that the desired behavior is executed by the agent as a result of finding action sequences that minimize the objective. 3. by training the agent to behave a certain way through direct supervision. 4. by training the agent through imitation learning."
+    },
+    {
+      "text": "Designing an objective function is simpler and more robust than explicit behavior programming because it allows adaptation to changing conditions.",
+      "locator": "pp. 13–18",
+      "quote": "The second method is considerably simpler to engineer than the first one, because it merely requires to design an objective, and not design a complete behavior. The second method is also more robust: a preordained behavior may be invalidated by unexpected conditions or a changing environment."
+    },
+    {
+      "text": "The critic is trained to predict future intrinsic energy values using a short-term associative memory that stores triplets of time, state, and intrinsic energy.",
+      "locator": "pp. 13–18",
+      "quote": "The principal role of the critic is to predict future values of the intrinsic energy. To do so, it uses the short-term memory module. This module is an associative memory in which the intrinsic cost module stores triplets (time, state, intrinsic energy): (τ, sτ , IC(sτ ))."
+    },
+    {
+      "text": "The critic learns to minimize prediction loss between predicted energy at current state and actual intrinsic energy at a future time.",
+      "locator": "pp. 13–18",
+      "quote": "The critic can be trained to predict future intrinsic energy values by retrieving a past state vector sτ together with an intrinsic energy at a later time IC(sτ +δ). The parameters of the critic can then be optimized to minimize a prediction loss, for example ||IC(sτ +δ) − T C(sτ )||2."
+    },
+    {
+      "text": "Critic training is similar to critic training methods in reinforcement learning approaches like A2C.",
+      "locator": "pp. 13–18",
+      "quote": "At a general level, this is similar to critic training methods used in such reinforcement learning approaches as A2C."
+    },
+    {
+      "text": "Short-term memory can be implemented as a key-value memory network that performs soft associative retrieval with interpolation capability.",
+      "locator": "pp. 13–18",
+      "quote": "The short-term memory can be implemented as the memory module in a key-value memory network: a query vector is compared to a number of key vectors, producing a vector of scores. The scores are normalized and used as coefficients to output a linear combination of the stored values."
+    },
+    {
+      "text": "Designing world model architectures and training paradigms is a main obstacle to progress in AI.",
+      "locator": "pp. 13–18",
+      "quote": "Arguably, designing architectures and training paradigms for the world model constitute the main obstacles towards real progress in AI over the next decades."
+    },
+    {
+      "text": "The proposal contributes a hierarchical world model architecture and training procedure that can represent multiple outcomes in predictions.",
+      "locator": "pp. 13–18",
+      "quote": "One of the main contributions of the present proposal is precisely a hierarchical architecture and a training procedure for world models that can represent multiple outcomes in their predictions."
+    },
+    {
+      "text": "Training the world model is an example of self-supervised learning based on pattern completion.",
+      "locator": "pp. 13–18",
+      "quote": "Training the world model is a prototypical example of Self-Supervised Learning (SSL), whose basic idea is pattern completion."
+    },
+    {
+      "text": "The quality of world model predictions depends on the diversity of state sequences observed during training.",
+      "locator": "pp. 13–18",
+      "quote": "First, quite evidently, the quality of the world model will greatly depend on the diversity of state sequences, or triplets of (state, action, resulting state) it is able to observe while training."
+    },
+    {
+      "text": "World models must represent multiple plausible outcomes because the world is not entirely predictable.",
+      "locator": "pp. 13–18",
+      "quote": "Second, because the world is not entirely predictable, there may be multiple plausible world state representations that follow a given world state representation and an action from the agent."
+    },
+    {
+      "text": "World models must make predictions at different time scales and levels of abstraction.",
+      "locator": "pp. 13–18",
+      "quote": "Third, the world model must be able to make predictions at different time scales and different levels of abstraction."
+    },
+    {
+      "text": "Self-supervised learning trains systems to capture mutual dependencies between inputs or consistency between observed and unobserved parts of input.",
+      "locator": "pp. 13–18",
+      "quote": "Self-Supervised Learning (SSL) is a paradigm in which a learning system is trained to capture the mutual dependencies between its inputs. Concretely, this often comes down to training a system to tell us if various parts of its input are consistent with each other."
+    },
+    {
+      "text": "SSL systems can be trained to assess whether proposed unobserved input completions are plausible given observed parts without requiring explicit prediction of all plausible outcomes.",
+      "locator": "pp. 13–18",
+      "quote": "Importantly, we do not impose that the model be able to predict y from x. The reason is that there may be an infinite number of y that are compatible with a given x. But it seems less inconvenient to merely ask the system to tell us if a proposed y is compatible with a given x."
+    },
+    {
+      "text": "Energy-Based Models formulate SSL as a scalar-valued function that produces low energy for compatible inputs and high energy for incompatible inputs.",
+      "locator": "pp. 13–18",
+      "quote": "A general formulation can be done with the framework of Energy-Based Models (EBM). The system is a scalar-valued function F (x, y) that produces low energy values when x and y are compatible and higher values when they are not."
+    },
+    {
+      "text": "EBM formulation enables representation of multi-modal dependencies where multiple values of y can be compatible with a given x.",
+      "locator": "pp. 13–18",
+      "quote": "The EBM implicit function formulation enables the system to represent multi-modal dependencies in which multiple values of y are compatible with a given x. The set of y compatible with a given x may be a single point, multiple discrete points, a manifold, or a collection of points and manifolds."
+    },
+    {
+      "text": "A predictive world model should learn representations such that future representations are maximally informative and easily predictable from past representations.",
+      "locator": "pp. 13–18",
+      "quote": "The general learning principle is as follows: given two inputs x and y, learn two functions that compute representations sx = gx(x) and sy = gy(y) such that (1) sx and sy are maximally informative about x and y and (2) sy can easily be predicted from sx."
+    },
+    {
+      "text": "Through hierarchical prediction at increasingly abstract levels and time scales, complex world concepts may be learned including edges, depth, occlusion, object permanence, and intuitive physics.",
+      "locator": "pp. 13–18",
+      "quote": "One may imagine that through predictions at increasingly abstract levels of representation and increasingly long time scales, more and more complex concepts about how the world works may be acquired in a hierarchical fashion."
+    }
+  ],
+  "candidates": [
+    {
+      "kind": "concept",
+      "title": "Cost module",
+      "why": "Core architectural component that combines intrinsic and trainable costs to drive agent behavior through energy minimization.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Intrinsic cost (IC)",
+      "why": "Immutable component of the cost module defining fundamental behavioral drives and constraints that prevent behavioral collapse.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Trainable cost / Critic (TC)",
+      "why": "Learnable component that predicts long-term intrinsic energy values and enables goal-directed behavior through learned objectives.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Configurator module",
+      "why": "Component that determines weights for cost submodules, allowing the agent to dynamically focus on different subgoals.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Short-term associative memory",
+      "why": "Memory system storing state-energy triplets used to train the critic to predict future intrinsic energy values.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Key-value memory network",
+      "why": "Specific implementation approach for short-term memory enabling soft associative retrieval with interpolation.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Self-Supervised Learning (SSL)",
+      "why": "Learning paradigm based on pattern completion used to train world models to capture dependencies between inputs.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Energy-Based Models (EBM)",
+      "why": "Mathematical framework for SSL that uses scalar energy functions to assess compatibility between observed and unobserved input parts.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "World model",
+      "why": "Hierarchical predictive system that learns multiple outcomes and multi-scale representations for planning and reasoning.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Mode-2 planning",
+      "why": "Planning through simulation and optimization using imagined world states, enabled by world model predictions.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Inverse reinforcement learning",
+      "why": "Method for training agents through imitation by inferring objective functions that expert behavior appears to optimize.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "A2C (Advantage Actor-Critic)",
+      "why": "Reinforcement learning approach mentioned as similar to the critic training methodology proposed.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Amygdala",
+      "why": "Biological structure in mammalian brains that the intrinsic cost module is conceptually analogous to.",
+      "tier": "mention"
+    }
+  ]
+}

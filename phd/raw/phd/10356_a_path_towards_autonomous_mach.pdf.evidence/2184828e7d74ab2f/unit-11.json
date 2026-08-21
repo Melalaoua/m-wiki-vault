@@ -1,0 +1,565 @@
+{
+  "ordinal": 11,
+  "locator": "pp. 43–48",
+  "claims": [
+    {
+      "text": "Building and training a Hierarchical JEPA system from videos and making it work for non-trivial tasks will be difficult and will likely take many years.",
+      "locator": "pp. 43–48",
+      "quote": "Constructing the cognitive architecture of the present proposal, instantiating all the details, and making the system work for non-trivial tasks will not be an easy task. The path to success is likely riddled with unforeseen obstacles. It will probably take many years to work them all out."
+    },
+    {
+      "text": "A key open question is whether a Hierarchical JEPA can be built and trained from videos and whether it could learn abstract concept hierarchies.",
+      "locator": "pp. 43–48",
+      "quote": "The first question is whether a Hierarchical JEPA can be built and trained from videos. Could it learn the type of abstract concept hierarchy mentioned in section 4.1?"
+    },
+    {
+      "text": "It remains unclear which mechanism for regularizing the latent variable—discrete, low-dimensional, sparse, or stochastic—will ultimately be most effective.",
+      "locator": "pp. 43–48",
+      "quote": "A number of possible mechanisms are proposed: making the latent variable discrete, low-dimensional, sparse, or stochastic. But it is not clear which approach will ultimately be the best."
+    },
+    {
+      "text": "The proposal does not specify how the actor should infer latent variable instantiations and optimal action sequences, and gradient-based optimization may be ineffective for discrete action spaces or non-smooth cost functions.",
+      "locator": "pp. 43–48",
+      "quote": "The current proposal does not prescribe a particular way for the actor to infer latent variable instantiations and optimal action sequences. While the differentiability of all the modules makes it possible in principle to use gradient-based optimization to infer optimal action sequences, the optimization problem may be very difficult in practice. In particular, when the action space is discrete, or when the function from actions to cost is highly non smooth, gradient-based method may be ineffective, requiring to use other (gradient-free) search methods"
+    },
+    {
+      "text": "The proposal lacks mechanisms for instantiating multiple configurations of latent variables in Mode-2 planning, such as the ability to cycle through alternative interpretations of ambiguous percepts.",
+      "locator": "pp. 43–48",
+      "quote": "Instantiating multiple configurations of latent variables in Mode-2 planning/reasoning may require additional mechanisms not described in the present proposal. Humans seem to be endowed with an ability to spontaneously cycle through alternative interpretations of a percept, as demonstrated by the Necker cube and other visual illusions"
+    },
+    {
+      "text": "The proposal does not specify the detailed architectures of various modules, including the dynamic routing and gating circuits needed in the predictor.",
+      "locator": "pp. 43–48",
+      "quote": "The present proposal does not specify the details of the architecture of the various modules. For example, it is probable that the predictor will require some sort of dynamic routing and gating circuits in its micro-architecture."
+    },
+    {
+      "text": "The precise architecture and function of short-term memory for representing beliefs about the world state remains fuzzy and may be difficult to implement for complex planning.",
+      "locator": "pp. 43–48",
+      "quote": "Similarly, the precise architecture and function of the short-term memory and how it may be used to represent beliefs about the state of the world are somewhat fuzzy... But getting such an architecture to work for complex planning and control may prove difficult."
+    },
+    {
+      "text": "The configurator module, which should identify sequences of subgoals and configure the agent to accomplish them, is the least understood aspect of the proposal.",
+      "locator": "pp. 43–48",
+      "quote": "Of all the least understood aspects of the current proposal, the configurator module is the most mysterious. In particular, while planning a complex task, the configurator is supposed to identify sequences of subgoals and configure the agent to successively accomplish those subgoals. Precisely how to do that is not specified."
+    },
+    {
+      "text": "Various modules in the proposed architecture have counterparts in the mammalian brain performing similar functions.",
+      "locator": "pp. 43–48",
+      "quote": "Many of the modules in the proposed architecture have counterparts in the mammalian brain that perform similar functions."
+    },
+    {
+      "text": "The perception module corresponds to visual, auditory, and sensory areas of the cortex and association areas.",
+      "locator": "pp. 43–48",
+      "quote": "The perception module corresponds to the visual, auditory, and other sensory areas of the cortex, as well as some of the association areas."
+    },
+    {
+      "text": "The world model and critic correspond to various parts of the prefrontal cortex.",
+      "locator": "pp. 43–48",
+      "quote": "The world model and the critic correspond to various part of the prefrontal cortex."
+    },
+    {
+      "text": "The intrinsic cost module corresponds to basal ganglia structures involved in rewards, including the amygdala.",
+      "locator": "pp. 43–48",
+      "quote": "The intrinsic cost module corresponds to structures in the basal ganglia involved in rewards, including the amygdala."
+    },
+    {
+      "text": "The trainable critic may correspond to parts of the prefrontal cortex involved in reward prediction.",
+      "locator": "pp. 43–48",
+      "quote": "The trainable critic may correspond to part of the prefrontal cortex involved in reward prediction."
+    },
+    {
+      "text": "The short-term memory function overlaps with the hippocampus.",
+      "locator": "pp. 43–48",
+      "quote": "The function of the short-term memory overlaps with what is known of the hippocampus."
+    },
+    {
+      "text": "The configurator may correspond to prefrontal cortex structures that perform executive control and modulate attention.",
+      "locator": "pp. 43–48",
+      "quote": "The configurator may correspond to structures in the prefrontal cortex that perform executive control and modulate attention."
+    },
+    {
+      "text": "The actor regroups areas in the pre-motor cortex that elaborate and encode motor plans.",
+      "locator": "pp. 43–48",
+      "quote": "The actor regroups areas in the pre-motor cortex that elaborate and encode motor plans."
+    },
+    {
+      "text": "The idea of a predictive world model has been prominent in cognitive science, and predictive coding has been prominent in neuroscience.",
+      "locator": "pp. 43–48",
+      "quote": "The idea of predictive world model has long been a prominent concept in cognitive science, and the idea of predictive coding has been a prominent concept in neuroscience."
+    },
+    {
+      "text": "The JEPA architecture and non-sample-contrastive self-supervised learning are somewhat consistent with ideas of predictive coding and efficient coding.",
+      "locator": "pp. 43–48",
+      "quote": "The JEPA architecture and the corresponding non-sample-contrastive self-supervised learning method are somewhat consistent with ideas of predictive coding and efficient coding."
+    },
+    {
+      "text": "A single configurable world model engine can confer computational advantages through hardware reuse and allow knowledge sharing across multiple tasks.",
+      "locator": "pp. 43–48",
+      "quote": "The proposed architecture has a single world model engine that can be configured for the task at hand by the configurator. I have argued that this may not only confer a computational advantage through hardware reuse, but also allow knowledge to be shared across multiple tasks."
+    },
+    {
+      "text": "A configurable world model in the human brain may explain why humans can perform essentially only a single conscious reasoning and planning task at a time.",
+      "locator": "pp. 43–48",
+      "quote": "The hypothesis of a single, configurable world model engine in the human brain may explain why humans can essentially perform a single \"conscious\" reasoning and planning task at a time."
+    },
+    {
+      "text": "The illusion of consciousness may result from a configurator-like module that oversees the brain's function and configures it for the task at hand.",
+      "locator": "pp. 43–48",
+      "quote": "A highly-speculative idea is that the illusion of consciouness may be a side-effect of a configurator-like module in the brain that oversees the function of the rest of brain and configures it for the task at hand."
+    },
+    {
+      "text": "Instantaneous emotions like pain and pleasure may result from brain structures playing a role similar to the Intrinsic Cost module.",
+      "locator": "pp. 43–48",
+      "quote": "Instantaneous emotions (e.g. pain, pleasure, hunger, etc) may be the result of brain structures that play a role similar to the Intrinsic Cost module in the proposed architecture."
+    },
+    {
+      "text": "Anticipatory emotions like fear or elation may result from brain structures similar to the Trainable Critic.",
+      "locator": "pp. 43–48",
+      "quote": "Other emotions such as fear or elation may be the result of anticipation of outcome by brain structures whose function is similar to the Trainable Critic."
+    },
+    {
+      "text": "Autonomous intelligent agents with a cost module will inevitably possess machine emotions analogous to animal and human emotions.",
+      "locator": "pp. 43–48",
+      "quote": "The presence of a cost module that drives the behavior of the agent by searching for optimal actions suggests that autonomous intelligent agents of the type proposed here will inevitably possess the equivalent of emotions."
+    },
+    {
+      "text": "Current AI systems, even when pre-trained with self-supervised learning, possess very limited common sense compared to animals.",
+      "locator": "pp. 43–48",
+      "quote": "By contrast, AI systems, even when (pre-)trained with self-supervised mode (e.g. from text) seem to exhibit very limited levels of common sense, making them somewhat brittle."
+    },
+    {
+      "text": "Large language models possess background knowledge from written text but lack the common-sense knowledge that comes from physical interaction with the world.",
+      "locator": "pp. 43–48",
+      "quote": "Large language models (LLMs) seem to possess a surprisingly large amount of background knowledge extracted from written text. But much of human common-sense knowledge is not represented in any text and results from our interaction with the physical world. Because LLMs have no direct experience with an underlying reality, the type of common-sense knowledge they exhibit is very shallow and can be disconnected from reality."
+    },
+    {
+      "text": "Common sense can be characterized as the ability to use world models to fill in blanks and predict the future or infer unavailable information.",
+      "locator": "pp. 43–48",
+      "quote": "A possible characterization of common sense is the ability to use models of the world to fill in blanks, for example predicting the future, or more generally filling in information about the world that is unavailable from perception or from memory."
+    },
+    {
+      "text": "Common sense emerges from a collection of world models or a single configurable model engine capturing multiple levels of abstraction.",
+      "locator": "pp. 43–48",
+      "quote": "With this definition, common sense is an ability that emerges from a collection of models of the world or from a single model engine configurable to handle the situation at hand."
+    },
+    {
+      "text": "Common sense is grounded intelligence comprising models from low to high levels of abstraction, including knowledge from language interaction.",
+      "locator": "pp. 43–48",
+      "quote": "This view of common sense sits squarely in the camp of \"grounded intelligence\": common sense is a collection of models from low-levels of abstraction to high levels, all the way up to knowledge acquired through language."
+    },
+    {
+      "text": "Self-supervised learning applied to configurable H-JEPA might constitute the substrate for machine common sense.",
+      "locator": "pp. 43–48",
+      "quote": "Could SSL applied to configurable H-JEPA constitute the substrate of machine common sense?"
+    },
+    {
+      "text": "Common sense may emerge from learning world models that capture self-consistency and mutual dependencies of observations, enabling agents to fill in missing information and detect violations.",
+      "locator": "pp. 43–48",
+      "quote": "I speculate that common sense may emerge from learning world models that capture the self-consistency and mutual dependencies of observations in the world, allowing an agent to fill in missing information and detect violations of its world model."
+    },
+    {
+      "text": "Some researchers claim that human-level intelligence can be achieved through scaling up large transformer architectures trained on text and other modalities.",
+      "locator": "pp. 43–48",
+      "quote": "The surprising power of large transformer architectures trained to predict text and other modalities have led some to claim that we merely need to scale up those models"
+    },
+    {
+      "text": "Some researchers claim that reward is enough to achieve human-level intelligence through reinforcement learning.",
+      "locator": "pp. 43–48",
+      "quote": "The surprising power of reinforcement learning for games and other simple environments have led other to claim that reward is enough"
+    },
+    {
+      "text": "Some researchers claim that deep learning systems need to be augmented with hard-wired circuitry for symbol manipulation due to reasoning limitations.",
+      "locator": "pp. 43–48",
+      "quote": "finally, the limitations of current deep-learning systems when it comes to reasoning have led some to claim that deep learning systems need to be augmented by hard-wired circuitry to enable symbol manipulation"
+    },
+    {
+      "text": "Scaling alone is insufficient for human-level AI because large language models operate on tokenized data and are subject to limitations of generative models.",
+      "locator": "pp. 43–48",
+      "quote": "My position in this debate is that I do not believe that scaling is enough for two main reasons. First, current models operate on \"tokenized\" data and are generative."
+    },
+    {
+      "text": "Large language models handle discrete tokens but are unsuitable for continuous, high-dimensional signals like video.",
+      "locator": "pp. 43–48",
+      "quote": "While this works well for text, which is already a sequence of discrete tokens, it is less suitable for continuous, high dimensional signals such as video."
+    },
+    {
+      "text": "Generative models struggle with representing complex uncertainties in continuous spaces, whereas LLMs simplify this through discrete tokens.",
+      "locator": "pp. 43–48",
+      "quote": "Generative models have difficulty representing complex uncertainties in continuous spaces. LLMs simplify the representation of uncertainty in the prediction by only dealing with discrete objects from a finite collection"
+    },
+    {
+      "text": "High-dimensional continuous modalities like video require eliminating irrelevant information through an encoder, as in JEPA.",
+      "locator": "pp. 43–48",
+      "quote": "To represent such data, it is necessary to eliminate irrelevant information about the variable to be modeled through an encoder, as in the JEPA."
+    },
+    {
+      "text": "Current models are capable of only limited forms of reasoning due to the absence of abstract latent variables.",
+      "locator": "pp. 43–48",
+      "quote": "Second, current models are only capable of very limited forms of reasoning. The absence of abstract latent variables in these models precludes the exploration of multiple interpretations of a percept and the search for optimal courses of action to achieve a goal."
+    },
+    {
+      "text": "Current models cannot dynamically specify goals, limiting their reasoning capabilities.",
+      "locator": "pp. 43–48",
+      "quote": "In fact, dynamically specifying a goal in such models is essentially impossible."
+    },
+    {
+      "text": "Model-free reinforcement learning is extremely sample-inefficient compared to human and animal learning.",
+      "locator": "pp. 43–48",
+      "quote": "But model-free RL is extremely sample-inefficient, at least when compared with human and animal learning, requiring very large numbers of trials to learn a skill."
+    },
+    {
+      "text": "Scalar rewards provide low-information feedback, requiring pure RL systems to use very large numbers of trials to learn even simple tasks.",
+      "locator": "pp. 43–48",
+      "quote": "Scalar rewards provide low-information feedback to a learning system. As a consequence, a pure RL system requires a very large number of trials to learn even relatively simple tasks."
+    },
+    {
+      "text": "Model-based RL can be considerably more sample efficient than model-free RL.",
+      "locator": "pp. 43–48",
+      "quote": "Model-based RL clearly has the potential of being considerably more sample efficient."
+    },
+    {
+      "text": "In model-based systems where the world model is trained by predicting world states, reward plays a relatively minor role compared to predicting observations.",
+      "locator": "pp. 43–48",
+      "quote": "In the latter case, reward is clearly not enough: most of the parameters in the systems are trained to predict large amounts of observations in the world. Contrary to the title of a recent position paper by Silver et al. (Silver et al., 2021), the reward plays a relatively minor role in this scenario."
+    },
+    {
+      "text": "In the proposed architecture, reasoning is energy minimization or constraint satisfaction using search methods to find suitable combinations of actions and latent variables.",
+      "locator": "pp. 43–48",
+      "quote": "In the proposed architecture, reasoning comes down to energy minimization or constraint satisfaction by the actor using various search methods to find a suitable combination of actions and latent variables"
+    },
+    {
+      "text": "Gradient-based methods can be used for search if actions and latent variables are continuous and modules are differentiable.",
+      "locator": "pp. 43–48",
+      "quote": "If the actions and latent variables are continuous, and if the predictor and the cost modules are differentiable and relatively well behaved, one can use gradient-based methods to perform the search."
+    },
+    {
+      "text": "High-level abstractions with discrete action spaces may require exhaustive or heuristic search methods like Monte-Carlo Tree Search instead of gradient-based methods.",
+      "locator": "pp. 43–48",
+      "quote": "If the action space is discrete with low cardinality, the actor may use exhaustive search methods. If the action set cardinality, and hence the branching factor, are too large, the actor may have to resort to heuristic search methods, including Monte-Carlo Tree Search, or other gradient-free methods."
+    },
+    {
+      "text": "World-model training should find hierarchical representations where planning becomes a continuous relaxation of an otherwise discrete problem.",
+      "locator": "pp. 43–48",
+      "quote": "But the efficiency advantage of gradient-based search methods over gradient-free search methods motivates us to find ways for the world-model training procedure to find hierarchical representations with which the planning/reasoning problem constitutes a continuous relaxation of an otherwise discrete problem."
+    },
+    {
+      "text": "It remains an open question whether the proposed type of reasoning can encompass all forms of reasoning that humans and animals are capable of.",
+      "locator": "pp. 43–48",
+      "quote": "A remain question is whether the type of reasoning proposed here can encompass all forms of reasoning that humans and animals are capable of."
+    }
+  ],
+  "candidates": [
+    {
+      "kind": "concept",
+      "title": "Hierarchical JEPA",
+      "why": "The section discusses whether a Hierarchical JEPA can be built and trained from videos and questions about its capacity to learn abstract concept hierarchies, identifying it as a key technical challenge.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Latent variable regularization",
+      "why": "The section identifies multiple proposed mechanisms (discrete, low-dimensional, sparse, stochastic) for regularizing latent variables and notes uncertainty about which approach is best.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Mode-2 planning/reasoning",
+      "why": "The section discusses the challenge of instantiating multiple configurations of latent variables in Mode-2 planning and mentions the need for mechanisms to cycle through alternative interpretations.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Necker cube",
+      "why": "Used as an example of visual illusions with multiple equally-plausible interpretations to illustrate human ability to cycle through alternative percept interpretations.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Dynamic routing and gating circuits",
+      "why": "The section identifies these as probable architectural requirements in the predictor module that are not detailed in the proposal.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Short-term memory architecture",
+      "why": "The section discusses the unclear architecture and function of short-term memory for representing beliefs about world state and mentions Memory Networks as a related approach.",
+      "tier": "page"
+    },
+    {
+      "kind": "entity",
+      "title": "Memory Network system",
+      "why": "Referenced as containing the idea that neural nets could use associative memory as working memory, though getting such architectures to work for complex planning is noted as difficult.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Configurator module",
+      "why": "Identified as the most mysterious and least understood aspect, supposed to identify sequences of subgoals and configure agents to accomplish them, with implementation details unspecified.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Prefrontal cortex",
+      "why": "The section maps multiple architectural components (world model, critic, configurator, actor components) to different prefrontal cortex structures.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Basal ganglia",
+      "why": "Mentioned as the location of structures corresponding to the intrinsic cost module and involved in rewards.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Amygdala",
+      "why": "Identified as part of the basal ganglia structures corresponding to the intrinsic cost module.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Hippocampus",
+      "why": "The section notes that the function of short-term memory overlaps with knowledge of the hippocampus.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Pre-motor cortex",
+      "why": "Identified as the brain region corresponding to the actor module in the proposed architecture.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Predictive coding",
+      "why": "Identified as a prominent concept in neuroscience that the JEPA architecture and self-supervised learning are somewhat consistent with.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Efficient coding",
+      "why": "Mentioned alongside predictive coding as a neuroscience concept consistent with the JEPA architecture approach.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Common sense in AI",
+      "why": "The section extensively discusses whether the proposed architecture could be a path towards machine common sense and characterizes common sense as using world models to fill in missing information.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Grounded intelligence",
+      "why": "Presented as the framework where common sense is a collection of models from low to high abstraction levels including language knowledge.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Large language models",
+      "why": "The section discusses LLMs' capabilities and limitations regarding common sense, their reliance on tokenized data, and their limited experience with physical reality.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Transformer architectures",
+      "why": "Discussed as large-scale models trained with generative self-supervised learning that have been successful at capturing text knowledge.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Generative models",
+      "why": "The section analyzes limitations of generative models in representing complex uncertainties in continuous spaces compared to latent-variable approaches.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Denoising auto-encoder",
+      "why": "Identified as a type of contrastive method related to how LLMs perform self-supervised learning.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Masked auto-encoder",
+      "why": "Mentioned as the specific type of denoising auto-encoder approach used in LLM-style models.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Model-free reinforcement learning",
+      "why": "The section discusses sample inefficiency of model-free RL compared to human learning and its reliance on large numbers of trials.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Model-based reinforcement learning",
+      "why": "Discussed as having potential for greater sample efficiency by learning world models, with examination of how the world model is trained.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Actor-Critic methods",
+      "why": "Mentioned as methods where a critic module approximates the reward function to provide differentiable feedback.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Policy gradient methods",
+      "why": "Identified as methods that estimate reward gradients through multiple action trials.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Energy minimization",
+      "why": "The section describes reasoning as energy minimization or constraint satisfaction by the actor using search methods.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Gradient-based optimization",
+      "why": "The section discusses when gradient-based optimization can be used for action sequence inference and when it may fail.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Gradient-free search methods",
+      "why": "The section identifies multiple gradient-free approaches (dynamic programming, belief propagation, MCTS, SAT) needed when gradient-based methods are ineffective.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Monte-Carlo Tree Search",
+      "why": "Identified as a heuristic search method that may be needed when action space has high cardinality.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Dynamic programming",
+      "why": "Mentioned as a gradient-free search method potentially applicable when cost functions satisfy Bellman equations.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Belief propagation",
+      "why": "Listed as one of the gradient-free search methods that could be used in the actor module.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Continuous relaxation",
+      "why": "The section discusses finding hierarchical representations where discrete planning problems become continuous relaxation problems.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Leon Bottou",
+      "why": "Listed in acknowledgments as someone with whom ideas were discussed over years of interaction.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Yoshua Bengio",
+      "why": "Mentioned in acknowledgments and as someone who provided comments on the manuscript.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Geoffrey Hinton",
+      "why": "Listed in acknowledgments as a source of salient interactions on the paper's ideas.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Rob Fergus",
+      "why": "Named in acknowledgments as a contributor to the paper's ideas through interaction.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Jitendra Malik",
+      "why": "Listed in acknowledgments as a salient source of interactions on the paper's ideas.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Emmanuel Dupoux",
+      "why": "Mentioned in acknowledgments and as someone who provided manuscript comments.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Stanislas Dehaene",
+      "why": "Named in acknowledgments as a contributor to interactions on the paper's ideas.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Mikael Henaff",
+      "why": "Listed as someone at FAIR who contributed to the paper's ideas.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Alfredo Canziani",
+      "why": "Named as someone at NYU who contributed to interactions on the paper's ideas.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Nicolas Carion",
+      "why": "Listed as someone at NYU who contributed to interactions on the paper's ideas.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Olivier Delalleau",
+      "why": "Mentioned as a colleague who provided comments on the manuscript.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Gus Xia",
+      "why": "Listed as a colleague who provided comments on the manuscript.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Brown et al. (2020)",
+      "why": "Cited as claiming that human-level AI can be achieved by scaling up transformer architectures.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Silver et al. (2021)",
+      "why": "Cited as claiming that reward is enough for achieving human-level intelligence, though the author disputes this.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Marcus and Davis (2019)",
+      "why": "Cited as arguing that deep learning needs augmentation with hard-wired circuitry for symbol manipulation.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Vincent et al. (2010)",
+      "why": "Cited as creators of the denoising auto-encoder concept related to LLM training approaches.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Devlin et al. (2018)",
+      "why": "Cited as developers of masked auto-encoder approach used in LLM-style models.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Bordes et al. (2015)",
+      "why": "Cited in relation to Memory Networks containing the idea of using associative memory as working memory.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Sukhbaatar et al. (2015)",
+      "why": "Cited in relation to successors of Memory Networks for representing beliefs about world state.",
+      "tier": "mention"
+    }
+  ]
+}

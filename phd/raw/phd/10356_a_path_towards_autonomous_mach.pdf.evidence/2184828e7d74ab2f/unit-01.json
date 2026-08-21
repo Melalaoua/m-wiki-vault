@@ -1,0 +1,192 @@
+{
+  "ordinal": 1,
+  "locator": "pp. 1–6",
+  "claims": [
+    {
+      "text": "Current AI and machine learning systems require vastly more training trials than humans and animals to achieve reliable performance, even in domains where humans excel with minimal practice.",
+      "locator": "pp. 1–6",
+      "quote": "to be reliable, current ML systems need to be trained with very large numbers of trials so that even the rarest combination of situations will be encountered frequently during training"
+    },
+    {
+      "text": "Humans and animals learn world models—internal models of how the world works—which enable their superior learning efficiency and ability to reason and plan.",
+      "locator": "pp. 1–6",
+      "quote": "The answer may lie in the ability of humans and many animals to learn world models, internal models of how the world works."
+    },
+    {
+      "text": "A key challenge for AI is enabling machines to learn representations of the world, make predictions, and act through observation rather than requiring expensive interactions.",
+      "locator": "pp. 1–6",
+      "quote": "How can machines learn to represent the world, learn to predict, and learn to act largely by observation?"
+    },
+    {
+      "text": "Current gradient-based learning approaches are difficult to reconcile with logic-based symbolic reasoning, presenting a major challenge for machine reasoning and planning.",
+      "locator": "pp. 1–6",
+      "quote": "How can machine reason and plan in ways that are compatible with gradient-based learning? Our best approaches to learning rely on estimating and using the gradient of a loss, which can only be performed with differentiable architectures and is difficult to reconcile with logic-based symbolic reasoning."
+    },
+    {
+      "text": "Machines need to learn hierarchical representations at multiple levels of abstraction and time scales, decomposing complex actions into sequences of lower-level ones.",
+      "locator": "pp. 1–6",
+      "quote": "How can machines learn to represent percepts and action plans in a hierarchical manner, at multiple levels of abstraction, and multiple time scales?"
+    },
+    {
+      "text": "Common sense in animals and humans can be understood as a collection of world models that enable agents to predict what is likely, plausible, or impossible.",
+      "locator": "pp. 1–6",
+      "quote": "Common sense can be seen as a collection of models of the world that can tell an agent what is likely, what is plausible, and what is impossible."
+    },
+    {
+      "text": "Humans and animals acquire basic knowledge about the world through observation with minimal interaction during development, acquiring hierarchical concepts from concrete to abstract levels.",
+      "locator": "pp. 1–6",
+      "quote": "Much of this knowledge is acquired mostly by observation, with very little direct intervention, particularly in the first few weeks and months."
+    },
+    {
+      "text": "The document proposes a differentiable cognitive architecture with modules for perception, world modeling, action selection, cost computation, and memory that work together for autonomous intelligence.",
+      "locator": "pp. 1–6",
+      "quote": "an overall cognitive architecture in which all modules are differentiable and many of them are trainable (Section 3, Figure 2)"
+    },
+    {
+      "text": "JEPA (Joint Embedding Predictive Architecture) and its hierarchical variant (H-JEPA) are proposed as non-generative architectures for predictive world models that learn hierarchical representations.",
+      "locator": "pp. 1–6",
+      "quote": "JEPA and Hierarchical JEPA: a non-generative architecture for predictive world models that learn a hierarchy of representations (Sections 4.4 and 4.6, Figures 12 and 15)"
+    },
+    {
+      "text": "A non-contrastive self-supervised learning approach is proposed that produces representations that are both informative and predictable.",
+      "locator": "pp. 1–6",
+      "quote": "a non-contrastive self-supervised learning paradigm that produces representations that are simultaneously informative and predictable (Section 4.5, Figure 13)"
+    },
+    {
+      "text": "The proposed architecture uses H-JEPA to enable hierarchical planning under uncertainty.",
+      "locator": "pp. 1–6",
+      "quote": "A way to use H-JEPA as the basis of predictive world models for hierarchical planning under uncertainty (section 4.7, Figure 16 and 17)"
+    },
+    {
+      "text": "Humans may have a single configurable world model engine rather than separate models for each situation, enabling knowledge sharing and reasoning by analogy across tasks.",
+      "locator": "pp. 1–6",
+      "quote": "One hypothesis in this paper is that animals and humans have only one world model engine somewhere in their prefrontal cortex. That world model engine is dynamically configurable for the task at hand."
+    },
+    {
+      "text": "The proposed architecture includes an intrinsic cost module with immutable and trainable sub-components that compute the agent's discomfort or energy level.",
+      "locator": "pp. 1–6",
+      "quote": "It is composed of two sub-modules, the intrinsic cost, which is immutable (not trainable) and computes the immediate energy of the current state (pain, pleasure, hunger, etc), and the critic, a trainable module that predicts future values of the intrinsic cost."
+    },
+    {
+      "text": "The actor module in the architecture finds optimal action sequences that minimize estimated future cost by using predictions from the world model and critic.",
+      "locator": "pp. 1–6",
+      "quote": "The actor can find an optimal action sequence that minimizes the estimated future cost, and output the first action in the optimal sequence."
+    }
+  ],
+  "candidates": [
+    {
+      "kind": "concept",
+      "title": "World Models",
+      "why": "Central concept to the paper's proposal; explained as internal models enabling learning, prediction, reasoning and planning in biological and artificial agents.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Hierarchical Learning",
+      "why": "Core mechanism by which humans and animals acquire increasingly abstract concepts from concrete observations, developing multilevel representations.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Common Sense",
+      "why": "Defined as knowledge enabling agents to predict likelihood and plausibility; foundational to the proposed architecture's capabilities.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Joint Embedding Predictive Architecture (JEPA)",
+      "why": "One of the main technical contributions; described as a non-generative architecture for learning hierarchical predictive world models.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Hierarchical JEPA (H-JEPA)",
+      "why": "Hierarchical variant of JEPA proposed as basis for hierarchical planning under uncertainty; central to the paper's main contributions.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Self-Supervised Learning",
+      "why": "Proposed learning paradigm producing simultaneously informative and predictable representations without external supervision.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Intrinsic Motivation",
+      "why": "Listed as key concept; drives agent behavior through internal objectives rather than external rewards or supervision.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Energy-Based Models",
+      "why": "Listed as a key concept combining with world models and joint embeddings in the proposed approach.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Cognitive Architecture",
+      "why": "The overall framework for autonomous intelligence with differentiable, interconnected modules for perception, world modeling, action, and cost computation.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Model-Predictive Control",
+      "why": "Referenced as established technique since 1950s using forward models; foundational to the world model approach.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Intuitive Physics",
+      "why": "Knowledge children acquire about gravity, inertia, object persistence, and physical rules; necessary for reasoning and planning.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Gradient-Based Learning",
+      "why": "Discussed as core to modern ML but poses challenges for symbolic reasoning; central to the differentiability requirement of the proposed architecture.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Prefrontal Cortex",
+      "why": "Hypothesized location of the world model engine that is dynamically configurable across tasks.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Emmanuel Dupoux",
+      "why": "Credited for the chart showing the developmental timeline of concept acquisition in human infants.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Configurator Module",
+      "why": "Proposed component that dynamically configures all other modules in the architecture for the task at hand.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Perception Module",
+      "why": "Proposed component that estimates the current state of the world from sensory input.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Actor Module",
+      "why": "Proposed component that computes action sequences and optimizes them using world model and critic predictions.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Critic Module",
+      "why": "Trainable component that predicts future values of intrinsic cost to enable action optimization.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Short-Term Memory Module",
+      "why": "Proposed component tracking current and predicted world states and associated costs for planning.",
+      "tier": "mention"
+    }
+  ]
+}

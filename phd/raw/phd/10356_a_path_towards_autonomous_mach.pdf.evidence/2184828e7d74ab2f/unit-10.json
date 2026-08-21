@@ -1,0 +1,459 @@
+{
+  "ordinal": 10,
+  "locator": "pp. 40–42",
+  "claims": [
+    {
+      "text": "Learning a Mode-1 like policy network is known as direct inverse control in optimal control.",
+      "locator": "pp. 40–42",
+      "quote": "In the context of optimal control, learning a Mode-1 like policy network is known as direct inverse control."
+    },
+    {
+      "text": "Mode-2 style inference over actions using a predictive model in reinforcement learning is exemplified by Sutton's Dyna architecture from 1991.",
+      "locator": "pp. 40–42",
+      "quote": "The idea of Mode-2 style inference over actions using a predictive model in the context of reinforcement learning is also an old idea with, for example, Sutton's Dyna architecture (Sutton, 1991)."
+    },
+    {
+      "text": "Learnable models have recently received renewed interest across various contexts including generative modeling and reinforcement learning.",
+      "locator": "pp. 40–42",
+      "quote": "The idea of learnable models has recently enjoyed a renewal of interest in various contexts (Ha and Schmidhuber, 2018b; Ha and Schmidhuber, 2018a; Hafner et al., 2018; Hafner et al., 2020)"
+    },
+    {
+      "text": "Learning world models is particularly critical in robotics for grasping and manipulation where sample efficiency is crucial and simulation is often inaccurate.",
+      "locator": "pp. 40–42",
+      "quote": "Learning world models is particularly important in the context of robotics, especially for grasping and manipulation where sample efficiency is paramount and simulation is often inaccurate."
+    },
+    {
+      "text": "Classical reinforcement learning approaches require too many trials for real-world applications, spurring advances in learned models for control from robotics research.",
+      "locator": "pp. 40–42",
+      "quote": "because classical reinforcement learning approaches require too many trials for real-world applications, interesting advances in learned model for control have emerged from ML-based robotics research"
+    },
+    {
+      "text": "Early attempts to train predictive models from video without latent variables produced blurry predictions.",
+      "locator": "pp. 40–42",
+      "quote": "Early attempts to train predictive models without latent variables from simple video produced blurry predictions (Lerer et al., 2016)."
+    },
+    {
+      "text": "Latent variable models such as GANs, VAEs, and VQ-VAEs can handle uncertainty in video predictions and reduce blurriness.",
+      "locator": "pp. 40–42",
+      "quote": "To handle uncertainty in the predictions, one can use various flavors of latent variable models such as generative adversarial networks (GAN) (Goodfellow et al., 2014), variational auto-encoders (VAE) (Kingma and Welling, 2013) vector-quantized VAE (VQ-VAE) (van den Oord et al., 2017)."
+    },
+    {
+      "text": "Unlike generative models like the proposed JEPA, many video prediction methods have not been applied to control problems, though some have been applied to autonomous driving and robot control.",
+      "locator": "pp. 40–42",
+      "quote": "Although many of these methods have not been applied to control problems, some have been applied to vehicle trajectory prediction for autonomous driving (Henaff et al., 2019; Mercat et al., 2020), or various robot control tasks"
+    },
+    {
+      "text": "Contrastive methods such as Contrastive Predictive Coding have been applied to learning visual representations through video prediction.",
+      "locator": "pp. 40–42",
+      "quote": "The alternative to regularized latent-variable models is constrative methods, such as Contrastive Predictive Coding (CPC) (H´enaff et al., 2019), which has been applied to learning visual representations through video prediction"
+    },
+    {
+      "text": "Video prediction in representation spaces rather than pixel space can solve multi-modality and blurriness problems, but methods requiring pre-trained vision pipelines reduce general usability.",
+      "locator": "pp. 40–42",
+      "quote": "To solve the multi-modality/blurriness problem, other works have proposed to perform video prediction in representations spaces. In some works, the representation space is obtained from a vision pipeline that has been trained in supervised mode, for example to perform semantic segmentation (Luc et al., 2017; Luc et al., 2018). Unfortunately, the requirement for a pre-trained vision pipeline reduces the general usability of these methods"
+    },
+    {
+      "text": "Some proposals automatically learn video frame representations to enable easy prediction, generally limited to low-level features, often using reconstruction through a decoder to prevent collapse.",
+      "locator": "pp. 40–42",
+      "quote": "In the same spirit as JEPA, there have been proposals for automatically learning representations of video frames so they can be easily predicted. These proposals are generally limited to learning low-level features, and often use reconstruction through a decoder as a way to prevent collapse"
+    },
+    {
+      "text": "Temporal invariance or consistency can separate image content from instantiation parameters.",
+      "locator": "pp. 40–42",
+      "quote": "Some authors have proposed to use temporal invariance (or consistency) to separate the content of an image region from its instantiation parameters (Wiskott and Sejnowski, 2002; Gregor and LeCun, 2010a; Goroshin et al., 2015b)."
+    },
+    {
+      "text": "Non-contrastive SSL methods have been applied to joint embedding architectures for robotics control with some success.",
+      "locator": "pp. 40–42",
+      "quote": "At least one recent work has applied non-contrastive SSL methods to a joint embedding architecture for robotics control with some success (Pari et al., 2021; ?)."
+    },
+    {
+      "text": "Contrastive methods applied to joint-embedding and prediction have been successfully applied to speech recognition.",
+      "locator": "pp. 40–42",
+      "quote": "Contrastive methods applied to joint-embedding and prediction have been applied successfully to speech recognition (Baevski et al., 2020)"
+    },
+    {
+      "text": "Transformers are advocated for performing state trajectory predictions and are ideal for representing discrete object dynamics.",
+      "locator": "pp. 40–42",
+      "quote": "To perform state trajectory predictions, recent works have advocated the use of transformers, as proposed in the present paper. Transformers are ideal to represent the dynamics of discrete objects in interaction"
+    },
+    {
+      "text": "Transformers have been successfully applied to predicting car trajectories.",
+      "locator": "pp. 40–42",
+      "quote": "Transformers are ideal to represent the dynamics of discrete objects in interaction, and have successfully been applied to the prediction of car trajectories (Mercat et al., 2020)."
+    },
+    {
+      "text": "The trajectory transformer architecture allows a transformer to be fed the sequence of predicted states over an entire episode with constrained attention to operate causally.",
+      "locator": "pp. 40–42",
+      "quote": "An interesting proposal is the trajectory transformer architecture in which a transformer is fed with the sequence of predicted states over an entire episode (Janner et al., 2021). The pattern of attention can be constrained so as to force the system to only attend to the past so it can be operated in a causal manner (without looking at the future)"
+    },
+    {
+      "text": "Hierarchical planning remains a largely unsolved problem in machine learning.",
+      "locator": "pp. 40–42",
+      "quote": "Hierarchical planning is a largely unsolved problem."
+    },
+    {
+      "text": "Wayne and Abbott proposed an architecture using a stack of trained forward models that specify intermediate goals for lower layers.",
+      "locator": "pp. 40–42",
+      "quote": "Wayne and Abbott proposed an architecture that uses a stack of trained forward models that specify intermediate goals for the lower layers (Wayne and Abbott, 2014)."
+    },
+    {
+      "text": "Some recent works specify intermediate goals for robots in terms of pose parameters.",
+      "locator": "pp. 40–42",
+      "quote": "Some recent works specify intermediate goals for robots in terms of pose parameters (Gehring et al., 2021)."
+    },
+    {
+      "text": "The Director system contains a hierarchical world model and planning architecture trained end-to-end through reinforcement learning.",
+      "locator": "pp. 40–42",
+      "quote": "A more recent proposal is the Director system (Hafner et al., 2022) which contains a hierarchical world model and planning architecture trained end-to-end through reinforcement learning."
+    },
+    {
+      "text": "Intrinsic motivation to train agents has been studied in robotics contexts.",
+      "locator": "pp. 40–42",
+      "quote": "The idea of intrinsic motivation to train an agent has been studied in the context of robotics (Gottlieb et al., 2013)."
+    },
+    {
+      "text": "An intrinsic cost provides a differentiable and efficient way to direct agents to follow certain behaviors and learn certain skills.",
+      "locator": "pp. 40–42",
+      "quote": "The presence of an Intrinsic Cost provides a differentiable and efficient way to direct the agent to follow certain behaviors and to learn certain skills."
+    },
+    {
+      "text": "Energy-based models can broadly designate models that treat the energy function as fundamental and directly manipulate its landscape through learning.",
+      "locator": "pp. 40–42",
+      "quote": "In this paper, EBM designates a much broader category of models that treat the energy function as fundamental, and directly manipulate its landscape through learning."
+    },
+    {
+      "text": "Traditional optimization-based learning methods can be interpreted as energy-based methods.",
+      "locator": "pp. 40–42",
+      "quote": "In fact, all traditional optimization-based learning methods can be interpreted as energy-based methods (LeCun et al., 2006)."
+    },
+    {
+      "text": "Discriminative training methods for structure prediction can be formulated as energy-based models.",
+      "locator": "pp. 40–42",
+      "quote": "In particular, discriminative training methods for structure prediction problems can be formulated as EBM (LeCun et al., 1998; LeCun et al., 2006)."
+    },
+    {
+      "text": "Most EBM approaches for unsupervised or self-supervised learning have been contrastive, with the Boltzmann Machine being an early example.",
+      "locator": "pp. 40–42",
+      "quote": "Most EBM approaches for unsupervised or self-supervised learning have been contrastive. The earliest example is the Boltzmann Machine (Hinton and Sejnowski, 1983)"
+    },
+    {
+      "text": "The Boltzmann Machine is a probabilistic generative energy-based model trained contrastively.",
+      "locator": "pp. 40–42",
+      "quote": "The Boltzmann Machine (Hinton and Sejnowski, 1983), which is a probabilistic generative energy-based model trained contrastively."
+    },
+    {
+      "text": "Joint embedding architectures trained with contrastive and mutual information maximization methods have a long history.",
+      "locator": "pp. 40–42",
+      "quote": "Joint Embedding Architectures (JEA) trained with contrastive methods and mutual information maximization methods have a long history."
+    },
+    {
+      "text": "The first non-contrastive JEA was based on maximizing mutual information between representations from two branches seeing different views of the same scene.",
+      "locator": "pp. 40–42",
+      "quote": "The first non-contrastive JEA was (Becker and Hinton, 1992) which was based on maximizing a measure of mutual information between the representations from two branches seeing to different views of the same scene."
+    },
+    {
+      "text": "The Siamese Network was perhaps the first contrastive method for JEA, trained for signature verification on a pen tablet.",
+      "locator": "pp. 40–42",
+      "quote": "Perhaps the first contrastive method for JEA is the so-called \"Siamese Network\" (Bromley et al., 1994). This was trained contrastively for the purpose of verifying signatures handwritten on a pen tablet."
+    },
+    {
+      "text": "Joint embedding architectures remained largely untouched for over a decade until they were revived in papers from LeCun's group and Geoffrey Hinton's group.",
+      "locator": "pp. 40–42",
+      "quote": "The idea of JEA remained largely untouched for over a decade, until it was revived in a series of papers from my group (Chopra et al., 2005; Hadsell et al., 2006), and Geoffrey Hinton's group (Goldberger et al., 2005)."
+    },
+    {
+      "text": "Following the rebirth of deep learning, JEA was used for fine-grained recognition including face recognition.",
+      "locator": "pp. 40–42",
+      "quote": "Following the rebirth of deep learning, a few papers used JEA for fine-grained recognition, including face recognition (Taigman et al., 2014)."
+    },
+    {
+      "text": "With self-supervised learning, contrastive JEA methods have exploded in recent years including PIRL, MoCo, MoCo-v2, and SimCLR.",
+      "locator": "pp. 40–42",
+      "quote": "With the emergence of SSL approaches, the use of JEA trained contrastively has exploded in the last few years with methods such as PIRL (Misra and Maaten, 2020), MoCo and MoCo-v2 (He et al., 2020; Chen et al., 2020b), and SimCLR (Chen et al., 2020a)."
+    },
+    {
+      "text": "Some JEA methods use distillation approaches where one branch is a teacher whose outputs are targets for the other branch.",
+      "locator": "pp. 40–42",
+      "quote": "Some methods can be seen as \"distillation\" approaches in which one branch of the Siamese network is a teacher whose output are used as targets for the other branch."
+    },
+    {
+      "text": "Some methods quantize output vectors to discrete cluster prototypes.",
+      "locator": "pp. 40–42",
+      "quote": "This includes methods in which the output vectors are quantized to discrete cluster prototypes (see (Caron et al., 2020) and predecessors)."
+    },
+    {
+      "text": "Recent non-contrastive methods like BYOL have appeared in recent years.",
+      "locator": "pp. 40–42",
+      "quote": "In recent years, a number of new non-contrastive methods have appeared, such as BYOL (Grill et al., 2020)."
+    },
+    {
+      "text": "Non-contrastive methods advocated in this proposal prevent collapse by maximizing information content of embeddings, including Barlow Twins, VICReg, whitening-based methods, and Maximum Coding Rate Reduction.",
+      "locator": "pp. 40–42",
+      "quote": "But the class of non-contrastive methods advocated in the present proposal prevent collapse by maximizing the information content of the embeddings. This includes Barlow Twins (Zbontar et al., 2021), VICReg (Bardes et al., 2021), whitening-based methods (Ermolov et al., 2021), and Maximum Coding Rate Reduction methods"
+    },
+    {
+      "text": "There are obvious limitations in current machine learning approaches compared to human learning.",
+      "locator": "pp. 40–42",
+      "quote": "The limitations of current approaches to machine learning when compared with human learning are obvious (Lake et al., 2017a; Zaadnoordijk et al., 2022)."
+    },
+    {
+      "text": "Young children quickly learn abstract concepts and develop models enabling navigation, goal formation, and complex action planning.",
+      "locator": "pp. 40–42",
+      "quote": "Young children quickly learn abstract concepts (Murphy, 2002), and models that allow them to navigate, to form goals, and to plan complex action sequences to fulfill them"
+    },
+    {
+      "text": "In cognitive science, the idea that the brain builds predictive world models is common and has inspired machine learning attempts.",
+      "locator": "pp. 40–42",
+      "quote": "In cognitive science, the idea that the brain builds predictive world models is a common one, and have inspired attempt to reproduce the process in machines"
+    },
+    {
+      "text": "Efforts have been devoted to building video datasets to test intuitive physics and common sense in machines and infants.",
+      "locator": "pp. 40–42",
+      "quote": "Some efforts have been devoted to building video datasets to test intuitive physics common sense in machines and infants (Riochet et al., 2019)."
+    },
+    {
+      "text": "Planning is a well-studied feature of human intelligence.",
+      "locator": "pp. 40–42",
+      "quote": "The ability to plan is a well-studied feature of human intelligence (Mattar and Lengyel, 2022)."
+    },
+    {
+      "text": "People construct simplified representations of the world for planning in which irrelevant details are abstracted away.",
+      "locator": "pp. 40–42",
+      "quote": "There is evidence that people construct simplified representations of the world for planning in which irrelevant details are abstracted away (Ho et al., 2022)"
+    },
+    {
+      "text": "Consciousness is a speculative topic due to the difficulty of defining what consciousness is.",
+      "locator": "pp. 40–42",
+      "quote": "Consciousness is a rather speculative topic, owing to the difficulty of defining what consciousness is."
+    },
+    {
+      "text": "Dehaene and collaborators have proposed two types of consciousness: C1 related to attention modulation, and C2 requiring self-monitoring ability.",
+      "locator": "pp. 40–42",
+      "quote": "Dehaene and collaborators who have proposed two types of consciousness that they call C1 and C2. C1 is largely related with the modulation of attention, while C2 requires a self-monitoring ability"
+    },
+    {
+      "text": "The configurator module in the proposed architecture may be assimilable to C2 consciousness requiring self-monitoring ability.",
+      "locator": "pp. 40–42",
+      "quote": "C2 requires a self-monitoring ability, perhaps assimilable to what the configurator module needs to do in the present proposal (Dehaene et al., 2021)."
+    }
+  ],
+  "candidates": [
+    {
+      "kind": "concept",
+      "title": "Direct inverse control",
+      "why": "A fundamental approach in optimal control for learning policy networks from demonstrations.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Mode-1 policy network",
+      "why": "A type of policy network architecture in optimal control referenced as known direct inverse control.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Mode-2 inference over actions",
+      "why": "A predictive model-based approach to action inference in reinforcement learning, exemplified by Dyna.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Sutton's Dyna architecture",
+      "why": "Classic 1991 reinforcement learning system combining learning and planning with a predictive model.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "World models",
+      "why": "Learned representations enabling prediction of environment dynamics, crucial for robotics and control.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Sample efficiency in reinforcement learning",
+      "why": "A core problem in real-world applications where classical RL methods are impractical, driving advances in learned models.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Generative adversarial networks (GAN)",
+      "why": "A latent variable model approach for handling uncertainty and reducing blurriness in video prediction.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Variational auto-encoders (VAE)",
+      "why": "A latent variable model for video prediction that can represent multimodal outputs and reduce blurriness.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Vector-quantized VAE (VQ-VAE)",
+      "why": "A variant of VAE used in video prediction and representation learning applications.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Video prediction",
+      "why": "The task of learning to predict future video frames from current observations.",
+      "tier": "page"
+    },
+    {
+      "kind": "entity",
+      "title": "Contrastive Predictive Coding (CPC)",
+      "why": "A contrastive method for learning visual representations through video prediction.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Representation learning from video",
+      "why": "The task of learning abstract representations from video that enable prediction and control.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Multi-modality in prediction",
+      "why": "The problem of handling multiple possible future outcomes in stochastic environments.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Temporal invariance",
+      "why": "A principle for separating image content from instantiation parameters using temporal consistency.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Joint embedding architectures (JEA)",
+      "why": "A foundational architecture for learning representations by matching embeddings from different views.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Self-supervised learning (SSL)",
+      "why": "An approach to learning representations without labels, heavily using contrastive and non-contrastive methods.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Trajectory prediction",
+      "why": "The task of predicting future positions and movements of objects or agents.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Trajectory Transformer",
+      "why": "A transformer-based architecture for predicting state trajectories with causal attention patterns.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Hierarchical planning",
+      "why": "A planning approach using multiple levels of abstraction with intermediate goals, identified as largely unsolved.",
+      "tier": "page"
+    },
+    {
+      "kind": "entity",
+      "title": "Director system",
+      "why": "A recent hierarchical world model and planning architecture trained end-to-end with reinforcement learning.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Intrinsic motivation",
+      "why": "An approach to agent training that encourages learning of specific behaviors and skills through internal rewards.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Energy-based models (EBM)",
+      "why": "A broad class of models that manipulate an energy function landscape for learning.",
+      "tier": "page"
+    },
+    {
+      "kind": "entity",
+      "title": "Boltzmann Machine",
+      "why": "An early probabilistic generative energy-based model trained contrastively.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Contrastive learning",
+      "why": "A major approach to learning representations by contrasting similar and dissimilar examples.",
+      "tier": "page"
+    },
+    {
+      "kind": "entity",
+      "title": "Siamese Network",
+      "why": "An early contrastive method for joint embedding architectures originally used for signature verification.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "PIRL",
+      "why": "A self-supervised learning method using contrastive joint embedding architectures.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "MoCo (Momentum Contrast)",
+      "why": "A contrastive self-supervised learning method for representation learning.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "SimCLR",
+      "why": "A contrastive self-supervised learning framework using joint embedding architectures.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "BYOL",
+      "why": "A non-contrastive self-supervised learning method that avoids collapse without negative pairs.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Barlow Twins",
+      "why": "A non-contrastive method that prevents collapse by maximizing information content of embeddings.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "VICReg",
+      "why": "A non-contrastive self-supervised learning method using variance, invariance, and covariance regularization.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Maximum Coding Rate Reduction",
+      "why": "A non-contrastive method for learning representations by maximizing information content.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Intuitive physics",
+      "why": "Understanding of physical principles that enables prediction and reasoning about object dynamics.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Planning in humans",
+      "why": "A cognitive ability where humans construct simplified world representations abstracting irrelevant details.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Dehaene's consciousness framework",
+      "why": "A proposal distinguishing two types of consciousness: C1 (attention modulation) and C2 (self-monitoring).",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "JEPA (Joint-Embedding Predictive Architecture)",
+      "why": "A proposed architecture for learning world models without reconstruction, using joint embeddings and prediction.",
+      "tier": "page"
+    }
+  ]
+}

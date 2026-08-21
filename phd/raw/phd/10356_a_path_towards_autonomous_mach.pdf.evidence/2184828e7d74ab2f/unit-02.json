@@ -1,0 +1,242 @@
+{
+  "ordinal": 2,
+  "locator": "pp. 7–9",
+  "claims": [
+    {
+      "text": "The proposed autonomous intelligence architecture comprises multiple configurable modules whose functions are coordinated by a configurator module that exercises executive control.",
+      "locator": "pp. 7–9",
+      "quote": "The proposed architecture for autonomous intelligent agents is depicted in Figure 2. It is composed of a number of modules whose functions are described below. Some of the modules are configurable on the fly, i.e. their precise function is determined by the configurator module. The role of the configurator is executive control."
+    },
+    {
+      "text": "The configurator module takes input from all other modules and configures them by modulating parameters and attention circuits, priming perception, world model, and cost modules to fulfill particular goals.",
+      "locator": "pp. 7–9",
+      "quote": "The configurator module takes input from all other modules and configures them for the task at hand by modulating their parameters and their attention circuits. In particular, the configurator may prime the perception, world model, and cost modules to fulfill a particular goal."
+    },
+    {
+      "text": "The perception module receives sensor signals and estimates the current state of the world, potentially in hierarchical fashion with multiple levels of abstraction.",
+      "locator": "pp. 7–9",
+      "quote": "The perception module receives signals from sensors and estimates the current state of the world. The perception module may represent the state of the world in a hierarchical fashion, with multiple levels of abstraction."
+    },
+    {
+      "text": "The world model serves two primary functions: estimating missing information about world state and predicting plausible future states.",
+      "locator": "pp. 7–9",
+      "quote": "The world model module constitutes the most complex piece of the architecture. Its role is twofold: (1) estimate missing information about the state of the world not provided by perception, (2) predict plausible future states of the world."
+    },
+    {
+      "text": "The world model can predict multiple plausible world states parameterized by latent variables representing uncertainty about the world state.",
+      "locator": "pp. 7–9",
+      "quote": "The world model may predict multiple plausible world states, parameterized by latent variables that represent the uncertainty about the world state."
+    },
+    {
+      "text": "Representing multiple possible predictions and managing uncertainty in predictions are essential questions for building the proposed architecture.",
+      "locator": "pp. 7–9",
+      "quote": "There are two essential questions to answer when building the proposed architectures: (1) How to allow the world model to make multiple plausible prediction and represent uncertainty in the predictions, and (2) how to train the world model."
+    },
+    {
+      "text": "The cost module measures agent discomfort as a scalar quantity called energy, computed as the sum of outputs from the Intrinsic Cost module and the Trainable Critic module.",
+      "locator": "pp. 7–9",
+      "quote": "The cost module measures the level of \"discomfort\" of the agent, in the form of a scalar quantity called the energy. The energy is the sum of two energy terms computed by two sub-modules: the Intrinsic Cost module and the Trainable Critic module."
+    },
+    {
+      "text": "The agent's overall objective is to take actions that minimize average energy over time.",
+      "locator": "pp. 7–9",
+      "quote": "The overall objective of the agent is to take actions so as to remain in states that minimize the average energy."
+    },
+    {
+      "text": "The Intrinsic Cost module is hard-wired and non-trainable, computing intrinsic energy as a measure of instantaneous discomfort based on current or predicted world states.",
+      "locator": "pp. 7–9",
+      "quote": "The Intrinsic Cost module is hard-wired (immutable, non trainable) and computes a single scalar, the intrinsic energy that measures the instantaneous \"discomfort\" of the agent."
+    },
+    {
+      "text": "Basic behavioral drives and intrinsic motivations can be hard-wired into the intrinsic cost module, including drives related to walking, agency, social interaction, empathy, satiety, curiosity, and task fulfillment.",
+      "locator": "pp. 7–9",
+      "quote": "This is where basic behavioral drives and intrinsic motivations reside. Basic drives can be hard-wired in this module. This may include feeling \"good\" (low energy) when standing up to motivate a legged robot to walk, when influencing the state of the world to motivate agency, when interacting with humans to motivate social behavior, when perceiving joy in nearby humans to motivate empathy, when having a full energy supplies (hunger/satiety), when experiencing a new situation to motivate curiosity and exploration, when fulfilling a particular program."
+    },
+    {
+      "text": "The Trainable Critic module predicts estimates of future intrinsic energies from current or predicted world states.",
+      "locator": "pp. 7–9",
+      "quote": "The Trainable Critic module predicts an estimate of future intrinsic energies. Like the intrinsic cost, its input is either the current state of the world or possible states predicted by the world model."
+    },
+    {
+      "text": "The critic module trains itself by retrieving past states and subsequent intrinsic costs from associative memory and learning to predict future intrinsic costs.",
+      "locator": "pp. 7–9",
+      "quote": "For training, the critic retrieves past states and subsequent intrinsic costs stored in the associative memory module, and trains itself to predict the latter from the former."
+    },
+    {
+      "text": "The cost module's differentiable design allows energy gradients to be backpropagated through other modules for planning, reasoning, and learning.",
+      "locator": "pp. 7–9",
+      "quote": "Because both sub-modules of the cost module are differentiable, the gradient of the energy can be back-propagated through the other modules, particularly the world model, the actor and the perception, for planning, reasoning, and learning."
+    },
+    {
+      "text": "The short-term memory module stores information about past, current, and future world states along with corresponding intrinsic cost values.",
+      "locator": "pp. 7–9",
+      "quote": "The short-term memory module stores relevant information about the past, current, and future states of the world, as well as the corresponding value of the intrinsic cost."
+    },
+    {
+      "text": "The world model accesses and updates short-term memory while temporally predicting future or past states and spatially completing or correcting world state information.",
+      "locator": "pp. 7–9",
+      "quote": "The world model accesses and updates the short-term memory while temporally predicting future (or past) states of the world, and while spatially completing missing information or correcting inconsistent information about the current world state."
+    },
+    {
+      "text": "The short-term memory architecture may be similar to Key-Value Memory Networks and plays roles analogous to the hippocampus in vertebrates.",
+      "locator": "pp. 7–9",
+      "quote": "The architecture may be similar to that of Key-Value Memory Networks (Miller et al., 2016) This module can be seen as playing some of same roles as the hippocampus in vertebrates."
+    },
+    {
+      "text": "The actor module computes proposed action sequences, which are evaluated by the world model and cost module to determine optimal actions that minimize estimated cost.",
+      "locator": "pp. 7–9",
+      "quote": "The actor module computes proposals for sequences of actions and outputs actions to the effectors. The actor proposes a sequence of actions to the world model. The world model predicts future world state sequences from the action sequence, and feeds it to the cost."
+    },
+    {
+      "text": "The actor uses gradient-based methods to compute optimal action sequences; for discrete action spaces, dynamic programming may be used.",
+      "locator": "pp. 7–9",
+      "quote": "Since the actor has access to the gradient of the estimated cost with respect to the proposed action sequence, it can compute an optimal action sequence that minimizes the estimated cost using gradient-based methods. If the action space is discrete, dynamic programming may be used to find an optimal action sequence."
+    },
+    {
+      "text": "The actor's optimization process is akin to model-predictive control in optimal control theory.",
+      "locator": "pp. 7–9",
+      "quote": "This process is akin to model-predictive control in optimal control (Bryson and Ho, 1969)."
+    },
+    {
+      "text": "Mode-1 is a reactive perception-action mode that directly computes actions from perception output and short-term memory without using the world model or cost module.",
+      "locator": "pp. 7–9",
+      "quote": "This reactive process does not make use of the world model nor of the cost."
+    },
+    {
+      "text": "In Mode-1, the cost module can compute energy of the initial state and optionally predict the next state using the world model for later adjustment.",
+      "locator": "pp. 7–9",
+      "quote": "The cost module computes the energy of the initial state f [0] = C(s[0]) and stores the pairs (s[0], f [0]) in the short-term memory. Optionally, it may also predict the next state using the world model s[1] = Pred(s[0], a[0])."
+    },
+    {
+      "text": "Mode-1 is analogous to Daniel Kahneman's System 1, while Mode-2 involving model-predictive control is analogous to System 2.",
+      "locator": "pp. 7–9",
+      "quote": "The first mode is similar to Daniel Kahneman's \"System 1\", while the second mode is similar to \"System 2\" (Kahneman, 2011)"
+    },
+    {
+      "text": "The actor module comprises two components: a policy module that directly produces actions, and an action optimizer for model-predictive control.",
+      "locator": "pp. 7–9",
+      "quote": "The actor may comprise two components: (1) a policy module that directly produces an action from the world state estimate produced by the perception and retrieved from the short-term memory, and (2) the action optimizer, as described above, for model-predictive control."
+    },
+    {
+      "text": "Mode-2 involves reasoning and planning through the world model and cost module using model-predictive control paradigms.",
+      "locator": "pp. 7–9",
+      "quote": "The second mode involves reasoning and planning through the world model and the cost. It is akin to model-predictive control (MPC), a classical planning and reasoning paradigm in optimal control and robotics."
+    }
+  ],
+  "candidates": [
+    {
+      "kind": "concept",
+      "title": "Configurator module",
+      "why": "Executive control component that configures other modules by modulating parameters and attention circuits for task-specific execution.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Perception module",
+      "why": "Receives sensor signals and estimates world state, potentially hierarchically, with configuration by the configurator for task-relevant information extraction.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "World model",
+      "why": "Complex module that estimates missing world information and predicts plausible future states at multiple levels of abstraction, handling uncertainty through latent variables.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Cost module",
+      "why": "Measures agent discomfort as energy, composed of Intrinsic Cost and Trainable Critic sub-modules, enabling gradient-based optimization across the architecture.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Intrinsic Cost module",
+      "why": "Hard-wired, non-trainable module computing instantaneous discomfort based on pain, pleasure, hunger, and behavioral drives relevant to task execution.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Trainable Critic module",
+      "why": "Predicts future intrinsic energy from current or predicted states, trained on retrieved past states and associated costs from memory.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Short-term memory module",
+      "why": "Stores past, current, and future world states with associated intrinsic costs, supporting world model predictions and critic training via retrieval operations.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Actor module",
+      "why": "Generates proposed action sequences optimized through gradient descent or dynamic programming to minimize estimated future cost via model-predictive control.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Mode-1 perception-action episode",
+      "why": "Reactive behavior mode that directly produces actions from perception and memory without planning, analogous to Kahneman's System 1 thinking.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Mode-2 perception-action episode",
+      "why": "Planning and reasoning mode using model-predictive control through world model and cost evaluation, analogous to Kahneman's System 2 thinking.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Model-predictive control",
+      "why": "Classical optimization framework used by the actor module to compute optimal action sequences based on cost gradients.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Key-Value Memory Networks",
+      "why": "Referenced architecture that the short-term memory module may resemble in its structure and operation.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Daniel Kahneman",
+      "why": "Cognitive scientist whose System 1/System 2 framework is used as analogy for reactive versus deliberative processing modes.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Bryson and Ho",
+      "why": "Authors of foundational work on model-predictive control in optimal control theory, cited for the actor module's planning methodology.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Miller et al.",
+      "why": "Authors of Key-Value Memory Networks paper referenced for the short-term memory module architecture.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Energy minimization",
+      "why": "Core objective function where reasoning is framed as constraint satisfaction or energy minimization across planning and learning.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Hierarchical state representation",
+      "why": "The perception module and world model may represent world state at multiple levels of abstraction enabling prediction across different time scales.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Gradient-based optimization",
+      "why": "Method used by the actor to compute optimal action sequences from cost function gradients.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Dynamic programming",
+      "why": "Alternative optimization method applicable when the action space is discrete, as mentioned for the actor module.",
+      "tier": "mention"
+    }
+  ]
+}

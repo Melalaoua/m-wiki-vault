@@ -1,0 +1,205 @@
+{
+  "ordinal": 3,
+  "locator": "pp. 10–12",
+  "claims": [
+    {
+      "text": "The policy module produces an action as a function of the current state, and this function is modulated by a configurator component.",
+      "locator": "pp. 10–12",
+      "quote": "a policy module, a component of the actor, produces an action as a function of the state a[0] = A(s[0]). The function of the policy module is modulated by the configurator"
+    },
+    {
+      "text": "The policy module implements a purely reactive policy without deliberate planning or prediction, though it can access short-term memory for more complete information about previous states.",
+      "locator": "pp. 10–12",
+      "quote": "The policy module implements a purely reactive policy that does not involve deliberate planning nor prediction through the world model. Yet, its structure can be quite sophisticated. For example, in addition to the state s[0], the policy module may access the short-term memory"
+    },
+    {
+      "text": "Gradient backpropagation from cost through perception to action is impossible because the external world is not differentiable, requiring policy gradient methods or costly world sampling instead.",
+      "locator": "pp. 10–12",
+      "quote": "Since the world is not differentiable, one cannot back-propagate gradients from the cost through the chain cost ← perception ← world ← action. In this mode, gradients of the cost f [0] with respect to actions can only be estimated by polling the world with multiple perturbed actions"
+    },
+    {
+      "text": "During Mode-1, the system can optionally adjust the world model by running it for one step and using the observed world state as a target for the predictor.",
+      "locator": "pp. 10–12",
+      "quote": "During Mode-1, the system can optionally adjust the world model. It runs the world model for one step, predicting the next state s[1], then it waits for the next percept resulting from the action taken, and uses the observed world state as a target for the predictor"
+    },
+    {
+      "text": "Using a world model allows the agent to imagine action sequences and predict their outcomes, reducing the need for expensive and dangerous real-world trials.",
+      "locator": "pp. 10–12",
+      "quote": "With the use of a world model, the agent can imagine courses of actions and predict their effect and outcome, lessening the need to perform an expensive and dangerous search for good actions and policies by trying multiple actions in the external world"
+    },
+    {
+      "text": "Mode-2 involves proposing an initial action sequence, using the world model to predict resulting state sequences, evaluating total cost as a sum over time steps, and planning new action sequences with lower cost through gradient-based optimization.",
+      "locator": "pp. 10–12",
+      "quote": "action proposal: the actor proposes an initial sequence of actions to be fed to the world model for evaluation...simulation: the world model predicts one or several likely sequence of world state representations...evaluation: the cost module estimates a total cost from the predicted state sequence, generally as a sum over time steps F (x) = ∑T t=1 C(s[t])...planning: the actor proposes a new action sequence with lower cost"
+    },
+    {
+      "text": "Mode-2 is essentially Model-Predictive Control with receding horizon, where the world model and cost function are learned rather than hand-designed.",
+      "locator": "pp. 10–12",
+      "quote": "This procedure is essentially what is known as Model-Predictive Control (MPC) with receding horizon in the optimal control literature. The difference with classical optimal control is that the world model and the cost function are learned"
+    },
+    {
+      "text": "Various optimization strategies beyond gradient-based methods can be used for Mode-2 planning, including dynamic programming, combinatorial optimization, simulated annealing, and heuristic search techniques.",
+      "locator": "pp. 10–12",
+      "quote": "any form of optimization strategy can be used, for step 5. While gradient-based optimization methods can be efficient...situations in which the action-cost mapping has discontinuities may require to use other optimization strategies...These strategies include dynamic programming, combinatorial optimization, simulate annealing and other gradient-free methods, heuristic search techniques (e.g. tree search with pruning)"
+    },
+    {
+      "text": "Real-world uncertainty requires handling multiple possible states resulting from a single initial state and action due to aleatoric uncertainty, epistemic uncertainty, or imperfect world model accuracy.",
+      "locator": "pp. 10–12",
+      "quote": "In real situations, the world is likely to be somewhat unpredictable. Multiple states may result from a single initial state and action due to the fact that the world is intrinsically stochastic (aleatoric uncertainty), or that the state representation s[t] contains incomplete information about the true world state (epistemic uncertainty), or that the world model's prediction accuracy is imperfect"
+    },
+    {
+      "text": "Mode-1 is considerably less computationally onerous than Mode-2, requiring only a single pass through a policy module, allowing multiple policy modules to work simultaneously on different tasks.",
+      "locator": "pp. 10–12",
+      "quote": "Mode-1 is considerably less onerous, since it only requires a single pass through a policy module. The agent may possess multiple policy modules working simultaneously, each specialized for a particular set of tasks"
+    },
+    {
+      "text": "A policy module can be trained to approximate optimal actions from Mode-2 reasoning by minimizing divergence between the policy output and the optimal Mode-2 actions.",
+      "locator": "pp. 10–12",
+      "quote": "the parameters of the policy module A(s[t]) are updated to minimize a divergence measure between its output and the optimal action at that time D(ˇa[t], A(s[t]))"
+    },
+    {
+      "text": "A trained policy module performs amortized inference and can be used to produce reactive actions in Mode-1 or initialize action sequences for Mode-2 optimization.",
+      "locator": "pp. 10–12",
+      "quote": "The policy module can be seen as performing a form of amortized inference...It can also be used to recursively compute an initial action sequence proposal before Mode-2 optimization"
+    },
+    {
+      "text": "The process allows agents to acquire new skills through Mode-2 reasoning that are then compiled into reactive policy modules, eliminating the need for careful planning once learned.",
+      "locator": "pp. 10–12",
+      "quote": "This process allows the agent to use the full power of its world model and reasoning capabilities to acquire new skills that are then \"compiled\" into a reactive policy module that no longer requires careful planning"
+    }
+  ],
+  "candidates": [
+    {
+      "kind": "concept",
+      "title": "Policy Module",
+      "why": "Core component of the actor that maps states to actions, can be reactive or trained from Mode-2 reasoning, fundamental to both operational modes.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Configurator",
+      "why": "Component that modulates the policy module to adapt it for different tasks.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Short-term Memory",
+      "why": "Storage mechanism used by policy modules for associative retrieval and by the system to store state-cost pairs for critic training.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "World Model",
+      "why": "Learned predictor component that simulates future states from current state and action, central to Mode-2 reasoning and planning.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Cost Module",
+      "why": "Evaluates energy/cost of states, used for both immediate cost assessment and sequence evaluation.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Mode-1: Reactive Operation",
+      "why": "Fast operational mode using only policy module for immediate action selection without planning.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Mode-2: Planning and Reasoning",
+      "why": "Computationally intensive mode using world model simulation and optimization to plan action sequences.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Model-Predictive Control (MPC)",
+      "why": "Classical control technique that Mode-2 implements with learned models and cost functions instead of hand-designed ones.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Receding Horizon Planning",
+      "why": "Planning strategy used in Mode-2 where only the first few actions of an optimized sequence are executed before replanning.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Amortized Inference",
+      "why": "Concept describing how a trained policy module efficiently approximates expensive Mode-2 optimization without explicit planning.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Policy Gradient Methods",
+      "why": "Reinforcement learning technique used when gradients cannot be backpropagated through the world, requiring empirical estimation.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Aleatoric Uncertainty",
+      "why": "Type of environmental unpredictability due to intrinsic stochasticity in the world.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Epistemic Uncertainty",
+      "why": "Type of uncertainty arising from incomplete information in state representation about the true world state.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Divergence Measure",
+      "why": "Loss function used to train policy modules to approximate Mode-2 optimal actions.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Dynamic Programming",
+      "why": "Optimization strategy that can be used for Mode-2 planning when action spaces are small and discretized.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Gradient-based Optimization",
+      "why": "Primary optimization method for Mode-2 when cost and world model are differentiable.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Combinatorial Optimization",
+      "why": "Alternative optimization strategy for Mode-2 when action-cost mappings have discontinuities.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Simulated Annealing",
+      "why": "Gradient-free optimization strategy available as alternative for Mode-2 planning.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Tree Search with Pruning",
+      "why": "Heuristic search technique available as alternative optimization strategy for Mode-2.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Perception System",
+      "why": "Extracts state representation from raw observations for use by cost module and actor.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Effectors",
+      "why": "Output mechanism that executes actions selected by the policy module.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Critic",
+      "why": "Component that learns to estimate costs, its predictions stored in short-term memory for training.",
+      "tier": "mention"
+    }
+  ]
+}

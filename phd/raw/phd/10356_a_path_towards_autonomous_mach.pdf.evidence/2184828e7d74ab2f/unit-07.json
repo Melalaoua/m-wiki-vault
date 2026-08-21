@@ -1,0 +1,149 @@
+{
+  "ordinal": 7,
+  "locator": "pp. 28–30",
+  "claims": [
+    {
+      "text": "VICReg is a non-sample-contrastive method that maximizes information content of representations by mapping them to higher-dimensional embeddings and driving the covariance matrix towards identity.",
+      "locator": "pp. 28–30",
+      "quote": "VICReg is a non sample-contrastive method for training embeddings. The information content of the representations sx and sy is maximized by first mapping them to higher-dimensional embeddings vx and vy through an expander (e.g. a trainable neural net with a few layers). The loss function drives the covariance matrix of the embeddings towards the identity (e.g. computed over a batch)."
+    },
+    {
+      "text": "VICReg can be characterized as dimension-contrastive rather than sample-contrastive.",
+      "locator": "pp. 28–30",
+      "quote": "VICReg can be seen as a dimension-contrastive method as opposed to sample-contrastive methods."
+    },
+    {
+      "text": "To maximize information content of a representation, the encoding function should be minimally surjective, meaning the volume of input sets mapping to the same representation should be minimal.",
+      "locator": "pp. 28–30",
+      "quote": "sy is maximally informative about y if the function Encw(y) is minimally surjective, i.e. if the volume of sets of y that map to the same sy is minimal."
+    },
+    {
+      "text": "VICReg uses two sub-criteria: components must not be constant, and components must be as independent of each other as possible.",
+      "locator": "pp. 28–30",
+      "quote": "To maximize the information content of sx, VICReg uses the following two sub-criteria: (1) the components of sx must not be constant, (2) the components of sx must be as independent of each other as possible."
+    },
+    {
+      "text": "VICReg employs a variance loss that maintains standard deviation of each component above a threshold over a batch.",
+      "locator": "pp. 28–30",
+      "quote": "Variance: a hinge loss that maintains the standard deviation of each component of sy and vy above a threshold over a batch."
+    },
+    {
+      "text": "VICReg uses a covariance loss that pushes covariance between different components towards zero, decorrelating the representation components.",
+      "locator": "pp. 28–30",
+      "quote": "Covariance: a covariance loss in which the covariance between pairs of different components of vy are pushed towards zero. This has the effect of decorrelating the components of vy, which will in turn make the components of sy somewhat independent."
+    },
+    {
+      "text": "VICReg's third criterion is the representation prediction error between the actual and predicted representations.",
+      "locator": "pp. 28–30",
+      "quote": "The third criterion of VICReg is the representation prediction error D(sy, ˜sy)."
+    },
+    {
+      "text": "In simple VICReg implementations, the predictor is the identity function, making representations invariant to transformations; more sophisticated versions use latent variables that may be discrete, low-dimensional, or stochastic.",
+      "locator": "pp. 28–30",
+      "quote": "In the simplest implementations of VICReg, the predictor is constant (equal to the identity function), making the representations invariant to the transformation that turns x into y. In more sophisticated versions, the predictor may have no latent variable, or may depend on a latent variable that is either discrete, low dimensional, or stochastic."
+    },
+    {
+      "text": "VICReg ensures different components of representations are different across a batch, contrasting over components rather than over vectors like traditional contrastive methods.",
+      "locator": "pp. 28–30",
+      "quote": "While contrastive methods ensure that representations of different inputs in a batch are different, VICReg ensures that different components of representations over a batch are different. VICReg is contrastive over components, while traditional contrastive methods are contrastive over vectors, which requires a large number of contrastive samples."
+    },
+    {
+      "text": "The most promising aspect of JEPA trained with VICReg is for learning hierarchical predictive world models.",
+      "locator": "pp. 28–30",
+      "quote": "But the most promising aspect of JEPA trained with VICReg and similar non-contrastive methods is for learning hierarchical predictive world models, as we examine in the next section."
+    },
+    {
+      "text": "JEPA architectures and predictor design create inductive biases that implicitly determine what information is predictable.",
+      "locator": "pp. 28–30",
+      "quote": "What is predictable and what does not get represented is determined implicitly by the architectures of the encoders and predictor. They determine a inductive bias that defines what information is predictable or not."
+    },
+    {
+      "text": "Prediction heads can be added to bias JEPA towards learning representations containing task-relevant information.",
+      "locator": "pp. 28–30",
+      "quote": "But it would be useful to have a way to bias the system towards representations that contain information relevant to a class of tasks. This can be done by adding prediction heads that take ˜sy as input and are trained to predict variables that are easily derived from the data and known to be relevant to the task."
+    },
+    {
+      "text": "JEPA models can learn abstract representations by eliminating irrelevant details, making the world more predictable.",
+      "locator": "pp. 28–30",
+      "quote": "a JEPA can choose to train its encoders to eliminate irrelevant details of the inputs so as to make the representations more predictable. In other words, a JEPA will learn abstract representations that make the world predictable."
+    },
+    {
+      "text": "Generative latent-variable models cannot eliminate irrelevant details the way JEPA can; they can only push such details into latent variables.",
+      "locator": "pp. 28–30",
+      "quote": "It is important to note that generative latent-variable models are not capable of eliminating irrelevant details, other than by pushing them into a latent variable. This is because they do not produce abstract (and invariant) representations of y."
+    },
+    {
+      "text": "Hierarchical JEPA enables multi-timescale and multi-level abstraction prediction, with lower levels for short-term detailed predictions and higher levels for long-term abstract predictions.",
+      "locator": "pp. 28–30",
+      "quote": "The capacity of JEPA to learn abstractions suggests an extension of the architecture to handle prediction at multiple time scales and multiple levels of abstraction. Intuitively, low-level representations contain a lot of details about the input, and can be used to predict in the short term. But it may be difficult to produce accurate long-term predictions with the same level of details. Conversely high-level, abstract representation may enable long-term predictions, but at the cost of eliminating a lot of details."
+    }
+  ],
+  "candidates": [
+    {
+      "kind": "concept",
+      "title": "VICReg",
+      "why": "A non-sample-contrastive method for training embeddings that maximizes information content through variance and covariance losses; dimension-contrastive rather than sample-contrastive.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "JEPA (Joint Embedding Predictive Architecture)",
+      "why": "An architecture that learns abstract representations through joint embedding and prediction, capable of eliminating irrelevant details and learning at multiple timescales.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Dimension-contrastive methods",
+      "why": "Methods that contrast over components of representations rather than over vectors, as exemplified by VICReg.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Hierarchical JEPA (H-JEPA)",
+      "why": "Extension of JEPA architecture enabling multi-timescale and multi-level abstraction prediction through stacked levels.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Minimal surjectivity",
+      "why": "Criterion for maximizing information content in encodings by minimizing the volume of input sets that map to the same representation.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Amortized inference",
+      "why": "A method for reducing computational cost when inferring latent variables in VICReg through gradient-based methods.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Variance loss",
+      "why": "A hinge loss component in VICReg that maintains standard deviation of representation components above a threshold.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Covariance loss",
+      "why": "A loss component in VICReg that decorrelates representation components by pushing covariance between pairs towards zero.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Expander module",
+      "why": "A trainable neural network component in VICReg that maps representations to higher-dimensional embeddings.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Prediction heads",
+      "why": "Additional task-specific layers added to JEPA to bias learning towards task-relevant representations.",
+      "tier": "mention"
+    },
+    {
+      "kind": "entity",
+      "title": "Bardes et al., 2021",
+      "why": "Citation for the VICReg method.",
+      "tier": "mention"
+    }
+  ]
+}

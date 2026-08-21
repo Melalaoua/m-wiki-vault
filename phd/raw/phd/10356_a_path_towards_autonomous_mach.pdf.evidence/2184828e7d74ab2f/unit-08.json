@@ -1,0 +1,216 @@
+{
+  "ordinal": 8,
+  "locator": "pp. 31–33",
+  "claims": [
+    {
+      "text": "When driving a car, given a proposed sequence of steering and pedal actions over several seconds, drivers can accurately predict the car's trajectory over that same period.",
+      "locator": "pp. 31–33",
+      "quote": "given a proposed sequence of actions on the steering wheel and pedals over the next several seconds, drivers can accurately predict the trajectory of their car over the same period"
+    },
+    {
+      "text": "Trajectory details over longer driving periods are harder to predict because they depend on unpredictable external events like other cars, traffic lights, and pedestrians.",
+      "locator": "pp. 31–33",
+      "quote": "The details of the trajectory over longer periods are harder to predict because they may depend on other cars, traffic lights, pedestrians, and other external events that are somewhat unpredictable"
+    },
+    {
+      "text": "Drivers can make accurate higher-level predictions about arrival times even when detailed trajectories are unpredictable.",
+      "locator": "pp. 31–33",
+      "quote": "the car will probably arrive at its destination within a predictable time frame"
+    },
+    {
+      "text": "Discrete latent variables can represent multiple alternative routes in hierarchical prediction.",
+      "locator": "pp. 31–33",
+      "quote": "A discrete latent variable may be used to represent multiple alternative routes"
+    },
+    {
+      "text": "Hierarchical world state prediction with multiple levels can use convolutional and other modules with temporal pooling between levels.",
+      "locator": "pp. 31–33",
+      "quote": "One can envision architectures of this type with many levels, possibly using convolutional and other modules, and using temporal pooling between levels to coarse-grain the representation and perform longer-term predictions"
+    },
+    {
+      "text": "The ability to represent world state sequences at several levels of abstraction is essential to intelligent behavior.",
+      "locator": "pp. 31–33",
+      "quote": "the ability to represent sequences of world states at several levels of abstraction is essential to intelligent behavior"
+    },
+    {
+      "text": "Complex tasks can be decomposed into hierarchically structured subtasks at different levels of detail, instantiated when local conditions permit.",
+      "locator": "pp. 31–33",
+      "quote": "With multi-level representations of world states and actions, a complex task can be decomposed into successively more detailed sub-tasks, instantiated into actions sequences when informed by local conditions"
+    },
+    {
+      "text": "Hierarchical planning architectures can learn intermediate action representations rather than requiring them to be predefined.",
+      "locator": "pp. 31–33",
+      "quote": "if one abides by the deep learning philosophy, those intermediate representations of action plans should also be learned"
+    },
+    {
+      "text": "In hierarchical Mode-2 planning, high-level actions are actually targets for lower-level predicted states, functioning as conditions that lower-level states must satisfy.",
+      "locator": "pp. 31–33",
+      "quote": "These high-level \"actions\" are not real actions but targets for the lower level predicted states. One can think of them as conditions that the lower-level state must satisfy in order for the high-level predictions to be accurate"
+    },
+    {
+      "text": "Cost modules measure the extent to which a lower-level state satisfies a high-level condition to define subgoals.",
+      "locator": "pp. 31–33",
+      "quote": "cost modules C(s[2]) and C(s[4]) take a lower-level state s[2] and a high-level condition a2[2] and measure to what extent the state satisfies the condition"
+    },
+    {
+      "text": "Top-down greedy hierarchical planning can be improved by jointly optimizing action sequences across all layers.",
+      "locator": "pp. 31–33",
+      "quote": "one may advantageously iterate the optimization so that high level and low-level action sequences are optimized jointly"
+    },
+    {
+      "text": "The concept that an action is a condition to be satisfied by the level below originates from classical control theory.",
+      "locator": "pp. 31–33",
+      "quote": "The idea that an action is merely a condition to be satisfied by the level below is actually an old one in control theory"
+    },
+    {
+      "text": "A proportional servomechanism from classical control theory can be understood as receiving a target state with quadratic cost measuring distance to that target.",
+      "locator": "pp. 31–33",
+      "quote": "a classical proportional servomechanism can be seen as being given a target state. A quadratic cost measures the squared distance between the target and the current state"
+    },
+    {
+      "text": "Real-world uncertainty can arise from the world being intrinsically stochastic (aleatoric uncertainty type 1).",
+      "locator": "pp. 31–33",
+      "quote": "the world is intrinsically stochastic (aleatoric uncertainty, type 1)"
+    },
+    {
+      "text": "Uncertainty can result from deterministic but chaotic worlds that are difficult to predict without infinitely precise perception (aleatoric uncertainty type 2).",
+      "locator": "pp. 31–33",
+      "quote": "the world is deterministic but chaotic, hence difficult to predict without infinitely precise perception (aleatoric uncertainty, type 2)"
+    },
+    {
+      "text": "Partial observability of a deterministic world creates aleatoric uncertainty (type 3).",
+      "locator": "pp. 31–33",
+      "quote": "the world is deterministic but partially observable (aleatoric uncertainty type 3)"
+    },
+    {
+      "text": "Epistemic uncertainty type 1 occurs when sensors provide only partial information about fully observable world states.",
+      "locator": "pp. 31–33",
+      "quote": "the world is fully observable, but the sensors only give partial information about the world state (epistemic uncertainty, type 1)"
+    },
+    {
+      "text": "Epistemic uncertainty type 2 occurs when the perception module's extracted representation lacks information necessary for accurate prediction.",
+      "locator": "pp. 31–33",
+      "quote": "the representation of the world state extracted by the perception module does not contain the full information necessary for accurate prediction (epistemic uncertainty, type 2)"
+    },
+    {
+      "text": "Epistemic uncertainty type 3 results from inaccurate world models due to limited representational power (bounded rationality).",
+      "locator": "pp. 31–33",
+      "quote": "the world model is inaccurate due to limitations of its representational power (bounded rationality or epistemic uncertainty, type 3)"
+    },
+    {
+      "text": "Latent variables in predictors can represent prediction information that cannot be derived from prior observations.",
+      "locator": "pp. 31–33",
+      "quote": "Uncertainty about predictions can be handled by predictors with latent variables. The latent variables contain information about the prediction that cannot be derived from the prior observation"
+    },
+    {
+      "text": "Latent variables must be regularized to prevent energy collapse and force the system to predict without their help.",
+      "locator": "pp. 31–33",
+      "quote": "The latent variables must be regularized to prevent an energy collapse and to force the system to predict as much as possible without the help of it"
+    },
+    {
+      "text": "At planning time, latent variables are sampled from distributions created by applying Gibbs distributions to regularizers, producing different predictions.",
+      "locator": "pp. 31–33",
+      "quote": "At planning time, latent variables are sampled from distributions obtained by applying a Gibbs distribution to the regularizers. Each sample leads to a different prediction"
+    },
+    {
+      "text": "Regularizer parameters can be functions of previous states and retrieved memories to produce consistent latent sequences.",
+      "locator": "pp. 31–33",
+      "quote": "the parameters of the regularizer can be functions of previous states and retrieved memories"
+    },
+    {
+      "text": "The number of generated state trajectories grows exponentially when each latent variable has k discrete values and prediction progresses t time steps (k^t trajectories).",
+      "locator": "pp. 31–33",
+      "quote": "If each latent variable has k possible discrete values, the number of possible trajectories will grow as k^t, where t is the number of time steps"
+    },
+    {
+      "text": "Directed search and pruning strategies are necessary to manage exponential growth in predicted trajectories.",
+      "locator": "pp. 31–33",
+      "quote": "Directed search and pruning strategies must be employed"
+    },
+    {
+      "text": "With multiple predicted trajectories, optimal action sequences can minimize average cost or combinations of average and variance to minimize risk.",
+      "locator": "pp. 31–33",
+      "quote": "optimal action sequences can be computed that minimize the average cost, or a combination of average and variance of the cost so as to minimize risk"
+    }
+  ],
+  "candidates": [
+    {
+      "kind": "concept",
+      "title": "Hierarchical world state prediction",
+      "why": "Multi-level architecture (JEPA-1, JEPA-2) using temporal pooling to represent world states at different abstractions for short and long-term prediction.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Multi-scale representation",
+      "why": "Core mechanism for representing world states and actions at multiple levels of abstraction to enable hierarchical decomposition of complex tasks.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Hierarchical planning (Mode-2 reasoning)",
+      "why": "Architecture and approach for decomposing complex tasks into hierarchically structured subtasks using learned intermediate action representations.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "JEPA (Joint-Embedding Predictive Architecture)",
+      "why": "Specific architecture mentioned for performing hierarchical predictions; appears as JEPA-1, JEPA-2 in Figure 15 and extended in Figures 16-17.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Action as condition satisfaction",
+      "why": "Conceptual framework where high-level actions are viewed as conditions/targets for lower-level states to satisfy, with historical roots in control theory.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Cost modules",
+      "why": "Components that measure the extent to which lower-level states satisfy high-level conditions, defining subgoals in hierarchical planning.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Aleatoric uncertainty",
+      "why": "Classification of uncertainty types (1-3) due to stochasticity, chaos, or partial observability of the world rather than model limitations.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Epistemic uncertainty",
+      "why": "Classification of uncertainty types (1-3) due to incomplete sensors, insufficient representation, or bounded rationality of world models.",
+      "tier": "page"
+    },
+    {
+      "kind": "concept",
+      "title": "Latent variable regularization",
+      "why": "Mechanism for preventing energy collapse in predictors with latent variables and forcing prediction without relying on latent information.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Gibbs distribution for latent sampling",
+      "why": "Technique for sampling latent variables during planning from distributions derived from regularizers.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Proportional servomechanism",
+      "why": "Historical control theory example showing action as condition satisfaction, using quadratic cost to measure distance to target state.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Exponential trajectory growth in planning",
+      "why": "Problem of k^t trajectory explosion when planning with k-valued latent variables across t timesteps, requiring pruning strategies.",
+      "tier": "mention"
+    },
+    {
+      "kind": "concept",
+      "title": "Risk-minimizing action sequences",
+      "why": "Planning approach that minimizes combinations of average cost and variance across multiple predicted trajectories.",
+      "tier": "mention"
+    }
+  ]
+}
