@@ -48,7 +48,11 @@ Attention mechanism are algorithms designed to determine which parts of a data s
 
 ##### How does self-attention work ?
 Broadly speaking, a transformer model attention layers assess and use the specific context of each part of a data sequence in 4 steps : 
-1. The model "reads" raw data sequences and convert them into [[embedding-space|vector-embedding]]
+1. The model "reads" raw data sequences and convert them into [[embedding-space|vector-embedding]] representing semantic meaning.
+2. The model determines similarities, correlations and other dependencies between each vector and each other vector (*most commonly by dot product between each vector*). If the vectors are well aligned, multiplying them together will yield a large value (else small/negative).
+3. The alignment scores are converted into attention weights. This is achieved by using alignment scores as inputs to a softmax activation function, which normalizes all values to a range between 0-1 such that they all add up to a total of 1.
+4. These attention weights are used to emphasize or deemphasize the influence of specific input elements at specific times.
 
+Before training, a transformer model doesn't yet "know" how to generate optimal vector embeddings and alignment scores. During training, the model makes predictions across millions of examples drawn from its training data, and a [[loss-function]]
 
 
