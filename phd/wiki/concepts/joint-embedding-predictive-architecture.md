@@ -27,9 +27,14 @@ LeCun's paper spells out a non-contrastive training principle as four simultaneo
 
 (1) and (2) block collapse of the [[phd/wiki/concepts/joint-embedding-architecture|joint-embedding-architecture]] into constant, uninformative codes; 
 (3) is enforced directly by the energy/distance term; 
-(4) blocks a distinct collapse mode in which an overly expressive $z$ lets the predictor ignore $s_x$ entirely (e.g., if $z$ matches $s_y$ dimension, the predictor can simply copy `z` onto its output, driving energy to zero for any input). This directly motivates architectures like the [[phd/wiki/concepts/sketched-isotropic-gaussian-regularizer|sketched-isotropic-gaussian-regularizer]] used for collapse prevention — the paper catalogs the general family of such fixes as discretization/quantization (VQ-VAE), dimensionality/rank minimization (Implicit Rank-Minimizing AE), sparsification (LISTA, sparse coding), and fuzzyfication (noisy AE, [[phd/wiki/concepts/variational-autoencoder|variational-autoencoder]]).
+(4) blocks a distinct collapse mode in which an overly expressive $z$ lets the predictor ignore $s_x$ entirely (e.g., if $z$ matches $s_y$ dimension, the predictor can simply copy $z$ onto its output, driving energy to zero for any input).
 
-Multi-modality — representing several plausible futures for one input — is achieved either through encoder invariance (mapping multiple compatible `y` to the same `sy`) or through the latent `z` itself, sampled or optimized at inference/planning time. [[phd/wiki/concepts/vicreg|vicreg]] and Barlow Twins are named as the concrete non-contrastive losses used to instantiate the four criteria in practice, with VICReg characterized as "dimension-contrastive" (decorrelating representation components over a batch) rather than sample-contrastive.
+> Anti-collapse technique were found such as [[phd/wiki/concepts/sketched-isotropic-gaussian-regularizer|sketched-isotropic-gaussian-regularizer]] — the paper catalogs the general family of such fixes as discretization/quantization (VQ-VAE), dimensionality/rank minimization (Implicit Rank-Minimizing AE), sparsification (LISTA, sparse coding), and fuzzyfication (noisy AE, [[phd/wiki/concepts/variational-autoencoder|variational-autoencoder]]).
+
+
+Multi-modality — representing several plausible futures for one input — is achieved either through encoder invariance (mapping multiple compatible `y` to the same `sy`) or through the latent `z` itself, sampled or optimized at inference/planning time.
+
+[[phd/wiki/concepts/vicreg|vicreg]] and Barlow Twins are named as the concrete non-contrastive losses used to instantiate the four points state before in practice, with VICReg characterized as "dimension-contrastive" (decorrelating representation components over a batch) rather than sample-contrastive.
 
 JEPA is positioned as the central technical proposal of LeCun's cognitive architecture because it underlies the Hierarchical [[phd/wiki/concepts/world-models|World Models]] (H-JEPA) needed for the full system: stacked JEPA levels with temporal pooling are proposed to support prediction at multiple time scales and abstraction levels (e.g., short-term detailed vehicle trajectory vs. long-term arrival-time estimates), feeding into the actor, cost, and configurator modules for hierarchical model-predictive-control-style planning under uncertainty.
 
