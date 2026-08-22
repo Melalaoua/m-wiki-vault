@@ -12,7 +12,9 @@ status: developing
 # Principal Component Analysis
 
 ### Overview
-**Principal Component Analysis (PCA)** is an unsupervised linear technique used for dimensionality reduction and feature extraction. Originating with Karl Pearson in 1901, it projects a high-dimensional dataset onto a lower-dimensional [[latent-space]] of orthogonal axes, known as principal components, designed to capture maximum variance.
+**Principal Component Analysis (PCA)** is an [[unsupervised-learning|unsupervised]] linear technique used for [[linear-algebra|dimensionality reduction]] and feature extraction. Originating with [[karl-pearson]] in 1901, it projects a high-dimensional dataset onto a lower-dimensional [[latent-space]] of orthogonal axes, known as principal components, designed to capture maximum variance.
+
+- **==Eigenvector==** : Imagine a linear transformation (like stretching or rotating a vector space). An eigeinvector of a square matrix is a non-zero vector that, when that transformation is applied to it, only changes by a sclar factor. It doesn't change its direction. Its a special direction in the data that remins stable under the transformation. => *Represented by the equation $A\mathbf{v} = \lambda\mathbf{v}$, where A is a square matrix, $\mathbf{v}$ is the eigenvector, and λ is the eigenvalue.*
 
 ### Mathematical Formulation
 Given a data matrix, the execution pipeline consists of:
