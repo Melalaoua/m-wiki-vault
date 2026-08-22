@@ -68,3 +68,4 @@ If we try describing thousands of customers with 100 different features each (ag
 
 ==**In short, dimensionality reduction is a way to distill complex data into its most informative parts, and linear algebra provides the mathematical machinery to make it possible.**==
 
+Another powerful technique, [[singular-value-decomposition]] (SVD) 
