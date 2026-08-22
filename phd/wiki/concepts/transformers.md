@@ -63,6 +63,17 @@ Transformer models such as [[relational-databases]] generate *query, key and val
 
 Relational databases are designed to simplify the storage and retrieval of relevant data : *they assign a unique identifier ("key") to each piece of data, and each key is associated with a corresponding value*. The Attention is all you need paper applie that conceptual framework to processing the relationships between each [[token]] in a sequence of text.
 
-- The **==query vector==** represents the information a specific token is "seeking". It's computes how other tokens might influence 
+- The **==query vector==** represents the information a specific token is "seeking". It's computes, related to this specific token, how other tokens might influence its meaning, conjugation or connotations in context.
+- The **==key vector==** represent the information that each token contains. Alignment between query and key is used to compute attention wieghts that reflect how relevant they are in the context of that text sequence.
+- The ==**value vector**== returns the information from each key vector, scaled by its respective attention weight.
+
+For an LLM, the model's database is the vocabulary of [[tokens]] it has learned from the text samples in its training data. Its attention mechanism uses information from this database to understand the context of language.
 
 
+###### Tokenization and input embeddings.
+Whereas characters, letters, numbers or punctuation marks are the base unit we humans use to represent language, the smallest unit of language that AI models use is a token. Each token is assigned an ID number, and these ID numbers are the way LLMs navigate their vocabulary "database". This tokenization of language significantly reduces the computational power needed to process text.
+
+###### Positional encoding
+The order and position of words can significantly impact their semantic meanings. Whereas the serialized nature of RNNs inherently preserves information about the position of each token, transformer models must explicitly _add_ positional information for the attention mechanism to consider.
+
+With _positional encoding,_ the model adds a vector of values to each token’s embedding, derived from its relative position, before the input enters the attention mechanism. The nearer the 2 tokens are, the more similar their positional vectors will be and therefore, the more their alignment score will increase from adding positional information. The model thereby learns to pay greater attention to nearby tokens.
