@@ -11,7 +11,7 @@ status: developing
 
 ## Model-Predictive Control
 
-Model-Predictive Control (MPC) is a classical planning and reasoning paradigm from optimal control theory, used in the paper "A Path Towards Autonomous Machine Intelligence" as the conceptual template for **Mode-2** reasoning within its proposed [[phd/wiki/concepts/cognitive-architecture|cognitive architecture]]. The paper's central move is to reframe MPC not as a technique relying on hand-engineered dynamics and objectives, but as a procedure whose two core components — the [[phd/wiki/concepts/world-model|world model]] and the [[phd/wiki/concepts/cost-module|cost module]] — are learned end-to-end.
+Model-Predictive Control (MPC) is a classical planning and reasoning paradigm from optimal control theory, used in the paper "A Path Towards Autonomous Machine Intelligence" as the conceptual template for **Mode-2** reasoning within its proposed [[phd/wiki/concepts/cognitive-architecture|cognitive architecture]]. The paper's central move is to reframe MPC not as a technique relying on hand-engineered dynamics and objectives, but as a procedure whose two core components — the [[world-models|world model]] and the [[phd/wiki/concepts/cost-module|cost module]] — are learned end-to-end.
 
 ### MPC as the mechanism of Mode-2
 
