@@ -20,4 +20,14 @@ Linear algebra involves the use of mathematical operations to represent and mani
 - Linear algebra provides the tools to organize, manipulate and analyze this data efficiently.
 - Manipulates objects like vectors, matrices, tensors to represent structured (often tabular data) and unstructured data like images or videos. 
 
-> An image can be represented 
+> - An image can be represented as a matrix of pixel values. 
+> - A collection of features describing a house (such as neigborhood, age, square footage) can be represented as a vector in a linear regression model.
+
+#### Key concepts.
+*The tools to represent and work with data in a structured forms.*
+
+- **==Scalar==** : simplest building block, a single numerical value (i.e 5 or 2.3). => *often represent parameters, scaling factors, or single measurements*.
+- **==Vector==** : Ordered array of numbers (column or row). => *Can represent anything from a list of features to the coordinates in space.*
+- **==Matrix**== : Two-dimensional array of numbers (row and columns).Dataset where each row is a data point and each column is a feature naturally forms a matrix. => *Central to linear algebra because allow *
+
+> Most ML workflows start by organizing data into numerical formats, and each structure (scalar, vector, matrix & tensor) serves a different purpose
