@@ -53,6 +53,16 @@ Broadly speaking, a transformer model attention layers assess and use the specif
 3. The alignment scores are converted into attention weights. This is achieved by using alignment scores as inputs to a softmax activation function, which normalizes all values to a range between 0-1 such that they all add up to a total of 1.
 4. These attention weights are used to emphasize or deemphasize the influence of specific input elements at specific times.
 
-Before training, a transformer model doesn't yet "know" how to generate optimal vector embeddings and alignment scores. During training, the model makes predictions across millions of examples drawn from its training data, and a [[loss-function]]
+Before training, a transformer model doesn't yet "know" how to generate optimal vector embeddings and alignment scores. During training, the model makes predictions across millions of examples drawn from its training data, and a [[loss-function]] quantifies the error of each prediction.
+
+Through an iterative cycle of making predictions and then updating model wieghts through [[backpropagation]] and [[gradient-descent]], the model "learns" to generate vector embeddings, alignments scores and attention weights that lead to accurate outputs.
+
+
+##### How do transformer models work?
+Transformer models such as [[relational-databases]] generate *query, key and value* vectors for each part of a data sequence, and use them to compute attention weights through a series of [[linear-algebra|matrix multiplications]] .
+
+Relational databases are designed to simplify the storage and retrieval of relevant data : *they assign a unique identifier ("key") to each piece of data, and each key is associated with a corresponding value*. The Attention is all you need paper applie that conceptual framework to processing the relationships between each [[token]] in a sequence of text.
+
+- The **==query vector==** represents the information a specific token is "seeking". It's computes how other tokens might influence 
 
 
