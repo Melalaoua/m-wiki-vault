@@ -48,7 +48,7 @@ this can be represented and solved using matrices. Techniques like "least square
 
 > In other words, approximating a loss function is represented as a collection of linear equations that solved for with calculus.
 
-More complex algorithms , such as those found in [[deep-learning]] and [[neural-network]] heavily rely on operatoins like massive matrix multiplication for processing information through different layers. Each layer in a neural-network performs a linear transformation on its input data, which is essentially a matrix transformation where the input vector is multiplied by a weight matrix. This allows the network to learn complex patterns and relationships within the data.
+More complex algorithms , such as those found in [[deep-learning]] and [[neural-networks]] heavily rely on operatoins like massive matrix multiplication for processing information through different layers. Each layer in a neural-network performs a linear transformation on its input data, which is essentially a matrix transformation where the input vector is multiplied by a weight matrix. This allows the network to learn complex patterns and relationships within the data.
 
 
 #### Dimensionality reduction
@@ -68,4 +68,14 @@ If we try describing thousands of customers with 100 different features each (ag
 
 ==**In short, dimensionality reduction is a way to distill complex data into its most informative parts, and linear algebra provides the mathematical machinery to make it possible.**==
 
-Another powerful technique, [[singular-value-decomposition]] (SVD) 
+Another powerful technique, [[singular-value-decomposition]] (SVD) is also related to eigendecomposition, SVD can be applied to any matrix (not just square matrices) and offers a more general way to decmopose a matrix into its constituent parts, revealing underlying structures and reducing dimensions effectively.
+
+
+
+#### Optimization.
+Linear Algebra is essential in optimization like [[gradient-descent]] used in [[neural-networks]] relying on linear algebra to calculate gradients (vector pointing in the direction of the steepest ascent of a function) and update model parameters iteratively.
+
+
+The **determinant** of a square matrix is a single number that provides crucial information about the matrix. For example :
+- a non-zero determinant indicates that the matrix is invertible (it has a corresponding matrix inversion operation), which is critical for solving systems of linear equations uniquely.
+- If the determinant is zero, the system might have no unique solution or infinitely many, indicating issues like linear independence (where one vector in a set can be expressed as) 
