@@ -73,6 +73,7 @@ For an LLM, the model's database is the vocabulary of [[tokens]] it has learned 
 ###### Tokenization and input embeddings.
 Whereas characters, letters, numbers or punctuation marks are the base unit we humans use to represent language, the smallest unit of language that AI models use is a token. Each token is assigned an ID number, and these ID numbers are the way LLMs navigate their vocabulary "database". This tokenization of language significantly reduces the computational power needed to process text.
 
+To generate query and key vectors to feed into the transformer’s attention layers, the model needs an initial, contextless vector embedding for each token. These initial token embeddings can be either learned during training or taken from a pretrained word embedding model.
 ###### Positional encoding
 The order and position of words can significantly impact their semantic meanings. Whereas the serialized nature of RNNs inherently preserves information about the position of each token, transformer models must explicitly _add_ positional information for the attention mechanism to consider.
 
