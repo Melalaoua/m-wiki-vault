@@ -26,7 +26,7 @@ Modern incarnations include [[joint-embedding-predictive-architecture]] (JEPA) a
 A **World Model** is a cognitive-inspired neural network architecture that learns a compressed spatial and temporal representation of an environment, enabling an agent to predict future states given its current state and action. Synthesized in deep reinforcement learning by [[David Ha]] and [[Jürgen Schmidhuber]] (2018), this approach decouples spatial compression and temporal dynamics from decision-making policies.
 
 ## Core Components
-* **Vision (V)**: Usually a [[phd/wiki/concepts/variational-autoencoder|variational-autoencoder]] (VAE), which compresses high-dimensional pixel streams into a compact latent vector $z$ inside the [[Latent Space]].
+* **Vision (V)**: Usually a [[phd/wiki/concepts/variational-autoencoder|variational-autoencoder]] (VAE), which compresses high-dimensional pixel streams into a compact latent vector $z$ inside the [[latent-space]].
 * **Memory (M)**: A recurrent model, typically an MDN-RNN, which models $P(z_{t+1} | a_t, z_t, h_t)$ to capture temporal dependencies and environment stochastics.
 * **Controller (C)**: A compact neural network or linear policy optimized using black-box evolution strategies (such as CMA-ES) rather than backpropagation.
 
