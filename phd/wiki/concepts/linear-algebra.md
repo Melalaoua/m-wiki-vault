@@ -54,4 +54,17 @@ More complex algorithms , such as those found in [[deep-learning]] and [[neural-
 #### Dimensionality reduction
 real-world datasets contain large numer of features/variables for each data-point => *high-dimensional data*.
 
-> Intuition says this makes everything more precise, but it makes learning harder. **High-dimensional data can be computationally expensive to process, memory-intensive, 
+> Intuition says this makes everything more precise, but it makes learning harder. **High-dimensional data can be computationally expensive to process, memory-intensive to store and prone to [[overfitting]].
+
+##### Curse of dimensionality
+As dimensions grows, data points become increasingly sparse in the feature space, and the notion of "closeness" between points becomes less meaningful.
+
+Dimensionality reduction is the process of transforming data from a high-dimensional space into a lower-dimensional one while preserving as much of the original structure and important information as possible.
+
+Linear algebra is at the core of many dimensionality reduction techniques. [[principal-component-analysis]] uses concepts like **eigenvalues or eigeinvectors** to find new axes (principal components) that capture the maximum variance in the data, representing a meaningful attribute in the high dimensional dataset.
+
+##### Example.
+If we try describing thousands of customers with 100 different features each (age, income, spending in various product categories, etc...). Analyzing all 100 features at once would be slow and complex, and many of them may be redundant (interest in sport gear often overlaps with outdoor equipment). PCA can reduce the dataset to just 2 or 3 components that summarize most of the variation in customer behavior.
+
+==**In short, dimensionality reduction is a way to distill complex data into its most informative parts, and linear algebra provides the mathematical machinery to make it possible.**==
+
