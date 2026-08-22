@@ -36,4 +36,19 @@ Before transformers, most NLP tasks relied on RNNs which inputs sequential data 
 
 Attention mechanism, conversely, can examine an entire sequence simultaneously and make decisisons about how and when to focus on specific time steps of that sequence. **They dramatically improve the ability to understand long-range dependencies.**
 
-Futhermore, attention mechanism allows **parallelization*** : the abitlity to perform many computational
+Futhermore, attention mechanism allows **parallelization*** : the abitlity to perform many computational steps at once rather than in a serialized manner.
+
+> Transformers take full advantage of the power and speed offered by [[graphic-processing-unit]] which in turn, **unlocked the opportunity to train transformers models on unprecedentedly massive datasets through [[supervised-learning|self-supervised learning]]
+
+
+#### What is self-attention ?
+*Understanding the mathematical concept of attention,  is essential to grasp the success of transformer models.
+
+Attention mechanism are algorithms designed to determine which parts of a data sequence an AI model should "pay attention to".
+
+##### How does self-attention work ?
+Broadly speaking, a transformer model attention layers assess and use the specific context of each part of a data sequence in 4 steps : 
+1. The model "reads" raw data sequences and convert them into [[embedding-space|vector-embedding]]
+
+
+
