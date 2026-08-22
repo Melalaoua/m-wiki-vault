@@ -46,4 +46,12 @@ where $w_1\ w_2 \ and \ b$ are the unknown coefficients to solve for.
 
 this can be represented and solved using matrices. Techniques like "least squares" are used to find the approximate solutions to these systems when an exact solution doesn't exist, which is often the case with real-word noisy data.
 
-> In other words, approximat
+> In other words, approximating a loss function is represented as a collection of linear equations that solved for with calculus.
+
+More complex algorithms , such as those found in [[deep-learning]] and [[neural-network]] heavily rely on operatoins like massive matrix multiplication for processing information through different layers. Each layer in a neural-network performs a linear transformation on its input data, which is essentially a matrix transformation where the input vector is multiplied by a weight matrix. This allows the network to learn complex patterns and relationships within the data.
+
+
+#### Dimensionality reduction
+real-world datasets contain large numer of features/variables for each data-point => *high-dimensional data*.
+
+> Intuition says this makes everything more precise, but it makes learning harder. **High-dimensional data can be computationally expensive to process, memory-intensive, 
