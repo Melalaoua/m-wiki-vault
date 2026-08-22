@@ -77,3 +77,13 @@ Whereas characters, letters, numbers or punctuation marks are the base unit we h
 The order and position of words can significantly impact their semantic meanings. Whereas the serialized nature of RNNs inherently preserves information about the position of each token, transformer models must explicitly _add_ positional information for the attention mechanism to consider.
 
 With _positional encoding,_ the model adds a vector of values to each token’s embedding, derived from its relative position, before the input enters the attention mechanism. The nearer the 2 tokens are, the more similar their positional vectors will be and therefore, the more their alignment score will increase from adding positional information. The model thereby learns to pay greater attention to nearby tokens.
+
+
+###### Generating query, key and value vectors.
+When positional information has been added, we generate the thre new vectors type.
+
+- The embeddings are multiplied by the weight matrix $W_Q$ to yield the query vectors $Q$, which have $d_k$ dimensions.
+- The embeddings are multiplied by the weight matrix $W_K$ to ield the key vector ($K$), also with dimensions $d_k$
+- The embeddings are multiplied by the weight matrix $W_V$ to yield the value vectors ($V$), with dimensions $d_v$
+
+![[Pasted image 20260822165131.png]]
