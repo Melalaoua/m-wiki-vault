@@ -9,11 +9,9 @@ status: developing
 
 # Energy-Based Models (EBM)
 
-# Energy-Based Models (EBM)
-
 ## Overview
 
-Energy-Based Models constitute the mathematical framework this document uses to unify and analyze [[phd/wiki/concepts/self-supervised-learning|self-supervised learning]] methods, providing the theoretical substrate for training [[phd/wiki/concepts/joint-embedding-predictive-architecture|JEPA]] and its hierarchical variant. Rather than being a narrow architecture, an EBM in this paper's sense "designates a much broader category of models that treat the energy function as fundamental, and directly manipulate its landscape through learning." The framework is explicitly broad enough that "all traditional optimization-based learning methods can be interpreted as energy-based methods," including discriminative training methods for structure prediction problems.
+Energy-Based Models constitute the mathematical framework this document uses to unify and analyze [[supervised-learning|self-supervised learning]] methods, providing the theoretical substrate for training [[phd/wiki/concepts/joint-embedding-predictive-architecture|JEPA]] and its hierarchical variant. Rather than being a narrow architecture, an EBM in this paper's sense "designates a much broader category of models that treat the energy function as fundamental, and directly manipulate its landscape through learning." The framework is explicitly broad enough that "all traditional optimization-based learning methods can be interpreted as energy-based methods," including discriminative training methods for structure prediction problems.
 
 The core formulation: an EBM is a scalar-valued function F(x, y) that produces low energy values when x and y are compatible, and higher values when they are not. This single formalism is used throughout the document to explain self-supervised learning, generative modeling, auto-encoders, and joint embedding methods as special cases distinguished mainly by how they avoid a shared pathology: energy collapse.
 
@@ -27,7 +25,8 @@ Crucially, "although many EBMs can easily be turned into probabilistic models, e
 
 To parameterize the set of possible relationships between x and compatible y values, the document introduces latent variables z, which "represent information about y that cannot be extracted from x." Inference then consists of finding the latent value that minimizes energy: ž = argmin_z E_w(x, y, z). After inference, z can be eliminated to yield a simplified energy Fw(x, y) = min_z E_w(x, y, z).
 
-This latent-variable machinery underlies the document's treatment of uncertainty throughout — including how [[phd/wiki/concepts/world-model|world models]] represent multiple plausible future states and how the [[phd/wiki/concepts/actor-module|actor module]] handles [[phd/wiki/concepts/aleatoric-uncertainty|aleatoric]] and [[phd/wiki/concepts/epistemic-uncertainty|epistemic uncertainty]] during Mode-2 planning.
+This latent-variable machinery underlies the document's treatment of uncertainty throughout — including how [[world-models]]
+represent multiple plausible future states and how the [[phd/wiki/concepts/actor-module|actor module]] handles [[phd/wiki/concepts/aleatoric-uncertainty|aleatoric]] and [[phd/wiki/concepts/epistemic-uncertainty|epistemic uncertainty]] during Mode-2 planning.
 
 ## Energy collapse: the central training problem
 

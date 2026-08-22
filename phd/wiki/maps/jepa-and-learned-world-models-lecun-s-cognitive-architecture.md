@@ -23,7 +23,7 @@ The Configurator is flagged by the source itself as the architecture's most spec
 
 ### JEPA: the technical centerpiece
 
-The architecture's world-model module is meant to be instantiated by the [[phd/wiki/concepts/joint-embedding-predictive-architecture|Joint-Embedding Predictive Architecture]] (JEPA), which **==predicts latent embeddings of future states rather than reconstructing raw observations==**, formalized as an energy $$E_w(x, y, z) = D(s_y, Pred(sx, z))$$ 
+The architecture's world-model module is meant to be instantiated by the [[phd/wiki/concepts/joint-embedding-predictive-architecture|Joint-Embedding Predictive Architecture]] (JEPA), which **==predicts latent embeddings of future states rather than reconstructing raw observations==**, formalized as an energy $$E_w(x, y, z) = D(s_y, Pred(s_x, z))$$ 
 
 JEPA is best understood as an instance of the general [[phd/wiki/concepts/energy-based-models-ebm|Energy-Based Models]] framework, which unifies [[phd/wiki/concepts/supervised-learning|self-supervised]] methods around a shared training problem, energy collapse, and a shared remedy split into contrastive versus regularized (non-contrastive) methods, the latter judged more promising for escaping the curse of dimensionality. 
 
