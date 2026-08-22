@@ -6,7 +6,7 @@ Il faut faire preuve d'imagination, la capacité à entrevoir dans notre tête c
 
 Tout repose sur ce principe : [[All things are created twice|toute chose est créée deux fois]] - **La première fois en tant qu'image mentale, la seconde fois en tant qu'objet physique.**
 
-L'objet physique obéit à la projection mentale, tel un batîment avec son schéma.
+L'objet physique obéit à la projection mentale, tel un bâtiment avec son schéma.
 
 Si tu ne fais pas un effort pour visualiser qui tu es et ce que tu veux dans la vie, alors tu renforces les gens autour de toi ou les circonstances qui t'entoure.
 
