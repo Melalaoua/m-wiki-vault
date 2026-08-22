@@ -9,13 +9,16 @@ status: stable
 
 # JEPA and Learned World Models: LeCun's Cognitive Architecture
 
-## JEPA and Learned World Models: LeCun's Cognitive Architecture
-
-This sub-area maps the technical proposal laid out in LeCun's "A Path Towards Autonomous Machine Intelligence" together with adjacent formulations of world models, and traces its conceptual lineage back through classical model-based control and forward into a concrete trainable system.
+Technical proposal laid out in [[phd202610356apathtowardsautonomousmach|LeCun's "A Path Towards Autonomous Machine Intelligence]]" together with adjacent formulations of world models, and traces its conceptual lineage back through classical model-based control and forward into a concrete trainable system.
 
 ### Core diagnosis and architecture
 
-The starting diagnosis is sample inefficiency: current ML systems require far more training trials than humans or animals because they lack internal [[phd/wiki/concepts/world-models|World Models]] that let an agent predict and reason from observation rather than costly interaction. The proposed remedy is a [[phd/wiki/concepts/cognitive-architecture|Cognitive Architecture]] of six differentiable, mostly trainable modules — perception, world model, cost (split into Intrinsic Cost and Trainable Critic), actor, short-term memory, and a [[phd/wiki/concepts/configurator-module|Configurator Module]] — supporting a fast reactive Mode-1 and a deliberative Mode-2. Mode-2 is explicitly framed as [[phd/wiki/concepts/model-predictive-control|Model-Predictive Control]] with receding horizon, distinguished from classical MPC in that both the world model and cost function are *learned* rather than hand-designed, with roots traced to Sutton's [[dyna-architecture|Dyna Architecture]] as historical precedent for planning via a learned predictive model. The Configurator is flagged by the source itself as the architecture's most speculative, least-specified component, responsible for reconfiguring the shared world-model engine and decomposing tasks into subgoals — a mechanism named but never operationalized.
+Current ML systems require far more training trials than humans or animals because they lack internal [[phd/wiki/concepts/world-models|World Models]] that let an **agent predict and reason from observation** rather than costly interaction. 
+
+The proposed remedy is a [[phd/wiki/concepts/cognitive-architecture|Cognitive Architecture]] of six differentiable, mostly trainable modules : perception, world model, cost (split into Intrinsic Cost and Trainable Critic), actor, short-term memory, and a [[phd/wiki/concepts/configurator-module|Configurator Module]].
+
+The cognitive architecture is supported by a fast reactive Mode-1 and a deliberative Mode-2. 
+- Mode-2 is explicitly framed as [[phd/wiki/concepts/model-predictive-control|Model-Predictive Control]] with receding horizon, distinguished from classical MPC in that both the world model and cost function are *learned* rather than hand-designed, with roots traced to Sutton's [[dyna-architecture|Dyna Architecture]] as historical precedent for planning via a learned predictive model. The Configurator is flagged by the source itself as the architecture's most speculative, least-specified component, responsible for reconfiguring the shared world-model engine and decomposing tasks into subgoals — a mechanism named but never operationalized.
 
 ### JEPA: the technical centerpiece
 
