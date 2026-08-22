@@ -36,4 +36,14 @@ Linear algebra involves the use of mathematical operations to represent and mani
 > Most ML workflows start by organizing data into numerical formats, and each structure (scalar, vector, matrix & tensor) serves a different purpose
 
 #### Understanding algorithms.
-ML are built upon a system of linear equations. [[linear-regression]] is a simple yet powerful algorithm used for predicting continous values i.e *the process of f*
+ML are built upon a system of linear equations. [[linear-regression]] is a simple yet powerful algorithm used for predicting continous values i.e *the process of finding the 'best fit' line or a plane that minimizes the error between predicted and actual values often boils down to solving a system of linear equations.*
+
+
+##### Simple Example.
+Predicting the house prices based on square footage, number of bedrooms. We use coefficients (weights) that need to be found to satisfy equations like :
+$$price = w_1 \cdot square\ footage +w_2 \cdot number\ of\ bedrooms + b$$
+where $w_1\ w_2 \ and \ b$ are the unknown coefficients to solve for.
+
+this can be represented and solved using matrices. Techniques like "least squares" are used to find the approximate solutions to these systems when an exact solution doesn't exist, which is often the case with real-word noisy data.
+
+> In other words, approximat
