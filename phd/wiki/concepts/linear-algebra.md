@@ -79,3 +79,5 @@ Linear Algebra is essential in optimization like [[gradient-descent]] used in [[
 The **determinant** of a square matrix is a single number that provides crucial information about the matrix. For example :
 - a non-zero determinant indicates that the matrix is invertible (it has a corresponding matrix inversion operation), which is critical for solving systems of linear equations uniquely.
 - If the determinant is zero, the system might have no unique solution or infinitely many, indicating issues like linear independence (where one vector in a set can be expressed as a linear combination of the others). 
+
+An identity matrix (a square matrix with ones on the main diagonal and zeros elsewhere) is special because when you multiply any matrix by the identity matrix, the original matrix remains unchanged, acting like the number ‘1’ in scalar multiplication.
