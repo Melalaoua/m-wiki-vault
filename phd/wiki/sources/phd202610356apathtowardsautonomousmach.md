@@ -19,16 +19,16 @@ Original: [[phd/raw/phd/10356_a_path_towards_autonomous_mach.pdf]]
 
 ## Overview
 
-This is Yann LeCun's 2022 position paper "A Path Towards Autonomous Machine Intelligence" (Meta/FAIR), proposing a comprehensive cognitive architecture and research roadmap for building autonomous intelligent agents that learn like humans and animals — largely through observation, with minimal trial-and-error interaction. The paper's central diagnosis is that current [[Deep Learning]] and [[Reinforcement Learning (RL)]] systems are catastrophically sample-inefficient compared to biological learners because they lack [[World Models]] — internal, predictive models of how the world works that support common sense, reasoning, and planning.
+This is Yann LeCun's 2022 position paper "A Path Towards Autonomous Machine Intelligence" (Meta/FAIR), proposing a comprehensive cognitive architecture and research roadmap for building autonomous intelligent agents that learn like humans and animals — largely through observation, with minimal trial-and-error interaction. The paper's central diagnosis is that current [[deep-learning]] and [[reinforcement-learning]] systems are catastrophically sample-inefficient compared to biological learners because they lack [[world-models]] — internal, predictive models of how the world works that support common sense, reasoning, and planning.
 
 ## The Cognitive Architecture
 
 LeCun proposes a modular, fully differentiable architecture composed of:
 - a **[[Perception Module]]** estimating world state from sensors (possibly hierarchically);
-- a **[[World model]]** that fills in missing information and predicts plausible future states, handling uncertainty via latent variables;
+- a **[[world-models]]** that fills in missing information and predicts plausible future states, handling uncertainty via latent variables;
 - a **[[Cost module]]** split into an immutable **[[Intrinsic Cost module]]** (hard-wired drives: pain, hunger, curiosity, social/empathic drives — analogous to the amygdala) and a **[[Trainable Critic module]]** (predicts future intrinsic energy, trained from a **[[Short-Term Memory Module]]** of state/energy triplets, similar to A2C critic training);
-- an **[[Actor Module]]** that proposes and optimizes action sequences to minimize predicted cost, operating in two modes: **[[Mode-1 perception-action episode]]** (fast, reactive, System-1-like) and **[[Mode-2 perception-action episode]]** (deliberate model-predictive control / System-2-like, akin to [[Model-Predictive Control]]);
-- a **[[Configurator Module]]**, the executive-control component that dynamically modulates all other modules' parameters and attention for the task at hand — explicitly flagged as the least understood, most "mysterious" part of the proposal, with no specified mechanism for how it learns to decompose tasks into subgoals.
+- an **[[Actor Module]]** that proposes and optimizes action sequences to minimize predicted cost, operating in two modes: **[[Mode-1 perception-action episode]]** (fast, reactive, System-1-like) and **[[Mode-2 perception-action episode]]** (deliberate model-predictive control / System-2-like, akin to [[model-predictive-control]]);
+- a **[[configurator-module]]**, the executive-control component that dynamically modulates all other modules' parameters and attention for the task at hand — explicitly flagged as the least understood, most "mysterious" part of the proposal, with no specified mechanism for how it learns to decompose tasks into subgoals.
 
 The architecture is explicitly mapped onto mammalian brain structures (prefrontal cortex, amygdala, hippocampus, basal ganglia, pre-motor cortex) and onto Kahneman's System 1/System 2 dichotomy.
 
