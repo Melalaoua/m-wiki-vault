@@ -47,7 +47,15 @@ In [[machine-learning]], data points must be represented numerically. Most often
 **The latent space is usually a *lower dimensional* representation of the feature space containing only the subset of features that, through machine learning, are identified as most relevant to the task at hand.**
 
 ##### What does "latent" mean in machine learning?
-Imagine a bridge with a sensor that measure the weight of each
+Imagine a bridge with a sensor that measure the weight of each passing vehicle. There's no camera to detect a vehicle's type.
+Nevertheless, we know that the type of vehicle significantly influences its weight.
+- *Vehicle weight* is an observable variable.
+- *Vehicle type* is a latent variable.
+We can infer the what types of vehicle use the bridge by exploring patterns in vehicle weight.
+
+> Not every "hidden" variable is important, and not every hidden variable will be represented in the latent space.
+
+**Latent variables are underlying characteristics that inform the way data is distributed but are often not directly observable.**
 
 
 In machine learning, a **latent space** is an abstract, lower-dimensional space that captures the compressed representation of high-dimensional input data, filtering out noise to retain essential attributes [[phd/wiki/sources/www2026latent|Latent and Embedding Space]] [[phd/wiki/sources/www2026variational|Variational autoencoder]]. This concept is foundational to environment-simulating systems, such as [[world-models]] [[phd/wiki/sources/www2026latent|Latent and Embedding Space]].\n\nTo map raw data into these compressed representations, both linear and non-linear methods are utilized. Classical linear approaches, most notably [[principal-component-analysis]] (PCA) [[phd/wiki/sources/www2026pca|PCA]], transform raw features into orthogonal coordinate systems representing a linear latent space of maximum variance. In contrast, deep learning architectures model highly non-linear manifolds. Traditional [[Autoencoder]]s, for instance, map inputs to discrete, fixed vectors within this space [[phd/wiki/sources/www2026latent|Latent and Embedding Space]] [[phd/wiki/sources/www2026variational|Variational autoencoder]].
