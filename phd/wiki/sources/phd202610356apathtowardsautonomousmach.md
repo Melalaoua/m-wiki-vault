@@ -19,7 +19,9 @@ Original: [[phd/raw/phd/10356_a_path_towards_autonomous_mach.pdf]]
 
 ## Overview
 
-This is Yann LeCun's 2022 position paper "A Path Towards Autonomous Machine Intelligence" (Meta/FAIR), proposing a comprehensive cognitive architecture and research roadmap for building autonomous intelligent agents that learn like humans and animals — largely through observation, with minimal trial-and-error interaction. The paper's central diagnosis is that current [[deep-learning]] and [[reinforcement-learning]] systems are catastrophically sample-inefficient compared to biological learners because they lack [[world-models]] — internal, predictive models of how the world works that support common sense, reasoning, and planning.
+This is Yann LeCun's 2022 position paper "A Path Towards Autonomous Machine Intelligence" (Meta/FAIR), proposing a comprehensive cognitive architecture and research roadmap for building autonomous intelligent agents that learn like humans and animals — largely through observation, with minimal trial-and-error interaction. 
+
+The paper's central diagnosis is that current [[deep-learning]] and [[reinforcement-learning]] systems are catastrophically **sample-inefficient compared to biological learners** because they lack [[world-models]] — internal, predictive models of how the world works that support common sense, reasoning, and planning.
 
 ## The Cognitive Architecture
 
@@ -30,11 +32,13 @@ LeCun proposes a modular, fully differentiable architecture composed of:
 - an **[[Actor Module]]** that proposes and optimizes action sequences to minimize predicted cost, operating in two modes: **[[Mode-1 perception-action episode]]** (fast, reactive, System-1-like) and **[[Mode-2 perception-action episode]]** (deliberate model-predictive control / System-2-like, akin to [[model-predictive-control]]);
 - a **[[configurator-module]]**, the executive-control component that dynamically modulates all other modules' parameters and attention for the task at hand — explicitly flagged as the least understood, most "mysterious" part of the proposal, with no specified mechanism for how it learns to decompose tasks into subgoals.
 
-The architecture is explicitly mapped onto mammalian brain structures (prefrontal cortex, amygdala, hippocampus, basal ganglia, pre-motor cortex) and onto Kahneman's System 1/System 2 dichotomy.
+The architecture is explicitly mapped onto mammalian brain structures (prefrontal cortex, amygdala, hippocampus, basal ganglia, pre-motor cortex) and onto **Kahneman's System1/System2 dichotomy**.
 
 ## JEPA and Non-Contrastive Self-Supervised Learning
 
-The paper's core technical contribution is the **[[Joint-Embedding Predictive Architecture]]** (JEPA), a non-generative architecture that predicts the *representation* of a future/missing input rather than the input itself, sidestepping the impossibility of pixel-level prediction under uncertainty. LeCun frames this within a broader **[[Energy-Based Models (EBM)]]** formalism, distinguishing **[[Contrastive methods]]** (which push down energy on real data and up on negative samples, but suffer the curse of dimensionality) from **[[Regularized Methods]]** (which minimize the volume of low-energy space directly, argued to be more promising long-term). **[[VICReg]]** and [[Barlow Twins]] are highlighted as non-contrastive training criteria; VICReg is discussed in detail as a "dimension-contrastive" method using variance and covariance losses to prevent representational collapse.
+The paper's core technical contribution is the **[[joint-embedding-predictive-architecture]]** (JEPA), a non-generative architecture that predicts the *representation* of a future/missing input rather than the input itself, sidestepping the impossibility of pixel-level prediction under uncertainty. 
+
+LeCun frames this within a broader **[[energy-based-models-ebm]]** formalism, distinguishing **[[Contrastive methods]]** (which push down energy on real data and up on negative samples, but suffer the curse of dimensionality) from **[[Regularized Methods]]** (which minimize the volume of low-energy space directly, argued to be more promising long-term). **[[VICReg]]** and [[Barlow Twins]] are highlighted as non-contrastive training criteria; VICReg is discussed in detail as a "dimension-contrastive" method using variance and covariance losses to prevent representational collapse.
 
 Extending JEPA hierarchically — **[[Hierarchical JEPA (H-JEPA)]]** — is proposed as the mechanism for multi-timescale, multi-abstraction prediction and hierarchical planning under uncertainty, where high-level "actions" become conditions to be satisfied by lower levels (an idea traced to classical control theory servomechanisms).
 
