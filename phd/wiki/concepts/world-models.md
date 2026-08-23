@@ -40,10 +40,14 @@ This paradigm has profound implications for translating AI into molecular biolog
 
 ## From [[phd/wiki/sources/phd202610356apathtowardsautonomousmach|10356_a_path_towards_autonomous_mach]] (2026-08-21)
 
-Yann LeCun frames world models not as one technique among several but as *the* missing capability separating current AI from human and animal intelligence. His diagnosis: machine learning systems today need vastly more training trials than a human or animal to reach reliable performance, "so that even the rarest combination of situations will be encountered frequently during training" — a brute-force substitute for genuine understanding. The proposed remedy is enabling machines to "learn to represent the world, learn to predict, and learn to act largely by observation," rather than through costly, potentially dangerous direct interaction.
+Yann LeCun frames world models not as one technique among several but as *the* missing capability separating current AI from human and animal intelligence.
+
+>Machine learning systems today need vastly more training trials than a human or animal to reach reliable performance, "so that even the rarest combination of situations will be encountered frequently during training" — a brute-force substitute for genuine understanding. 
+
+The proposed remedy is enabling machines to "learn to represent the world, learn to predict, and learn to act largely by observation," rather than through costly, potentially dangerous direct interaction.
 
 **Two functions, not one.** LeCun decomposes the world model's role into exactly two jobs: 
-1. estimating missing information about the state of the world not given directly by perception, and
+1. Estimating missing information about the state of the world not given directly by perception, 
 2. Predicting plausible future states of the world
 
 This is a sharper functional split than the page's current framing of "simulate future states" — the world model is doing state completion (filling gaps in an incomplete percept) as much as it is doing forward prediction, and multiple plausible future states are predicted in parallel, "parameterized by latent variables that represent the uncertainty about the world state," rather than a single trajectory or distribution collapse.
