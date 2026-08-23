@@ -34,7 +34,11 @@ Broadly speaking a *space* in ML refers to a specific mode of mapping, comparing
 
 Mathematically speaking, a *space* is primarily defined by what its dimensions correspond to (i.e which features/variables are being used to describe data points in that space). 
 
-> When data points are mapped to a specific space, data points with similar values for the variables that define the space will be similar to 
+> When data points are mapped to a specific space, data points with similar values for the variables that define the space will be similar to or near each other by some metric such as cosine similarity, Euclidian distance or dot product.
+
+In [[machine-learning]], data points must be represented numerically. Most often, data points are represented (or "embedded") as [[linear-algebra#Key concepts.|vectors]]. We thus refer to the space as "**vector embedding space**" (data points are compared by their vector representations innit).
+
+
 
 In machine learning, a **latent space** is an abstract, lower-dimensional space that captures the compressed representation of high-dimensional input data, filtering out noise to retain essential attributes [[phd/wiki/sources/www2026latent|Latent and Embedding Space]] [[phd/wiki/sources/www2026variational|Variational autoencoder]]. This concept is foundational to environment-simulating systems, such as [[world-models]] [[phd/wiki/sources/www2026latent|Latent and Embedding Space]].\n\nTo map raw data into these compressed representations, both linear and non-linear methods are utilized. Classical linear approaches, most notably [[principal-component-analysis]] (PCA) [[phd/wiki/sources/www2026pca|PCA]], transform raw features into orthogonal coordinate systems representing a linear latent space of maximum variance. In contrast, deep learning architectures model highly non-linear manifolds. Traditional [[Autoencoder]]s, for instance, map inputs to discrete, fixed vectors within this space [[phd/wiki/sources/www2026latent|Latent and Embedding Space]] [[phd/wiki/sources/www2026variational|Variational autoencoder]].
 
