@@ -38,15 +38,19 @@ The architecture is explicitly mapped onto mammalian brain structures (prefronta
 
 The paper's core technical contribution is the **[[joint-embedding-predictive-architecture]]** (JEPA), a non-generative architecture that predicts the *representation* of a future/missing input rather than the input itself, sidestepping the impossibility of pixel-level prediction under uncertainty. 
 
-LeCun frames this within a broader **[[energy-based-models-ebm]]** formalism, distinguishing **[[Contrastive methods]]** (which push down energy on real data and up on negative samples, but suffer the curse of dimensionality) from **[[Regularized Methods]]** (which minimize the volume of low-energy space directly, argued to be more promising long-term). **[[VICReg]]** and [[Barlow Twins]] are highlighted as non-contrastive training criteria; VICReg is discussed in detail as a "dimension-contrastive" method using variance and covariance losses to prevent representational collapse.
+LeCun frames this within a broader **[[energy-based-models-ebm]]** formalism, distinguishing **[[vicreg|Contrastive methods]]** (which push down energy on real data and up on negative samples, but suffer the curse of dimensionality) from **[[vicreg|Regularized Methods]]** (which minimize the volume of low-energy space directly, argued to be more promising long-term). **[[VICReg]]** and [[Barlow Twins]] are highlighted as non-contrastive training criteria; VICReg is discussed in detail as a "dimension-contrastive" method using variance and covariance losses to prevent representational collapse.
 
-Extending JEPA hierarchically — **[[Hierarchical JEPA (H-JEPA)]]** — is proposed as the mechanism for multi-timescale, multi-abstraction prediction and hierarchical planning under uncertainty, where high-level "actions" become conditions to be satisfied by lower levels (an idea traced to classical control theory servomechanisms).
+Extending JEPA hierarchically — **[[hierarchical-jepa-h-jepa|Hierarchical JEPA (H-JEPA)]]** — is proposed as the mechanism for multi-timescale, multi-abstraction prediction and hierarchical planning under uncertainty, where high-level "actions" become conditions to be satisfied by lower levels (an idea traced to classical control theory servomechanisms).
 
 ## Reasoning, Uncertainty, and Common Sense
 
 Reasoning in this architecture is reframed as energy minimization/constraint satisfaction rather than symbolic manipulation, addressing the paper's opening tension between gradient-based learning and logic-based reasoning. Multiple types of [[Aleatoric Uncertainty]] and [[Epistemic Uncertainty]] are catalogued, handled via regularized latent variables sampled at planning time (with combinatorial explosion of trajectories requiring pruning/search methods like Monte-Carlo Tree Search).
 
-The paper explicitly argues **against** two dominant contemporary positions: that scaling large transformer/language models alone yields human-level intelligence, and that "reward is enough" via model-free RL. Both are called sample-inefficient or representationally limited (tokenized, generative models struggle with continuous high-dimensional uncertainty; no dynamically specifiable goals). Large language models are said to possess only "shallow" common sense disconnected from physical reality, since they never interact with the world. [[Common Sense]] is instead characterized as the product of a configurable world-model engine capturing self-consistency of observations.
+The paper explicitly argues **against** two dominant contemporary positions: 
+- Scaling large transformer/language models alone yields human-level intelligence
+- The "reward is enough" via model-free RL. 
+
+Both are called sample-inefficient or representationally limited (tokenized, generative models struggle with continuous high-dimensional uncertainty; no dynamically specifiable goals). Large language models are said to possess only "shallow" common sense disconnected from physical reality, since they never interact with the world. [[common-sense]] is instead characterized as the product of a configurable world-model engine capturing self-consistency of observations.
 
 ## Open Problems
 
@@ -54,11 +58,11 @@ LeCun candidly lists unresolved issues: whether H-JEPA can actually be built and
 
 ## Related work referenced
 
-The paper situates itself against [[Dyna Architecture]] (Sutton's Mode-2-like model-based RL), the Director hierarchical world-model system, [[Model-Predictive Control]], and prior joint-embedding work (Siamese networks, [[PIRL]], [[SimCLR]], BYOL, MoCo).
+The paper situates itself against [[dyna-architecture]] (Sutton's Mode-2-like model-based RL), the Director hierarchical world-model system, [[model-predictive-control]], and prior joint-embedding work (Siamese networks, [[PIRL]], [[SimCLR]], BYOL, MoCo).
 
 ## Also mentioned
 
-- [[phd/wiki/concepts/energy-based-models|Energy-Based Models]] — Listed as a key concept combining with world models and joint embeddings in the proposed approach.
+- [[energy-based-models-ebm|Energy-Based Models]] — Listed as a key concept combining with world models and joint embeddings in the proposed approach.
 - [[phd/wiki/concepts/gradient-based-learning|Gradient-Based Learning]] — Discussed as core to modern ML but poses challenges for symbolic reasoning; central to the differentiability requirement of the proposed architecture.
 - [[phd/wiki/entities/prefrontal-cortex|Prefrontal Cortex]] — Hypothesized location of the world model engine that is dynamically configurable across tasks.
 - [[phd/wiki/concepts/critic-module|Critic Module]] — Trainable component that predicts future values of intrinsic cost to enable action optimization.
