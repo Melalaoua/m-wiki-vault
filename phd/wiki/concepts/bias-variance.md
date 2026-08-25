@@ -74,3 +74,11 @@ In this section, we dive into the mathematical details of how bias and variance 
 
 High-bias models are typically too simplistic to capture the true patterns in the data.
 High-variance models are overly flexible and fit the training data too closely.
+
+##### Diagnosing Bias & Variance.
+- **Learning curves** :  plot training and validation error versus training set size. 
+- If both errors are high and converge => high bias
+- If error is low and validation error is high => suggest high variance.
+
+#### Real-world consideration
+Controlling the bias-variance tradeoff is less about picking the "perfect" model and more about managing complexity through vari
