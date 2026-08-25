@@ -98,3 +98,15 @@ This discourages overly large weights, reducing variance, it ensures the feature
 Encourage sparsity 
 $$LossLasso=\sum_{i=1}^n(y_i-ŷ_i)²+\lambda\sum_{j=1}^p|\beta_j|$$
 It can eliminate irrelevant features entirely, simplifying the model and thus reducing the variance. $\sum_{j=1}^p|\beta_j|$  ensures that the insignificant features to be reduced to zero.
+
+
+##### Ensemble methods
+Ensemble methods combine multiple models to reduce error by averaging out individual prediction deviation. It involves combining, or stacking multiple high-variance models together to get the best prediction accuracy : 
+- **bagging** (i.e random forests) reduces variance by averaging multiple high-variance estimators trained on different data subsets.
+- **Boosting** (i.e xgBoost, AdaBoost) : builds a strong learner by sequentially correcting the errors of previous models, often balancing reduction of bias or variance with careful tuning.
+
+
+
+### Application to modern AI.
+---
+Bias-variance tradeoff is critical in [[deep-learning]]
