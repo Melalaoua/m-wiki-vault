@@ -33,4 +33,28 @@ Take x and y (input with corresponding output). The true relationship with X and
 We want to build a model to predict Y by using X by trying to fit 3 models of increasing complexity : a linear model, a moderately complex polynomial model, and a very complex polynomial model. 
 
 This nois introduces rnadomness, mimicking real-world data. A polynomial is a mathematical expression involving a sum of powers of X multiplied by coefficients.
-$$ŷ = \beta $$
+$$ŷ = \beta_0 + \beta_1x $$
+
+![[Pasted image 20260825114406.png]]
+
+This model is **very simple** and assume the relationship between X and Y is linear :
+- **Bias is high** : the model cannot capture the nonlinear pattern in the data.
+- **Variance is low** : it is stable and doesn't change much with different datasets.
+- **MSE = 0.2929 (high)**
+
+> This is an example of underfitting.
+
+A degree 4 polynomial is :
+$$ŷ = \beta_0 + \beta_1x + \beta_2x²+\beta_3x³+\beta_4x⁴
+$$
+![[Pasted image 20260825114648.png]]
+
+This model is complex enough to capture the curve of the data without being too sensitive to noise:
+- **Bias is moderate** : The model can represent the true function fairly well.
+- **Variance is moderate** : It doesn't overreact to small fluctuations in the data.
+- **MSE = 0.0714**
+
+This is the best performing model in this example.
+
+A degree 25 polynomial is :
+$$\sum$$
