@@ -57,4 +57,19 @@ This model is complex enough to capture the curve of the data without being too 
 This is the best performing model in this example.
 
 A degree 25 polynomial is :
-$$\sum$$
+$$\sum_{i=25}^{25}\beta_ix^i$$
+![[Pasted image 20260825114944.png]]
+
+With 26 parameters, the model has high flexibility and fits the training data very closely. The curve looks very squiggly and overfits the data.
+- **Bias is low** : It's flexible enough to follow the signal.
+- **Variance is high** : it reacts strongly to noise and would change significantly with a new sample of data.
+- **MSE = 0.059** lower than degree 4 because it overmemorized the pattern of the training data and over.
+
+This is a good example of overfitting.
+
+When we construct a [[machine-learning]] model, we aim to simultaneously bias and variance to achieve optimum model performance.
+
+#### Bias and variance in practice.
+In this section, we dive into the mathematical details of how bias and variance calculation is derived.
+
+High-bias models are typically too simplistic to capture the true patterns in the data.
