@@ -117,6 +117,10 @@ Bias-variance tradeoff is critical in [[deep-learning]]. In the modern era of AI
 	- **Pooling layers (for example, max pooling)** : these layers summarize feature map maps and introduce translation invariance. While this reduces variance by ignoring minor fluctuations, it might increase bias by discarding some potentially useful details.
 	- **Hierarchical feature learning** : CNNs learn from low-level edges to high-level shapes layer by layer. This layered inductive bias allows generalization with fewer examples.
 
-2. [[recurent-neural-network]] (RNNs): tailored to sequential data such as text ,speech, or time-series, where current outputs depend on previous elements. Their design tries to balance long-term dependencies (which reduce bias) and training stability (which controls variance).
-	- **Weight sharing over time** : RNNs use the same parameters at every time step, introducing a bias toward stationarity in sequences (assuming the same kind of patterns recur), but significantly reducing variance by limiting parameter growth.
-	- **Memory of past inputs** : RNNs maintain a hidden state h_t that summarize past information. 
+
+##### Techniques that control the tradeoff
+- **Dropout** : Randomly truning off neurons during training adds noise, forcing the network to learn redundant representations, reducing overfitting and thus variance.
+- **Batch normalization** : Helps stabilize and accelerate training, and often reduces variance by smoothing optimization.
+- **Early stopping** : Prevents overfitting by halting training when validation loss starts increasing.
+- **Transfer learning** : Pretrained models on large datasets often generalize better with fewer parameters to train, reducing variance on small datasets.
+- **Scaling laws and modern observations** : Recent findings in large models (like [[transformers]]) show that increasing data, compute and model size reduces test error - suggesting bias decreases faster than variance increases in high-capacity models.
