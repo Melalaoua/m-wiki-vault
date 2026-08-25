@@ -80,5 +80,13 @@ High-variance models are overly flexible and fit the training data too closely.
 - If both errors are high and converge => high bias
 - If error is low and validation error is high => suggest high variance.
 
-#### Real-world consideration
-Controlling the bias-variance tradeoff is less about picking the "perfect" model and more about managing complexity through vari
+### Real-world consideration
+Controlling the bias-variance tradeoff is less about picking the "perfect" model and more about managing complexity through various strategies.
+
+#### Regularization
+Set of techniques used to constrain or penalize a model's complexity to improve generalization. 
+- **Adding a penalty term that discourages complexity in the original loss function** (usually in the form of large weights or overly flexible models.)
+- When training a machine learning model, typically minimize a loss function like MSE by adding a penalty to this objective.
+
+##### L2 regularization (ridge regression)
+$$LossRidge = \sum_{i=1}^n(y_i-ŷ_i$$
