@@ -22,3 +22,9 @@ Feature engineering is not a linear process, it is an **iterative process**.
 
 
 ##### Feature transformation.
+*Converting one feature type into another, more readable form for a particular model.*
+
+- **Binning** : Transform continous, numerical values into categorical fetures. It sorts data points into a number of bins (i.e age demographics with 18-25, 25-30, ...). Once values binned, one can futher smooth the bins by means, medians, or boundaries.
+- **One-hot encoding** . Inverse of binning, creates numerical features from categorical variables. First map the categorical features to binary representations, then mapping the feature in a matrix or vector space.
+	An example of one-hot encoding is spam filtering classifcation in which the categories spam and not spam are converted to 1 and 0 respectively.
+
