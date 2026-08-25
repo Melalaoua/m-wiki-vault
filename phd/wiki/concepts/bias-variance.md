@@ -73,3 +73,4 @@ When we construct a [[machine-learning]] model, we aim to simultaneously bias an
 In this section, we dive into the mathematical details of how bias and variance calculation is derived.
 
 High-bias models are typically too simplistic to capture the true patterns in the data.
+High-variance models are overly flexible and fit the training data too closely.
