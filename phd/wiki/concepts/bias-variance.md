@@ -97,4 +97,4 @@ This discourages overly large weights, reducing variance, it ensures the feature
 ##### L1 regularization (lasso)
 Encourage sparsity 
 $$LossLasso=\sum_{i=1}^n(y_i-ŷ_i)²+\lambda\sum_{j=1}^p|\beta_j|$$
-It can eliminate irrelevant features entirely, simplifying the model and thus reducing the variance. $\sum_{j=1}^p|\beta_j|$  
+It can eliminate irrelevant features entirely, simplifying the model and thus reducing the variance. $\sum_{j=1}^p|\beta_j|$  ensures that the insignificant features to be reduced to zero.
