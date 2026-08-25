@@ -1,14 +1,24 @@
 ---
 type: concept
-title: "MD to PhD Transition"
+title: Feature enginering
 aliases: []
-tags: [concept, phd, chat]
-updated: 2026-07-20
+tags:
+  - concept
+  - phd
+updated: 2026-08-25
 status: developing
 ---
 
-# MD to PhD Transition
+# What is feature engineering?
+*Preprocess raw data into a machine-readable format.*
 
-In 2024, the user completed an MD (Doctor of Medicine) and faced a period of significant doubt when proposed to pursue a PhD. They ultimately made the transition and, as of July 2026, are concluding the first year of their PhD program. Revisiting sources like Andrej Karpathy's "A Survival Guide to a PhD" ([[karpathy2026a]]) serves as a marker of this transition—from the uncertainty of the initial decision in 2024 to establishing their footing in the [[outer-loop-of-research]] one year into the PhD.
+Feature engineering is the process of creating predictive model features. A feature, also called a dimension, is an input variable used to generate model predictions.
 
-Filed from chat (2026-07-20).
+> Model performance largely rests on the quality of data used during training, feature engineering is a crucial preprocessing technique that require selecting the most relevant aspects of raw training data for both the predictive task and model type under consideration.
+
+Data scientists spend a large portion of time on data preparation and feature creation in order to create high-quality models. It can require much trial and error.
+
+Feature engineering is not a linear process, it is an **iterative process**.
+
+
+##### Feature transformation.
