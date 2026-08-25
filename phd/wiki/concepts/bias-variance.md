@@ -115,4 +115,8 @@ Bias-variance tradeoff is critical in [[deep-learning]]. In the modern era of AI
 	- **Local receptive fiels (convolutions)** : Instead of connecting every input pixel to every output neuron (as in fully connected networks), CNNs use small filters (kernels) that slide across the input. This enforces the assumption that local features are useful- a bias toward spatial locality.
 	- **Weight sharing** : Eeach filter (or kernel) is reused across the entire image, drastically reducing the number of trainable parameters. This limits overfitting, lowering variance, but introduces some bias by constraining the model's flexibility.
 	- **Pooling layers (for example, max pooling)** : these layers summarize feature map maps and introduce translation invariance. While this reduces variance by ignoring minor fluctuations, it might increase bias by discarding some potentially useful details.
-	- **Hierarchical feature learning** : CNNs learn from low-level edges to high-level shapes layer by layer.
+	- **Hierarchical feature learning** : CNNs learn from low-level edges to high-level shapes layer by layer. This layered inductive bias allows generalization with fewer examples.
+
+2. [[recurent-neural-network]] (RNNs): tailored to sequential data such as text ,speech, or time-series, where current outputs depend on previous elements. Their design tries to balance long-term dependencies (which reduce bias) and training stability (which controls variance).
+	- **Weight sharing over time** : RNNs use the same parameters at every time step, introducing a bias toward stationarity in sequences (assuming the same kind of patterns recur), but significantly reducing variance by limiting parameter growth.
+	- **Memory of past inputs** : RNNs maintain a hidden state h_t that summarize past information. 
