@@ -109,4 +109,10 @@ Ensemble methods combine multiple models to reduce error by averaging out indivi
 
 ### Application to modern AI.
 ---
-Bias-variance tradeoff is critical in [[deep-learning]]
+Bias-variance tradeoff is critical in [[deep-learning]]. In the modern era of AI, the coice of [[neural-networks]] architecture plays a critical role in managing the tradeoff between bias and variance.
+
+1. **[[convolutional-neural-networks]]** (CNNs) are designed specifically for data with a spatial structure, their architectural features allow them to reduce variance while maintaining sufficient expressiveness to keep bias low : 
+	- **Local receptive fiels (convolutions)** : Instead of connecting every input pixel to every output neuron (as in fully connected networks), CNNs use small filters (kernels) that slide across the input. This enforces the assumption that local features are useful- a bias toward spatial locality.
+	- **Weight sharing** : Eeach filter (or kernel) is reused across the entire image, drastically reducing the number of trainable parameters. This limits overfitting, lowering variance, but introduces some bias by constraining the model's flexibility.
+	- **Pooling layers (for example, max pooling)** : these layers summarize feature map maps and introduce translation invariance. While this reduces variance by ignoring minor fluctuations, it might increase bias by discarding some potentially useful details.
+	- **Hierarchical feature learning** : CNNs learn from low-level edges to high-level shapes layer by layer.
