@@ -31,3 +31,5 @@ Feature engineering is not a linear process, it is an **iterative process**.
 
 
 ##### Feature extraction and selection.
+Extraction is **combining variables into new, surrogate variables** or in order to reduce dimensions of the model's feature space.
+
