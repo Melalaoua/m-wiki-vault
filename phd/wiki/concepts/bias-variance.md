@@ -89,4 +89,12 @@ Set of techniques used to constrain or penalize a model's complexity to improve 
 - When training a machine learning model, typically minimize a loss function like MSE by adding a penalty to this objective.
 
 ##### L2 regularization (ridge regression)
-$$LossRidge = \sum_{i=1}^n(y_i-ŷ_i$$
+$$LossRidge = \sum_{i=1}^n(y_i-ŷ_i)²+\lambda*Penalty$$$\lambda$ is a hyperparameter that controls the tradeoff between fitting the training data and keeping the model simple. **It adds penalty proportional to the square of the magnitude of coefficients.**
+
+This discourages overly large weights, reducing variance, it ensures the features that have low predictive power to have low values, effectively reducing the coefficients of the parameters.
+
+
+##### L1 regularization (lasso)
+Encourage sparsity 
+$$LossLasso=\sum_{i=1}^n(y_i-ŷ_i)²+\lambda\sum_{j=1}^p|\beta_j|$$
+It can eliminate irrelevant features entirely, simplifying the model and thus reducing the variance. $\sum_{j=1}^p|\beta_j|$  
