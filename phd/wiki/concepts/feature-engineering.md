@@ -78,7 +78,7 @@ Example, in a database of employees, input features can include age, location, s
 	- *Backward selection* : remove features one-by-one.
 	- *Exhaustive feature selection* : Tests every possible combination of features to find the overall best one by optimizing a specified performance metric.
 	- *Recursive feature elimination (RFE)* : A type of backward selection that begins with an initial feature space and eliminates or adds features after each iteration based on their relative importance.
-	- *Recursive feature elimination with cross-validation* : variation of RFE that uses cros
+	- *Recursive feature elimination with cross-validation* : variation of RFE that uses cross-validation, which test model on unseen data, to select the best performing feature set. It's a common [[large-language-models]] evaluation technique.
 ### Feature scaling.
 *Also called **feature normalization***
 
