@@ -63,7 +63,15 @@ Example, in a database of employees, input features can include age, location, s
 ##### Supervised feature selection methods.
 [[supervised-learning]] feature selection uses the target variable to determine the most important features. Because the data features are already identified, the task is about indentifying which input variables most directly affect the target variable. Correlation is the primary criterion when assessing the most important features.
 
-- **Filter Methods** : a group of feature selection techniques that are solely concrned with the data itself and do not directly consider model performance optimization. Input variables are assessed independently against the target va
+- **Filter Methods** : a group of feature selection techniques that are solely concrned with the data itself and do not directly consider model performance optimization. Input variables are assessed independently against the target variable to determine which has the highest correlation.
+	- *Information gain* : measures how important the presence or absence of a feature is in determining the target variable by the degree of entropy reduction.
+	- *Mutual information* : assesses the dependence between variables by measuring the information obtained about on through the other.
+	- *Chi-square test* : assesses the relationship between two categorical variables by comparing observed to expected values.
+	- *Fisher's score* : Uses derivatives to calculate the relative importance of each feature for classifying data. A higher score indicates greater influence.
+	- *Pearson's correlation coefficient* : Quantifies the relationship between two continuous variables with a score ranging from -1 to 1.
+	- *Variance threshold* : Removes all features that fall under a minimum degree of variance because features with more variances are likely to contain more useful information.
+	- *Missing value ratio* : Calculates the percentages of instances in a dataset for which a certain feature is missing or has a null value. If too many instances are missing a feature, it is not likely to be useful.
+	- *ANOVA (analysis of variance)* : Determines whether different feature values affect the value of the target variable.
 
 ### Feature scaling.
 *Also called **feature normalization***
