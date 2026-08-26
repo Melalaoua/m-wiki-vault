@@ -31,6 +31,11 @@ Feature engineering is not a linear process, it is an **iterative process**.
 
 
 ##### Feature extraction and selection.
-Extraction is **combining variables into new, surrogate variables** or in order to reduce dimensions of the model's feature space.
+Extraction is creating new dimensional space for a model by **combining variables into new, surrogate variables** or in order to reduce dimensions of the model's feature space.
 
+Selection is **selecting a subset of the most relevant features** to represent a model.
 
+Both are a form of [[linear-algebra#Dimensionality reduction|dimensionality reduction]] and suitable for regression problems with a large number of features and limited available data samples.
+
+- [[principal-component-analysis]] (PCA) is a common feature extraction method that combines and transforms a dataset's original features to produce new features called *principal components.* PCA selects a subset of variables from a model that together comprise the majority or all of the variance present in the model's original set of variables. PCA then projects data onto a new space defined by this subset of variables.
+- **Linear discriminant analysis**  (LDA) : ostensibly similar to PCA in that it projects model data onto a new, lower, dimensional space. As in PCA, this model's space dimensions (or features) are derived from the initial model's features. LDA differs in its concern for retaining classification labels in the original dataset. PCA produces new component variables, LDA produces component variables 
