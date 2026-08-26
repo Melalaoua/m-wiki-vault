@@ -65,3 +65,11 @@ Simply representing words in terms of their letters, the way image embeddings re
 
 Whereas most computer vision models are trained use conventional [[supervised-learning]], embedding models for NLP require [[supervised-learning#Self-supervised learning.|self-supervised learning]] on a truly massive amount of training data to adequately capture the many potential meanings of language in different contexts, the resulting embedding power many of the task commonly assiociated with genAI (translation, chatbots, ...).
 
+To train a decoder-only autoregressive model (typical chatGPT, ...), we present it with the first word of a text sample and taks it with continous prediction of the next word until the end of the sequence. **While this lends itself well to learning to generate coherent text it's not optimal for learning useful standalone vector embeddings**.
+
+Instead, text embeddings typically rely on **masked language models** such as bidirectional encoder representations from [[transformers]] (BERT). In training, these encoder-decoder models are provided with **text sequences with certain words masked**, and tasked with completing the blanks. This exercise rewards embeddings that better capture information about a specific word or sentence and how it relates to the context around it. Word2Vec pursues a similar training task, albeit with a simpler 2-layer neural network architecture.
+
+
+#### Types of text embeddings.
+
+##### Word embeddings.
