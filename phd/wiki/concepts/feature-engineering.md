@@ -50,3 +50,6 @@ Rescale features and limit the impact of large scales on models, it transforms d
 
 - **Z-core scaling** : Literature also refers to this as **standardization and variance scaling**. Whereas min-max scaling scales feature values to fit within the designated minimum and maximum values, z-score scaling rescale feature so that they have a shared standard deviation of 1 with a mean of 0. Z-score scaling si represented by the formula : 
 	$$x̃=\frac{x-mean(x)}{sqrt(var(x))}$$
+	Here, a given feature value (x) is computed against the rescaled feature's mean and divided by the standardized standard deviation. Z-score scaling can be useful when implementing feature extraction methods like PCA and LDA, as these two methods require features to share the same scale.
+
+
