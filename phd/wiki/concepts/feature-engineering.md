@@ -91,7 +91,7 @@ With [[unsupervised-learning]], models figure out data features, patterns and re
 One unsupervised feature selection method is [[principal-component-analysis]] which reduces the dimensionality of large datasets by transforming potentially correlated variables into a smaller set of variables.
 Others techniques include independent component analysis (ICA) which separates multivariate data into individual components that are statistically independent, and[[phd/wiki/concepts/variational-autoencoder|autoencoders]].
 
-Widely used with [[transformers]] architectures, an autoencoder is a type of neural network that learns 
+Widely used with [[transformers]] architectures, an autoencoder is a type of neural network that learns to compress and then reconstruct data. In doing so, autoencoders discover [[latent-space|latent variables]] 
 ### Feature scaling.
 *Also called **feature normalization***
 
