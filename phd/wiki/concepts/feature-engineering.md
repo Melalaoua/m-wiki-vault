@@ -79,6 +79,14 @@ Example, in a database of employees, input features can include age, location, s
 	- *Exhaustive feature selection* : Tests every possible combination of features to find the overall best one by optimizing a specified performance metric.
 	- *Recursive feature elimination (RFE)* : A type of backward selection that begins with an initial feature space and eliminates or adds features after each iteration based on their relative importance.
 	- *Recursive feature elimination with cross-validation* : variation of RFE that uses cross-validation, which test model on unseen data, to select the best performing feature set. It's a common [[large-language-models]] evaluation technique.
+
+- **Embedded methods** : As the model undergoes training, it uses various mechanisms to detect underperforming features and discard those from future iterations. Many embedded methods revolve around regularization, which penalize features based on a preset coefficient threshold : 
+	- *[[bias-variance#L1 regularization (lasso)|LASSO regression (L1 regression)]]* : adds a penalty to the loss function for high value correlated coefficients, moving them toward a value of 0. The greater the penalization, the more features are removed from the feature space.
+	- *Random forest importance* : builds hundreds of decision trees, each with a random selection of data points and features. Each tree is assessed by how well it divides the data points. The better the results, the more important the feature or features in that tree are considered to be.
+	- *Gradient boosting* : Adds predictors in sequence to an ensemble with each iteration correcting the errors of the previous one.
+
+##### Unsupervised feature selection methods.
+
 ### Feature scaling.
 *Also called **feature normalization***
 
