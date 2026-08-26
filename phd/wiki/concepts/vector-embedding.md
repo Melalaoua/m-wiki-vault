@@ -54,11 +54,14 @@ Embeddings are obtained by training an embedding model on a large data set relev
 	- ==euclidian distance== : mesures the average straight-line distance between the corresponding points of different vectors. The difference between two n-dimensional vectors a and b is calculated by $\sqrt{ (a_1-b_1)² + (a_2-b_2)² + ... (a_n-b_n)² }$ or simply $d(p,q) =\sqrt{ \sum_{i=1}^n(q_i -p_i)² }$ . 
 	- ==cosine distance== (cosine similarity) : normalized measure of the cosine of the angle between two vectors, from -1 (orthogonal i.e unrelated) to 1 (idential vectors). Used widely in NPL task because naturally normalizes vector magnitudes, thus it's less sensitive to relative frequency of words in training data than euclidian distance.
 	- ==dot product== : the sum of the product of the corresponding components of each vector $a\cdot b=\sum_{i=1}^na_{i}b_{i}$.
+- **how models can be used to generate vector embeddings**: stand-alone embedding models are trained from scratch on specific tasks or training data. Each form of data typically benefits from a specific neural network architecture. 
+	- **pretrained models** : Trained on a massive and broad set of training data to learn embeddings useful to many downstream tasks.
+	- **custom embedding models** : for some uses cases involving esoteric concepts or novel classes of data. Beneftif from the fine-tuning of pretrained models or the full train of custom embedding models. Medical and legal often requires custom embedding models.
 
+### Vector embedding for NLP.
+Text embeddings are less straightforward than image embeddings (rgb). They must numerically represent abstract conceps such as semantic meaning, variable connotations and contextual relationships between words and phrases. 
 
-### Embedding models.
+Simply representing words in terms of their letters, the way image embeddings represent visuals in terms of their pixel values, would not yield meaningful embeddings. 
 
-- **pretrained models** : Trained on a massive and broad set of training data to learn embeddings useful to many downstream tasks.
-- **custom embedding models** : for some uses cases involving esoteric concepts or novel classes of data. Beneftif from the fine-tuning of pretrained models or the full train of custom embedding models. Medical and legal often requires custom embedding models.
+Whereas most computer vision models are trained use conventional [[supervised-learning]], embedding models for NLP require [[supervised-learning#Self-supervised learning.|self-supervised learning]] on a truly massive amount of training data to adequately capture the many potential meanings of language in different contexts, the resulting embedding power many of the task commonly assiociated with genAI (translation, chatbots, ...).
 
-##### Vector embedding
