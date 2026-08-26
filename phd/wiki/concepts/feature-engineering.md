@@ -45,5 +45,8 @@ Both are a form of [[linear-algebra#Dimensionality reduction|dimensionality redu
 
 Rescale features and limit the impact of large scales on models, it transforms data in terms of range and distribution.
 
-- **Min-max scaling** : rescales all values for a given feature so that they fall between specified minimum and maximum values (often 0 and 1).
-	$$$$
+- **Min-max scaling** : rescales all values for a given feature so that they fall between specified minimum and maximum values (often 0 and 1). Each data point’s value for the selected feature (represented by _x_) is computed against the decided minimum and maximum feature values, _min(x)_ and _max(x)_ respectively, which produces the new feature value for that data point (represented by _x̃_ ). Min-max scaling is calculated using the formula:
+	$$x̃ = \frac{x-min(x)}{max(x)-min(x)}$$
+
+- **Z-core scaling** : Literature also refers to this as **standardization and variance scaling**. Whereas min-max scaling scales feature values to fit within the designated minimum and maximum values, z-score scaling rescale feature so that they have a shared standard deviation of 1 with a mean of 0. Z-score scaling si represented by the formula : 
+	$$x̃=\frac{x-mean(x)}{sqrt(var(x))}$$
