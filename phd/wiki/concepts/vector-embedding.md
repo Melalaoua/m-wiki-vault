@@ -30,4 +30,7 @@ Likewise, **dimension** has different implications in ML, depend on the context.
 - For a vector, it refers to how many components (indiv. numbers) it contains.
 
 - a *scalar* is a zero-dimensional tensor, containing a single number.
-- a *vector* is a *one-dimensional* (or first-degree or first-order) tensor, containing multiple scalars of the same type of data. (i.e (25, 30, 33) in weather r)
+- a *vector* is a *one-dimensional* (or first-degree or first-order) tensor, containing multiple scalars of the same type of data. For example, the weather model might represent the low, mean and high temperatures of that single day vector form as (25,30, 33). Each scalar component is a [[feature-engineering#What are features ?|feature]], a dimension, of the vector corresponding to a feature of that day's weather.
+- a *tuple* is a first-order tensor containing scalars of more than one type of data. For example, a person's name, age and height might be represented in tuple form as (Jane, Smith, 31, 65).
+- a *matrix* is a two-dimensional tensor, containing multiple vectors of the same type of data. It can be intuitively visualized as two-dimensional grid of scalars in which each row or column is a vector. For example, that weather model might represent the netire mont of june as a 3x30 matrix, in which each row is a feature vector describing an individual day's low, mean and high tempartures.
+- *Tensors* with three or more dimensions, like the 3-dimensional tensors used to represent color images in computer visoin algorithms, are referred as *multidimensional arrays or N-dimensional tenors*
