@@ -64,7 +64,16 @@ First, the model takes in input data, then the feature extractor transforms the 
 
 Most modern AI models perform automatic feature extraction, but it is still useful to understand the diverse ways of handling it. Here are a few common feature extractions methods used :
 - **Principal component analysis (PCA)** : Reduces the number of features in large datasets to principal components. Popular because of its ability to create original data that is uncorrelated.
-- 
+- **Linear discriminant analysis (LDA)** : separate multiple classes and features to solve classification problems, commonly used to optimize machine learning models.
+- **T-distributed stochastic neighbor embedding (t-SNE)** : This machine learning technique is commonly applied to tasks such as feature visualization in [[deep-learning]]. This is especially useful when the task is to render visualizations of high-dimensional data in 2D or 3D. Computationally expensive.
+- **Term frequency-Inverse document frequency (TF-IDF)** : Evaluates the importance of words based on how frequently they appear. Commonly used in NLP for classification, clustering and information retrieval. Bag of words is a similar technique but instead of considering the term's relevance, it effectively treats all words equally.
+
+##### Use case.
+**Image processing and computer vision:** The feature extraction process identifies and extracts the key characteristics from images and video. Raw image data (pixels) is transformed into features that the machine can apply algorithms to extract and classify a new set of features. For example, the histogram of oriented gradients (HOG) is a feature extraction algorithm used for object detection.
+
+**Natural language processing:** Feature extraction converts raw text data into a format structure that the machine learning model can process. This is useful for tasks such as classification, sentiment analysis or named entity recognition (NER). This technique can be applied across industries, used in chat interfaces and even behavioral health. This research suggests that feature extraction aids in multimodal emotion recognition to monitor patient behavioral health.[10](https://www.ibm.com/think/topics/feature-extraction#f10)
+
+==**Signal processing:** This technique is used to analyze and extract meaningful information from raw signal data (audio, images or even time-series data) to facilitate tasks such as classification, detection or prediction. While signal processing is traditionally associated with areas such as speech recognition, audio processing and image analysis, it can also be applied in many other domains. For example, in the medical context, psychological signals are used such as ECG readings to detect trends.[11](https://www.ibm.com/think/topics/feature-extraction#f11)==
 
 #### Feature Selection.
 *Choosing the features to use for the model.*
