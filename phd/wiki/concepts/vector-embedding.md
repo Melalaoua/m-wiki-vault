@@ -47,7 +47,10 @@ Embeddings are obtained by training an embedding model on a large data set relev
 
 - **how vector embeddings represent data** : embeddings typically deal with high-dimensional data (commonly most nonnumerical information is high-dimensional). For instance a smiple 28x28 pixel B&W image can be represented as a 784-dimensional vector. 
 	Efficient vector embeddings of high-dimensional data often entails some degree of [[linear-algebra#Dimensionality reduction|dimensionality reduction]], omitting irrelevant or redundant information and increasing model speed and efficiency (*albeit a potential tradeoff in accuracy or precision*). 
-	> The specific features are represented by the dimensions of vector embeddings can be established through manual [[feature-engineering]]
+	> The specific features are represented by the dimensions of vector embeddings can be established through manual [[feature-engineering]] or implicitly through the process of training a model to make accurate predictions.
+	
  
-- **how vector embeddings can be compared :**
+- **how vector embeddings can be compared :** multiple mathematical measures can be used to infer the relative similarity or proximity of different vector embeddings (choosing which depends largely on the nature of the data) : 
+	- ==euclidian distance== : mesures the average straight-line distance between the corresponding points of different vectors. The difference between two n-dimensional vectors a and b is calculated by $\sqrt{ (a_1-b_1)² + (a_2-b_2)² + ... (a_n-b_n)² }$ . 
+	- ==cosine distance== (cosine similarity) : normalized measure of the cosine of the angle between two vectors, from -1 (orthogonal i.e unrelated) to 1 (idential vectors). Used widely in NPL task because naturally normalizes vector magnitudes, thus les 
 - **how models can be used to generate vector embeddings :**
