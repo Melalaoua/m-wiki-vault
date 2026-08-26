@@ -46,7 +46,8 @@ an *embedding* is any numerical representation of data that captures its relevan
 Embeddings are obtained by training an embedding model on a large data set relevant to the task at hand or by using a pretrained model.
 
 - **how vector embeddings represent data** : embeddings typically deal with high-dimensional data (commonly most nonnumerical information is high-dimensional). For instance a smiple 28x28 pixel B&W image can be represented as a 784-dimensional vector. 
-	Efficient vector embedding
+	Efficient vector embeddings of high-dimensional data often entails some degree of [[linear-algebra#Dimensionality reduction|dimensionality reduction]], omitting irrelevant or redundant information and increasing model speed and efficiency (*albeit a potential tradeoff in accuracy or precision*). 
+	> The specific features are represented by the dimensions of vector embeddings can be established through manual [[feature-engineering]]
  
 - **how vector embeddings can be compared :**
 - **how models can be used to generate vector embeddings :**
