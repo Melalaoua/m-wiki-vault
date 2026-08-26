@@ -94,6 +94,8 @@ Others techniques include independent component analysis (ICA) which separates m
 Widely used with [[transformers]] architectures, an autoencoder is a type of neural network that learns to compress and then reconstruct data. In doing so, autoencoders discover [[latent-space|latent variables]]  (those which are not directly observable, but that strongly affect data distribution.)
 
 ##### Choosing a feature selection method.
+- **Numerical input, numerical output** : When inputs and outputs are both numerical, this indicates a [[linear-regression|regression]] predictive problem.
+- **Numerical input, categorical output** :
 ### Feature scaling.
 *Also called **feature normalization***
 

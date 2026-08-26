@@ -38,3 +38,18 @@ Wrappers are computationally greedy algorithms that train models on various subs
 *   **Forward/Backward Selection:** Iteratively adds or removes one feature at a time until model performance fails to improve.
 *   **Recursive Feature Elimination (RFE):** Iteratively drops the weakest features based on importance scores. Best used with Cross-Validation (RFECV) to prevent overfitting.
 > **⚠️ Genetics Warning:** Never use exhaustive wrapper methods on raw genome/RNA-seq data. The compute time scales exponentially. Only use these at the very end of your pipeline.
+
+
+### The Mandatory Step: Filters First
+
+In genetics, because of your millions of features, **Step 1 is almost always a Filter method.** You must do this first because the other methods are too computationally heavy to run on the raw data. The output of your filter step (e.g., reducing 5 million SNPs down to the top 10,000 using Chi-squared) becomes the input for the next phase.
+
+### The Fork in the Road: Choosing Step Two
+
+Once your data is filtered, you reach a fork in the road. You usually pick _one_ of the following paths depending on your final goal, rather than chaining them all together:
+
+- **Path A (Filter $\rightarrow$ Embedded):** You feed your 10,000 filtered SNPs into a LASSO regression model. As LASSO trains, it acts as an embedded selector, pushing the coefficients of weak SNPs to zero. The model finishes training with only the best 50 SNPs active. You are done.
+    
+- **Path B (Filter $\rightarrow$ Wrapper):** You feed those 10,000 SNPs into a Recursive Feature Elimination (RFE) algorithm. RFE tests hundreds of feature combinations and outputs the absolute best 50 SNPs. You then train a standard model on those 50.
+    
+- **Path C (Filter $\rightarrow$ Unsupervised):** You feed the 10,000 SNPs into a PCA algorithm. PCA compresses those 10,000 features into 10 new "principal components" that capture the overall biological variance. You train your final model on those 10 components.
