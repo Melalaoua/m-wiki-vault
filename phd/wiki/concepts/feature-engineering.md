@@ -73,6 +73,12 @@ Example, in a database of employees, input features can include age, location, s
 	- *Missing value ratio* : Calculates the percentages of instances in a dataset for which a certain feature is missing or has a null value. If too many instances are missing a feature, it is not likely to be useful.
 	- *ANOVA (analysis of variance)* : Determines whether different feature values affect the value of the target variable.
 
+- **Wrapper methods** : train the machine learning algorithm with various subsets of features, adding or removing features and testing the results at each iteration. The goal is to find the feature that leads to optimal model performance. **Test all the possible feature combination** known as greedy algorithms : 
+	- *Forward selection* : Starts with an empty feature set and gradually adds new features until the optimal set is found.
+	- *Backward selection* : remove features one-by-one.
+	- *Exhaustive feature selection* : Tests every possible combination of features to find the overall best one by optimizing a specified performance metric.
+	- *Recursive feature elimination (RFE)* : A type of backward selection that begins with an initial feature space and eliminates or adds features after each iteration based on their relative importance.
+	- *Recursive feature elimination with cross-validation* : variation of RFE that uses cros
 ### Feature scaling.
 *Also called **feature normalization***
 
