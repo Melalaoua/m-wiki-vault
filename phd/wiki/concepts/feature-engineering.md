@@ -12,6 +12,8 @@ status: developing
 # What is feature engineering?
 *Preprocess raw data into a machine-readable format.*
 
+A "feature" refers to an individual measurable property or characteristic of a data point: a specific attriute of the data that helps describe the phenomenon being observed.
+
 Feature engineering is the process of creating predictive model features. A feature, also called a dimension, is an input variable used to generate model predictions.
 
 > Model performance largely rests on the quality of data used during training, feature engineering is a crucial preprocessing technique that require selecting the most relevant aspects of raw training data for both the predictive task and model type under consideration.
@@ -20,8 +22,13 @@ Data scientists spend a large portion of time on data preparation and feature cr
 
 Feature engineering is not a linear process, it is an **iterative process**.
 
+#### What are features ? 
 
-##### Feature transformation.
+A definable quality of the items in a dataset, also known as variables because their values can change from one data point to the next, and attributes because they characterize the data points in the dataset.
+
+Features can be independant variables, dependent variables that derive their value from independent variables or combined attributes that are compiled from multiple other features.
+
+#### Feature transformation.
 *Converting one feature type into another, more readable form for a particular model.*
 
 - **Binning** : Transform continous, numerical values into categorical fetures. It sorts data points into a number of bins (i.e age demographics with 18-25, 25-30, ...). Once values binned, one can futher smooth the bins by means, medians, or boundaries.
@@ -30,7 +37,7 @@ Feature engineering is not a linear process, it is an **iterative process**.
 	An example of one-hot encoding is spam filtering classifcation in which the categories spam and not spam are converted to 1 and 0 respectively.
 
 
-##### Feature extraction and selection.
+#### Feature extraction and selection.
 Extraction is creating new dimensional space for a model by **combining variables into new, surrogate variables** or in order to reduce dimensions of the model's feature space.
 
 Selection is **selecting a subset of the most relevant features** to represent a model.
@@ -40,7 +47,14 @@ Both are a form of [[linear-algebra#Dimensionality reduction|dimensionality redu
 - [[principal-component-analysis]] (PCA) is a common feature extraction method that combines and transforms a dataset's original features to produce new features called *principal components.* PCA selects a subset of variables from a model that together comprise the majority or all of the variance present in the model's original set of variables. PCA then projects data onto a new space defined by this subset of variables.
 - **Linear discriminant analysis**  (LDA) : ostensibly similar to PCA in that it projects model data onto a new, lower, dimensional space. As in PCA, this model's space dimensions (or features) are derived from the initial model's features. LDA differs in its concern for retaining classification labels in the original dataset. PCA produces new component variables, LDA produces component variables primarily intended to maximize class difference in the data.
 
-##### Feature scaling.
+##### Feature Selection.
+*Choosing the features to use for the model.*
+
+Identifying the most important, impactful and nonredundant features in the dataset. Reducing the number of features enhances model efficiency and boost performance.
+
+Which features 
+
+#### Feature scaling.
 *Also called **feature normalization***
 
 Rescale features and limit the impact of large scales on models, it transforms data in terms of range and distribution.
