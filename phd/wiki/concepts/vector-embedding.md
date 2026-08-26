@@ -76,3 +76,5 @@ Instead, text embeddings typically rely on **masked language models** such as bi
 *Aim to capture not only the semantic meaning of individual words but also their contextual relationship to others words with which they often cooccur.*
 
 GloVe, a popular word embedding model, was trained on a "global word-word cooccurrence matrix", inferring semantic meaning and semantic relationships from how often specific words are used close to one another. For example, meaning can be derived from how "ice" and "steam" coincide with "water" at roughly the same frequency, but coincide with "solid" and "gas" at very different rates.
+
+The way the dimensions of a word embedding vector implicitly capture these relationships enables us to mathematically manipulate them in useful and intuitive ways. In a well-configured word embedding scheme, subtracting the vector for “man” from the vector for “king” and adding the vector for “woman” should essentially yield the vector for “queen.”
