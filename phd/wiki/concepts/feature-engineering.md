@@ -94,8 +94,16 @@ Others techniques include independent component analysis (ICA) which separates m
 Widely used with [[transformers]] architectures, an autoencoder is a type of neural network that learns to compress and then reconstruct data. In doing so, autoencoders discover [[latent-space|latent variables]]  (those which are not directly observable, but that strongly affect data distribution.)
 
 ##### Choosing a feature selection method.
-- **Numerical input, numerical output** : When inputs and outputs are both numerical, this indicates a [[linear-regression|regression]] predictive problem.
-- **Numerical input, categorical output** :
+- **Numerical input, numerical output** : When inputs and outputs are both numerical, this indicates a [[linear-regression|regression]] predictive problem. In theses cases, correlation coefficients, such as Pearson's correlation coefficient, are an ideal feature selection method.
+
+- **Numerical input, categorical output** : [[logistic-regression]] models classify inputs into discrete categorial outputs. In this classifications problem, correlation-based feature selection methods that support categorical target variables can be used. These inlucde ANOVA for linear regression models and Kendall's coefficient of rank correlation for nonlinear tasks.
+
+- **Categorical input, numerical output** : This rare type of challenge can also be solved with correlation methods that support categorical variables.
+
+- **Categorical input, categorical output** : Classificaiton problems with categorical input and target variables lend themselves to the chi-square methods or information gain techniques.
+
+Other factors to consider include the size of the dataset and feature space, feature complexity and model type. Filter methods can quickly eliminate a large portion of irrelevant features, but struggle with complex feature interactions. In these cases, wrapper and embedded methods might be more suitable.
+
 ### Feature scaling.
 *Also called **feature normalization***
 
