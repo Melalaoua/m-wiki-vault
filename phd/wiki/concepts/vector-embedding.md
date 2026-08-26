@@ -54,5 +54,3 @@ Embeddings are obtained by training an embedding model on a large data set relev
 	- ==euclidian distance== : mesures the average straight-line distance between the corresponding points of different vectors. The difference between two n-dimensional vectors a and b is calculated by $\sqrt{ (a_1-b_1)² + (a_2-b_2)² + ... (a_n-b_n)² }$ or simply $d(p,q) =\sqrt{ \sum_{i=1}^n(q_i -p_i)² }$ . 
 	- ==cosine distance== (cosine similarity) : normalized measure of the cosine of the angle between two vectors, from -1 (orthogonal i.e unrelated) to 1 (idential vectors). Used widely in NPL task because naturally normalizes vector magnitudes, thus it's less sensitive to relative frequency of words in training data than euclidian distance.
 	- ==dot product== : the sum of the product of the corresponding components of each vector $a\cdot b=\sum_{i=1}^na_{i}b_{i}$.
-
-- **how models can be used to generate vector embeddings :** stand alone embedding models might be pretrained offerings or trained from scratch on specific tasks or training data. 
