@@ -38,4 +38,15 @@ Likewise, **dimension** has different implications in ML, depend on the context.
 ### Vectors versus embeddings.
 Not necessarily the same thing.
 
-an *embedding* is any numerical representation of data that captures its relevant qualities in a way that ML algorithms can process.
+an *embedding* is any numerical representation of data that captures its relevant qualities in a way that ML algorithms can process. **Data is embedding in $n$-dimensional space.** Data doesn't have to be embedded as a vector, but it's predominately is in modern ML.
+
+### How does vector embedding work?
+*embeddings transforms a data point (word, sentence, image) into a n-dimensional array of numbers, representing its features.*
+
+Embeddings are obtained by training an embedding model on a large data set relevant to the task at hand or by using a pretrained model.
+
+- **how vector embeddings represent data** : embeddings typically deal with high-dimensional data (commonly most nonnumerical information is high-dimensional). For instance a smiple 28x28 pixel B&W image can be represented as a 784-dimensional vector. 
+	Efficient vector embedding
+ 
+- **how vector embeddings can be compared :**
+- **how models can be used to generate vector embeddings :**
