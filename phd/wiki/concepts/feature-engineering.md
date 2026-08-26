@@ -51,6 +51,21 @@ Both are a form of [[linear-algebra#Dimensionality reduction|dimensionality redu
 - [[principal-component-analysis]] (PCA) is a common feature extraction method that combines and transforms a dataset's original features to produce new features called *principal components.* PCA selects a subset of variables from a model that together comprise the majority or all of the variance present in the model's original set of variables. PCA then projects data onto a new space defined by this subset of variables.
 - **Linear discriminant analysis**  (LDA) : ostensibly similar to PCA in that it projects model data onto a new, lower, dimensional space. As in PCA, this model's space dimensions (or features) are derived from the initial model's features. LDA differs in its concern for retaining classification labels in the original dataset. PCA produces new component variables, LDA produces component variables primarily intended to maximize class difference in the data.
 
+#### Feature extraction.
+During the extraction process, unstructured data is converted into a more structured and usable format to enance the data quality and model interpretability.
+
+Data is difficult to work with when the number of features or covariates, exceeds the number of independent data points. This type of data is considered high-dimensional data.[3](https://www.ibm.com/think/topics/feature-extraction#f03) Feature extraction can be considered a [dimensionality reduction](https://www.ibm.com/think/topics/dimensionality-reduction) technique.[4](https://www.ibm.com/think/topics/feature-extraction#f04)  
+  
+This is crucial when working with large datasets or datasets from multiple modalities. The more extracted features the model must manage, the less proficient and performant it is.[5](https://www.ibm.com/think/topics/feature-extraction#f05) Common tasks that rely on efficient feature extraction include image processing, natural language processing (NLP) and signal processing.
+
+First, the model takes in input data, then the feature extractor transforms the data into a numerical representation that can be used to compute the dimensionality reduction methods for feature extraction. These representations are stored in feature vectors for the model to perform algorithms for data reduction.
+
+> After extraction, it is sometimes necessary to standardize the data using feature normalization.
+
+Most modern AI models perform automatic feature extraction, but it is still useful to understand the diverse ways of handling it. Here are a few common feature extractions methods used :
+- **Principal component analysis (PCA)** : Reduces the number of features in large datasets to principal components. Popular because of its ability to create original data that is uncorrelated.
+- 
+
 #### Feature Selection.
 *Choosing the features to use for the model.*
 
