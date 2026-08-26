@@ -38,4 +38,12 @@ Selection is **selecting a subset of the most relevant features** to represent a
 Both are a form of [[linear-algebra#Dimensionality reduction|dimensionality reduction]] and suitable for regression problems with a large number of features and limited available data samples.
 
 - [[principal-component-analysis]] (PCA) is a common feature extraction method that combines and transforms a dataset's original features to produce new features called *principal components.* PCA selects a subset of variables from a model that together comprise the majority or all of the variance present in the model's original set of variables. PCA then projects data onto a new space defined by this subset of variables.
-- **Linear discriminant analysis**  (LDA) : ostensibly similar to PCA in that it projects model data onto a new, lower, dimensional space. As in PCA, this model's space dimensions (or features) are derived from the initial model's features. LDA differs in its concern for retaining classification labels in the original dataset. PCA produces new component variables, LDA produces component variables 
+- **Linear discriminant analysis**  (LDA) : ostensibly similar to PCA in that it projects model data onto a new, lower, dimensional space. As in PCA, this model's space dimensions (or features) are derived from the initial model's features. LDA differs in its concern for retaining classification labels in the original dataset. PCA produces new component variables, LDA produces component variables primarily intended to maximize class difference in the data.
+
+##### Feature scaling.
+*Also called **feature normalization***
+
+Rescale features and limit the impact of large scales on models, it transforms data in terms of range and distribution.
+
+- **Min-max scaling** : rescales all values for a given feature so that they fall between specified minimum and maximum values (often 0 and 1).
+	$$$$
