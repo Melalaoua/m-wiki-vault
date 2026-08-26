@@ -78,3 +78,23 @@ Instead, text embeddings typically rely on **masked language models** such as bi
 GloVe, a popular word embedding model, was trained on a "global word-word cooccurrence matrix", inferring semantic meaning and semantic relationships from how often specific words are used close to one another. For example, meaning can be derived from how "ice" and "steam" coincide with "water" at roughly the same frequency, but coincide with "solid" and "gas" at very different rates.
 
 The way the dimensions of a word embedding vector implicitly capture these relationships enables us to mathematically manipulate them in useful and intuitive ways. In a well-configured word embedding scheme, subtracting the vector for “man” from the vector for “king” and adding the vector for “woman” should essentially yield the vector for “queen.”
+
+
+##### Sentence embeddings.
+*The entire semantinc meaning of the entire phrases or sentences, rather than individual words.*
+
+
+##### Document embeddings.
+*Classify documents or web pges for indexeing in search engines or vector databases.*
+
+#### Other types of vector embeddings.
+
+Though image and text data tend to receive the most attention, particularly for generative AI use cases, a wide variety of data modalities can benefit from vector embedding.
+
+- **Audio embeddings** are used for various applications, from voice assistants to song recommendation systems to music recognition systems such as Shazam. They represent sound through the numerical properties of its waveform data. Audio can be embedded by using [recurrent neural networks (RNNs)](https://www.ibm.com/topics/recurrent-neural-networks), CNNs or [transformer-based architectures](https://www.ibm.com/think/topics/attention-mechanism).  
+      
+    
+- **Product embeddings** are often used to power recommendation systems for e-commerce platforms. They’re typically generated with [unsupervised learning](https://www.ibm.com/topics/unsupervised-learning) algorithms.  
+      
+    
+- **Graph embeddings** can be used to model and represent complex relationship structures such as social networks or biological systems. The dimensions of a graph embedding vector represent the way various nodes and edges of a system are connected.
