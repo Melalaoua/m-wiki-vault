@@ -2,5 +2,7 @@
   "obsidian-git",
   "obsidian-front-matter-title-plugin",
   "dataview",
-  "obsidian-latex-suite"
+  "obsidian-latex-suite",
+  "editing-toolbar",
+  "callout-manager"
 ]

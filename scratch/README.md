@@ -7,7 +7,6 @@ call. Exempt from lint, sweep, consolidation, and both indexes. Graduating an
 item into a brain happens only on the user's say-so, via a Filing.
 
 
-
 Base information on me :
 
 - I'm a PhD student in artificial intelligence applied to clinical and molecular diagnosis. I'm interested in genetic, artificial intelligence, technology in general.
