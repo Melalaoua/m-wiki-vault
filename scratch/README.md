@@ -42,3 +42,89 @@ I want to reboot a project i've been working on this summer which is Talis, my f
 - Eventually a LLM-backed agent for active conversation and proactive interaction (the bot acting on its own).
     
 - Assist me in my first step in the stock market exchange. (PEA, Worldwide, Crypto).
+
+
+
+
+
+Wayfinder feedback for “Prototype the Discord operating loop”. Scene: 2 · Import data Interaction balance: balanced Disposition: keep this direction Feedback: no extra note.
+
+Wayfinder feedback for “Prototype the Discord operating loop”.
+
+Scene: 3 · Correct data
+
+Interaction balance: conversation
+
+Disposition: keep this direction
+
+Feedback: no extra note.
+
+Wayfinder feedback for “Prototype the Discord operating loop”.
+
+Scene: 4 · Ask a financial question
+
+Interaction balance: conversation
+
+Disposition: keep this direction
+
+Feedback: Button get deactivated after one action, this is prototype limitation i guess and discord will allow intercting multiple time on the same embed. The embed is a bit fuzzy and a lot of numbers are thrown to my face but i cannot account if this is just me due to synthetic data. I'll be more focused with my real bank datas.
+
+Wayfinder feedback for “Prototype the Discord operating loop”.
+
+Scene: 5 · Review current position
+
+Interaction balance: conversation
+
+Disposition: keep this direction
+
+Feedback: Again, the embed is not complete and too linear in my opinion, discord allows usage of emojis, better embed with components V2, images, ... This is as good as a textual message sent, could be improved visually. information is not clear.
+
+Wayfinder feedback for “Prototype the Discord operating loop”.
+
+Scene: 6 · Weekly review
+
+Interaction balance: conversation
+
+Disposition: keep this direction
+
+Feedback: In order to make talis more proactive & alive, the weekly recap should be send without me asking for it. This would bump Talis from a reactive agent (react to my demands) to a proactive assistant. This doesn't just concern the weekly review.
+
+Wayfinder feedback for “Prototype the Discord operating loop”.
+
+Scene: 7 · Monthly review
+
+Interaction balance: conversation
+
+Disposition: keep this direction
+
+Feedback: Same comment as scene 6
+
+Wayfinder feedback for “Prototype the Discord operating loop”.
+
+Scene: 8 · Receive a proactive observation
+
+Interaction balance: conversation
+
+Disposition: keep this direction
+
+Feedback: no extra note.
+
+Wayfinder feedback for “Prototype the Discord operating loop”.
+
+Scene: 9 · Handle uncertainty
+
+Interaction balance: conversation
+
+Disposition: keep this direction
+
+Feedback: no extra note.
+
+Wayfinder feedback for “Prototype the Discord operating loop”.
+
+Scene: 10 · Approve a consequential change
+
+Interaction balance: conversation
+
+Disposition: keep this direction
+
+Feedback: no extra note.
