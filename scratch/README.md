@@ -127,9 +127,3 @@ Interaction balance: conversation
 Disposition: keep this direction
 
 Feedback: no extra note.
-
-
-
-  
-
-Justificatif : Mail Didier partir à telle date + sujet de thèse tout à Vargun
