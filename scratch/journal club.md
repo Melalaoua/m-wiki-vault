@@ -33,3 +33,7 @@ Qu'est ce que le "pretraining" apprend au model concrètement
 ```
 
 That is the entire slide.
+
+
+
+
