@@ -21,7 +21,7 @@ Footer, small: `Zhou et al., ICLR 2024 (GUE) · Marin et al., ICLR 2024 (BEND)`
 > [!note] timing
 > [slide 1, top line only. Let it sit two seconds before you speak.]
 
-Voici Evo-2, un genomic language model (GLM)  entrainé sur 
+Voici Evo-2, un genomic language model (GLM) entrainé sur 
 
 ---
 
