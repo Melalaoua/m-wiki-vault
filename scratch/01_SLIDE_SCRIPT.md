@@ -31,7 +31,7 @@
 - *Objectif : Connecter l'architecture au laboratoire CSTB.*
 - *Sur l'écran : titre + "A technical introduction and critical biological case study" + 3 figures représentatives.*
 
-##### Script.
+#### Script.
 Examinons la question que cherchent à répondre le modèles que nous utilisons en biologie : PLM pour les protéines, GLM pour la génétiuqe : **dans quel but sont entrainés ses modèles de nos jours ?**
 La plupart sont entrainés à reconstruire l'information manquante, à prédire le prochain nucléotide. 
 **=> l'architecture JEPA, pour joint-embedding predictive architecture cherche à savoir s'il est possible de faire apprendre les modèles en les entrainant à prédire l'information manquantes à partir des représentations latentes.**
@@ -49,7 +49,7 @@ Mon objectif est que, d'ici la fin, on peut comprendre ensemble cette nouvelle a
 - *Objectif : Etablir la distinction entre les deux sans impliquer que les modèles actuels sont défectueux.*
 - *Sur l'écran : Photo oiseau et disctinction entre les deux*
 
-##### Script
+#### Script
 Considérons cette partie de l'oiseau masquée. On est capable de prédire que dans ce carré on retrouve l'aile de l'oiseau. Sans être certains de la couleur de chaque plume ou pixel consittuant notre oiseau.
 
 C'est là le coeur du message : un objectif d'entrainement par observation va voulor comparer au pixel près l'erreur de notre modèle. Tandis que par représentation, va tout d'abord envoyer notre image complète à travers un encodeur, et demander à un autre modèle de prédire les features associées à la région cachée. 
@@ -62,18 +62,18 @@ De plus, les modèles de languages apprennent déjà des représentations riches
 
 En biologie, ca créée une tension immédiate. Certaines séquences seront pertinentes dans un contexte et tantôt inutile dans un autre. Un simple nucléotide changé peut être décisif. C'est donc risqué de translationner cette idée de supprimer des détails à première vue inutile comme pour une image. On doit se poser la question quelles informations conserve la représentation latente de notre modèle, et évaluer sa pertinence dans une tâche biologique.
 
-**Transition** : On est donc capable de positionner JEPA face à plusieurs objectifs d'entrainement.
+**Transition** : On est donc capable de positionner JEPA face à plusieurs objectifs.
 
 **Sources:** [S01](https://openreview.net/pdf?id=BZ5a1r-kVsf); [S02, introduction and Figure 2](https://arxiv.org/pdf/2301.08243); [S12: MAE](https://arxiv.org/abs/2111.06377). The bird and single-variant discussion are original teaching examples, not reported experiments.
 
-### Slide 3 - 
+### Slide 3 - JEPA est une méthode d'entrainement, pas un remplacement des transformers.
 
-| Learning pattern                 | Compared during training                              | Example                       |
-| -------------------------------- | ----------------------------------------------------- | ----------------------------- |
-| Reconstruct/predict observations | Prediction versus pixels or tokens                    | MAE; masked language modeling |
-| Align representations            | Compatible views, with a non-collapse mechanism       | SimCLR; BYOL                  |
-| Predict representations          | Context-conditioned prediction versus target features | I-JEPA                        |
+- *Temps : 2 minutes.*
+- *Objectif : Distinguer le squelette, l'objectif et l'utilisation*
+- *A l'écran : Tableau ci-dessous.*
 
+#### Script
+Il y a trois niveaux à distinguer dans l'architecture JEPA
 
 **Transition:** “Here is that graph for I-JEPA.”
 
