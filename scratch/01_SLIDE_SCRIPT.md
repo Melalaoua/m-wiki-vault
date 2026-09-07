@@ -100,9 +100,11 @@ I-JEPA poursuit 3 objectifs :
 2. Un predicteur prends la features embedding du contexte généré par l'encodeur et son seul but est de prédire les features en sorties, ce dernier a les paramètres notés phi.
 3. Un autre encodeur prends notre cible d'entrainement et produit des features cibles. On compare les deux. L'encodeur 2 possède les paramatères theta barre.
 
-L'encodeur de la cible voit l'image en entier.
+L'encodeur de la cible voit l'image en entier. L'encodeur du contexte ne voit que des bout de l'images et le prédicteur est guidé pour lui dire ou prédire, il ne recoit pas l'image en entier. seulement la position et le contexte latent généré par l'encodeur, sinon on tombe dans un objectif de reconstruction au pixel près.
 
+La fonction de perte entraine l'encodeur du contexte et le predicteur par backpropagation. Pour l'encoder cible, on met à jour ses paramètres par moving average.
 
+Deux mécanismes distinct : par gradient en haut, par moving average en bas
 
 **Transition:** “Let us make the patch selection concrete before writing the loss.”
 
