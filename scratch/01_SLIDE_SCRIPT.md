@@ -6,45 +6,33 @@
 - Expertise dans le self-supervised learning : **incertain**.
 - 14 slides, 28 minutes de présentation (2 min de marge) sans prendre en compte les discussions.
 - Ce document contient le script à lire (traduit directement de la version anglaise) et des informations techniques sur le PPT.
-- Argument cnet
-
+- Argument central de la présentation : **JEPA l'objectif de prédiction pendant l'entrainement d'un modèle IA. Est-ce que l'espace latent contient encore des informations biologiques ?**
 
 | Slide | Minutes | Cumulative target |
-|---|---:|---:|
-| 1 | 1 | 01:00 |
-| 2 | 2 | 03:00 |
-| 3 | 2 | 05:00 |
-| 4 | 2.5 | 07:30 |
-| 5 | 2.5 | 10:00 |
-| 6 | 3 | 13:00 |
-| 7 | 2 | 15:00 |
-| 8 | 2 | 17:00 |
-| 9 | 2 | 19:00 |
-| 10 | 2.5 | 21:30 |
-| 11 | 2 | 23:30 |
-| 12 | 1.5 | 25:00 |
-| 13 | 2 | 27:00 |
-| 14 | 1 | 28:00 |
+| ----- | ------: | ----------------: |
+| 1     |       1 |             01:00 |
+| 2     |       2 |             03:00 |
+| 3     |       2 |             05:00 |
+| 4     |     2.5 |             07:30 |
+| 5     |     2.5 |             10:00 |
+| 6     |       3 |             13:00 |
+| 7     |       2 |             15:00 |
+| 8     |       2 |             17:00 |
+| 9     |       2 |             19:00 |
+| 10    |     2.5 |             21:30 |
+| 11    |       2 |             23:30 |
+| 12    |     1.5 |             25:00 |
+| 13    |       2 |             27:00 |
+| 14    |       1 |             28:00 |
 
-## Slide 1 — What should a biological foundation model learn to predict?
+### Slide 1 - Que dois prédir un modèle biologique de fondation ?.
+---
+- *Temps : 1 minute.*
+- *Objectif : Connecter l'architecture au laboratoire CSTB.*
+- *Sur l'écran : titre + "A technical introduction and critical biological case study" + 3 figures représentatives.*
 
-**Time:** 1 minute. **Purpose:** connect the architectural question to the lab before introducing acronyms.
-
-**On screen:** title; subtitle “A technical introduction and critical biological case study”; three small labels: “Images → representations”, “Genomes → functional evaluation”, “Evidence → research decisions”. Presenter name and affiliation should be supplied by the presenter, not invented.
-
-**Visual instructions:** a simple sequence of an image patch grid, a vector, and a DNA sequence. This is a roadmap, not a claimed image-to-DNA model. No brain illustration or AGI slogan.
-
-**Spoken script:**
-
-Today I want to examine a question that connects directly to the models we use in biology: what should a foundation model be trained to predict?
-
-Many of our models predict missing residues or nucleotides. JEPA asks whether we can also learn by predicting an internal representation of missing information.
-
-I will first explain the idea associated with Yann LeCun's broader proposal for autonomous machine intelligence. Then we will follow an actual training step through I-JEPA. Finally, we will examine a genomic application and ask what its experiments justify.
-
-My goal is that, by the end, we can draw the architecture, explain its loss, and decide what evidence we would need before applying it to our own biological questions.
-
-**Transition:** “Let us start with why the prediction target might matter.”
+##### Script.
+Examinons la question qui
 
 **Sources:** [S01: LeCun, 2022](https://openreview.net/pdf?id=BZ5a1r-kVsf); [S02: I-JEPA](https://arxiv.org/abs/2301.08243); [S06: JEPA-DNA](https://arxiv.org/html/2602.17162v3).
 
