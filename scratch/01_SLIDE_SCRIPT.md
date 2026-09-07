@@ -77,6 +77,10 @@ Il y a trois niveaux à distinguer dans l'architecture JEPA (pléonasme) : l'obj
 
 Un transformers est un backbone qui prends en entrée des matrices de tokens. Il peut être entrainé à reconstruire des observations (du texte), aligner des représentations, ou alors prédire des représentations. 
 
+Le premier rang couvre la prédiction d'observation : MLM (masked language modeling), le modèle cherche à prédire les tokens sur des positions masquées. Par exemple un autoencoder va reconstruire l'image au niveau du pixel près.
+
+La seconde ligne couvre l'alignement entre 
+
 **Transition:** “Here is that graph for I-JEPA.”
 
 **Sources:** [S02, Figure 2](https://arxiv.org/pdf/2301.08243); [S10: BYOL](https://arxiv.org/abs/2006.07733); [S13: SimCLR](https://arxiv.org/abs/2002.05709); [S15: Transformer](https://arxiv.org/abs/1706.03762).
