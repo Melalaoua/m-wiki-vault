@@ -81,35 +81,18 @@ Le premier rang couvre la prédiction d'observation : MLM (masked language model
 
 La seconde ligne couvre l'alignement du modèle à partir de différentes vues d'une même donnée c'est le cas de SimCLR ou BYOL.
 
-Et enfin la troisième ligne se concentre sur le point suivant : considérant le contexte et la position de notre cible, prédit 
+Et enfin la troisième ligne se concentre sur le point suivant : considérant le contexte et la position de la cible, prédit la representation latente de la cible. Le contexte et la cible ne sont pas forcément des représentations identiques mais le prédicteur apprends à comprendre la relations entre les deux.
 
-**Transition:** “Here is that graph for I-JEPA.”
+Nos trois catégories d'entrainement ne sont pas clivées, elles vont même se superposer en certains points. Ce qui nous intéresse c'est la vue technique, qu'est ce que chaque partie de l'architecture voit, ce qui est prédit, la fonction de perte appliquée, et comment elle peut s'effondrer.
+
+**Transition:** “Voici le graphique pour I-JEPA.”
 
 **Sources:** [S02, Figure 2](https://arxiv.org/pdf/2301.08243); [S10: BYOL](https://arxiv.org/abs/2006.07733); [S13: SimCLR](https://arxiv.org/abs/2002.05709); [S15: Transformer](https://arxiv.org/abs/1706.03762).
 
-## Slide 4 — I-JEPA has three trainable roles and two update mechanisms
-
-**Time:** 2.5 minutes. **Purpose:** make the data and parameter flows unambiguous.
-
-**On screen:** context encoder `fθ`, predictor `gφ`, target encoder `fθ̄`. Solid arrows are data flow, a dashed arrow is the EMA parameter update. Loss receives predicted and target features. A stop-gradient mark sits on the target feature branch.
-
-**Visual instructions:** use `assets/ijepa_architecture.svg` as a starting diagram or redraw it with native editable shapes. The complete image goes into the target encoder; target positions are selected after encoding. Hidden target patches are removed before context encoding. Put “full image” and “visible patches only” on the correct branches. Never connect the target features to the predictor input.
-
-**Spoken script:**
-
-I-JEPA has three roles. First, a context encoder processes the visible image patches. Its parameters are theta. Second, a predictor takes those context features and tokens specifying the positions to predict. Its parameters are phi. Third, a target encoder produces the features that the prediction will be compared against.
-
-[Trace the upper path, then the lower path.]
-
-The target encoder has the same backbone architecture as the context encoder, but its parameters are maintained separately. We denote them theta bar.
-
-An important detail is that the target encoder sees the complete image. We then select the output representations at the target positions. We do not first crop the hidden region and encode it in isolation. Its features can therefore incorporate the surrounding image through attention.
-
-The context branch sees only the permitted visible patches. The predictor is told where to predict, but it does not receive the target content. Otherwise, we could create an easy copying task.
-
-The prediction loss trains the context encoder and predictor through backpropagation. It does not backpropagate through the target encoder. Instead, we update the target encoder using a moving average of the context encoder's parameters.
-
-There are therefore two distinct mechanisms: gradients improve the predicting branch, and parameter averaging updates the branch that defines the targets. The target is learned and changes over time; it is not an externally supplied biological or semantic label.
+### Slide 4 -- I-JEPA : trois objectif d'entrainement et deux mécanisme de mise à jours des paramètres.
+---
+- *Temps : 2.5 minutes*
+- *Objectif : *
 
 **Transition:** “Let us make the patch selection concrete before writing the loss.”
 
