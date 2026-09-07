@@ -73,7 +73,9 @@ En biologie, ca créée une tension immédiate. Certaines séquences seront pert
 - *A l'écran : Tableau ci-dessous.*
 
 #### Script
-Il y a trois niveaux à distinguer dans l'architecture JEPA (pléonasme)
+Il y a trois niveaux à distinguer dans l'architecture JEPA (pléonasme) : l'objectif d'entrainement, le backbone (squelette), et l'utilisation en aval.
+
+Un transformers est un backbone qui prends en entrée des matrices de tokens. Il peut être entrainé à reconstruire des observations (du texte), aligner des représentations, ou alors prédire des représentations. 
 
 **Transition:** “Here is that graph for I-JEPA.”
 
