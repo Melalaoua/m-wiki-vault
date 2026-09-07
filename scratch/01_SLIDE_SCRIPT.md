@@ -162,9 +162,11 @@ Une problématique se pose face à tout ça, si tout nos composants apprennent, 
 Supposons deux encodeurs produisant le même résultat de manière constante pour chaque données en entrée. Le prédicteur produit aussi cette constante. L'erreur est de zero. Pourtant la représentation du modèle ne peut pas distinguer une voiture d'un oiseau, ou une séquence ADN d'une autre.
 C'est l'effondrement de représentation, ou representation collapse. En voulant réduire l'erreur, en optimisant le modèle, ce n'est pas suffisant pour faire apprendre au modèle des représentations informatives.
 
-I-JEPA utilise un apprentissage asymétrique avec le stop-gradient et l'EMA, et le maskin
+I-JEPA utilise un apprentissage asymétrique avec le stop-gradient et l'EMA, et le masking. Ca fonctionne de manière empirique. Mais ca ne veut pas dire que l'EMA et le stop-gradient empêche théoriquement l'effondrement, c'est un pansement.
 
-**Transition:** “That is why we now move from the training loss to the experimental evidence.”
+JEPA-DNA c'est le second papier que je veux vous montrer, qui applique JEPA à la génétique, eux ils ont utilisé des restrictions sur la distribution des représentations latentes du modèle. VICReg inclues un terme qui pénalise le modèle si ces représenations sont trop peu variables de l'une à l'autre.
+
+Mais avant ça, on s'est concentré que sur l'objectif d'entrainement, l'architecture, on a pas encore parlé des utilisations possibles de JEPA.
 
 **Sources:** [S02, §2–3](https://arxiv.org/pdf/2301.08243); [S09: VICReg](https://arxiv.org/abs/2105.04906); [S11: SimSiam](https://arxiv.org/abs/2011.10566). The counterexample and biological confounders are explanatory analysis.
 
