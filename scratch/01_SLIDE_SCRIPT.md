@@ -73,7 +73,7 @@ En biologie, ca créée une tension immédiate. Certaines séquences seront pert
 - *A l'écran : Tableau ci-dessous.*
 
 #### Script
-Il y a trois niveaux à distinguer dans l'architecture JEPA
+Il y a trois niveaux à distinguer dans l'architecture JEPA (pléonasme)
 
 **Transition:** “Here is that graph for I-JEPA.”
 
