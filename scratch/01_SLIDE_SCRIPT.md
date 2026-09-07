@@ -176,7 +176,9 @@ Mais avant ça, on s'est concentré que sur l'objectif d'entrainement, l'archite
 - *Objectif : Lire un résultat*
 
 #### Script.
-
+Comment est évaluée la capacité de représentation du modèle ?
+- On gèle un encodeur pré-entrainé ainsi qu'un classifieur linéaire à partir d'exemple labélisés. On cherche à savoir la difficulté d'extraction de l'information. Ce n'est pas un évaluation non-labellisée.
+- 
 
 **Transition:** “Useful image features are one milestone. Temporal prediction and planning add further requirements.”
 
