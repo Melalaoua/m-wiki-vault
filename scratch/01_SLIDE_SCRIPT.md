@@ -1,12 +1,13 @@
 # JEPA: Predicting Representations—from Images to Genomes
 
-## Presentation contract
+## Contrat
+- Journal club pour iCube, Mardi 8 Septembre 2026.
+- Audience : laboratoire CSTB familiers avec les transformers (PLM, GLM, ...)
+- Expertise dans le self-supervised learning : **incertain**.
+- 14 slides, 28 minutes de présentation (2 min de marge) sans prendre en compte les discussions.
+- Ce document contient le script à lire (traduit directement de la version anglaise) et des informations techniques sur le PPT.
+- Argument cnet
 
-English journal club, Tuesday 8 September 2026. Audience: computational biology researchers familiar with transformers and biological language models, without assumed expertise in non-contrastive self-supervised learning. Fourteen main slides; 28 minutes allocated to their explanations plus 2 minutes of delivery margin. Discussion is outside that budget. This is a tutorial with critical examination of primary studies, not a systematic review.
-
-Read only the **Spoken script** aloud. Other fields are instructions or preparation material. Stage directions in square brackets are silent. Timing is a rehearsal target, not a measured recording. Source IDs resolve in `04_SOURCE_EVIDENCE.md`; direct links are also supplied here.
-
-The central argument: **JEPA changes what is predicted during learning. Whether the resulting representation preserves useful biology must be tested.**
 
 | Slide | Minutes | Cumulative target |
 |---|---:|---:|
