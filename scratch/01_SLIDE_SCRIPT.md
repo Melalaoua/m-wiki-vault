@@ -133,43 +133,13 @@ Pour un génome, les choix techniques peuvent être la tokenization, la longueur
 
 **Sources:** [S02, §3, Figure 4, and masking ablations](https://arxiv.org/pdf/2301.08243). The sixteen-patch tensors are an original illustrative construction.
 
-## Slide 6 — The objective and one training step
+### Slide 6 -- L'objectif et une étape d'entrainement
+---
+- *Temps : 3 minutes*
+- *Objectif : Expliquer les 3 équations centrale à I-JEPA*
 
-**Time:** 3 minutes. **Purpose:** explain the three central equations with controlled notation.
+#### Script.
 
-**On screen:** reveal these equations sequentially, not all at once:
-
-\[
-\hat h_{T_k}=g_\phi(f_\theta(x_C),p_{T_k}),\qquad h_{T_k}=\operatorname{sg}(f_{\bar\theta}(x)_{T_k})
-\]
-
-\[
-\mathcal L_{\rm teach}=\frac1K\sum_{k=1}^{K}\frac1{|T_k|}\sum_{j\in T_k}\|\hat h_j-h_j\|_2^2
-\]
-
-\[
-\bar\theta\leftarrow\tau\bar\theta+(1-\tau)\theta
-\]
-
-**Equation labels:** “Squared-distance teaching form, following the paper; explicit per-block normalization added here.” Footer: “Released implementation: normalized teacher features + Smooth L1 loss.” `sg` = stop-gradient; `p` = position queries; `τ` = EMA coefficient.
-
-**Visual instructions:** keep the architecture thumbnail visible. Gradient arrows illuminate context encoder and predictor; the EMA arrow illuminates separately. Put the full pseudocode in speaker notes or backup B2, not as another dense main-slide panel.
-
-**Spoken script:**
-
-The first line describes the prediction and its target. On the left, we encode the visible context and predict features at specified positions. On the right, we encode the complete image, select those same positions, and stop the gradient.
-
-The second line averages the discrepancy between predicted and target vectors. In this teaching equation, I use squared Euclidean distance and explicitly average over target blocks and patches. The paper presents a squared-distance objective. The released training code instead uses Smooth L1 with normalized teacher features, so this equation explains the paper-level mechanism rather than claiming to reproduce every implementation detail.
-
-Take one target vector equal to one, zero, and a prediction equal to zero point eight, zero point two. Their squared distance is zero point zero eight. The gradient with respect to the prediction points toward reducing that discrepancy. Through the chain rule, that signal updates the predictor and the context encoder.
-
-Stop-gradient means the teacher receives no derivative from this comparison. It does not mean the teacher never changes. After the optimizer step, we update its parameters using the third equation.
-
-For example, if the old teacher parameter is two, the updated context parameter is three, and tau is zero point nine, the new teacher parameter is two point one. That is a toy coefficient chosen for arithmetic; practical schedules use their own settings.
-
-So one iteration is: sample masks, compute the target without gradients, predict from the context, evaluate the loss, update the online parameters, then update the teacher by averaging.
-
-A natural objection follows: since the targets are learned, why do all these networks not agree on a useless constant?
 
 **Transition:** the final sentence opens slide 7.
 
