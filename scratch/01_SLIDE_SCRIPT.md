@@ -92,7 +92,9 @@ Nos trois catégories d'entrainement ne sont pas clivées, elles vont même se s
 ### Slide 4 -- I-JEPA : trois objectif d'entrainement et deux mécanisme de mise à jours des paramètres.
 ---
 - *Temps : 2.5 minutes*
-- *Objectif : *
+- *Objectif : Description du flux de données et mise à jour des paramètres.*
+
+
 
 **Transition:** “Let us make the patch selection concrete before writing the loss.”
 
