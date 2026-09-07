@@ -120,11 +120,16 @@ Voici un exemple concret avec une image divisée en 16 morceaux. On cache le car
 
 Supposons que nos features sont de 8 dimensions. Pour une image, l'encodeur reçoit une matrice de 12 x 8. 
 
-Notre encodeur cible lui reçoit les 16 morceaux, fois 8. Nos morceaux cibles sont de dimensions 4 x 8.
+Notre encodeur cible lui reçoit les 16 morceaux, fois 8. Mais on s'interesse qu'aux positions du centre, donc nos morceaux cibles seront de dimensions 4 x 8.
 
-Le predicteur va recevoir la matrice de 12 x 8 ainsi que 4 requête de position (prédit position 5, 6, 9, 10).
+Le predicteur va recevoir la matrice de 12 x 8 ainsi que 4 requête de position (prédit position 5, 6, 9, 10). Il produit en sortie une matrice de 4 x8, comparable à ce qu'à produit notre encodeur cible.
 
-**Transition:** “Once these tensors are aligned, the training objective is easy to state.”
+Le but de ce simple exercise est de montré qui à accès à quoi. Le vrai I-JEPA est plus complexe. Si une cible est petite, les pixels environnants peuvent suffire à la prédiction. Si la cible est très large et le contexte pas très informatif, la prédiction peut être ambiguë. Le fait de masquer induit un biais dans notre modèle.
+
+Pour un génome, les choix techniques peuvent être la tokenization, la longueur des séquence. Ce n'est pas sûr que la recette appliquée içi soit pertinente pour un génome.
+
+
+**Transition:** “Une fois qu'on a explicité la différence entre ce qui entre, c'est facile d'établir notre fonction de perte"
 
 **Sources:** [S02, §3, Figure 4, and masking ablations](https://arxiv.org/pdf/2301.08243). The sixteen-patch tensors are an original illustrative construction.
 
