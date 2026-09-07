@@ -32,7 +32,12 @@
 - *Sur l'écran : titre + "A technical introduction and critical biological case study" + 3 figures représentatives.*
 
 ##### Script.
-Examinons la question qui
+Examinons la question que cherchent à répondre le modèles que nous utilisons en biologie : PLM pour les protéines, GLM pour la génétiuqe : **dans quel but sont entrainés ses modèles de nos jours ?**
+La plupart sont entrainés à reconstruire l'information manquante, à prédire le prochain nucléotide. 
+**=> l'architecture JEPA, pour joint-embedding predictive architecture cherche à savoir s'il est possible de faire apprendre les modèles en les entrainant à prédire l'information manquantes à partir des représentations latentes.**
+
+Je commencerai cette présentation par
+
 
 **Sources:** [S01: LeCun, 2022](https://openreview.net/pdf?id=BZ5a1r-kVsf); [S02: I-JEPA](https://arxiv.org/abs/2301.08243); [S06: JEPA-DNA](https://arxiv.org/html/2602.17162v3).
 
