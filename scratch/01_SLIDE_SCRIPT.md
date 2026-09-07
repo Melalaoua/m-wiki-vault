@@ -56,9 +56,11 @@ C'est là le coeur du message : un objectif d'entrainement par observation va vo
 
 [Pointer les deux target spaces]
 
-Notre modèle est entrainé à **potentiellement** retenir les informations prédictibles tout en étant moins sensibles à des détails qu'on ne peut pas prédire et qui ne seront de toute façon pas utile à notre tâche. Le mot "potentiellement" est important ici, un embedding est un vecteur de X dimension, pas une représentation sémantique de notre donnée. Il est possible que le modèle retienne des informations pertinentes, mais aussi du bruit ou juste rien retenir de représentatif.
+Notre modèle est entrainé à **potentiellement** retenir les informations prédictibles tout en étant moins sensibles à des détails qu'on ne peut pas prédire et qui ne seront de toute façon pas utile à notre tâche. Le mot "potentiellement" est important ici, un embedding est un vecteur de X dimension, pas une assurance que cette donnée est sémantiquement correcte. Il est possible que le modèle retienne des informations pertinentes, mais aussi du bruit ou juste rien retenir de représentatif.
 
-Les modèles de languages apprennent  
+De plus, les modèles de languages apprennent déjà des représentations riches de nos données (notamment via le mécanisme de self-attention). La distinction avec JEPA se trouve dans la cible à atteindre par le modèle mais aussi comment notre cible est construire (i.e via un encodeur).
+
+En biologie, ca créée une tension immédiate. Certaines séquences seront pertinentes dans un contexte et tantôt inutile dans un autre. Un simple nucléotide changé peut être décisif. C'est donc risqué de copie
 
 **Sources:** [S01](https://openreview.net/pdf?id=BZ5a1r-kVsf); [S02, introduction and Figure 2](https://arxiv.org/pdf/2301.08243); [S12: MAE](https://arxiv.org/abs/2111.06377). The bird and single-variant discussion are original teaching examples, not reported experiments.
 
