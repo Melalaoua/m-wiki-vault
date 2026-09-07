@@ -36,38 +36,21 @@ Examinons la question que cherchent à répondre le modèles que nous utilisons 
 La plupart sont entrainés à reconstruire l'information manquante, à prédire le prochain nucléotide. 
 **=> l'architecture JEPA, pour joint-embedding predictive architecture cherche à savoir s'il est possible de faire apprendre les modèles en les entrainant à prédire l'information manquantes à partir des représentations latentes.**
 
-Je commencerai cette présentation par
+Je commence déjà par expliquer cette idée apportée par Yann Lecun concernant les modèles intelligents. Je poursuivrai par une vue technique de l'entrainement d'un modèle étape par étape par I-JEPA (image). Et ensuite on examinera une application concrète de JEPA en génétique.
 
+Mon objectif est que, d'ici la fin, on peut comprendre ensemble cette nouvelle architecture, comprendre sa fonction de perte, et voir ses limites.
+
+**Transition** : Commençons par comprendre pourquoi la prédiction est importante.
 
 **Sources:** [S01: LeCun, 2022](https://openreview.net/pdf?id=BZ5a1r-kVsf); [S02: I-JEPA](https://arxiv.org/abs/2301.08243); [S06: JEPA-DNA](https://arxiv.org/html/2602.17162v3).
 
-## Slide 2 — Predict an observation, or predict its representation?
+### Slide 2 - Prédire une observation ou prédire une représentation ?
+- *Temps : 2 minutes.*
+- *Objectif : Etablir la distinction entre les deux sans impliquer que les modèles actuels sont défectueux.*
+- *Sur l'écran : Photo oiseau et disctinction entre les deux*
 
-**Time:** 2 minutes. **Purpose:** establish the central distinction without implying that generative models lack representations.
-
-**On screen:** two paths from the same partially visible image:
-
-- “Observation target: missing pixels”
-- “Representation target: features produced by an encoder”
-- Footer: “The representation determines which differences count.”
-
-**Visual instructions:** use an original schematic bird with a hidden wing. Left: a grid of pixel values. Right: an unlabeled feature vector. Do not label particular vector coordinates “wing”, “species”, or “function”; those semantics are not guaranteed. If decoded image reconstructions are later used, identify their separate visualization decoder.
-
-**Spoken script:**
-
-Imagine that part of a bird is hidden. We may be able to predict that the missing region contains a wing, while being much less certain about every feather and background pixel.
-
-An observation-level objective compares our output with the missing pixels. A representation-level objective first sends the complete image through an encoder, then asks another network to predict the features associated with the hidden region.
-
-[Point to the two target spaces.]
-
-The attraction is that the learned target could retain predictable structure while being less sensitive to details that do not help the task. But the word “could” matters. An embedding is a vector of numbers, not a certificate of semantic understanding. The model might preserve useful features, nuisance features, or too little information.
-
-Also, language models already learn rich internal representations. JEPA's distinction is the learning target and the way the target representation is constructed—not the invention of embeddings.
-
-For biology, this creates an immediate tension. Some sequence variation may be irrelevant to one assay, while a single nucleotide change can be decisive for another. We therefore cannot copy the visual intuition that fine detail is expendable. We need to ask which information the representation preserves, and evaluate that against the biological task.
-
-**Transition:** “This places JEPA within a broader set of learning objectives.”
+##### Script
+Considérons cette partie de l'oiseau masquée. On est capable de prédire que dans ce carré on retrouve l'aile de l'oiseau. Sans 
 
 **Sources:** [S01](https://openreview.net/pdf?id=BZ5a1r-kVsf); [S02, introduction and Figure 2](https://arxiv.org/pdf/2301.08243); [S12: MAE](https://arxiv.org/abs/2111.06377). The bird and single-variant discussion are original teaching examples, not reported experiments.
 
