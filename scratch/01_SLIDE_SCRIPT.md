@@ -116,7 +116,13 @@ Deux mécanismes distinct : par gradient en haut, par moving average en bas
 - *Objectif : Montrer que le masking fait partie intégrante de l'entrainement*
 
 #### Script.
+Voici un exemple concret avec une image divisée en 16 morceaux. On cache le carré central aux positions 5 6 9 10. L'encodeur du context reçoit que les morceaux de la partie verte (12 morceaux) ainsi que leur position associée.
 
+Supposons que nos features sont de 8 dimensions. Pour une image, l'encodeur reçoit une matrice de 12 x 8. 
+
+Notre encodeur cible lui reçoit les 16 morceaux, fois 8. Nos morceaux cibles sont de dimensions 4 x 8.
+
+Le predicteur va recevoir la matrice de 12 x 8 ainsi que 4 requête de position (prédit position 5, 6, 9, 10).
 
 **Transition:** “Once these tensors are aligned, the training objective is easy to state.”
 
