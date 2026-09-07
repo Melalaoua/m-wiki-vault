@@ -79,7 +79,9 @@ Un transformers est un backbone qui prends en entrée des matrices de tokens. Il
 
 Le premier rang couvre la prédiction d'observation : MLM (masked language modeling), le modèle cherche à prédire les tokens sur des positions masquées. Par exemple un autoencoder va reconstruire l'image au niveau du pixel près.
 
-La seconde ligne couvre l'alignement entre 
+La seconde ligne couvre l'alignement du modèle à partir de différentes vues d'une même donnée c'est le cas de SimCLR ou BYOL.
+
+Et enfin la troisième ligne se concentre sur le point suivant : considérant le contexte et la position de notre cible, prédit 
 
 **Transition:** “Here is that graph for I-JEPA.”
 
