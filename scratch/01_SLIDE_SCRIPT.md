@@ -139,7 +139,9 @@ Pour un génome, les choix techniques peuvent être la tokenization, la longueur
 - *Objectif : Expliquer les 3 équations centrale à I-JEPA*
 
 #### Script.
-Cette première equation décris la prédiction du modèle ains que ça cible. A gauche, $ĥ_{T}$ représente l'espace latent. A droite,  
+Cette première equation décris la prédiction du modèle ains que ça cible. A gauche, $ĥ_{T} = g_{\phi}(f_{\theta}(x_{C}, p_{T}))$  représente la prédiction du modèle des features générées par l'encodeur ainsi que de la position. A droite, l'encodage de l'image entière par l'encodeur cible à la position identique que l'équation de gauche, le tout entouré d'un stop gradient.
+
+La seconde equation c'est la fonction de perte qui consiste en une moyenne de la perte entre la prédiction h_barre et l'encodage de l'image entière. C'est la distance euclidienne entre les deux 
 **Transition:** the final sentence opens slide 7.
 
 **Sources:** [S02, §3](https://arxiv.org/pdf/2301.08243); [S16, `forward_target`, `loss_fn`, and momentum update](https://github.com/facebookresearch/ijepa/blob/52c1ae95d05f743e000e8f10a1f3a79b10cff048/src/train.py). Arithmetic is illustrative; it is not a trained-model result.
