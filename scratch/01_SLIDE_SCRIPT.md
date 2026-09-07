@@ -60,39 +60,20 @@ Notre modèle est entrainé à **potentiellement** retenir les informations pré
 
 De plus, les modèles de languages apprennent déjà des représentations riches de nos données (notamment via le mécanisme de self-attention). La distinction avec JEPA se trouve dans la cible à atteindre par le modèle mais aussi comment notre cible est construire (i.e via un encodeur).
 
-En biologie, ca créée une tension immédiate. Certaines séquences seront pertinentes dans un contexte et tantôt inutile dans un autre. Un simple nucléotide changé peut être décisif. C'est donc risqué de copie
+En biologie, ca créée une tension immédiate. Certaines séquences seront pertinentes dans un contexte et tantôt inutile dans un autre. Un simple nucléotide changé peut être décisif. C'est donc risqué de translationner cette idée de supprimer des détails à première vue inutile comme pour une image. On doit se poser la question quelles informations conserve la représentation latente de notre modèle, et évaluer sa pertinence dans une tâche biologique.
+
+**Transition** : On est donc capable de positionner JEPA face à plusieurs objectifs d'entrainement.
 
 **Sources:** [S01](https://openreview.net/pdf?id=BZ5a1r-kVsf); [S02, introduction and Figure 2](https://arxiv.org/pdf/2301.08243); [S12: MAE](https://arxiv.org/abs/2111.06377). The bird and single-variant discussion are original teaching examples, not reported experiments.
 
-## Slide 3 — JEPA is a learning architecture, not a replacement for transformers
+### Slide 3 - 
 
-**Time:** 2 minutes. **Purpose:** separate backbone, objective, and downstream use.
+| Learning pattern                 | Compared during training                              | Example                       |
+| -------------------------------- | ----------------------------------------------------- | ----------------------------- |
+| Reconstruct/predict observations | Prediction versus pixels or tokens                    | MAE; masked language modeling |
+| Align representations            | Compatible views, with a non-collapse mechanism       | SimCLR; BYOL                  |
+| Predict representations          | Context-conditioned prediction versus target features | I-JEPA                        |
 
-**On screen:** a three-row comparison.
-
-| Learning pattern | Compared during training | Example |
-|---|---|---|
-| Reconstruct/predict observations | Prediction versus pixels or tokens | MAE; masked language modeling |
-| Align representations | Compatible views, with a non-collapse mechanism | SimCLR; BYOL |
-| Predict representations | Context-conditioned prediction versus target features | I-JEPA |
-
-Footer: “These families overlap; a predictor or EMA teacher alone does not define JEPA.”
-
-**Visual instructions:** align the three small diagrams vertically; use the same encoder icon in every row. Explicitly show that SimCLR is contrastive and BYOL is non-contrastive. No “all joint embeddings require negatives” implication.
-
-**Spoken script:**
-
-There are three levels that we should keep separate: the backbone, the learning objective, and the downstream application.
-
-A transformer is a backbone that processes a sequence of tokens. It can be trained to reconstruct observations, align representations, or predict representations. Saying “JEPA versus transformer” therefore compares different kinds of things.
-
-The first row covers observation prediction. In masked language modeling, the model predicts token identities at masked positions. In a masked autoencoder for images, it reconstructs pixels.
-
-The second row concerns alignment between compatible views. SimCLR uses a contrastive objective with negative examples. BYOL instead uses a predictor and a moving target network without explicit negative pairs. That already tells us that neither a predictor nor a moving teacher was invented by I-JEPA.
-
-In the third row, the emphasis is a conditional relationship: given this context and the location of a target, predict the target's representation. The context and target do not have to become identical representations. The predictor learns the relationship between them.
-
-These categories are useful, but their boundaries overlap. What we should inspect in a paper is the actual computational graph: what each branch sees, what is predicted, where the loss is applied, and how collapse is addressed.
 
 **Transition:** “Here is that graph for I-JEPA.”
 
