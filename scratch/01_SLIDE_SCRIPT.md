@@ -139,8 +139,7 @@ Pour un génome, les choix techniques peuvent être la tokenization, la longueur
 - *Objectif : Expliquer les 3 équations centrale à I-JEPA*
 
 #### Script.
-
-
+Cette première equation décris la prédiction du modèle ains que ça cible. A gauche, $ĥ_{T}$ représente l'espace latent. A droite,  
 **Transition:** the final sentence opens slide 7.
 
 **Sources:** [S02, §3](https://arxiv.org/pdf/2301.08243); [S16, `forward_target`, `loss_fn`, and momentum update](https://github.com/facebookresearch/ijepa/blob/52c1ae95d05f743e000e8f10a1f3a79b10cff048/src/train.py). Arithmetic is illustrative; it is not a trained-model result.
