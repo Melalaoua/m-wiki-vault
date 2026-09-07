@@ -145,32 +145,17 @@ La seconde equation c'est la fonction de perte qui consiste en une moyenne de la
 
 Cette fonction permet d'update les paramètres de l'encodeur de contexte ainsi que le prédicteur. Mais quid de l'encodeur cible ?
 
-C'est notre troisième équation : Si le paramètre d
+C'est notre troisième équation : Si le paramètre de notre ancien encodeur est 2, le nouveau paramètre de l'encodeur de context est 3, et notre facteur tau est 0.9, le nouveau paramètre de l'encodeur cible est 2.1
+
+Une problématique se pose face à tout ça, si tout nos composants apprennent, pourquoi ne se mettent t'il pas d'accord sur une constante inutile ?
 
 **Transition:** the final sentence opens slide 7.
 
 **Sources:** [S02, §3](https://arxiv.org/pdf/2301.08243); [S16, `forward_target`, `loss_fn`, and momentum update](https://github.com/facebookresearch/ijepa/blob/52c1ae95d05f743e000e8f10a1f3a79b10cff048/src/train.py). Arithmetic is illustrative; it is not a trained-model result.
 
-## Slide 7 — Collapse: low prediction error can mean no information
-
-**Time:** 2 minutes. **Purpose:** separate optimizing agreement from learning useful representations.
-
-**On screen:** three distinct inputs map to the same vector `c`; predictor outputs `c`; loss is zero. Beside this, show a spread of embeddings with label “Variation is necessary, but not sufficient, for usefulness.”
-
-**Visual instructions:** depict constant outputs as identical points. Avoid suggesting that two visibly separated clusters prove biological meaning. List “asymmetry, target updates, masking, optimization” under I-JEPA and “explicit variance/covariance terms” under the genomic extension.
-
-**Spoken script:**
-
-Suppose both encoders output the same constant vector for every input, and the predictor outputs that constant too. The prediction error is zero. Yet the representation cannot distinguish a bird from a car, or one DNA sequence from another.
-
-This is representation collapse. It shows why minimizing prediction error alone is not a sufficient definition of successful learning when the target is also learned.
-
-I-JEPA uses an asymmetric training system, including the predictor, stopped target gradients, and a moving teacher. Together with the masking and optimization recipe, this works empirically. We should not turn that observation into a theorem that EMA or stop-gradient alone makes collapse impossible. Our constant example still exists algebraically.
-
-Another family of methods adds explicit constraints on the embedding distribution. VICReg includes a variance term that penalizes dimensions with too little variation across a batch, and a covariance term that discourages redundant dimensions. We will see these ingredients in JEPA-DNA.
-
-Even then, non-collapse is only a minimum requirement. A model can encode scanner identity, species composition, or batch effects and remain highly variable. Useful biology has to be demonstrated through appropriate downstream tasks and controls.
-
+### Slide 7 -- Effondrement (collapse) : une faible erreur veut peut être dire aucune information.
+---
+- *Time*
 **Transition:** “That is why we now move from the training loss to the experimental evidence.”
 
 **Sources:** [S02, §2–3](https://arxiv.org/pdf/2301.08243); [S09: VICReg](https://arxiv.org/abs/2105.04906); [S11: SimSiam](https://arxiv.org/abs/2011.10566). The counterexample and biological confounders are explanatory analysis.
