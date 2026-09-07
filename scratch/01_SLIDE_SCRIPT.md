@@ -94,6 +94,14 @@ Nos trois catégories d'entrainement ne sont pas clivées, elles vont même se s
 - *Temps : 2.5 minutes*
 - *Objectif : Description du flux de données et mise à jour des paramètres.*
 
+#### Script.
+I-JEPA poursuit 3 objectifs : 
+1. Un context encoder prends les données en entrée, un batch d'images, et possède des paramètres theta.
+2. Un predicteur prends la features embedding du contexte généré par l'encodeur et son seul but est de prédire les features en sorties, ce dernier a les paramètres notés phi.
+3. Un autre encodeur prends notre cible d'entrainement et produit des features cibles. On compare les deux. L'encodeur 2 possède les paramatères theta barre.
+
+L'encodeur de la cible voit l'image en entier.
+
 
 
 **Transition:** “Let us make the patch selection concrete before writing the loss.”
