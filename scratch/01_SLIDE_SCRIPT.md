@@ -170,25 +170,13 @@ Mais avant ça, on s'est concentré que sur l'objectif d'entrainement, l'archite
 
 **Sources:** [S02, §2–3](https://arxiv.org/pdf/2301.08243); [S09: VICReg](https://arxiv.org/abs/2105.04906); [S11: SimSiam](https://arxiv.org/abs/2011.10566). The counterexample and biological confounders are explanatory analysis.
 
-## Slide 8 — What does I-JEPA demonstrate?
+### Slide 8 - Que I-JEPA démontre ?
+---
+- *Temps : 2 minutes*
+- *Objectif : Lire un résultat*
 
-**Time:** 2 minutes. **Purpose:** read a result under its actual evaluation protocol.
+#### Script.
 
-**On screen:** two paired values, “ImageNet-1K linear evaluation, ViT-H/14”: I-JEPA 79.3% at 300 epochs; MAE 77.2% at 1,600 epochs. Show epochs beside values. Footer: “Reported configurations; not a universal compute-controlled comparison.” Add “Masking and prediction-target ablations support design choices.”
-
-**Visual instructions:** use `assets/ijepa_results.svg` or the corresponding CSV. Preserve the benchmark, backbone, metric, and training-duration labels. Do not merge the paper's linear-probe and fine-tuning tables.
-
-**Spoken script:**
-
-The first question is how the representation is evaluated. In linear probing, we freeze the pretrained encoder and train a linear classifier using labeled examples. This asks how easily the task information can be extracted by that restricted readout. It is not label-free evaluation.
-
-For the ViT-Huge configuration shown here, the paper reports seventy-nine point three percent ImageNet top-one accuracy for I-JEPA, compared with seventy-seven point two for MAE. The listed pretraining schedules are three hundred and sixteen hundred epochs respectively.
-
-This is useful evidence that the I-JEPA recipe learns accessible image features. It is not evidence of universal superiority: these are particular recipes, and training epochs are not a complete measure of computational cost.
-
-The paper also changes masking strategies and the space in which targets are predicted. Those ablations support the claim that the learning task itself matters. We should still inspect what else changes between each pair of conditions.
-
-One easily missed detail: the reported I-JEPA evaluation uses the moving-average target encoder and average pooling, without a class token. “Discard the teacher and evaluate the student” is therefore not an accurate universal summary of this paper.
 
 **Transition:** “Useful image features are one milestone. Temporal prediction and planning add further requirements.”
 
