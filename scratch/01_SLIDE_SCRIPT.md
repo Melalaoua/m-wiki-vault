@@ -106,33 +106,17 @@ La fonction de perte entraine l'encodeur du contexte et le predicteur par backpr
 
 Deux mécanismes distinct : par gradient en haut, par moving average en bas
 
-**Transition:** “Let us make the patch selection concrete before writing the loss.”
+**Transition:** “On va se concentrer quelques minutes sur les données en entrée”
 
 **Sources:** [S02, §3 and Figure 3](https://arxiv.org/pdf/2301.08243); [S16: released training code](https://github.com/facebookresearch/ijepa/blob/52c1ae95d05f743e000e8f10a1f3a79b10cff048/src/train.py).
 
-## Slide 5 — A worked example: what information reaches each branch?
+### Slide 5 - Exemple concret : quelles informations entrent dans le système ?
+---
+- *Temps : 2.5 minutes*
+- *Objectif : Montrer que le masking fait partie intégrante de l'entrainement*
 
-**Time:** 2.5 minutes. **Purpose:** show that masking is part of the task definition.
+#### Script.
 
-**On screen:** original 4 × 4 grid labeled 0–15; target positions `{5,6,9,10}`; remaining positions are context in this deliberately simplified example. Three stages: “select input context”, “encode full image for teacher”, “compare matching target positions”.
-
-**Visual instructions:** use `assets/masking_example.svg`. All positions are zero-based. This one-target teaching example is not the published four-target masking recipe. For the paper recipe, add a small text callout: “Multiple sizeable target blocks; broad candidate context; remove target overlap”. Do not represent candidate context size as final visible size.
-
-**Spoken script:**
-
-Here is a deliberately small example with sixteen patches. We hide the central four, at positions five, six, nine, and ten. The context encoder receives the other twelve patches together with their positions.
-
-Suppose each output feature has eight dimensions. For one image, the context features have shape twelve by eight. The target encoder processes all sixteen patches, producing sixteen by eight features. We select the four target positions, leaving a four by eight target tensor.
-
-The predictor receives the twelve context features and four positional queries. Its output is also four by eight, so every predicted feature vector can be compared with its corresponding target vector.
-
-[Point to one position and trace it through both outputs.]
-
-Those numbers are a teaching example, not the model size in the paper. The important feature is the separation of information: target position is available to the predictor; hidden target content is not.
-
-The actual I-JEPA recipe uses multiple target blocks. Their size and the remaining context change the problem the model must solve. If a target is tiny, local texture may suffice. If it is very large and the context uninformative, prediction may become too ambiguous. The masking design is therefore an inductive bias, not just a way to save computation.
-
-For a genome, the analogous decisions would include tokenization, span length, and whether the remaining context contains the regulatory information needed for the task. There is no guarantee that the same masking recipe transfers unchanged.
 
 **Transition:** “Once these tensors are aligned, the training objective is easy to state.”
 
