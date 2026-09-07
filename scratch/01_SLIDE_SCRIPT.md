@@ -155,7 +155,15 @@ Une problématique se pose face à tout ça, si tout nos composants apprennent, 
 
 ### Slide 7 -- Effondrement (collapse) : une faible erreur veut peut être dire aucune information.
 ---
-- *Time*
+- *Temps : 2 minutes*
+- *Objectif : Séparer l'optimisation du modèle de l'apprentissage de répresentation informative*
+
+#### Script.
+Supposons deux encodeurs produisant le même résultat de manière constante pour chaque données en entrée. Le prédicteur produit aussi cette constante. L'erreur est de zero. Pourtant la représentation du modèle ne peut pas distinguer une voiture d'un oiseau, ou une séquence ADN d'une autre.
+C'est l'effondrement de représentation, ou representation collapse. En voulant réduire l'erreur, en optimisant le modèle, ce n'est pas suffisant pour faire apprendre au modèle des représentations informatives.
+
+I-JEPA utilise un apprentissage asymétrique avec le stop-gradient et l'EMA, et le maskin
+
 **Transition:** “That is why we now move from the training loss to the experimental evidence.”
 
 **Sources:** [S02, §2–3](https://arxiv.org/pdf/2301.08243); [S09: VICReg](https://arxiv.org/abs/2105.04906); [S11: SimSiam](https://arxiv.org/abs/2011.10566). The counterexample and biological confounders are explanatory analysis.
