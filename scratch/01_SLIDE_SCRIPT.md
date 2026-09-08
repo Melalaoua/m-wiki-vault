@@ -188,33 +188,18 @@ Ils ont aussi fait des études ablatives sur l'architecture en changeant les str
 
 **Sources:** [S02, Table 1, Tables 6–7, Appendix A.1](https://arxiv.org/pdf/2301.08243); [S12: MAE](https://arxiv.org/abs/2111.06377).
 
-## Slide 9 — From representation learning to a world model
+### Slide 9 - De la représentation au world model.
+---
+- *Temps : 2 minutes*
+- *Objectif : Connecter JEPA aux world models*
 
-**Time:** 2 minutes. **Purpose:** connect the technical example to LeCun's vision without conflating different achievements.
+#### Script.
+La proposition de Yann Lecun sur JEPA inclue les worlds models capables de prédire à certains niveaux d'abstraction leur entourage, ainsi que leur capacité de plannification.
 
-**On screen:** “I-JEPA: image features” → “V-JEPA: video features” → “V-JEPA 2-AC: action-conditioned prediction + planning”. Small inset:
+On a montré que I-JEPA est capable d'apprendre des représentations informatives, mais on est encore loin du système autonome intelligent.
 
-\[
-\hat z_{t+1}=F(z_{\le t},a_t)
-\]
+V-JEPA étends la prédiction jusqu'à
 
-Label this a **conceptual dynamics equation**, not the exact architecture. Add “V-JEPA 2.1 (2026): further dense-feature developments; details in backup.”
-
-**Visual instructions:** the final arrow must show action/state data entering post-training and a separate planner choosing actions. “Zero-shot” must be qualified as deployment transfer after action-conditioned training.
-
-**Spoken script:**
-
-LeCun's broader proposal includes world models that predict at different levels of abstraction and support planning. I-JEPA is an image representation learner within that research direction; it is not the complete proposed autonomous system.
-
-V-JEPA extends feature prediction to video. But reconstructing masked video features can use context on both sides of a missing region. We should not automatically call every such objective causal forecasting.
-
-For control, the model needs to predict how the state changes under an action. V-JEPA two introduces an action-conditioned model after large-scale visual pretraining. Its robot experiments use additional interaction data containing video and robot state information.
-
-The authors describe deployment in new environments as zero-shot. That does not mean the system learned control without action experience. A planner evaluates candidate actions using the learned dynamics and a goal, then executes and replans.
-
-The distinction matters for my clinical interests. A model that predicts a patient's future record from observed history has not thereby learned what would happen under a different treatment. That requires additional assumptions and evidence about interventions and confounding.
-
-There are subsequent developments, including V-JEPA two point one, but the key distinction for today is between useful representations, temporal predictions, and action-conditioned planning.
 
 **Transition:** “We can now ask what carries over when the observations are DNA sequences.”
 
