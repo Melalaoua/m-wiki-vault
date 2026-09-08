@@ -226,7 +226,7 @@ La fonction de perte contient 4 contributions. La capacité de reconstruire la s
 
 Ils ont fait des tests sur des modèles de fondations de génétique connus comme DNABERT-2, Nucleotide Transformer 3, HyenaDNA.
 
-Il faut faire attention, la cible utilisée pour l'entrainement JEPA est produite par un modèle déjà pre-entrainé, ce n'est pas une mesure directe de notre séquence 
+Il faut faire attention, la cible utilisée pour l'entrainement JEPA est produite par un modèle déjà pre-entrainé, ce n'est pas une mesure directe de notre séquence. Ils ont continué leur expérience pour mesurer si le modèle était capable de tirer des représentations utiles pour une tâche donnée.
 
 **Transition:** “The key journal club question is therefore: which part of this recipe actually helps?”
 
