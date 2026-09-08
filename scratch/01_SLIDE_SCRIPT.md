@@ -178,7 +178,11 @@ Mais avant ça, on s'est concentré que sur l'objectif d'entrainement, l'archite
 #### Script.
 Comment est évaluée la capacité de représentation du modèle ? Ce qu'ont fait les chercheur, c'est du linear probing, on va entrainer un classifieur linéaire sur un encodeur avec ses paramètres gelés en ingérant des données déjà labéllisées dans notre encodeur. On y récupère les espaces latents de ces données pour y entrainer notre classifieur linéaire.
 
-Par exemple sur la diapositive on retrouve 2 architectures : un Masked AutoEncoder (MAE) et JEPA. Les deux ont comme squelette un transformer ViT et son testé sur un benchmark d'images (ImageNet-1K). On remarque que I-JEPA est Le papier rapporte 79.3 de précision sur le benchmark IMageNet-1k
+Par exemple sur la diapositive on retrouve 2 architectures : un Masked AutoEncoder (MAE) et JEPA. Les deux ont comme squelette un transformer ViT et son testé sur un benchmark d'images (ImageNet-1K). On remarque que I-JEPA est plus performant de 2% pour  Le papier rapporte 79.3 de précision sur le benchmark IMageNet-1k pour 5x moins d'epochs d'entrainement.
+
+C'est une preuve qualitative que I-JEPA permet d'apprendre des représentations informatives sur les données. C'est pas une évidence de sa supériorité par rapport aux autres architectures cependant : on a aucune info sur le temps de calcul/la puissance nécessaire.
+
+Ils ont aussi fait des études ablatives sur l'architecture en changeant les stratégies, en enlevant le masking, et ces résultat supportent le fait que la tâche sur lequel est entrainé le modèle est importante.
 
 **Transition:** “Useful image features are one milestone. Temporal prediction and planning add further requirements.”
 
