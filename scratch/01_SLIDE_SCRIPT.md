@@ -218,7 +218,9 @@ Cette diapositive sert à faire la distinction entre représentations informativ
 #### Script.
 Passons à l'ADN, voici JEPA-DNA, et se base sur des modèles de fondations de génétique, c'est un préprint (3e versoin), et ce n'est pas de l'entrainement from scratch, ils ont réutilisés des modèles de languages de génomique pre-trained.
 
-On conserve l'objectif initial des genetics languages models : prédiction masquée ou prédiction du prochain token (depend de que GFM utilisé). Ils ont rajouté une branche 
+On conserve l'objectif initial des genetics languages models : prédiction masquée ou prédiction du prochain token (depend de que GFM utilisé). Ils ont rajouté une branche qui cherche à prédire la séquence génomique masquée contre la même séquence non-masquée.
+
+La différence avec I-JEPA est importante : I-JEPA veut prédire des patch d'image masqués, ici, on 
 
 **Transition:** “The key journal club question is therefore: which part of this recipe actually helps?”
 
