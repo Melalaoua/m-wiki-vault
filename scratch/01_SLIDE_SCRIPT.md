@@ -220,7 +220,13 @@ Passons à l'ADN, voici JEPA-DNA, et se base sur des modèles de fondations de g
 
 On conserve l'objectif initial des genetics languages models : prédiction masquée ou prédiction du prochain token (depend de que GFM utilisé). Ils ont rajouté une branche qui cherche à prédire la séquence génomique masquée contre la même séquence non-masquée.
 
-La différence avec I-JEPA est importante : I-JEPA veut prédire des patch d'image masqués, ici, on 
+La différence avec I-JEPA est importante : I-JEPA veut prédire des patch d'image masqués, ici, on prédit des séquences globales. JEPA-DNA emprunte l'idée globale du JEPA, prédire des espaces latent à partir de contextes incomplets.
+
+La fonction de perte contient 4 contributions. La capacité de reconstruire la séquence du modèle de language, la perte entre l'élève et l'enseignant. Et enfin deux autres termes : la variance et la covariance qui encourage la diversification du modèles et eviter l'effondrement de ce dernier comme expliqué auparavant.
+
+Ils ont fait des tests sur des modèles de fondations de génétique connus comme DNABERT-2, Nucleotide Transformer 3, HyenaDNA.
+
+Il faut faire attention, la cible utilisée pour l'entrainement JEPA est produite par un modèle déjà pre-entrainé, ce n'est pas une mesure directe de notre séquence 
 
 **Transition:** “The key journal club question is therefore: which part of this recipe actually helps?”
 
