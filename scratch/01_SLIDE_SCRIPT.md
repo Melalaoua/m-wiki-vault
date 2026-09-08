@@ -202,38 +202,23 @@ V-JEPA étends la prédiction jusqu'à l'image. C'est la même chose que I-JEPA,
 
 Le twist avec V-JEPA-2, c'est qu'on veut prédire comment évolue notre espace latent quand on rajoute une action dans le mix. La deuxième version rajoute un modèle capable de recevoir une action en plus du contexte. Le modèle reçoit des vidéos + l'état du robot à cet instant (porte la balle, ...). 
 
-Ils ont deployé ce modèle en environnement zero-shot, le modèle evalues les actions possibles à l'instant t à partir du contexte, et d'un objectif, e
+Ils ont deployé ce modèle en environnement zero-shot, le modèle evalues les actions possibles à l'instant t à partir du contexte, et d'un objectif, execute son action, recommence.
 
+Cette diapositive sert à faire la distinction entre représentations informatives, prédiction dans le temps, et plannification par l'action.
 
 **Transition:** “We can now ask what carries over when the observations are DNA sequences.”
 
 **Sources:** [S01](https://openreview.net/pdf?id=BZ5a1r-kVsf); [S03: V-JEPA](https://arxiv.org/abs/2404.08471); [S04: V-JEPA 2, §3–4](https://arxiv.org/abs/2506.09985); [S05: V-JEPA 2.1](https://arxiv.org/abs/2603.14482). The clinical distinction is methodological analysis, not a claim of validated treatment simulation.
 
-## Slide 10 — JEPA-DNA: a hybrid objective for existing genomic models
+### Slide 10 - JEPA-DNA un objectif hybridie pour les modèles de language génomique actuels.
+---
+- *Temps : 2.5 minutes*
+- *Objectif : Porter l'explication précédente à la biologie*.
 
-**Time:** 2.5 minutes. **Purpose:** explain the actual biological adaptation, not a fictional nucleotide version of I-JEPA.
+#### Script.
+Passons à l'ADN, voici JEPA-DNA, et se base sur des modèles de fondations de génétique, c'est un préprint (3e versoin), et ce n'est pas de l'entrainement from scratch, ils ont réutilisés des modèles de languages de génomique pre-trained.
 
-**On screen:** visible label “PREPRINT · version 3 · 11 August 2026”. Starting point: pretrained genomic backbone. Show a masked-sequence context branch, unmasked target branch, predictor and aggregation, alongside a retained language-model objective.
-
-\[
-\mathcal L=\lambda_{\rm LM}\mathcal L_{\rm LM}+\lambda_{\rm pred}\mathcal L_{\rm cosine}+\lambda_{\rm var}\mathcal L_{\rm var}+\lambda_{\rm cov}\mathcal L_{\rm cov}
-\]
-
-**Visual instructions:** use `assets/dna_objective.svg` as a high-level objective diagram, not a complete implementation graph. Do not depict the genomic latent loss as a residue-by-residue image-style loss: the paper compares aggregated global sequence representations. Label backbone-specific pooling/predictor choices; details in B5.
-
-**Spoken script:**
-
-JEPA-DNA is particularly relevant to this lab because it starts with existing genomic foundation models. The version we are discussing is a preprint, and its setting is continual training rather than learning a new model from scratch.
-
-It retains the model's language objective: masked-token prediction or next-token prediction, depending on the backbone. It adds a branch that predicts an aggregated representation of the unmasked sequence from the masked context.
-
-This is a meaningful difference from the I-JEPA example. There we compared target patch features. Here the latent objective operates on global sequence representations, with aggregation and predictor choices adapted to the backbone.
-
-The equation contains four contributions. The language loss preserves pressure to recover tokens. A cosine loss aligns predicted and teacher sequence representations. Variance and covariance terms encourage a representation that remains diverse rather than collapsing or becoming unnecessarily redundant.
-
-The recipe also includes training stages and a scheduled masking strategy. The paper evaluates three quite different backbones: DNABERT-two, Nucleotide Transformer version three, and HyenaDNA. That illustrates how a learning objective can be added to different architectures.
-
-We should be careful with the paper's language about biological semantics. The target is produced by a learned model; it is not a direct measurement of regulatory function. Downstream experiments test whether these representations are useful for selected tasks. They do not automatically establish a mechanistic model of the genome.
+On conserve l'objectif initial des genetics languages models : prédiction masquée ou prédiction du prochain token (depend de que GFM utilisé). Ils ont rajouté une branche 
 
 **Transition:** “The key journal club question is therefore: which part of this recipe actually helps?”
 
