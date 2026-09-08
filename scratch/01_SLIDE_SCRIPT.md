@@ -176,9 +176,9 @@ Mais avant ça, on s'est concentré que sur l'objectif d'entrainement, l'archite
 - *Objectif : Lire un résultat*
 
 #### Script.
-Comment est évaluée la capacité de représentation du modèle ?
-- On gèle un encodeur pré-entrainé ainsi qu'un classifieur linéaire à partir d'exemple labélisés. On cherche à savoir la difficulté d'extraction de l'information. Ce n'est pas un évaluation non-labellisée.
-- 
+Comment est évaluée la capacité de représentation du modèle ? Ce qu'ont fait les chercheur, c'est du linear probing, on va entrainer un classifieur linéaire sur un encodeur avec ses paramètres gelés en ingérant des données déjà labéllisées dans notre encodeur. On y récupère les espaces latents de ces données pour y entrainer notre classifieur linéaire.
+
+Par exemple sur la diapositive ils ont utilisé un ViT-Huge (visual transformer) entrainé par méthode JEPA. Le papier rapporte 79.3 de précision sur le bench
 
 **Transition:** “Useful image features are one milestone. Temporal prediction and planning add further requirements.”
 
