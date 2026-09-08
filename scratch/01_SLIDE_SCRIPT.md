@@ -198,9 +198,9 @@ La proposition de Yann Lecun sur JEPA inclue les worlds models capables de préd
 
 On a montré que I-JEPA est capable d'apprendre des représentations informatives, mais on est encore loin du système autonome intelligent.
 
-V-JEPA étends la prédiction jusqu'à l'image. C'est la même chose que I-JEPA, mais sur des vidéos, qui sont en soit des séquence d'images. Toutefois la reconstruction de vidéo dépend à la fois des pixels autour de
+V-JEPA étends la prédiction jusqu'à l'image. C'est la même chose que I-JEPA, mais se rajoute la temporalité dans l'équation. La différence c'est qu'on peut reconstruire l'image avec l'image d'avant, et l'image d'après. Un modèle autorisé à regarder les images futures ne démontre pas les mêmes capacités qu'un modèle qui doit prédire le futur à partir des informations disponibles à l'instant t.
 
-V-JEPA-2 
+Le twist avec V-JEPA-2, c'est qu'on veut prédire comment évolue notre espace latent quand on rajoute une action dans le mix. La deuxième version rajoute un modèle capable de recevoir une action en plus du contexte. Le modèle 
 
 
 **Transition:** “We can now ask what carries over when the observations are DNA sequences.”
