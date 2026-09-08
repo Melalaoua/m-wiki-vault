@@ -198,7 +198,9 @@ La proposition de Yann Lecun sur JEPA inclue les worlds models capables de préd
 
 On a montré que I-JEPA est capable d'apprendre des représentations informatives, mais on est encore loin du système autonome intelligent.
 
-V-JEPA étends la prédiction jusqu'à
+V-JEPA étends la prédiction jusqu'à l'image. C'est la même chose que I-JEPA, mais sur des vidéos, qui sont en soit des séquence d'images. Toutefois la reconstruction de vidéo dépend à la fois des pixels autour de
+
+V-JEPA-2 
 
 
 **Transition:** “We can now ask what carries over when the observations are DNA sequences.”
