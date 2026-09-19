@@ -30,9 +30,7 @@ Explore the repo.
 # Implementation
 
 - Use /tdd to complete the task.
-- Use context7 for updated library documentation.
-- Install dependencies through npm. Do not edit the package.json manually.
-
+- 
 # Feedback loops
 
 Before comitting, run the feedback loops:
